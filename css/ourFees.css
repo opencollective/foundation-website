@@ -1,0 +1,148 @@
+.ourFees {
+  margin-top: 70px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.ourFees > .titleWrapper {
+  width: 288px;
+}
+
+.ourFees > .titleWrapper > h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  color: #376b6e;
+}
+
+.ourFees > .titleWrapper > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  color: #313233;
+  margin-top: 8px;
+}
+
+.ourFees > .fiscalSponsorshipWrapper h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+  text-align: center;
+  color: #05464a;
+  margin-top: 36px;
+  text-transform: uppercase;
+}
+
+.ourFees > .fiscalSponsorshipWrapper p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #1e595c;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.amountRaisedWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.amountRaisedCard {
+  width: 288px;
+  height: 112px;
+  padding: 32px 24px 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 16px;
+  margin-right: 16px;
+  box-sizing: border-box;
+}
+
+.eightPercent {
+  border-top-right-radius : 32px;
+  border-top-left-radius : 32px;
+  background: url("/images/leaf-1.svg") no-repeat 24px 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #8ac6c1, #8ac6c1);
+}
+
+.sixPercent {
+  background: url("/images/leaf-1.svg") no-repeat 24px 0, url("/images/leaf-2.svg") no-repeat 24px 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #4e908d, #4e908d);
+}
+
+.fourPercent {
+  border-bottom-right-radius : 32px;
+  border-bottom-left-radius : 32px;
+  background: url("/images/leaf-1.svg") no-repeat 24px 0, url("/images/leaf-2.svg") no-repeat 24px 0, url("/images/leaf-3.svg") no-repeat 24px 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #045257, #045257);
+}
+
+.figureRaisedWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.figure {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: right;
+  color: #ffffff;
+}
+
+.figure > .percentage{
+  font-size: 32px;
+} 
+
+.figureInWords {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-align: right;
+  color: #cddadb;
+}
+
+.crowdFundingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.crowdFundingWrapper h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #1e595c;
+  margin-bottom: 16px;
+}
+
+.fivePercent {
+  border-radius: 32px;
+  padding-top: 16px;
+  background: url("/images/opencollective-icon.svg") no-repeat 24px 41px, linear-gradient(to top, #045257, #045257, #4e908d), linear-gradient(to bottom, #05464a, #05464a);
+}
+
+.crowdFundingWrapper > .note {
+  width: 288px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+
+}
+
+.crowdFundingWrapper > .note > p {
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  color: #313233;
+}
+
+.crowdFundingWrapper > .note > p > a {
+  font-weight: bold;
+  color: #4e908d;
+}

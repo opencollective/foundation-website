@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="630px" viewBox="0 0 320 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>top-bgd-mobile</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="320" height="630"></rect>
+        <radialGradient cx="46.5589104%" cy="94.9472815%" fx="46.5589104%" fy="94.9472815%" r="81.7840339%" gradientTransform="translate(0.465589,0.949473),scale(0.355210,1.000000),rotate(-89.541860),translate(-0.465589,-0.949473)" id="radialGradient-3">
+            <stop stop-color="#4E908D" offset="0%"></stop>
+            <stop stop-color="#045257" offset="100%"></stop>
+            <stop stop-color="#045257" offset="100%"></stop>
+        </radialGradient>
+        <path d="M988.385965,0 L218.238798,549.798681 C185.05389,573.488982 140.809176,574.659377 106.418206,552.756643 L-623.50515,87.887031 C-652.332397,69.5276905 -669.786931,37.7175279 -669.786931,3.54040698 L-669.786931,0 L-669.786931,0 L988.385965,0 Z" id="path-4"></path>
+    </defs>
+    <g id="02-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-OCF-Website-Mobile" transform="translate(0.000000, -40.000000)">
+            <g id="top-bgd-mobile" transform="translate(0.000000, 40.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Path" mask="url(#mask-2)">
+                    <use fill="#05464A" xlink:href="#path-4"></use>
+                    <use fill-opacity="0.7" fill="url(#radialGradient-3)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

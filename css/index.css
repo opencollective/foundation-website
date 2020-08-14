@@ -1,0 +1,24 @@
+* {
+		margin: 0;
+		padding: 0;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #f7f8fa;
+}
+
+button {
+	outline: none;
+	border: none;
+	padding: 0;
+}
+
+.headerAndSponsorshipWrapper {
+	width: 100%;
+	height: 589px;
+	background-image: url("/images/top-bgd-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+

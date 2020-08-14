@@ -1,0 +1,75 @@
+.whatWeOffer {
+  margin-top: 108px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.whatWeOffer h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  color: #313233;
+}
+
+.whatWeOfferItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.whatWeOfferIllustration {
+  width: 296px;
+  height: 257px;
+  box-sizing: border-box;
+}
+
+.whatWeOfferIllustration img{
+  width: 100%;
+  height: 100%;
+}
+
+.whatWeOfferItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reduceYourOverhead {
+  margin-top: 49px;
+}
+
+.increaseCapacity {
+  margin-top: 24px;
+}
+
+.whatWeOfferTextWrapper {
+  margin-top: 24px;
+  width: 256px;
+}
+
+.whatWeOfferTextWrapper h5 {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #76777a;
+}
+
+.whatWeOfferTextWrapper h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #05464a;
+}
+
+.whatWeOfferTextWrapper p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #313233;
+}
+
+
+
