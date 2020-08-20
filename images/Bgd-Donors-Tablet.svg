@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768px" height="491px" viewBox="0 0 768 491" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bgd-Donors-Tablet</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="768" height="491"></rect>
+        <linearGradient x1="38.3541367%" y1="98.9833129%" x2="38.3541367%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#045257" offset="0%"></stop>
+            <stop stop-color="#4E908D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M-85.4752431,40.425844 C69.7142702,13.4752813 225.736321,0 382.590909,0 C539.525956,0 696.469299,13.4891092 853.420939,40.4673276 C868.777187,43.1068929 880,56.4233669 880,72.0048198 L880,435 C880,452.673112 865.673112,467 848,467 L-80,467 C-97.673112,467 -112,452.673112 -112,435 L-112,71.9539541 C-112,56.3933175 -100.806414,43.0882899 -85.4752431,40.425844 Z" id="path-4"></path>
+        <filter x="-2.5%" y="-5.0%" width="104.9%" height="110.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.349019608   0 0 0 0 0.360784314  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="03-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-OCF-Website-Tablet" transform="translate(0.000000, -4087.000000)">
+            <g id="Initiatives" transform="translate(-205.000000, 3924.000000)">
+                <g id="Bgd-Donors-Tablet" transform="translate(205.000000, 163.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Bgd" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#045257" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <use fill-opacity="0.7" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <path d="M880.312177,-270.206959 L1028.7098,-183.600358 C1053.27912,-169.261417 1068.38577,-142.953852 1068.38577,-114.50642 L1068.38577,63.6279966 C1068.38577,92.2403612 1053.10492,118.674336 1028.31032,132.953534 L873.617437,222.041111 C848.903726,236.273727 818.482042,236.273727 793.768332,222.041111 L639.075448,132.953534 C614.280854,118.674336 599,92.2403612 599,63.6279966 L599,-113.025657 C599,-142.263384 614.950063,-169.172342 640.59925,-183.206726 L801.587392,-271.29409 C826.203641,-284.763284 856.077242,-284.350752 880.312177,-270.206959 Z" id="Polygon" stroke="#CDDADB" stroke-width="2" opacity="0.164196" mask="url(#mask-2)" transform="translate(833.692884, -23.983177) rotate(-109.000000) translate(-833.692884, 23.983177) "></path>
+                    <path d="M682.082636,382.96245 L739.232358,416.324467 C756.427753,426.362539 767,444.776078 767,464.686993 L767,533.810058 C767,553.836439 756.305811,572.338481 738.952702,582.334757 L678.952702,616.897818 C661.650298,626.864885 640.349702,626.864885 623.047298,616.897818 L563.047298,582.334757 C545.694189,572.338481 535,553.836439 535,533.810058 L535,465.7236 C535,445.259411 546.162643,426.424816 564.114038,416.599827 L626.964316,382.201203 C644.198588,372.768703 665.115435,373.057589 682.082636,382.96245 Z" id="Polygon" fill="#CDDADB" opacity="0.084196" mask="url(#mask-2)" transform="translate(651.000000, 500.000000) rotate(-109.000000) translate(-651.000000, -500.000000) "></path>
+                    <path d="M-115.628863,160.728126 L-45.7660945,201.590138 C-31.0468023,210.1993 -22,225.971298 -22,243.023431 L-22,327.446196 C-22,344.597383 -31.1513289,360.445347 -46.0059122,369.018828 L-119.005912,411.151556 C-133.854159,419.72138 -152.145841,419.72138 -166.994088,411.151556 L-239.994088,369.018828 C-254.848671,360.445347 -264,344.597383 -264,327.446196 L-264,243.912404 C-264,226.38562 -254.447093,210.252202 -239.079247,201.825015 L-162.942015,160.07403 C-148.151602,151.963487 -130.189413,152.211811 -115.628863,160.728126 Z" id="Polygon" stroke="#E6EDED" stroke-width="2" opacity="0.164196" mask="url(#mask-2)" transform="translate(-143.000000, 286.000000) rotate(-75.000000) translate(143.000000, -286.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

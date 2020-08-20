@@ -9,6 +9,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.copyRightAndSubscribeWrapper,
+.addressWrapper {
   width: 288px;
 }
 
@@ -124,4 +128,62 @@ footer {
   margin-top: 24px;
 }
 
+@media screen and (min-width: 640px) {
+  .footerContent {
+    margin: 0 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .copyRightAndSubscribeWrapper {
+    margin-right: 30px;
+  }
+  .addressWrapper {
+    margin-left: 30px;
+  }
+  .organizationDetailsWrapper {
+    margin-top: 0;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .copyRightAndSubscribeWrapper {
+    width: 384px;
+  }
+  .subscribe input {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .copyRightAndSubscribeWrapper {
+    margin-right: 75px;
+  }
+  .subscribe input {
+    width: 320px;
+  }
+  .addressWrapper {
+    margin-left: 75px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .copyRightAndSubscribeWrapper {
+    width: 447px;
+  }
+  .subscribe input {
+    width: 383px;
+  }
+  .addressWrapper {
+    display: flex;
+    width: 550px;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .organizationDetailsWrapper {
+    margin-right: 50px;
+  }
+  .paymentDetailsWrapper {
+    margin-left: 50px;
+  }
+}

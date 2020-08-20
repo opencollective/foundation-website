@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="829px" viewBox="0 0 320 829" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bgd-Donors-Mobile</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="320" height="829"></rect>
+        <linearGradient x1="38.3541367%" y1="98.9833129%" x2="38.3541367%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#045257" offset="0%"></stop>
+            <stop stop-color="#4E908D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M-308.966576,44.5330469 C-153.9448,20.1776823 1.90769483,8 158.590909,8 C315.358069,8 472.133508,20.1907347 628.917226,44.572204 C644.504441,46.9961765 656,60.4175824 656,76.1921487 L656,773 C656,790.673112 641.673112,805 624,805 L-304,805 C-321.673112,805 -336,790.673112 -336,773 L-336,76.1452777 C-336,60.3896342 -324.531296,46.9784094 -308.966576,44.5330469 Z" id="path-4"></path>
+        <filter x="-2.5%" y="-2.9%" width="104.9%" height="106.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.349019608   0 0 0 0 0.360784314  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="02-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-OCF-Website-Mobile" transform="translate(0.000000, -6126.000000)">
+            <g id="Initiatives" transform="translate(0.000000, 5972.000000)">
+                <g id="Bgd-Donors-Mobile" transform="translate(0.000000, 154.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Bgd" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#045257" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <use fill-opacity="0.7" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <path d="M536.312177,-182.206959 L684.709804,-95.6003575 C709.279117,-81.261417 724.385769,-54.953852 724.385769,-26.50642 L724.385769,151.627997 C724.385769,180.240361 709.104915,206.674336 684.310321,220.953534 L529.617437,310.041111 C504.903726,324.273727 474.482042,324.273727 449.768332,310.041111 L295.075448,220.953534 C270.280854,206.674336 255,180.240361 255,151.627997 L255,-25.0256568 C255,-54.2633843 270.950063,-81.1723423 296.59925,-95.2067255 L457.587392,-183.29409 C482.203641,-196.763284 512.077242,-196.350752 536.312177,-182.206959 Z" id="Polygon" stroke="#CDDADB" stroke-width="2" opacity="0.164196" mask="url(#mask-2)" transform="translate(489.692884, 64.016823) rotate(-109.000000) translate(-489.692884, -64.016823) "></path>
+                    <path d="M458.082636,382.96245 L515.232358,416.324467 C532.427753,426.362539 543,444.776078 543,464.686993 L543,533.810058 C543,553.836439 532.305811,572.338481 514.952702,582.334757 L454.952702,616.897818 C437.650298,626.864885 416.349702,626.864885 399.047298,616.897818 L339.047298,582.334757 C321.694189,572.338481 311,553.836439 311,533.810058 L311,465.7236 C311,445.259411 322.162643,426.424816 340.114038,416.599827 L402.964316,382.201203 C420.198588,372.768703 441.115435,373.057589 458.082636,382.96245 Z" id="Polygon" fill="#CDDADB" opacity="0.084196" mask="url(#mask-2)" transform="translate(427.000000, 500.000000) rotate(-109.000000) translate(-427.000000, -500.000000) "></path>
+                    <path d="M12.3711371,104.728126 L82.2339055,145.590138 C96.9531977,154.1993 106,169.971298 106,187.023431 L106,271.446196 C106,288.597383 96.8486711,304.445347 81.9940878,313.018828 L8.99408781,355.151556 C-5.85415863,363.72138 -24.1458414,363.72138 -38.9940878,355.151556 L-111.994088,313.018828 C-126.848671,304.445347 -136,288.597383 -136,271.446196 L-136,187.912404 C-136,170.38562 -126.447093,154.252202 -111.079247,145.825015 L-34.9420153,104.07403 C-20.151602,95.9634866 -2.18941288,96.2118107 12.3711371,104.728126 Z" id="Polygon" stroke="#E6EDED" stroke-width="2" opacity="0.164196" mask="url(#mask-2)" transform="translate(-15.000000, 230.000000) rotate(-75.000000) translate(15.000000, -230.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

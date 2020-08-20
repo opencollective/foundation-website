@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="320px" height="630px" viewBox="0 0 320 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="730px" height="930px" viewBox="0 0 730 930" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>top-bgd-mobile</title>
     <defs>
-        <rect id="path-1" x="0" y="0" width="320" height="630"></rect>
+        <rect id="path-1" x="0" y="0" width="730" height="930"></rect>
         <radialGradient cx="46.5589104%" cy="94.9472815%" fx="46.5589104%" fy="94.9472815%" r="81.7840339%" gradientTransform="translate(0.465589,0.949473),scale(0.355210,1.000000),rotate(-89.541860),translate(-0.465589,-0.949473)" id="radialGradient-3">
             <stop stop-color="#4E908D" offset="0%"></stop>
             <stop stop-color="#045257" offset="100%"></stop>

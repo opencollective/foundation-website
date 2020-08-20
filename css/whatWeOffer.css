@@ -71,5 +71,64 @@
   color: #313233;
 }
 
+@media screen and (min-width: 640px) {
+  .whatWeOfferItems {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .whatWeOfferItem {
+    box-sizing: border-box;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .whatWeOfferIllustration {
+    width: 197px;
+    height: 171px;
+  }
+  .whatWeOfferTextWrapper {
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+  }
+  .whatWeOfferTextWrapper h3 {
+    order: 1;
+  }
+  .whatWeOfferTextWrapper h5 {
+    order: 2;
+  }
+  .whatWeOfferTextWrapper p {
+    order: 3;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .whatWeOfferItem {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .whatWeOfferTextWrapper {
+    width: 256px;
+  }
+  .whatWeOfferTextWrapper h3 {
+    order: 2;
+  }
+  .whatWeOfferTextWrapper h5 {
+    order: 1;
+  }
+  .whatWeOfferTextWrapper p {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .whatWeOfferItem {
+    width: 360px;
+  }
+  .whatWeOfferTextWrapper {
+    width: 296px;
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="630px" viewBox="0 0 1024 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>top-bgd-tablet</title>
+    <defs>
+        <rect id="path-1" x="0.5" y="0" width="1024" height="630"></rect>
+        <radialGradient cx="46.5589104%" cy="94.9472815%" fx="46.5589104%" fy="94.9472815%" r="81.7840343%" gradientTransform="translate(0.465589,0.949473),scale(0.355178,1.000000),rotate(-89.541819),translate(-0.465589,-0.949473)" id="radialGradient-3">
+            <stop stop-color="#4E908D" offset="0%"></stop>
+            <stop stop-color="#045257" offset="100%"></stop>
+            <stop stop-color="#045257" offset="100%"></stop>
+        </radialGradient>
+        <path d="M1149,-1 L353.559467,566.804506 C320.376014,590.491649 276.135048,591.661906 241.745737,569.762188 L-513.7148,88.6716379 C-542.544006,70.3126924 -560,38.5013973 -560,4.32283642 L-560,-1 L-560,-1 L1149,-1 Z" id="path-4"></path>
+    </defs>
+    <g id="03-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-OCF-Website-Tablet" transform="translate(1.000000, -40.000000)">
+            <g id="Header" transform="translate(-1.000000, 40.000000)">
+                <g id="top-bgd-tablet" transform="translate(0.500000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Path" mask="url(#mask-2)">
+                        <use fill="#05464A" xlink:href="#path-4"></use>
+                        <use fill-opacity="0.7" fill="url(#radialGradient-3)" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

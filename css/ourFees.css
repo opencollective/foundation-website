@@ -1,7 +1,13 @@
+.ourFeesSection {
+  background-color: #F7F8FA;
+}
 .ourFees {
-  margin-top: 70px;
+  padding-top: 70px;
   margin-left: 12px;
   margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ourFees > .titleWrapper {
@@ -23,6 +29,10 @@
   text-align: center;
   color: #313233;
   margin-top: 8px;
+}
+
+.ourFees > .fiscalSponsorshipWrapper {
+  width: 288px;
 }
 
 .ourFees > .fiscalSponsorshipWrapper h2 {
@@ -145,4 +155,147 @@
 .crowdFundingWrapper > .note > p > a {
   font-weight: bold;
   color: #4e908d;
+}
+
+@media screen and (min-width: 640px) {
+  .ourFees > .titleWrapper {
+    width: 600px;
+  }
+  .ourFees > .fiscalSponsorshipWrapper {
+    width: 429px;
+    margin-top: 48px;
+  }
+  .amountRaisedWrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .amountRaisedCard {
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+  }
+  .eightPercent, .fourPercent {
+    border-radius: 0;
+  }
+  .eightPercent {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    background: url("/images/leaf-1.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #8ac6c1, #8ac6c1);
+  }
+  .fourPercent {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background: url("/images/leaf-1.svg") no-repeat 0 0, url("/images/leaf-2.svg") no-repeat 0 0, url("/images/leaf-3.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #045257, #045257);
+  }
+  .sixPercent{
+    background: url("/images/leaf-1.svg") no-repeat 0 0, url("/images/leaf-2.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #4e908d, #4e908d);
+  }
+  .crowdFundingWrapper {
+    margin-top: 48px;
+  }
+  .fivePercent {
+    padding: 10px 5px;
+    box-sizing: border-box;
+  }
+  .fivePercent > .figureRaisedWrapper {
+    flex-direction: row-reverse;
+  }
+  .crowdFundingWrapper > .note {
+    width: 448px;
+  }
+  .figure {
+    display: flex;
+    align-items: baseline;
+  }
+  .fivePercent > .figureRaisedWrapper > .figureInWords {
+    margin-right: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ourFees > .titleWrapper {
+    width: 688px;
+  }
+  .amountRaisedCard {
+    width: 240px;
+  }
+  .fivePercent {
+    padding: 21px 16px 24px 21px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .amountRaisedWrapperWithTitle p {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .amountRaisedAndCrowdFundWrapper {
+    height: 295px;
+    align-items: center;
+    margin-top: 17px;
+  }
+  .ourFees > .titleWrapper {
+    width: 928px;
+  }
+  .ourFees > .titleWrapper > h1 {
+    font-size: 56px;
+    line-height: 1.146;
+  }
+  .fiscalSponsorshipWrapper p {
+    display: none;
+  }
+  .amountRaisedWrapperWithTitle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 33px;
+    padding-bottom: 106px;
+    background-image: linear-gradient(to top, rgba(130, 163, 165, 0), #82a3a5 43%, rgba(130, 163, 165, 0));
+  }
+  .amountRaisedWrapperWithTitle p {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #1e595c;
+    align-self: flex-end;
+    margin-bottom: 17px;
+  }
+  .amountRaisedAndCrowdFundWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .crowdFundingWrapper {
+    margin-top: 0;
+    padding: 33px 16px 58px;
+    background-image: linear-gradient(to top, rgba(180, 200, 201, 0) 100%, #b4c8c9 41%, rgba(180, 200, 201, 0));
+  }
+  .fivePercent {
+    width: 448px;
+  }
+  .crowdFundingWrapper > .note > p {
+    text-align: right;
+  }
+  .fivePercent > .figureRaisedWrapper > .figureInWords {
+    width: 240px;
+    margin-right: 16px;
+    position: relative;
+    top: -10px;
+  }
+  .fivePercent > .figureRaisedWrapper > .figure > .number {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #e6eded;
+  }
+  .fivePercent > .figureRaisedWrapper > .figure > .percentage {
+    font-size: 32px;
+  }
 }

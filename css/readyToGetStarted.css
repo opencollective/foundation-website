@@ -2,6 +2,9 @@
   margin-top: 41px;
   margin-left: 12px;
   margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .readyToGetStartedIllustration {
@@ -15,6 +18,10 @@
   height: 100%;
 }
 
+.getStartedTextWrapper > .titleWrapper,
+.getStartedTextWrapper > .descriptionWrapper {
+  width: 288px;
+}
 .getStartedTextWrapper h2 {
   font-size: 32px;
   font-weight: bold;
@@ -23,7 +30,7 @@
   margin-bottom: 16px;
 }
 
-.getStartedTextWrapper p {
+.getStartedTextWrapper div > p {
   font-size: 16px;
   line-height: 1.5;
   color: #313233;
@@ -55,5 +62,122 @@
   background-image: linear-gradient(to bottom, #313233, #141414);
   margin-left: 8px;
 }
+
+.longerTextLink {
+  display: none;
+}
+
+
+@media screen and (min-width: 640px) {
+  .readyToGetStartedSection {
+    position: relative;
+    top: 30px;
+  }
+  .readyToGetStarted {
+    margin-right: 20px;
+  }
+  .readyToGetStartedIllustration {
+    width: 422px;
+    height: 345px;
+    align-self: flex-start;
+    margin-left: 72px;
+  }
+  .getStartedTextWrapper {
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 20px;;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .getStartedTextWrapper > .titleWrapper,
+  .getStartedTextWrapper > .descriptionWrapper {
+    width: 476px;
+  }
+  .actionWrapper {
+    justify-content: flex-end;
+    display: flex;
+  }
+  .longerTextLink {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .readyToGetStartedSection {
+    top: 50px;
+  }
+  .readyToGetStarted {
+    margin-right: 52px;
+  }
+  .getStartedTextWrapper > .titleWrapper {
+    width: 589px;
+  }
+  .getStartedTextWrapper h2 {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .readyToGetStartedSection {
+    top: 0;
+  }
+  .readyToGetStarted {
+    flex-direction: row;
+    justify-content: center;
+    align-self: baseline;
+    margin-right: 0;
+  }
+  .readyToGetStartedIllustration {
+    margin-left: 0;
+  }
+  .getStartedInitiativeBG {
+		background-image: url("/images/initaties-background-desktop.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+    background-color: #f7f8fa;
+    height: 520px;
+    background-position: 0 125%;
+  }
+  .getStartedTextAndActionWrapper {
+    margin-right: 30px;;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .readyToGetStartedIllustration {
+    width: 534px;
+    height: 455px;
+    margin-right: 57px;
+  }
+  .getStartedInitiativeBG {
+    background-position: 0 120%;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .getStartedInitiativeBG {
+    height: 1100px;
+    background-position: 0 100%;
+  }
+  .readyToGetStartedSection {
+    display: flex;
+    justify-content: center;
+  }
+  .readyToGetStarted {
+    width: 1280px;
+    position: relative;
+    top: 330px;
+    margin-right: 0;
+  }
+  .readyToGetStartedIllustration {
+    margin-right: 57px;
+  }
+}
+
 
 

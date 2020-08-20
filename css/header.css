@@ -24,6 +24,10 @@ header {
   color: #fff;
 }
 
+.menuWrapper-sm {
+  display: none;
+}
+
 .logo {
   width: 80px;
   height: 31px;
@@ -38,4 +42,152 @@ header {
   border-radius: 24px;
   color: #ffffff;
   background-image: linear-gradient(to bottom, #507e80, #376b6e);
+}
+
+.mobileNavOverlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.6);
+}
+
+.mobileNavWrapper {
+  width: 242px;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.mobileNavContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  background: url("/images/mobileNav-illustration.png") no-repeat bottom, #ffffff;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  box-shadow: 0 -16px 16px 24px rgba(49, 50, 51, 0.16);
+}
+
+.closeMenuButtonWrapper {
+  margin-bottom: 80px;
+  margin-left: 16px;
+  margin-top: 40px;
+}
+
+.closeMenuButton {
+  background: none;
+}
+
+.mobileNav {
+  width: 100%;
+}
+
+.mobileNavListWrapper a{
+  text-decoration: none;
+}
+
+.mobileNavList {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  white-space: nowrap;
+}
+
+.mobileNavList {
+  font-size: 24px;
+  line-height: 1;
+  color: #313233;
+  margin-left: 27px;
+}
+
+.homeLink {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .menuWrapper-sm {
+    display: inline-block;
+  }
+
+  .menuListWrapper-sm {
+    display: inline-flex;
+  }
+
+  .menuList-sm {
+    list-style: none;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .menuList-sm > a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .logo {
+    width: 115px;
+    height: 43px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerAndSponsorshipWrapper {
+    z-index: 1;
+  }
+  .messageWrapper {
+    margin-left: auto;
+    z-index: 99;
+  }
+  .contactUsButton {
+    z-index: 99;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .homeLink {
+    display: inline-block;
+  }
+  .logoWrapper {
+    margin-left: 10%;
+  }
+  .menuWrapper-sm {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .homeLink {
+    display: inline-block;
+  }
+  .messageWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99;
+  }
+  .logoWrapper {
+    margin-left: 20%;
+  }
+  .menuWrapper-sm {
+    margin-right: auto;
+    margin-left: 4%;
+  }
 }

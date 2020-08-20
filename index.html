@@ -13,62 +13,172 @@
     <link rel="stylesheet" href="/css/initiatives.css">
     <link rel="stylesheet" href="/css/ourFees.css">
     <link rel="stylesheet" href="/css/donors.css">
-    <link rel="stylesheet" href="/css/generalWrapper.css">
+    <link rel="stylesheet" href="/css/generalInformation.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="/js/faq.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
 	  <div class="headerAndSponsorshipWrapper">
       <header>
         <div class="navWrapper">
             <div class="menuIcon">
-              <button class="menuButton">
-                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg> 
+              <button class="menuButton js-menuToggle">
+                <svg width="24px" height="17px" viewBox="0 0 24 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>icn-menu</title>
+                  <g id="02-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="04-OCF-Website-Mobile" transform="translate(-16.000000, -80.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                          <g id="Header" transform="translate(-670.000000, 40.000000)">
+                              <g id="Main-nav" transform="translate(686.000000, 24.000000)">
+                                  <g id="icn-menu" transform="translate(0.000000, 16.000000)">
+                                      <path d="M22.6338462,7.12615385 L0.996923077,7.12615385 C0.406153846,7.12615385 0,7.53230769 0,8.12307692 C0,8.71384615 0.406153846,9.12 0.996923077,9.12 L22.6707692,9.12 C23.2615385,9.12 23.6676923,8.71384615 23.6676923,8.12307692 C23.6307692,7.53230769 23.2246154,7.12615385 22.6338462,7.12615385 L22.6338462,7.12615385 Z" id="Path"></path>
+                                      <path d="M22.6338462,14.0307692 L0.996923077,14.0307692 C0.406153846,14.0307692 0,14.4369231 0,15.0276923 C0,15.6184615 0.406153846,16.0246154 0.996923077,16.0246154 L22.6707692,16.0246154 C23.2615385,16.0246154 23.6676923,15.6184615 23.6676923,15.0276923 C23.6307692,14.4369231 23.2246154,14.0307692 22.6338462,14.0307692 L22.6338462,14.0307692 Z" id="Path"></path>
+                                      <path d="M0.996923077,2.21538462 L22.6707692,2.21538462 C23.2615385,2.21538462 23.6676923,1.80923077 23.6676923,1.21846154 C23.6676923,0.627692308 23.2615385,0.221538462 22.6707692,0.221538462 L0.996923077,0.221538462 C0.406153846,0.221538462 0,0.627692308 0,1.21846154 C0,1.80923077 0.406153846,2.21538462 0.996923077,2.21538462 Z" id="Path"></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
               </button>
             </div>
             <div class="logoWrapper">
-              <img class="logo" src="images/logo.png" alt="Open Collective Foundation" />
+              <a href="/">
+                <img class="logo" src="images/logo.png" alt="Open Collective Foundation" />
+              </a>
+            </div>
+            <div class="menuWrapper-sm">
+              <ul class="menuListWrapper-sm">
+                <li class="menuList-sm homeLink">
+                  <a href="/">
+                    Home
+                  </a>
+                </li>
+                <li class="menuList-sm">
+                  <a href="#whatWeOffer">
+                    What we offer?
+                  </a>
+                </li>
+                <li class="menuList-sm">
+                  <a href="#whatWeDo">
+                    What we do?
+                  </a>
+                </li>
+                <li class="menuList-sm">
+                  <a href="#ourFees">
+                    Our fees
+                  </a>
+                </li>
+                <li class="menuList-sm">
+                  <a href="#generalInformation">
+                    General information
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="messageWrapper">
-              <button class="messageIcon">
+              <button class="messageIcon mobile tablet">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
                 </svg>
               </button>
+              <button class="buttonStyleLink desktop contactUsButton">
+                Contact us
+              </button>
             </div>
         </div>
+        <div class="mobileNavOverlay">
+        </div>
+        <div class="mobileNavWrapper">
+          <div class="mobileNavContent">
+            <div class="closeMenuButtonWrapper">
+              <button class="closeMenuButton js-menuToggle">
+                <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>icn-close-menu</title>
+                  <g id="02-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="05-OCF-Pop-up-confirmation-Mobile" transform="translate(-18.000000, -79.000000)" fill="#05464A" fill-rule="nonzero">
+                          <g id="Overlay" transform="translate(-560.000000, 40.000000)">
+                              <g id="Form" transform="translate(560.000000, 0.000000)">
+                                  <g id="icn-close-menu" transform="translate(18.000000, 39.000000)">
+                                      <path d="M20.6338462,8.12615385 L-1.00307692,8.12615385 C-1.59384615,8.12615385 -2,8.53230769 -2,9.12307692 C-2,9.71384615 -1.59384615,10.12 -1.00307692,10.12 L20.6707692,10.12 C21.2615385,10.12 21.6676923,9.71384615 21.6676923,9.12307692 C21.6307692,8.53230769 21.2246154,8.12615385 20.6338462,8.12615385 L20.6338462,8.12615385 Z" id="Path" transform="translate(9.833846, 9.123077) rotate(-315.000000) translate(-9.833846, -9.123077) "></path>
+                                      <path d="M20.6338462,8.12615385 L-1.00307692,8.12615385 C-1.59384615,8.12615385 -2,8.53230769 -2,9.12307692 C-2,9.71384615 -1.59384615,10.12 -1.00307692,10.12 L20.6707692,10.12 C21.2615385,10.12 21.6676923,9.71384615 21.6676923,9.12307692 C21.6307692,8.53230769 21.2246154,8.12615385 20.6338462,8.12615385 L20.6338462,8.12615385 Z" id="Path" transform="translate(9.833846, 9.123077) rotate(-225.000000) translate(-9.833846, -9.123077) "></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          <div class="mobileNav">
+            <ul class="mobileNavListWrapper">
+              <a href="/">
+                <li class="mobileNavList">
+                  Home
+                </li>
+              </a>
+              <a href="#whatWeOffer">
+                <li class="mobileNavList">
+                  What we offer?
+                </li>
+              </a>
+              <a href="#whatWeDo">
+                <li class="mobileNavList">
+                  What we do?
+                </li>
+              </a>
+              <a href="#ourFees">
+                <li class="mobileNavList">
+                  Our fees
+                </li>
+              </a>
+              <a href="#generalInformation">
+                <li class="mobileNavList">
+                  General info
+                </li>
+              </a>
+            </ul>
+          </div>
+          </div>
+       </div>
       </header>
       <section class="fiscalSponsorshipSection">
         <div class="fiscalSponsorshipSectionContent">
-          <h3>
-            Get your initiative up and running today
-          </h3>
-          <div class="title">
-           <h1>
-            Fiscal Sponsorship
-            <span class="madeEasy">
-              made easy
-            </span>
-           </h1>
-          </div>
-          <div class="actionWrapper">
-            <button class="applyToStart">
-              Apply to Start
-            </button>
-            <button class="learnMore">
-              Learn More
-            </button>
+          <div class="fiscalSponsorshipTitleAndActionWrapper">
+            <div class="fiscalSponsorshipTitlesContainer">
+              <h3>
+                Get your initiative up and running today
+              </h3>
+              <div class="title">
+               <h1>
+                Fiscal Sponsorship
+                <span class="madeEasy">
+                  made easy
+                </span>
+               </h1>
+              </div>
+            </div>
+            <div class="actionWrapper">
+              <a href="#" class="applyToStart">
+                Apply to Start
+              </a>
+              <a href="#" class="learnMore">
+                Learn More
+              </a>
+            </div>
           </div>
           <div class="sponsorShipIllustrationWrapper">
-            <img src="/images/fiscalsponsorship-ilustration-sm.png" alit="Sponsorship Illustration"  />
+            <img src="/images/fiscalsponsorship-ilustration-mobile.png" class="mobile" alt="Sponsorship Illustration"  />
+            <img src="/images/fiscalsponsorship-ilustration-tablet.png" class="bigger" alt="Sponsorship Illustration"  />
+            <img src="/images/fiscalsponsorship-ilustration-desktop.png" class="biggest" alt="Sponsorship Illustration"  />
           </div>
         </div>
       </section>
+      <!-- <div class="desktop sponsorShipIllustrationDesktopWrapper">
+        <img src="/images/fiscalsponsorship-ilustration-tablet.png" alt="Sponsorship Illustration"  />
+      </div> -->
     </div>
-    <section class="whatWeOffer">
+    <section id="whatWeOffer" class="whatWeOffer">
       <h2>
         What we offer
       </h2>
@@ -111,153 +221,184 @@
         </div>
       </div>
     </section>
-    <section class="readyToGetStarted">
-      <div class="readyToGetStartedIllustration">
-        <img src="/images/readytogetstarted.png" alt="Ready to get started" />
-      </div>
-      <div class="getStartedTextWrapper">
-        <h2>Ready to get started?</h2>
-        <p>
-          Open Collective Foundation helps you run your initiative with minimal hassle. Grantees and project participants will love the simplicity and accessibility, and you’ll love how much your overhead is reduced.
-        </p>
-        <p class="boldParagrah">
-          Reach out to us! We will set up a call and help you get started
-        </p>
-      </div>
-      <div class="actionWrapper">
-        <a class="buttonStyleLink" href="#">
-          Apply to Start
-        </a>
-        <a class="buttonStyleLink readDocs" href="#">
-          Read docs
-        </a>
-      </div>
-    </section>
-    <section class="initiatives">
-      <h2>
-        We enable initiatives to focus on their mission
-      </h2>
-      <div class="initiativesWrapper">
-        <div class="initiative">
-          <div>
-            <img src="/images/financial-admin.svg" alt="Financial Admin" />
+    <div class="getStartedInitiativeBG">
+      <section class="readyToGetStartedSection">
+        <div class="readyToGetStarted">
+          <div class="readyToGetStartedIllustration">
+            <img src="/images/readytogetstarted.png" alt="Ready to get started" />
           </div>
-          <div class="initiativeTextWrapper">
-            <h3>Financial Admin</h3>
-            <p>
-              Many initiatives don’t have a bank account or a charity legal entity set up to receive funds. We help them by taking care of tax reporting and financial admin. We keep track of the budget, process expense claims, and handle payments. Easily add multiple grants from different sources into one budget.
-            </p>
-          </div>
-        </div>
-        <div class="initiative">
-          <div>
-            <img src="/images/pay-expenses.svg" alt="Pay Expenses" />
-          </div>
-          <div class="initiativeTextWrapper">
-            <h3>Pay your expenses</h3>
-            <p>
-              Anyone in your initiative can submit expenses. Once approved by you, we process them for payment via bank transfer or PayPal.  A dashboard allows you to easily view, approve, and request payment expenses all in one place.
-            </p>
-          </div>
-        </div>
-        <div class="initiative">
-          <div>
-            <img src="/images/tax-deductible.svg" alt="Tax deductible" />
-          </div>
-          <div class="initiativeTextWrapper">
-            <h3>Tax deductible donations</h3>
-            <p>
-              Allow your supporters to make tax deductible donations via credit card, bank transfer, or PayPal. As part of many Donor Advised Funds (DAFS), donations through them are easy! We can provide the invoices and documentation your funders need.
-            </p>
-          </div>
-        </div>
-        <div class="initiative">
-          <div>
-            <img src="/images/community-features.svg" alt="Community features" />
-          </div>
-          <div class="initiativeTextWrapper">
-            <h3>Plus great community engagement features</h3>
-            <p>
-              Join our network of hosted initiatives and be a part of a supportive and growing open-source community.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ourFees">
-      <div class="titleWrapper">
-        <h1>
-          Our Fees
-        </h1>
-        <h3>In order to support you better, we use the Open Collective Platform to manage your fund.</h3>
-      </div>
-      <div class="fiscalSponsorshipWrapper">
-        <h2>Fiscal Sponsorship Fees</h2>
-        <p>On each incoming donation via Bank Transfer or Check</p>
-      </div>
-      <div class="amountRaisedWrapper">
-        <div class="amountRaisedCard eightPercent">
-          <div class="figureRaisedWrapper">
-            <div class="figure">
-              <span class="number">8</span>
-              <span class="percentage">%</span>
+          <div class="getStartedTextAndActionWrapper">
+            <div class="getStartedTextWrapper">
+              <div class="titleWrapper">
+                <h2>Ready to get started?</h2>
+              </div>
+              <div class="descriptionWrapper">
+                <p>
+                  Open Collective Foundation helps you run your initiative with minimal hassle. Grantees and project participants will love the simplicity and accessibility, and you’ll love how much your overhead is reduced.
+                </p>
+                <p class="boldParagrah">
+                  Reach out to us! We will set up a call and help you get started
+                </p>
+              </div>
             </div>
-            <span class="figureInWords">Up to 500k raised</span>
-          </div>
-        </div>
-        <div class="amountRaisedCard sixPercent">
-          <div class="figureRaisedWrapper">
-            <div class="figure">
-              <span class="number">6</span>
-              <span class="percentage">%</span>
+            <div class="actionWrapper">
+              <a class="buttonStyleLink mobile" href="#">
+                Apply to Start
+              </a>
+              <a class="buttonStyleLink longerTextLink" href="#">
+                Apply to Start a Fund
+              </a>
+              <a class="buttonStyleLink readDocs mobile" href="#">
+                Read docs
+              </a>
+               <a class="buttonStyleLink readDocs longerTextLink" href="#">
+                Read Documentation
+              </a>
             </div>
-            <span class="figureInWords">Up to 1 Million raised</span>
           </div>
         </div>
-        <div class="amountRaisedCard fourPercent">
-          <div class="figureRaisedWrapper">
-            <div class="figure">
-              <span class="number">4</span>
-              <span class="percentage">%</span>
+      </section>
+    </div>
+    <section id="whatWeDo" class="initiativeSection">
+      <div class="initiatives">
+        <div class="titleWrapper">
+          <h2>
+            We enable initiatives to focus on their mission
+          </h2>
+        </div>
+        <div class="initiativesWrapper">
+          <div class="initiative financialAdmin">
+            <div>
+              <img src="/images/financial-admin.svg" alt="Financial Admin" />
             </div>
-            <span class="figureInWords">More than 1 Million raised</span>
-          </div>
-        </div>
-      </div>
-      <div class="crowdFundingWrapper">
-        <h3>Crowd funding</h3>
-        <div class="amountRaisedCard fivePercent">
-          <div class="figureRaisedWrapper">
-            <div class="figure">
-              <span class="number">5</span>
-              <span class="percentage">%</span>
+            <div class="initiativeTextWrapper">
+              <h3>Financial Admin</h3>
+              <p>
+                Many initiatives don’t have a bank account or a charity legal entity set up to receive funds. We help them by taking care of tax reporting and financial admin. We keep track of the budget, process expense claims, and handle payments. Easily add multiple grants from different sources into one budget.
+              </p>
             </div>
-            <div class="figureInWords">On each incoming donation made via the Open Collective Platform</div>
           </div>
-        </div>
-        <div class="note">
-          <p>
-            *Third-party payment processors (like Stripe and Paypal) charge separate fees on each transaction made using their service.  <a href="#" class="learnMoreHere">Learn more here</a>.
-          </p>
+          <div class="initiative payYourExpenses">
+            <div>
+              <img src="/images/pay-expenses.svg" alt="Pay Expenses" />
+            </div>
+            <div class="initiativeTextWrapper">
+              <h3>Pay your expenses</h3>
+              <p>
+                Anyone in your initiative can submit expenses. Once approved by you, we process them for payment via bank transfer or PayPal.  A dashboard allows you to easily view, approve, and request payment expenses all in one place.
+              </p>
+            </div>
+          </div>
+          <div class="initiative taxDeductible">
+            <div>
+              <img src="/images/tax-deductible.svg" alt="Tax deductible" />
+            </div>
+            <div class="initiativeTextWrapper">
+              <h3>Tax deductible donations</h3>
+              <p>
+                Allow your supporters to make tax deductible donations via credit card, bank transfer, or PayPal. As part of many Donor Advised Funds (DAFS), donations through them are easy! We can provide the invoices and documentation your funders need.
+              </p>
+            </div>
+          </div>
+          <div class="initiative plusGreatCommunity">
+            <div>
+              <img src="/images/community-features.svg" alt="Community features" />
+            </div>
+            <div class="initiativeTextWrapper">
+              <h3>Plus great community engagement features</h3>
+              <p>
+                Join our network of hosted initiatives and be a part of a supportive and growing open-source community.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section>
+    <section id="ourFees" class="ourFeesSection">
+      <div class="ourFees">
+        <div class="titleWrapper">
+          <h1>
+            Our Fees
+          </h1>
+          <h3>In order to support you better, we use the Open Collective Platform to manage your fund.</h3>
+        </div>
+        <div class="fiscalSponsorshipWrapper">
+          <h2>Fiscal Sponsorship Fees</h2>
+          <p>On each incoming donation via Bank Transfer or Check</p>
+        </div>
+        <div class="amountRaisedAndCrowdFundWrapper">
+          <div class="amountRaisedWrapperWithTitle">
+            <p class="desktop">On each incoming donation via Bank Transfer or Check</p>
+            <div class="amountRaisedWrapper">
+              <div class="amountRaisedCard eightPercent">
+                <div class="figureRaisedWrapper">
+                  <div class="figure">
+                    <span class="number">8</span>
+                    <span class="percentage">%</span>
+                  </div>
+                  <span class="figureInWords">Up to 500k raised</span>
+                </div>
+              </div>
+              <div class="amountRaisedCard sixPercent">
+                <div class="figureRaisedWrapper">
+                  <div class="figure">
+                    <span class="number">6</span>
+                    <span class="percentage">%</span>
+                  </div>
+                  <span class="figureInWords">Up to 1 Million raised</span>
+                </div>
+              </div>
+              <div class="amountRaisedCard fourPercent">
+                <div class="figureRaisedWrapper">
+                  <div class="figure">
+                    <span class="number">4</span>
+                    <span class="percentage">%</span>
+                  </div>
+                  <span class="figureInWords">More than 1 Million raised</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="crowdFundingWrapper">
+            <h3>Crowd funding</h3>
+            <div class="amountRaisedCard fivePercent">
+              <div class="figureRaisedWrapper">
+                <div class="figure">
+                  <span class="number">5</span>
+                  <span class="percentage">%</span>
+                </div>
+                <div class="figureInWords">On each incoming donation made via the Open Collective Platform</div>
+              </div>
+            </div>
+            <div class="note">
+              <p>
+                *Third-party payment processors (like Stripe and Paypal) charge separate fees on each transaction made using their service.  <a href="#" class="learnMoreHere">Learn more here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="donorsSection">
       <div class="donorsBgWrapper">
         <img src="/images/donors-bg.svg" alt="Initiatives" />
       </div>
       <div class="donors">
         <div class="donorsContent">
           <div class="donorsTextWrapper">
-            <h2>
-              These donors and initiatives are trusting us
-            </h2>
-            <p>
-              Our Fiscally Sponsored Projects have received funding through Open Collective Foundation from these entities.
-            </p>
+            <div class="donorsTitleWrapper">
+              <h2>
+                These donors and initiatives are trusting us
+              </h2>
+            </div>
+            <div class="donorsDescriptionWrapper">
+              <p>
+                Our Fiscally Sponsored Projects have received funding through Open Collective Foundation from these entities.
+              </p>
+            </div>
           </div>
           <div class="donorsLogos">
-            
+           
           </div>
           <div class="createAnAccountWrapper">
             <a href="#" class="buttonStyleLink createAnAccountLink">Create an account</a>
@@ -265,7 +406,7 @@
         </div>
       </div>
     </section>
-    <section class="generalInformation">
+    <section id="generalInformation" class="generalInformation">
       <div class="generalInformationContent">
         <div class="generalInformationTitleWrapper">
           <h2>
@@ -274,7 +415,7 @@
         </div>
         <div class="faqWrapper">
           <div class="faq">
-            <div class="questionWrapper">
+            <div class="questionWrapper" data-toggle="question1">
               <span class="question">What is your mission</span>
               <span class="plusIcon">
                 <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -292,12 +433,15 @@
           </div>
         </div>
         <div class="doYouStillHaveQuestion">
-          <h3>Do you still have questions?</h3>
-          <p>
-            Feel free to read our documentation, or if you want us to contact you, send us an email, and we'll be in touch with you as soon as possible.
-          </p>
+          <div class="doYouStillHaveQuestionTextWrapper">
+              <h3>Do you still have questions?</h3>
+            <p>
+              Feel free to read our documentation, or if you want us to contact you, send us an email, and we'll be in touch with you as soon as possible.
+            </p>
+          </div>
           <div class="actionWrapper">
-            <a href="#" class="buttonStyleLink readDocs">Read Docs</a>
+            <a href="#" class="buttonStyleLink readDocs mobile">Read Docs</a>
+            <a href="#" class="buttonStyleLink readDocs tablet desktop">Read Documentation</a>
             <a href="#" class="buttonStyleLink contactUsBtn">Contact us</a>
           </div>
         </div>
@@ -305,52 +449,58 @@
     </section>
     <footer>
       <div class="footerContent">
-        <div class="copyRightWrapper">
-          <div class="footerLogoWrapper">
-            <img src="/images/ocf-logo-footer.png" alt="OCF" />
-          </div>
-          <p>Copyright © 2020 opencollective fundation, a 501(c)(3) nonprofit</p>
-        </div>
-        <div class="subscribeWrapper">
-          <h4>Subscribe to our Newsletter</h4>
-          <form class="subscribeForm">
-            <div class="subscribe">
-              <label>Email</label>
-              <input name="email" type="email" />
+        <div class="copyRightAndSubscribeWrapper">
+          <div class="copyRightWrapper">
+            <div class="footerLogoWrapper">
+              <img src="/images/ocf-logo-footer.png" alt="OCF" />
             </div>
-            <button class="subscribeButton">Subscribe</button>
-          </form>
-        </div>
-        <div class="organizationDetailsWrapper">
-          <h5>Our Organizational details</h5>
-          <p>
-            Open Collective Foundation 501(c)(3)
-            340 S. Lemon Avenue, #3717 
-            Walnut, CA 91789<br />
-            EIN 81-4004928<br />
-            DLN 17053184327027<br />
-          </p>
-        </div>
-        <div class="paymentDetailsWrapper">
-          <h6>Payments</h6>
-          <div class="paymentsWrapper">
-            <h4>PAYPAL</h4>
-            <p>host+c3@opencollective.org</p>
+            <p>Copyright © 2020 opencollective fundation, a 501(c)(3) nonprofit</p>
           </div>
-          <div class="bankDetails">
-            <h4>Bank Details</h4>
+          <div class="subscribeWrapper">
+            <h4>Subscribe to our Newsletter</h4>
+            <form class="subscribeForm">
+              <div class="subscribe">
+                <label>Email</label><br>
+                <input name="email" type="email" />
+              </div>
+              <button class="subscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="addressWrapper">
+          <div class="organizationDetailsWrapper">
+            <h5>Our Organizational details</h5>
             <p>
-              Umpqua Bank,<br />
-              450 Sansome St. Suite 120, <br />
-              San Francisco CA 94111<br />
-              Account name: <br />
-              Open Collective Foundation<br />
-              Account number: 4867268536<br />
-              Routing number: 123205054<br />
+              Open Collective Foundation 501(c)(3)
+              340 S. Lemon Avenue, #3717 
+              Walnut, CA 91789<br />
+              EIN 81-4004928<br />
+              DLN 17053184327027<br />
             </p>
+          </div>
+          <div class="paymentDetailsWrapper">
+            <h6>Payments</h6>
+            <div class="paymentsWrapper">
+              <h4>PAYPAL</h4>
+              <p>host+c3@opencollective.org</p>
+            </div>
+            <div class="bankDetails">
+              <h4>Bank Details</h4>
+              <p>
+                Umpqua Bank,<br />
+                450 Sansome St. Suite 120, <br />
+                San Francisco CA 94111<br />
+                Account name: <br />
+                Open Collective Foundation<br />
+                Account number: 4867268536<br />
+                Routing number: 123205054<br />
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script src="/js/nav.js" type="text/javascript"></script>
+  <script src="/js/faq.js" type="text/javascript"></script>
 </html>

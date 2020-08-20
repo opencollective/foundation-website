@@ -1,10 +1,23 @@
-.initiatives {
-  margin-top: 70px;
-  margin-left: 12px;
-  margin-right: 12px;
+.initiativeSection {
+  background-image: url("/images/initaties-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #F7F8FA;
+  padding-top: 130px; 
 }
 
-.initiatives h2 {
+.initiatives {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.initiatives > .titleWrapper {
+  width: 289px;
+}
+
+.initiatives > .titleWrapper h2 {
   font-size: 32px;
   font-weight: bold;
   line-height: 1.25;
@@ -24,6 +37,7 @@
   align-items: center;
   margin-top: 16px;
   margin-bottom: 16px;
+  width: 288px;
 }
 
 .initiativeTextWrapper h3 {
@@ -41,4 +55,81 @@
   line-height: 1.43;
   text-align: center;
   color: #313233;
+}
+
+@media screen and (min-width: 640px) {
+  .initiativeSection {
+    background-image: url("/images/initaties-background-tablet.svg");
+    padding-top: 250px; 
+  }
+  .initiatives > .titleWrapper {
+    width: 496px;
+    margin-top: 60px;
+  }
+  .initiativesWrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .initiative   {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .financialAdmin {
+    order: 1
+  }
+  .payYourExpenses {
+    order: 3
+  }
+  .taxDeductible {
+    order: 2
+  }
+  .plusGreatCommunity {
+    order: 4
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .initiative   {
+    width: 336px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .initiativeSection {
+    background: #F7F8FA;
+    padding-top: 0;
+  }
+  .initiatives {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .initiatives > .titleWrapper {
+    width: 718px;
+  }
+  .initiativeSection {
+    background: #F7F8FA;
+    padding-top: 0;
+  }
+  .initiativesWrapper {
+    width: 1104px;
+  }
+  .initiative {
+    width: 416px;
+  }
+  .financialAdmin, .payYourExpenses{
+    margin-right: 100px;
+  }
+  .taxDeductible, .plusGreatCommunity{
+    margin-left: 100px;
+  }
+  
 }
