@@ -112,7 +112,7 @@ header {
   margin-left: 27px;
 }
 
-.homeLink {
+.contactUsButton, .homeLink {
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -149,6 +149,9 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+  .messageIcon {
+    display: none;
+  }
   .headerAndSponsorshipWrapper {
     z-index: 1;
   }
@@ -158,6 +161,7 @@ header {
   }
   .contactUsButton {
     z-index: 99;
+    display: inline-block;
   }
 }
 

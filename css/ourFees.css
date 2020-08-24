@@ -181,7 +181,7 @@
   .eightPercent {
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
-    background: url("/images/leaf-1.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #8ac6c1, #8ac6c1);
+    background: #8ac6c1, url("/images/leaf-1.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #8ac6c1, #8ac6c1);
   }
   .fourPercent {
     border-top-right-radius: 32px;

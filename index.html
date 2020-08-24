@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/donors.css">
     <link rel="stylesheet" href="/css/generalInformation.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -77,12 +78,12 @@
               </ul>
             </div>
             <div class="messageWrapper">
-              <button class="messageIcon mobile tablet">
+              <button class="messageIcon" js-event="contactUs">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
                 </svg>
               </button>
-              <button class="buttonStyleLink desktop contactUsButton">
+              <button class="buttonStyleLink contactUsButton" js-event="contactUs">
                 Contact us
               </button>
             </div>
@@ -159,9 +160,9 @@
               </div>
             </div>
             <div class="actionWrapper">
-              <a href="#" class="applyToStart">
+              <button class="buttonStyleLink applyToStart" js-event="applyToStart">
                 Apply to Start
-              </a>
+              </button>
               <a href="#" class="learnMore">
                 Learn More
               </a>
@@ -712,6 +713,75 @@
         </div>
       </div>
     </footer>
+    <div class="modalOverlay" js-view="modalOverlay">
+      <div class="modalWrapper">
+        <div class="modalContent">
+          <div class="contactUsModalWrapper" js-view="contactUsModal">
+            <h1>Contact us</h1>
+            <div class="contactUsFormWrapper">
+              <form>
+                <div class="inputWrapper">
+                  <label>Name</label>
+                  <input type="text" name="name" />
+                </div>
+                <div class="inputWrapper">
+                  <label>Email</label>
+                  <input type="email" name="email" />
+                </div>
+                <div class="inputWrapper">
+                  <label>Message</label>
+                  <textarea name="" id="" cols="30" rows="10">
+                    
+                  </textarea>
+                </div>
+                <div class="modalActionWrapper">
+                  <button type="submit" class="buttonStyleLink sendButton">Send</button>
+                  <button type="button" class="buttonStyleLink closeButton" js-event="closeModal">Close</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="createYourInitiativeModalWrapper"js-view="createYourInitiativeModal" >
+            <div class="createYourInitiativeModalTitleWrapper">
+              <h1>Create your Initiatives</h1>
+              <p>Introduce your Foundation to the community</p>
+            </div>
+            <div class="initiativeFormWrapper">
+              <form>
+                <div class="inputWrapper">
+                  <label>What's its name</label>
+                  <input type="text" name="name" placeholder="Agora Foundation" />
+                </div>
+                <div class="inputWrapper">
+                  <label>What URL would you like?</label>
+                  <div class="initiativeUrlWrapper">
+                    <div class="prefix">opencollective.foundation/</div>
+                    <input type="url" name="url" placeholder="agora" />
+                  </div>
+                </div>
+                <div class="inputWrapper">
+                  <label>What is your mission</label>
+                  <textarea name="mission" placeholder="Making the world a better place"></textarea>
+                  <p class="inputDescription">
+                    Write a short description of your initiative (150 characters max). This is to start the conversation to see if we are a good fit for each other.
+                  </p>
+                </div>
+                <div class="termsOfServiceWrapper">
+                  <input type="checkbox" class="termsOfServiceCheckbox" name="termsOfService" />
+                  <span>
+                    I agree with the <a href="#" class="termsOfServiceLink">terms of service</a> of Open Collective Foundation.
+                  </span>
+                </div>
+                <div class="modalActionWrapper">
+                  <button type="submit" class="buttonStyleLink sendButton">Apply Now</button>
+                  <button type="button" class="buttonStyleLink closeButton" js-event="closeModal">Close</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="/js/nav.js" type="text/javascript"></script>
   <script src="/js/faq.js" type="text/javascript"></script>

@@ -59,16 +59,18 @@
   white-space: nowrap;
 }
 
-.applyToStart {
+button.applyToStart {
   background: linear-gradient(to bottom, #313233, #141414);
   margin-right: 8px;
   width: 144px;
+  white-space: nowrap;
 }
 
 .learnMore {
   background: rgba(255, 255, 255, 0.2);
   margin-left: 8px;
   width: 128px;
+  white-space: nowrap;
 }
 
 .sponsorShipIllustrationWrapper {

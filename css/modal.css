@@ -1,0 +1,199 @@
+.modalOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:  rgba(20, 20, 20, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+.modalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  min-height: 588px;
+  padding: 40px 16px 60px;
+  background: url("/images/mobileNav-illustration.png") no-repeat center bottom, #ffffff;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.contactUsModalWrapper {
+  width: 288px;
+  box-sizing: border-box;
+}
+
+.createYourInitiativeModalTitleWrapper h1,
+.contactUsModalWrapper h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+  color: #313233;
+  margin-bottom: 32px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.inputWrapper label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.07;
+  color: #313233;
+}
+
+
+.inputWrapper input,
+.inputWrapper textarea {
+  width: 90%;
+  border-radius: 5px;
+  border: solid 1px #dcdee0;
+  resize: none;
+  padding: 12px 8px;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 1.07;
+  color: #9ea2a6;
+  outline: none;
+}
+
+.inputWrapper textarea {
+  min-height: 91px;
+}
+
+.modalActionWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.sendButton,
+.closeButton {
+  width: 136px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sendButton {
+  border-radius: 24px;
+  background-image: linear-gradient(to bottom, #507e80, #376b6e);
+  margin-right: 8px;
+}
+
+.closeButton {
+  border-radius: 24px;
+  background-image: linear-gradient(to bottom, #313233, #141414);
+  margin-left: 8px;
+}
+
+.createYourInitiativeModalWrapper {
+  width: 288px;
+  box-sizing: border-box;
+}
+.createYourInitiativeModalTitleWrapper {
+  margin-bottom: 16px;
+}
+.createYourInitiativeModalTitleWrapper p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #313233;
+}
+
+.createYourInitiativeModalTitleWrapper h1 {
+  margin-bottom: 8px;
+}
+
+.initiativeUrlWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 1.07;
+  color: #9d9fa3;
+  border: solid 1px #dcdee0;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.initiativeUrlWrapper input {
+  border: none;
+  padding: 12px 8px;
+  border-left: none;
+}
+
+.prefix {
+  background-color: #f7f8fa;
+  padding: 12px 8px;
+}
+
+.inputDescription  {
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1.45;
+  color: #505559;
+  margin-top: 6px;
+}
+
+.termsOfServiceWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.termsOfServiceCheckbox {
+  border-radius: 5px;
+  border: solid 1px #dcdee0;
+  padding: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.termsOfServiceWrapper span {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #313233;
+}
+
+.termsOfServiceLink {
+  text-decoration: none;
+  color: #045257;
+}
+
+.createYourInitiativeModalWrapper,
+.contactUsModalWrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) { 
+	.modalContent {
+    width: 512px;
+    height: 672px;
+    border-radius: 48px;
+    box-shadow: 0 -16px 16px 24px rgba(49, 50, 51, 0.16);
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  .contactUsModalWrapper,
+  .createYourInitiativeModalWrapper {
+    width: 458px;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+}
