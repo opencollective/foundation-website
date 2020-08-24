@@ -34,17 +34,23 @@
 
 .faq {
   width: 288px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .questionWrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f7f8fa;
   padding: 12px 16px;
   border-radius: 8px;
-  background-color: #f7f8fa;
+}
+
+.faqQuestionHeaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .question {
@@ -54,12 +60,38 @@
   color: #4e5052;
 }
 
-.plusIcon {
+.closeIcon, .plusIcon {
   color: #699092;
+  background: transparent;
+  cursor: pointer;
 }
 
-.plusIcon svg {
+.closeIcon svg, .plusIcon svg {
   font-weight: bold;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.active.closeIcon {
+  display: inline-block;
+}
+
+.active.plusIcon {
+  display: none;
+}
+
+.answerWrapper {
+  margin-top: 20px;
+  display: none;
+}
+
+.answerWrapper p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #313233;
 }
 
 .doYouStillHaveQuestion {

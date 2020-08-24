@@ -7,11 +7,9 @@
 }
 
 .donors {
-  box-shadow: 0 1px 16px 0 rgba(30, 89, 92, 0.2);
   background: url("/images/Bgd-Donors-Mobile.svg") no-repeat;
   background-size: cover;
   padding-top: 90px;
-  padding-bottom: 40px;
 }
 
 .donorsContent {
