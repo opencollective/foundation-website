@@ -3,7 +3,8 @@ $(document).ready(function(){
 
   function accordionHandler () {
     $(this).find("button[js-toggle='icon']").toggleClass('active')
-    $(this).find("div[js-data='faqAnswer']").slideToggle()
+    $(this).siblings("div[js-data='faqAnswer']").slideToggle('fast')
+    $(this).toggleClass('removeQuestionWrapperBorder')
   }
 
   const faqPanels = $("div[js-toggle='question']");

@@ -7,6 +7,11 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: #4e908d;
+}
+
 button {
 	outline: none;
 	border: none;
@@ -47,7 +52,7 @@ button {
 @media screen and (min-width: 640px) { 
 	.headerAndSponsorshipWrapper {
 		position: relative;
-		background: url("/images/top-bgd-tablet.svg") no-repeat;
+		background: url("/images/top-bgd-sm.svg") no-repeat;
 	}
 	.mobile {
 		display: none;
@@ -62,9 +67,8 @@ button {
 
 @media screen and (min-width: 1024px) { 
 	.headerAndSponsorshipWrapper {
-		background-image: url("/images/top-bgd-tablet.svg");
+		background-image: url("/images/top-bgd-sm.svg");
 		background-repeat: no-repeat;
-		background-size: 100%;
 	}
 	.mobile {
 		display: none;
@@ -79,7 +83,7 @@ button {
 
 @media screen and (min-width: 1440px) { 
 	.headerAndSponsorshipWrapper {
-		background-image: url("/images/Top-Bgd-Desktop.svg");
+		background-image: url("/images/Top-Bgd-lg.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 75% 0;

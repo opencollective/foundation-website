@@ -60,6 +60,7 @@
 @media screen and (min-width: 640px) {
   .initiativeSection {
     background-image: url("/images/initaties-background-tablet.svg");
+    background-size: contain;
     padding-top: 250px; 
   }
   .initiatives > .titleWrapper {

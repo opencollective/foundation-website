@@ -1,7 +1,7 @@
 .fiscalSponsorshipSection {
   margin-left: 16px;
   margin-top: 57px;
-  margin-bottom: 48px;
+  margin-bottom: 0;
 }
 
 .fiscalSponsorshipSectionContent {
@@ -94,6 +94,10 @@ button.applyToStart {
   display: none;
 }
 
+.desktopApply {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
 	.fiscalSponsorshipSectionContent {
     flex-direction: row;
@@ -138,6 +142,13 @@ button.applyToStart {
     position: relative;
     top: -140px;
     z-index: 1;
+  }
+  .mobileApply {
+    display: none;
+  }
+  button.desktopApply {
+    display: inline;
+    width: 190px;
   }
 }
 

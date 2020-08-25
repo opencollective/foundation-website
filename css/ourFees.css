@@ -135,7 +135,8 @@
 .fivePercent {
   border-radius: 32px;
   padding-top: 16px;
-  background: url("/images/opencollective-icon.svg") no-repeat 24px 41px, linear-gradient(to top, #045257, #045257, #4e908d), linear-gradient(to bottom, #05464a, #05464a);
+  background: url("/images/opencollective-icon.svg") no-repeat 24px 41px, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
+  background-color: #05464A;
 }
 
 .crowdFundingWrapper > .note {
@@ -181,15 +182,18 @@
   .eightPercent {
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
-    background: #8ac6c1, url("/images/leaf-1.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #8ac6c1, #8ac6c1);
+    background: url("/images/leaf-1.svg") no-repeat 0 0, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
+    background-color: #8AC6C1;
   }
   .fourPercent {
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
-    background: url("/images/leaf-1.svg") no-repeat 0 0, url("/images/leaf-2.svg") no-repeat 0 0, url("/images/leaf-3.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #045257, #045257);
+    background: url("/images/leaf-1.svg") no-repeat 0 0, url("/images/leaf-2.svg") no-repeat 0 0, url("/images/leaf-3.svg") no-repeat 0 0, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
+    background-color: #045257;
   }
   .sixPercent{
-    background: url("/images/leaf-1.svg") no-repeat 0 0, url("/images/leaf-2.svg") no-repeat 0 0, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #4e908d, #4e908d);
+    background: url("/images/leaf-1.svg") no-repeat 0 0, url("/images/leaf-2.svg") no-repeat 0 0, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
+    background-color: #4E908D;
   }
   .crowdFundingWrapper {
     margin-top: 48px;
@@ -263,7 +267,7 @@
     font-weight: bold;
     line-height: 1.5;
     color: #1e595c;
-    align-self: flex-end;
+    align-self: center;
     margin-bottom: 17px;
   }
   .amountRaisedAndCrowdFundWrapper {

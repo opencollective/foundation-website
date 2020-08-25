@@ -10,6 +10,7 @@
   background: url("/images/Bgd-Donors-Mobile.svg") no-repeat;
   background-size: cover;
   padding-top: 90px;
+  padding-bottom: 30px;
 }
 
 .donorsContent {
@@ -59,7 +60,7 @@
   width: 298px;
   margin-top: 24px;
   margin-bottom: 32px;
-  background: url("/images/donors-logo-mobile.png") no-repeat;
+  background: url("/images/donors-logo-xs.png") no-repeat;
   background-size: contain;
 }
 
@@ -82,8 +83,10 @@
   .donorsLogos {
     width: 90%;
     height: 118px;
-    background: url("/images/donors-logo-desktop.png") no-repeat;
+    background: url("/images/donors-logo-lg.png") no-repeat;
     background-size: contain;
+    background-position: center;
+    margin-top: 42px;
   }
 }
 

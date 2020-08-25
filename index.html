@@ -57,22 +57,22 @@
                 </li>
                 <li class="menuList-sm">
                   <a href="#whatWeOffer">
-                    What we offer?
+                    What we offer
                   </a>
                 </li>
                 <li class="menuList-sm">
                   <a href="#whatWeDo">
-                    What we do?
+                    What do we do?
                   </a>
                 </li>
                 <li class="menuList-sm">
                   <a href="#ourFees">
-                    Our fees
+                    Our Fees
                   </a>
                 </li>
                 <li class="menuList-sm">
                   <a href="#generalInformation">
-                    General information
+                    General Information
                   </a>
                 </li>
               </ul>
@@ -120,22 +120,22 @@
               </a>
               <a href="#whatWeOffer">
                 <li class="mobileNavList">
-                  What we offer?
+                  What We Offer
                 </li>
               </a>
               <a href="#whatWeDo">
                 <li class="mobileNavList">
-                  What we do?
+                  What do we do?
                 </li>
               </a>
               <a href="#ourFees">
                 <li class="mobileNavList">
-                  Our fees
+                  Our Fees
                 </li>
               </a>
               <a href="#generalInformation">
                 <li class="mobileNavList">
-                  General info
+                  General Info
                 </li>
               </a>
             </ul>
@@ -160,8 +160,11 @@
               </div>
             </div>
             <div class="actionWrapper">
-              <button class="buttonStyleLink applyToStart" js-event="applyToStart">
+              <button class="buttonStyleLink applyToStart mobileApply" js-event="applyToStart">
                 Apply to Start
+              </button>
+              <button class="buttonStyleLink applyToStart desktopApply" js-event="applyToStart">
+                Apply to Start a Fund
               </button>
               <a href="#" class="learnMore">
                 Learn More
@@ -170,14 +173,11 @@
           </div>
           <div class="sponsorShipIllustrationWrapper">
             <img src="/images/fiscalsponsorship-ilustration-mobile.png" class="mobile" alt="Sponsorship Illustration"  />
-            <img src="/images/fiscalsponsorship-ilustration-tablet.png" class="bigger" alt="Sponsorship Illustration"  />
-            <img src="/images/fiscalsponsorship-ilustration-desktop.png" class="biggest" alt="Sponsorship Illustration"  />
+            <img src="/images/fiscalsponsorship-ilustration-sm.png" class="bigger" alt="Sponsorship Illustration"  />
+            <img src="/images/fiscalsponsorship-ilustration-lg.png" class="biggest" alt="Sponsorship Illustration"  />
           </div>
         </div>
       </section>
-      <!-- <div class="desktop sponsorShipIllustrationDesktopWrapper">
-        <img src="/images/fiscalsponsorship-ilustration-tablet.png" alt="Sponsorship Illustration"  />
-      </div> -->
     </div>
     <section id="whatWeOffer" class="whatWeOffer">
       <h2>
@@ -210,10 +210,10 @@
         </div>
         <div class="whatWeOfferItem increaseCapacity">
           <div class="whatWeOfferIllustration">
-            <img src="/images/increaseCapacity.png" alt="Increate capacity" />
+            <img src="/images/increaseCapacity.png" alt="Increase capacity" />
           </div>
           <div class="whatWeOfferTextWrapper">
-            <h5>Purpose built to streamline your process</h5>
+            <h5>Purpose-built to streamline your process</h5>
             <h3>Increase capacity</h3>
             <p>
               We automate the back-end processes so you can spend less time doing admin. We provide a dashboard where you can see the budget we are holding for you, how much you've spent and everything you need to tell your donors how to fund you. Reporting is automatic and in real time.
@@ -243,12 +243,12 @@
               </div>
             </div>
             <div class="actionWrapper">
-              <a class="buttonStyleLink mobile" href="#">
+              <button class="buttonStyleLink mobile" js-event="applyToStart">
                 Apply to Start
-              </a>
-              <a class="buttonStyleLink longerTextLink" href="#">
+              </button>
+              <button class="buttonStyleLink longerTextLink" js-event="applyToStart">
                 Apply to Start a Fund
-              </a>
+              </button>
               <a class="buttonStyleLink readDocs mobile" href="#">
                 Read docs
               </a>
@@ -297,7 +297,7 @@
             <div class="initiativeTextWrapper">
               <h3>Tax deductible donations</h3>
               <p>
-                Allow your supporters to make tax deductible donations via credit card, bank transfer, or PayPal. As part of many Donor Advised Funds (DAFS), donations through them are easy! We can provide the invoices and documentation your funders need.
+                Allow your supporters to make tax deductible donations via credit card, bank transfer, or PayPal. As part of many Donor Advised Funds (DAFs), donations through them are easy! We can provide the invoices and documentation your funders need.
               </p>
             </div>
           </div>
@@ -321,7 +321,7 @@
           <h1>
             Our Fees
           </h1>
-          <h3>In order to support you better, we use the Open Collective Platform to manage your fund.</h3>
+          <h3>In order to support you better, we use the Open Collective Platform to manage your initiative.</h3>
         </div>
         <div class="fiscalSponsorshipWrapper">
           <h2>Fiscal Sponsorship Fees</h2>
@@ -373,7 +373,7 @@
             </div>
             <div class="note">
               <p>
-                *Third-party payment processors (like Stripe and Paypal) charge separate fees on each transaction made using their service.  <a href="#" class="learnMoreHere">Learn more here</a>.
+                *Third-party payment processors (like Stripe and Paypal) charge separate fees on each transaction made using their service.  <a href="https://docs.opencollective.foundation/faqs/untitled#how-much-does-it-cost" class="learnMoreHere">Learn more here</a>.
               </p>
             </div>
           </div>
@@ -399,10 +399,6 @@
             </div>
           </div>
           <div class="donorsLogos">
-           
-          </div>
-          <div class="createAnAccountWrapper">
-            <a href="#" class="buttonStyleLink createAnAccountLink">Create an account</a>
           </div>
         </div>
       </div>
@@ -416,8 +412,8 @@
         </div>
         <div class="faqWrapper">
           <div class="faq">
-            <div class="questionWrapper" js-toggle="question">
-              <div class="faqQuestionHeaderWrapper">
+            <div class="questionWrapper">
+              <div class="faqQuestionHeaderWrapper" js-toggle="question">
                 <span class="question">What is your mission?</span>
                 <button js-toggle="icon" class="plusIcon">
                   <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -446,14 +442,16 @@
               </div>
               <div class="answerWrapper" js-data="faqAnswer">
                 <p>
-                  The Open Collective Foundation 501(c)(3) offers fiscal sponsorship as a service to help initiatives get up and running in one day. No need to create a bank account or legal entity. Our platform enables you to easily receive donations and disburse them.
+                  a. <strong>Increasing access to educational resources and training</strong>: With the advance of technology and the movement towards a society where people work together to enhance and develop the future, there has been an increase in the number of organizations and groups that are coming together to promote education.<br>
+b. <strong>Creating a positive social impact:</strong> Sponsor’s social impact purpose is aimed at finding ways to (i) eliminate prejudice and discrimination; (ii) combat community deterioration; (iii) decrease juvenile delinquency; (iv) serve the less fortunate or distressed; (v) serve to prevent animal or child cruelty; or (vi) create a positive impact on society.<br>
+c. <strong>Developing tools to improve civic participation within cities or communities:</strong> Sponsor sponsors projects aimed at fostering civic participation, democratic debate and rebuilding community ties and strengths.
                 </p>
               </div>
             </div>
           </div>
           <div class="faq">
-            <div class="questionWrapper" js-toggle="question">
-              <div class="faqQuestionHeaderWrapper">
+            <div class="questionWrapper">
+              <div class="faqQuestionHeaderWrapper" js-toggle="question">
                 <span class="question">What is Fiscal Sponsorship?</span>
                 <button js-toggle="icon" class="plusIcon">
                   <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -482,14 +480,15 @@
               </div>
               <div class="answerWrapper" js-data="faqAnswer">
                 <p>
-                  The Open Collective Foundation 501(c)(3) offers fiscal sponsorship as a service to help initiatives get up and running in one day. No need to create a bank account or legal entity. Our platform enables you to easily receive donations and disburse them.
+                  A Fiscal Sponsor/Host is a non-profit organization that legally offers their tax-exempt status to groups or projects that align with the mission of that host/sponsor.
+More info <a href="https://docs.opencollective.foundation/about/fiscal-sponsorship-info-guide">here</a>.
                 </p>
               </div>
             </div>
           </div>
           <div class="faq">
-            <div class="questionWrapper" js-toggle="question">
-              <div class="faqQuestionHeaderWrapper">
+            <div class="questionWrapper">
+              <div class="faqQuestionHeaderWrapper" js-toggle="question">
                 <span class="question">Why choose to be fiscally sponsored/Who needs a fiscal host?</span>
                 <button js-toggle="icon" class="plusIcon">
                   <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -517,15 +516,19 @@
                 </button>
               </div>
               <div class="answerWrapper" js-data="faqAnswer">
-                <p>
-                  The Open Collective Foundation 501(c)(3) offers fiscal sponsorship as a service to help initiatives get up and running in one day. No need to create a bank account or legal entity. Our platform enables you to easily receive donations and disburse them.
-                </p>
+                <ul>
+                  Fiscal hosting is a great option for:<br>
+<li>ongoing projects that want to raise funds over a long-term period,</li>
+<li>newly formed grassroots groups who want to quickly accept tax-deductible donations without going through the process of becoming a 501(c)(3) through the IRS (a process that can take months/years),</li>
+<li>initiatives who want to better organize their fundraising efforts, spending, and expenses in a transparent way.</li>
+There are many reasons a group might want to be fiscally sponsored! Read more about it in our <a href="https://docs.opencollective.foundation/about/fiscal-sponsorship-info-guide#why-choose-to-be-fiscally-hosted-who-needs-a-fiscal-host">FAQs</a> or feel free to <a href="mailto:contact@opencollective.foundation">reach out to us</a> with any questions or to schedule a time to chat.
+                </ul>
               </div>
             </div>
           </div>
           <div class="faq">
-            <div class="questionWrapper" js-toggle="question">
-              <div class="faqQuestionHeaderWrapper">
+            <div class="questionWrapper">
+              <div class="faqQuestionHeaderWrapper" js-toggle="question">
                 <span class="question">How it works:</span>
                 <button js-toggle="icon" class="plusIcon">
                   <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -553,15 +556,21 @@
                 </button>
               </div>
               <div class="answerWrapper" js-data="faqAnswer">
-                <p>
-                  The Open Collective Foundation 501(c)(3) offers fiscal sponsorship as a service to help initiatives get up and running in one day. No need to create a bank account or legal entity. Our platform enables you to easily receive donations and disburse them.
-                </p>
+                  <ol>
+                    <li>Donations are made to our 501(c)(3)</li>
+                    • A dashboard for you to manage your initiative.<br>
+                    <li>We make a “grant” to your group/project</li>
+                    <li>We send donors their receipts, disburse funds/reimburse expenses after your approval, send out tax forms to independent contractors as applicable</li>
+                    <li>You have complete access to collect, spend, manage your money on our platform
+                    </li>
+                    More info <a href="https://docs.opencollective.foundation/about/fiscal-sponsorship-info-guide#how-it-works">here</a>
+                  </ol>
               </div>
             </div>
           </div>
           <div class="faq">
-            <div class="questionWrapper" js-toggle="question">
-              <div class="faqQuestionHeaderWrapper">
+            <div class="questionWrapper">
+              <div class="faqQuestionHeaderWrapper" js-toggle="question">
                 <span class="question">Tax-exempt 501(c)(3) public charity nonprofit status</span>
                 <button js-toggle="icon" class="plusIcon">
                   <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -589,15 +598,20 @@
                 </button>
               </div>
               <div class="answerWrapper" js-data="faqAnswer">
-                <p>
-                  The Open Collective Foundation 501(c)(3) offers fiscal sponsorship as a service to help initiatives get up and running in one day. No need to create a bank account or legal entity. Our platform enables you to easily receive donations and disburse them.
-                </p>
+                <ul>
+                  <li>Your initiative will gain increased credibility to donors
+                  </li>
+                  <li>You will have special access to grant opportunities - wider range of funding opportunities
+                  </li>
+                  <li>Donations to your initiative are tax-deductible</li>
+                  <li>Groups hosted by us are aligned with <a href="https://docs.opencollective.foundation/about/eligibility">our charitable mission</a></li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="faq">
-            <div class="questionWrapper" js-toggle="question">
-              <div class="faqQuestionHeaderWrapper">
+            <div class="questionWrapper">
+              <div class="faqQuestionHeaderWrapper" js-toggle="question">
                 <span class="question">What we offer:</span>
                 <button js-toggle="icon" class="plusIcon">
                   <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -639,7 +653,7 @@
                   • CSV import/export options<br>
                   • Two step approval process for disbursement<br>
                   • Integrations with ActBlue<br>
-                  • We receive grants from Donor Advised Funds (DAFS)<br>
+                  • We receive grants from Donor Advised Funds (DAFs)<br>
                 </p>
               </div>
             </div>
@@ -649,13 +663,13 @@
           <div class="doYouStillHaveQuestionTextWrapper">
               <h3>Do you still have questions?</h3>
             <p>
-              Feel free to read our documentation, or if you want us to contact you, send us an email, and we'll be in touch with you as soon as possible.
+              Feel free to read more about us and what do in our Documentation + FAQs, or if you would like us contact you, send us an email, and we'll be in touch with you as soon as possible.
             </p>
           </div>
           <div class="actionWrapper">
             <a href="#" class="buttonStyleLink readDocs mobile">Read Docs</a>
             <a href="#" class="buttonStyleLink readDocs tablet desktop">Read Documentation</a>
-            <a href="#" class="buttonStyleLink contactUsBtn">Contact us</a>
+            <button js-event='contactUs' class="buttonStyleLink contactUsBtn">Contact us</button>
           </div>
         </div>
       </div>
@@ -667,7 +681,7 @@
             <div class="footerLogoWrapper">
               <img src="/images/ocf-logo-footer.png" alt="OCF" />
             </div>
-            <p>Copyright © 2020 opencollective fundation, a 501(c)(3) nonprofit</p>
+            <p>Copyright © 2020 opencollective foundation, a 501(c)(3) nonprofit</p>
           </div>
           <div class="subscribeWrapper">
             <h4>Subscribe to our Newsletter</h4>
@@ -684,31 +698,12 @@
           <div class="organizationDetailsWrapper">
             <h5>Our Organizational details</h5>
             <p>
-              Open Collective Foundation 501(c)(3)
-              340 S. Lemon Avenue, #3717 
+              Open Collective Foundation 501(c)(3)<br>
+              340 S. Lemon Avenue, #3717<br>
               Walnut, CA 91789<br />
               EIN 81-4004928<br />
               DLN 17053184327027<br />
             </p>
-          </div>
-          <div class="paymentDetailsWrapper">
-            <h6>Payments</h6>
-            <div class="paymentsWrapper">
-              <h4>PAYPAL</h4>
-              <p>host+c3@opencollective.org</p>
-            </div>
-            <div class="bankDetails">
-              <h4>Bank Details</h4>
-              <p>
-                Umpqua Bank,<br />
-                450 Sansome St. Suite 120, <br />
-                San Francisco CA 94111<br />
-                Account name: <br />
-                Open Collective Foundation<br />
-                Account number: 4867268536<br />
-                Routing number: 123205054<br />
-              </p>
-            </div>
           </div>
         </div>
       </div>

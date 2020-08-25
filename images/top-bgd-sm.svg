@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="630px" viewBox="0 0 1024 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1440px" height="630px" viewBox="0 0 1440 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>top-bgd-tablet</title>
     <defs>
-        <rect id="path-1" x="0.5" y="0" width="1024" height="630"></rect>
+        <rect id="path-1" x="0.5" y="0" width="1440" height="630"></rect>
         <radialGradient cx="46.5589104%" cy="94.9472815%" fx="46.5589104%" fy="94.9472815%" r="81.7840343%" gradientTransform="translate(0.465589,0.949473),scale(0.355178,1.000000),rotate(-89.541819),translate(-0.465589,-0.949473)" id="radialGradient-3">
             <stop stop-color="#4E908D" offset="0%"></stop>
             <stop stop-color="#045257" offset="100%"></stop>

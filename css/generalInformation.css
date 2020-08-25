@@ -41,8 +41,6 @@
 .questionWrapper {
   display: flex;
   flex-direction: column;
-  background-color: #f7f8fa;
-  padding: 12px 16px;
   border-radius: 8px;
 }
 
@@ -83,16 +81,24 @@
 }
 
 .answerWrapper {
-  margin-top: 20px;
   display: none;
 }
 
-.answerWrapper p {
+.answerWrapper p,
+.answerWrapper ol,
+.answerWrapper ul {
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.43;
   color: #313233;
 }
+
+.answerWrapper ol, 
+.answerWrapper ul {
+  margin-left: 20px;
+}
+
+
 
 .doYouStillHaveQuestion {
   display: flex;
@@ -131,6 +137,31 @@
   margin-left: 8px;
 }
 
+.faqQuestionHeaderWrapper,
+.answerWrapper {
+  padding: 12px 16px;
+  background-color: #f7f8fa;
+}
+
+.faqQuestionHeaderWrapper {
+  border-radius: 8px;
+}
+
+.answerWrapper {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.removeQuestionWrapperBorder {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.faqQuestionHeaderWrapper:focus{
+  background: none;
+  outline: none;
+}
+
 @media screen and (min-width: 640px) {
   .generalInformationTitleWrapper {
     width: 600px;
@@ -138,7 +169,8 @@
   .faq {
     width: 600px;
   }
-  .questionWrapper {
+  .faqQuestionHeaderWrapper,
+  .answerWrappe {
     padding: 21px 16px;
   }
   .doYouStillHaveQuestion {
@@ -165,6 +197,17 @@
   .readDocs {
     margin-right: 16px;
   }
+  .faqQuestionHeaderWrapper {
+    border-radius: 22px;
+  }
+  .removeQuestionWrapperBorder {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .answerWrapper {
+    border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -174,7 +217,8 @@
   .faq {
     width: 992px;
   }
-  .questionWrapper {
+  .faqQuestionHeaderWrapper,
+  .answerWrapper{
     padding: 24px 48px;
   }
   .doYouStillHaveQuestion {

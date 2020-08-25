@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1835px" height="611px" viewBox="0 0 1835 611" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Top-Bgd-Desktop</title>
+    <defs>
+        <radialGradient cx="46.5589104%" cy="94.9472815%" fx="46.5589104%" fy="94.9472815%" r="81.7843948%" gradientTransform="translate(0.465589,0.949473),scale(0.332970,1.000000),rotate(-89.511261),translate(-0.465589,-0.949473)" id="radialGradient-1">
+            <stop stop-color="#4E908D" offset="0%"></stop>
+            <stop stop-color="#045257" offset="100%"></stop>
+            <stop stop-color="#045257" offset="100%"></stop>
+        </radialGradient>
+        <path d="M1835,0 L982.138164,575.771714 C950.247396,597.301347 908.832529,598.623784 875.633183,579.172573 L49.4483117,95.1179702 C18.8194883,77.1728064 -2.40743794e-14,44.3349429 0,8.83629893 L0,0 L0,0 L1835,0 Z" id="path-2"></path>
+    </defs>
+    <g id="01-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-OCF-Website-2560-max-width-backgrounds-Desktop" transform="translate(0.000000, -40.000000)">
+            <g id="Header" transform="translate(0.000000, 40.000000)">
+                <g id="Path" transform="translate(0.000000, 0.000000)">
+                    <use fill="#05464A" xlink:href="#path-2"></use>
+                    <use fill-opacity="0.7" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
