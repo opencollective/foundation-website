@@ -7,27 +7,47 @@ $(document).ready(function(){
     $(this).toggleClass('removeQuestionWrapperBorder')
   }
 
-  const faqPanels = $("div[js-toggle='question']");
-  faqPanels.each((_index, panel) => panel.addEventListener('click', accordionHandler))
-
-  $("button[js-event='contactUs']").click(function () {
+  function handleOpenContactUsModal () {
     $("div[js-view='modalOverlay']").show();
     $('body').css('overflow','hidden');
     $("div[js-view='contactUsModal']").slideDown();
     activeModalContent = 'contactUsModal';
-  })
-  
-  $("button[js-event='applyToStart']").click(function () {
+  }
+
+  function handleCreateInitiativeModal () {
     $("div[js-view='modalOverlay']").show();
     $('body').css('overflow','hidden');
     activeModalContent = 'createYourInitiativeModal';
     $("div[js-view='createYourInitiativeModal']").slideDown();
-  })
+  }
 
-  $("button[js-event='closeModal']").click(function () {
+  function handleCloseModal () {
     $(`div[js-view='${activeModalContent}']`).slideUp();
     $("div[js-view='modalOverlay']").hide();
     $('body').css('overflow','auto');
     activeModalContent = '';
-  })
+  }
+
+  function handleMobileMenuToggle () {
+    $(".mobileNavOverlay").toggle()
+    $(".mobileNavWrapper").animate({
+      width: 'toggle'
+    })
+  }
+
+  // Accordion 
+  const faqPanels = $("div[js-toggle='question']");
+  faqPanels.each((_index, panel) => panel.addEventListener('click', accordionHandler))
+
+  // Open contact us  modal
+  $("button[js-event='contactUs']").click(handleOpenContactUsModal)
+  
+  // Open create initiative modal
+  $("button[js-event='applyToStart']").click(handleCreateInitiativeModal)
+
+  // Close modal
+  $("button[js-event='closeModal']").click(handleCloseModal)
+  
+  // Mobile menu toggle
+  $(".js-menuToggle").click(handleMobileMenuToggle);
 });

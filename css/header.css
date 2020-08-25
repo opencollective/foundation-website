@@ -149,6 +149,12 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+  .homeLink {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .messageIcon {
     display: none;
   }
@@ -161,12 +167,6 @@ header {
   }
   .contactUsButton {
     z-index: 99;
-    display: inline-block;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .homeLink {
     display: inline-block;
   }
   .menuWrapper-sm {
@@ -189,6 +189,6 @@ header {
   }
   .menuWrapper-sm {
     margin-right: auto;
-    margin-left: 4%;
+    margin-left: 2%;
   }
 }
