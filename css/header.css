@@ -127,12 +127,16 @@ header {
   background-color: #ffffff;
 }
 
+header .menuList-sm > .activeHomeLink {
+  color: #8ac6c1;
+}
+
 .stickyHeader .menuList-sm > a {
   color: #313233;
 }
 
 .stickyHeader .active {
-  color: #045257;
+  color: #045257 !important;
 }
 
 .stickyHeader .logoWrapper > a > .positiveLogo {

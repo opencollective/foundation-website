@@ -50,4 +50,24 @@ $(document).ready(function(){
   
   // Mobile menu toggle
   $(".js-menuToggle").click(handleMobileMenuToggle);
+
+  //Handle on scroll
+  $(window).scroll(function () {
+    const scrollTop = $(document).scrollTop();
+    if (scrollTop > 50) {
+      $("header").addClass('stickyHeader')
+    } else {
+      $("header").removeClass('stickyHeader')
+    }
+
+    $("section[js-view='mainSection']").each((_index, section) => {
+      const domRect = $(section)[0].getBoundingClientRect();
+      const id = $(section).attr('id');
+      if (domRect.top <= 77 && domRect.bottom > 77) {
+        $(`a[js-link='${id}']`).addClass('active')
+      } else {
+        $(`a[js-link='${id}']`).removeClass('active')
+      }
+    })
+  })
 });
