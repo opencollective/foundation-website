@@ -3,6 +3,10 @@
 		padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 }
@@ -97,7 +101,8 @@ button {
 @media screen and (min-width: 1440px) { 
 	.headerAndSponsorshipWrapper {
 		background-position: right;
-		height: 639px;
+		height: 61px;
+		padding-top: 76px;
 	}
 }
 

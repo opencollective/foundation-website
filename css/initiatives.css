@@ -132,5 +132,13 @@
   .taxDeductible, .plusGreatCommunity{
     margin-left: 100px;
   }
-  
+}
+
+@media screen and (min-width: 1440px) {
+  .initiatives > .titleWrapper{
+    margin-top: 0;
+  }
+  .initiativeSection {
+    padding-top: 70px;
+  }
 }

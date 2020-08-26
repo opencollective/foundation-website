@@ -125,10 +125,21 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .whatWeOffer {
+    margin-top: 0;
+  }
+  .whatWeOfferItems {
+    margin-top: 20px;
+  }
   .whatWeOfferItem {
     width: 360px;
   }
   .whatWeOfferTextWrapper {
     width: 296px;
+  }
+
+  .reduceYourOverhead,
+  .increaseCapacity {
+    margin-top: 0;
   }
 }

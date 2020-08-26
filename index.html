@@ -21,7 +21,7 @@
   </head>
   <body>
 	  <div class="headerAndSponsorshipWrapper">
-      <header>
+      <header js-event="stickHeader">
         <div class="navWrapper">
             <div class="menuIcon">
               <button class="menuButton js-menuToggle">
@@ -45,33 +45,34 @@
             </div>
             <div class="logoWrapper">
               <a href="/">
-                <img class="logo" src="images/logo.png" alt="Open Collective Foundation" />
+                <img class="logo positiveLogo" js-view="positiveLogo" src="images/logo.png" alt="Open Collective Foundation" />
+                <img class="logo negativeLogo" js-view="negativeLogo" src="images/logo-colored.png" alt="Open Collective Foundation" />
               </a>
             </div>
             <div class="menuWrapper-sm">
               <ul class="menuListWrapper-sm">
                 <li class="menuList-sm homeLink">
-                  <a href="/">
+                  <a href="#" js-link="home">
                     Home
                   </a>
                 </li>
                 <li class="menuList-sm">
-                  <a href="#whatWeOffer">
+                  <a href="#whatWeOffer" js-link="whatWeOffer">
                     What we offer
                   </a>
                 </li>
                 <li class="menuList-sm">
-                  <a href="#whatWeDo">
+                  <a href="#whatDoWeDo" js-link="whatDoWeDo">
                     What do we do?
                   </a>
                 </li>
                 <li class="menuList-sm">
-                  <a href="#ourFees">
+                  <a href="#ourFees" js-link="ourFees" >
                     Our Fees
                   </a>
                 </li>
                 <li class="menuList-sm">
-                  <a href="#generalInformation">
+                  <a href="#generalInformation" js-link="generalInformation">
                     General Information
                   </a>
                 </li>
@@ -113,27 +114,27 @@
             </div>
           <div class="mobileNav">
             <ul class="mobileNavListWrapper">
-              <a href="/">
+              <a href="/" js-link="home">
                 <li class="mobileNavList">
                   Home
                 </li>
               </a>
-              <a href="#whatWeOffer">
+              <a href="#whatWeOffer" js-link="whatWeOffer">
                 <li class="mobileNavList">
                   What We Offer
                 </li>
               </a>
-              <a href="#whatWeDo">
+              <a href="#whatDoWeDo" js-link="whatDoWeDo">
                 <li class="mobileNavList">
                   What do we do?
                 </li>
               </a>
-              <a href="#ourFees">
+              <a href="#ourFees" js-link="ourFees">
                 <li class="mobileNavList">
                   Our Fees
                 </li>
               </a>
-              <a href="#generalInformation">
+              <a href="#generalInformation" js-link="generalInformation">
                 <li class="mobileNavList">
                   General Info
                 </li>
@@ -177,7 +178,7 @@
         </div>
       </section>
     </div>
-    <section id="whatWeOffer" class="whatWeOffer">
+    <section id="whatWeOffer" js-view="mainSection" class="whatWeOffer">
       <h2>
         What we offer
       </h2>
@@ -258,7 +259,7 @@
         </div>
       </section>
     </div>
-    <section id="whatWeDo" class="initiativeSection">
+    <section id="whatDoWeDo" js-view="mainSection" class="initiativeSection">
       <div class="initiatives">
         <div class="titleWrapper">
           <h2>
@@ -313,7 +314,7 @@
         </div>
       </div>
     </section>
-    <section id="ourFees" class="ourFeesSection">
+    <section id="ourFees" js-view="mainSection" class="ourFeesSection">
       <div class="ourFees">
         <div class="titleWrapper">
           <h1>
@@ -401,7 +402,7 @@
         </div>
       </div>
     </section>
-    <section id="generalInformation" class="generalInformation">
+    <section id="generalInformation" js-view="mainSection" class="generalInformation">
       <div class="generalInformationContent">
         <div class="generalInformationTitleWrapper">
           <h2>

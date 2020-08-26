@@ -1,7 +1,7 @@
 header {
   width: 100%;
   display: flex;
-  padding-top: 32px;
+  padding-top: 26px;
   flex-direction: column;
 }
 
@@ -32,6 +32,10 @@ header {
   width: 80px;
   height: 31px;
   object-fit: contain;
+}
+
+.negativeLogo {
+  display: none;
 }
 
 .messageIcon {
@@ -115,6 +119,29 @@ header {
 .contactUsButton, .homeLink {
   display: none;
 }
+
+.stickyHeader {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 -1px 16px 0 rgba(30, 89, 92, 0.2);
+  background-color: #ffffff;
+}
+
+.stickyHeader .menuList-sm > a {
+  color: #313233;
+}
+
+.stickyHeader .active {
+  color: #045257;
+}
+
+.stickyHeader .logoWrapper > a > .positiveLogo {
+  display: none;
+}
+.stickyHeader .logoWrapper > a > .negativeLogo {
+  display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
   .menuIcon {
     display: none;
@@ -172,6 +199,15 @@ header {
   .menuWrapper-sm {
     margin-right: auto;
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
   }
 }
 

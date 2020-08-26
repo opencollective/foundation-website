@@ -144,7 +144,7 @@ button.applyToStart {
     display: none;
   }
   button.desktopApply {
-    display: inline;
+    display: inline-block;
     width: 190px;
   }
 }
@@ -155,7 +155,7 @@ button.applyToStart {
     margin-right: auto;
   }
   .sponsorShipIllustrationWrapper {
-    width: 640px;
+    width: 53%;
     height: 679px;
     position: relative;
     top: -140px;
