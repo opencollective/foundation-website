@@ -167,7 +167,7 @@
               <button class="buttonStyleLink applyToStart desktopApply" js-event="applyToStart">
                 Apply to Start a Fund
               </button>
-              <a href="#" class="learnMore">
+              <a href="https://docs.opencollective.foundation" class="learnMore">
                 Learn More
               </a>
             </div>
@@ -684,12 +684,12 @@ There are many reasons a group might want to be fiscally sponsored! Read more ab
           </div>
           <div class="subscribeWrapper">
             <h4>Subscribe to our Newsletter</h4>
-            <form class="subscribeForm">
+            <form class="subscribeForm" js-event="newsletterForm">
               <div class="subscribe">
                 <label>Email</label><br>
-                <input name="email" type="email" />
+                <input name="email" type="email" required />
               </div>
-              <button class="subscribeButton">Subscribe</button>
+              <button type="submit" class="subscribeButton">Subscribe</button>
             </form>
           </div>
         </div>
@@ -713,20 +713,18 @@ There are many reasons a group might want to be fiscally sponsored! Read more ab
           <div class="contactUsModalWrapper" js-view="contactUsModal">
             <h1>Contact us</h1>
             <div class="contactUsFormWrapper">
-              <form>
+              <form js-event="contactUsForm">
                 <div class="inputWrapper">
                   <label>Name</label>
-                  <input type="text" name="name" />
+                  <input type="text" name="name" required />
                 </div>
                 <div class="inputWrapper">
                   <label>Email</label>
-                  <input type="email" name="email" />
+                  <input type="email" name="email" required />
                 </div>
                 <div class="inputWrapper">
                   <label>Message</label>
-                  <textarea name="" id="" cols="30" rows="10">
-                    
-                  </textarea>
+                  <textarea name="message" spellcheck="true"></textarea>
                 </div>
                 <div class="modalActionWrapper">
                   <button type="submit" class="buttonStyleLink sendButton">Send</button>
@@ -741,27 +739,27 @@ There are many reasons a group might want to be fiscally sponsored! Read more ab
               <p>Introduce your Foundation to the community</p>
             </div>
             <div class="initiativeFormWrapper">
-              <form>
+              <form js-event="createInitiativeForm">
                 <div class="inputWrapper">
                   <label>What's its name</label>
-                  <input type="text" name="name" placeholder="Agora Foundation" />
+                  <input type="text" required name="name" placeholder="Agora Foundation" />
                 </div>
                 <div class="inputWrapper">
                   <label>What URL would you like?</label>
                   <div class="initiativeUrlWrapper">
                     <div class="prefix">opencollective.foundation/</div>
-                    <input type="url" name="url" placeholder="agora" />
+                    <input type="text" required name="slug" placeholder="agora" />
                   </div>
                 </div>
                 <div class="inputWrapper">
                   <label>What is your mission</label>
-                  <textarea name="mission" placeholder="Making the world a better place"></textarea>
+                  <textarea name="mission" required placeholder="Making the world a better place"></textarea>
                   <p class="inputDescription">
                     Write a short description of your initiative (150 characters max). This is to start the conversation to see if we are a good fit for each other.
                   </p>
                 </div>
                 <div class="termsOfServiceWrapper">
-                  <input type="checkbox" class="termsOfServiceCheckbox" name="termsOfService" />
+                  <input type="checkbox" required js-checkbox="termsOfService" class="termsOfServiceCheckbox" name="termsOfService" />
                   <span>
                     I agree with the <a href="#" class="termsOfServiceLink">terms of service</a> of Open Collective Foundation.
                   </span>
@@ -771,6 +769,14 @@ There are many reasons a group might want to be fiscally sponsored! Read more ab
                   <button type="button" class="buttonStyleLink closeButton" js-event="closeModal">Close</button>
                 </div>
               </form>
+            </div>
+          </div>
+          <div class="thankYouModalWrapper" js-view="thankYouModal">
+            <div class="thankYouModalContent">
+              <h1>Great, thank you!</h1>
+              <div class="modalActionWrapper">
+                <button type="button" class="buttonStyleLink closeButton" js-event="closeModal">Close</button>
+              </div>
             </div>
           </div>
         </div>

@@ -177,8 +177,26 @@
 }
 
 .createYourInitiativeModalWrapper,
-.contactUsModalWrapper {
+.contactUsModalWrapper,
+.thankYouModalWrapper {
   display: none;
+}
+
+.thankYouModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60%;
+}
+
+.thankYouModalContent h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  color: #313233;
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) { 

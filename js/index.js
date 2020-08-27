@@ -1,6 +1,34 @@
 $(document).ready(function(){
   let activeModalContent = '';
 
+  // Mobile menu toggle
+  $(".js-menuToggle").click(handleMobileMenuToggle);
+
+  //Handle on scroll
+  $(window).scroll(handleWindowScroll)
+
+  // Accordion 
+  const faqPanels = $("div[js-toggle='question']");
+  faqPanels.each((_index, panel) => panel.addEventListener('click', accordionHandler))
+
+  // Open contact us  modal
+  $("button[js-event='contactUs']").click(handleOpenContactUsModal)
+  
+  // Open create initiative modal
+  $("button[js-event='applyToStart']").click(handleCreateInitiativeModal)
+
+  // Close modal
+  $("button[js-event='closeModal']").click(handleCloseModal)
+
+  // Handle contact us form submission
+  $("form[js-event='contactUsForm']").submit(handleContactUsForm)
+
+  // Handle contact us form submission
+  $("form[js-event='createInitiativeForm']").submit(handleCreateInitiativeForm) 
+  
+  // Handle contact us form submission
+  $("form[js-event='newsletterForm']").submit(handleNewsletterForm)
+
   function accordionHandler () {
     $(this).find("button[js-toggle='icon']").toggleClass('active')
     $(this).siblings("div[js-data='faqAnswer']").slideToggle('fast')
@@ -35,24 +63,7 @@ $(document).ready(function(){
     })
   }
 
-  // Accordion 
-  const faqPanels = $("div[js-toggle='question']");
-  faqPanels.each((_index, panel) => panel.addEventListener('click', accordionHandler))
-
-  // Open contact us  modal
-  $("button[js-event='contactUs']").click(handleOpenContactUsModal)
-  
-  // Open create initiative modal
-  $("button[js-event='applyToStart']").click(handleCreateInitiativeModal)
-
-  // Close modal
-  $("button[js-event='closeModal']").click(handleCloseModal)
-  
-  // Mobile menu toggle
-  $(".js-menuToggle").click(handleMobileMenuToggle);
-
-  //Handle on scroll
-  $(window).scroll(function () {
+  function handleWindowScroll() {
     const scrollTop = $(document).scrollTop();
     if (scrollTop > 50) {
       $("header").addClass('stickyHeader')
@@ -69,5 +80,98 @@ $(document).ready(function(){
         $(`a[js-link='${id}']`).removeClass('active')
       }
     })
-  })
+  }
+
+  function handleContactUsForm (event) {
+    event.preventDefault();
+    const name = $(this).find("input[name='name']").val()
+    const email = $(this).find("input[name='email']").val()
+    const message = $(this).find("textarea[name='message']").val()
+
+
+    // const request = new Request('[opencollective-api-url]', {
+    //   method: 'POST',
+    //   headers: {},
+    //   body: JSON.stringify({
+    //     name,
+    //     email,
+    //     message
+    //   })
+    // })
+
+    // fetch(request).then(response => {
+    //   if (response.status === 200) {
+    //     // Render the thank you Modal
+    //     $("div[js-view='contactUsModal']").hide();
+    //     activeModalContent = '';
+    //     $(this).trigger("reset");
+    //     $("div[js-view='thankYouModal']").show();
+    //     activeModalContent = 'thankYouModal';
+    //   } else {
+    //     alert('An error occur while sending your message, please try again.')
+    //   }
+    // }).catch(error => {
+    //   console.error(error);
+    // });
+  }
+
+  function handleCreateInitiativeForm (event) {
+    event.preventDefault();
+    const name = $(this).find("input[name='name']").val();
+    const slug = $(this).find("input[name='slug']").val();
+    const mission = $(this).find("textarea[name='mission']").val()
+
+    if (!$(this).find("input[js-checkbox='termsOfService']").is(":checked")) {
+      alert("Pleas check you agree to our Terms of service");
+      return;
+    }
+
+    // const request = new Request('[opencollective-api-url]', {
+    //   method: 'POST',
+    //   headers: {},
+    //   body: JSON.stringify({
+    //     name,
+    //     slug,
+    //     mission
+    //   })
+    // })
+
+    // fetch(request).then(response => {
+    //   if (response.status === 200) {
+    //     // Render the thank you Modal
+    //     $("div[js-view='createYourInitiativeModal']").hide();
+    //     activeModalContent = '';
+    //     $(this).trigger("reset");
+    //     $("div[js-view='thankYouModal']").show();
+    //     activeModalContent = 'thankYouModal';
+    //   } else {
+    //     alert('An error occur while creating your initiative, please try again.')
+    //   }
+    // }).catch(error => {
+    //   console.error(error);
+    // });
+  }
+
+  function handleNewsletterForm (event) {
+    event.preventDefault();
+    const email = $(this).find("input[name='email']").val();
+
+    // const request = new Request('[opencollective-api-url]', {
+    //   method: 'POST',
+    //   headers: {},
+    //   body: JSON.stringify({
+    //     email
+    //   })
+    // })
+
+    // fetch(request).then(response => {
+    //   if (response.status === 200) {
+    //    alert("Thank you. Your subscription was successfully!")
+    //   } else {
+    //     alert('An error occur while subscribing, please try again.')
+    //   }
+    // }).catch(error => {
+    //   console.error(error);
+    // });
+  }
 });
