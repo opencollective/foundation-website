@@ -5,10 +5,12 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
 	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
 }
 
 a {
@@ -40,12 +42,20 @@ button {
 
 
 .headerAndSponsorshipWrapper {
+	position: relative;
+}
+
+.backgroundHeader {
+	position: absolute;
 	min-height: 579px;
 	background-image: url("/images/Top-Bgd.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
 }
 
 .tablet {
@@ -75,6 +85,9 @@ button {
 	.headerAndSponsorshipWrapper {
 		position: relative;
 	}
+	.backgroundHeader {
+		background-position: 60%;
+	}
 	.mobile {
 		display: none;
 	}
@@ -100,17 +113,22 @@ button {
 
 @media screen and (min-width: 1440px) { 
 	.headerAndSponsorshipWrapper {
+		padding-top: 50px;
+		height: 600px;
+	}
+	.backgroundHeader {
 		background-position: right;
-		height: 61px;
-		padding-top: 76px;
+		height: 611px;
+		width: 89%;
 	}
 }
 
 @media screen and (min-width: 2560px) { 
-	.headerAndSponsorshipWrapper {
+	.backgroundHeader {
 		background-position: initial;
 		background-size: auto;
 		height: 611px;
+		width: 100%;
 	}
 }
 

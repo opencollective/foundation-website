@@ -3,6 +3,8 @@ header {
   display: flex;
   padding-top: 26px;
   flex-direction: column;
+  z-index: 1;
+  position: relative;
 }
 
 .navWrapper {

@@ -4,6 +4,7 @@
 .donorsBgWrapper {
   position: relative;
   top: 60px;
+  z-index: 1;
 }
 
 .donors {
