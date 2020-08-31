@@ -2,7 +2,6 @@
   margin-left: 16px;
   margin-top: 57px;
   margin-bottom: 0;
-  z-index: 1;
   position: relative;
 }
 
@@ -89,14 +88,6 @@ button.applyToStart {
   object-fit: cover;
   object-position: left;
 }
-
-/* .sponsorShipIllustrationWrapper > .bigger {
-  display: none;
-}
-
-.sponsorShipIllustrationWrapper > .biggest {
-  display: none;
-} */
 
 .desktopApply {
   display: none;
