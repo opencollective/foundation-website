@@ -88,37 +88,40 @@ $(document).ready(function(){
     const email = $(this).find("input[name='email']").val()
     const message = $(this).find("textarea[name='message']").val()
 
+    if (!(name && email && message)) {
+      alert('All fields required');
+      return;
+    }
 
-    // const request = new Request('[opencollective-api-url]', {
-    //   method: 'POST',
-    //   headers: {},
-    //   body: JSON.stringify({
-    //     name,
-    //     email,
-    //     message
-    //   })
-    // })
+    const request = new Request(`/api/contact`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+      body: JSON.stringify({ name, email, message })
+    })
 
-    // fetch(request).then(response => {
-    //   if (response.status === 200) {
-    //     // Render the thank you Modal
-    //     $("div[js-view='contactUsModal']").hide();
-    //     activeModalContent = '';
-    //     $(this).trigger("reset");
-    //     $("div[js-view='thankYouModal']").show();
-    //     activeModalContent = 'thankYouModal';
-    //   } else {
-    //     alert('An error occur while sending your message, please try again.')
-    //   }
-    // }).catch(error => {
-    //   console.error(error);
-    // });
+    fetch(request).then(response => {
+      if (response.status === 200) {
+        // Render the thank you Modal
+        $("div[js-view='contactUsModal']").hide();
+        activeModalContent = '';
+        $(this).trigger("reset");
+        $("div[js-view='thankYouModal']").show();
+        activeModalContent = 'thankYouModal';
+      } else {
+        alert('An error occur while sending your message, please try again.')
+      }
+    }).catch(error => {
+      console.error(error);
+    });
   }
 
   function handleCreateInitiativeForm (event) {
     event.preventDefault();
     const name = $(this).find("input[name='name']").val();
     const slug = $(this).find("input[name='slug']").val();
+    const email = $(this).find("input[name='email']").val();
     const mission = $(this).find("textarea[name='mission']").val()
 
     if (!$(this).find("input[js-checkbox='termsOfService']").is(":checked")) {
@@ -126,52 +129,51 @@ $(document).ready(function(){
       return;
     }
 
-    // const request = new Request('[opencollective-api-url]', {
-    //   method: 'POST',
-    //   headers: {},
-    //   body: JSON.stringify({
-    //     name,
-    //     slug,
-    //     mission
-    //   })
-    // })
+    const request = new Request(`/api/initiative`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+      body: JSON.stringify({ name, email, slug, mission })
+    })
 
-    // fetch(request).then(response => {
-    //   if (response.status === 200) {
-    //     // Render the thank you Modal
-    //     $("div[js-view='createYourInitiativeModal']").hide();
-    //     activeModalContent = '';
-    //     $(this).trigger("reset");
-    //     $("div[js-view='thankYouModal']").show();
-    //     activeModalContent = 'thankYouModal';
-    //   } else {
-    //     alert('An error occur while creating your initiative, please try again.')
-    //   }
-    // }).catch(error => {
-    //   console.error(error);
-    // });
+    fetch(request).then(response => {
+      if (response.status === 200) {
+        // Render the thank you Modal
+        $("div[js-view='createYourInitiativeModal']").hide();
+        activeModalContent = '';
+        $(this).trigger("reset");
+        $("div[js-view='thankYouModal']").show();
+        activeModalContent = 'thankYouModal';
+      } else {
+        alert('An error occur while creating your initiative, please try again.')
+      }
+    }).catch(error => {
+      console.error(error);
+    });
   }
 
   function handleNewsletterForm (event) {
     event.preventDefault();
     const email = $(this).find("input[name='email']").val();
 
-    // const request = new Request('[opencollective-api-url]', {
-    //   method: 'POST',
-    //   headers: {},
-    //   body: JSON.stringify({
-    //     email
-    //   })
-    // })
+    const request = new Request(`/api/newsletter`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+      body: JSON.stringify({ email })
+    });
 
-    // fetch(request).then(response => {
-    //   if (response.status === 200) {
-    //    alert("Thank you. Your subscription was successfully!")
-    //   } else {
-    //     alert('An error occur while subscribing, please try again.')
-    //   }
-    // }).catch(error => {
-    //   console.error(error);
-    // });
+    fetch(request).then(response => {
+      if (response.status === 200) {
+       alert("Thank you. Your subscription was successfully!")
+      } else {
+        alert('An error occur while subscribing, please try again.')
+      }
+    }).catch(error => {
+      console.error(error);
+    });
   }
 });
+
