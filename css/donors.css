@@ -103,6 +103,8 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #F7F8FA 60%, #f0f1f2 40%);
+    z-index: 0;
+    position: relative;
   }
   .donors {
     background: url("/images/Bgd-Donors-Desktop.png") no-repeat;
