@@ -63,6 +63,21 @@
   margin-left: 8px;
 }
 
+.readDocs:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(78, 80, 82) 0%, rgb(49, 50, 51) 100%) rgb(78, 80, 82);
+  border-color: rgb(78, 80, 82);
+}
+
+.readDocs:focus {
+  box-shadow: rgb(144, 240, 189) 0px 0px 0px 2px;
+}
+
+.readDocs:active {
+  background: rgb(20, 20, 20);
+  border-color: rgb(20, 20, 20);
+}
+
 .longerTextLink {
   display: none;
 }

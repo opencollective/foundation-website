@@ -87,7 +87,6 @@
 .answerWrapper p,
 .answerWrapper ol,
 .answerWrapper ul {
-  margin-top: 20px;
   font-size: 14px;
   line-height: 1.43;
   color: #313233;
@@ -139,7 +138,7 @@
 
 .faqQuestionHeaderWrapper,
 .answerWrapper {
-  padding: 12px 16px;
+  padding: 8px 16px;
   background-color: #f7f8fa;
 }
 
@@ -160,6 +159,11 @@
 .faqQuestionHeaderWrapper:focus{
   background: none;
   outline: none;
+}
+
+.faqQuestionHeaderWrapper:hover{
+  box-shadow: 0 1px 16px 0 rgba(49, 50, 51, 0.1);
+  border-color: #8ac6c1;
 }
 
 @media screen and (min-width: 640px) {
@@ -199,6 +203,7 @@
   }
   .faqQuestionHeaderWrapper {
     border-radius: 22px;
+    border: 1px solid transparent;
   }
   .removeQuestionWrapperBorder {
     border-bottom-right-radius: 0;
@@ -217,11 +222,15 @@
   .faq {
     width: 992px;
   }
-  .faqQuestionHeaderWrapper,
-  .answerWrapper{
+  .faqQuestionHeaderWrapper {
     padding: 24px 48px;
+  }
+  .answerWrapper{
+    padding: 0 48px 24px;
   }
   .doYouStillHaveQuestion {
     width: 688px;
   }
 }
+
+

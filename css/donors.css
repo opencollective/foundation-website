@@ -106,11 +106,13 @@
   }
   .donors {
     background: url("/images/Bgd-Donors-Desktop.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 992px;
+    height: 429px;
   }
   .donorsLogos {
-    width: 60%;
+    width: 778px;
+    height: 136px;
   }
 }
 

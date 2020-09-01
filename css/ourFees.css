@@ -260,6 +260,7 @@
     padding-top: 33px;
     padding-bottom: 106px;
     background-image: linear-gradient(to top, rgba(130, 163, 165, 0), #82a3a5 43%, rgba(130, 163, 165, 0));
+    background: linear-gradient(0deg, rgba(130,163,165,0.00) 0%, #82A3A5 56%, rgba(130,163,165,0.00) 100%);;
   }
   .amountRaisedWrapperWithTitle p {
     display: block;
@@ -279,6 +280,7 @@
     margin-top: 0;
     padding: 33px 16px 58px;
     background-image: linear-gradient(to top, rgba(180, 200, 201, 0) 100%, #b4c8c9 41%, rgba(180, 200, 201, 0));
+    background: linear-gradient(0deg, rgba(180,200,201,0.00) 0%, #B4C8C9 59%, rgba(180,200,201,0.00) 100%);;
   }
   .fivePercent {
     width: 448px;
