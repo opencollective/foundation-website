@@ -68,7 +68,12 @@ footer {
   border-radius: 5px;
   border: solid 1px #dcdee0;
   background-color: #ffffff;
-  margin-bottom: 17px;
+  outline: none;
+  padding: 0 16px
+}
+
+.subscribe input:focus {
+  border-color: rgb(41, 126, 255);
 }
 
 .subscribeButton {
@@ -80,6 +85,26 @@ footer {
   line-height: 1.14;
   text-align: center;
   color: #ffffff;
+  margin-top: 17px;
+}
+
+.subscribeButton:disabled {
+  opacity: 0.5;
+}
+
+
+.subscriptionFeedback {
+  display: none;
+}
+
+.subscriptionFeedback.success {
+  color: green;
+  display: block;
+}
+
+.subscriptionFeedback.error {
+  color: red;
+  display: block;
 }
 
 .organizationDetailsWrapper {

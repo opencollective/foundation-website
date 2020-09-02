@@ -15,12 +15,8 @@ function emailSubscribe(email) {
       'Content-Type': 'application/json; charset=utf-8',
     },
     body: JSON.stringify({
-      members: [
-        {
-          email_address: email,
-          status: 'subscribed',
-        },
-      ],
+      email_address: email,
+      status: 'subscribed',
       update_existing: true,
     }),
   });
@@ -32,16 +28,7 @@ module.exports = async (req, res) => {
     res.status(400).send('Please provide a valid input');
   }
 
-  try {
-    const result = await emailSubscribe(body.email)
-    if (result.ok) {
-      res.status(200).send({ result: 'Success '})
-    } else {
-      console.error(await result.json())
-      res.status(400)
-    }
-  } catch (err) {
-    console.error(err);
-    res.status(400).send(err)
-  }
+  const result = await emailSubscribe(body.email)
+  const data = await result.json()
+  res.status(result.status).send(data)
 }

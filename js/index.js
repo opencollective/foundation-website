@@ -156,7 +156,7 @@ $(document).ready(function(){
   function handleNewsletterForm (event) {
     event.preventDefault();
     const email = $(this).find("input[name='email']").val();
-
+    $(this).find(".subscribeButton").prop('disabled', true);
     const request = new Request(`/api/newsletter`, {
       headers: {
         'Content-Type': 'application/json',
@@ -167,9 +167,15 @@ $(document).ready(function(){
 
     fetch(request).then(response => {
       if (response.status === 200) {
-       alert("Thank you. Your subscription was successfully!")
+        $(this).find('.subscriptionFeedback').text("Successful! Thank you for subscribing.")
+        $(this).find('.subscriptionFeedback').addClass('success')
+        $(this).find(".subscribeButton").prop('disabled', false);
+        $(this).trigger("reset");
+        setTimeout(() => $(this).find('.subscriptionFeedback').removeClass('success'), 2000)
       } else {
-        alert('An error occur while subscribing, please try again.')
+        $(this).find('.subscriptionFeedback').text("An error occur while subscribing, please try again.")
+        $(this).find('.subscriptionFeedback').addClass('error')
+        $(this).find(".subscribeButton").prop('disabled', false);
       }
     }).catch(error => {
       console.error(error);
