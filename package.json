@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/opencollective/foundation-website#readme",
   "dependencies": {
+    "cross-fetch": "^3.0.5",
     "nodemailer": "^6.4.11"
   }
 }

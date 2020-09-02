@@ -1,3 +1,5 @@
+const fetch = require('cross-fetch');
+
 function emailSubscribe(email) {
   const username = 'anystring';
   const password = process.env.MAILCHIMP_API_KEY;
@@ -31,10 +33,15 @@ module.exports = async (req, res) => {
   }
 
   try {
-    await emailSubscribe(body.email)
-    res.status(200).send({ result: 'Success '})
-
+    const result = await emailSubscribe(body.email)
+    if (result.ok) {
+      res.status(200).send({ result: 'Success '})
+    } else {
+      console.error(await result.json())
+      res.status(400)
+    }
   } catch (err) {
+    console.error(err);
     res.status(400).send(err)
   }
 }
