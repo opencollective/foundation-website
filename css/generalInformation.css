@@ -166,6 +166,11 @@
   border-color: #8ac6c1;
 }
 
+.removeQuestionWrapperBorder:hover {
+  box-shadow: none;
+  border-color: transparent;
+}
+
 @media screen and (min-width: 640px) {
   .generalInformationTitleWrapper {
     width: 600px;
@@ -203,7 +208,7 @@
   }
   .faqQuestionHeaderWrapper {
     border-radius: 22px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
   }
   .removeQuestionWrapperBorder {
     border-bottom-right-radius: 0;

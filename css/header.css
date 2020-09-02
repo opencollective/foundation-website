@@ -140,8 +140,42 @@ header .menuList-sm > .activeHomeLink {
   color: #313233;
 }
 
+.menuList-sm > a:hover {
+  text-decoration: underline;
+  color: #8ac6c1;
+}
+
+.menuList-sm > a:focus {
+  text-decoration: none;
+  color: #34ada3;
+}
+
+.menuList-sm > a:active {
+  text-decoration: none;
+  color: #8ac6c1;
+}
+
+
+.stickyHeader .menuList-sm > a:hover {
+  color: #208c93;
+  text-decoration: underline;
+}
+
+.mobileNavListWrapper a:focus,
+.stickyHeader .menuList-sm > a:focus {
+  color: #045257;
+  text-decoration: none;
+}
+
+.mobileNavListWrapper a:active,
+.stickyHeader .menuList-sm > a:active {
+  color: #208c93;
+  text-decoration: none;
+}
+
+
 .stickyHeader .active {
-  color: #045257 !important;
+  color: #208c93 !important;
 }
 
 .stickyHeader .logoWrapper > a > .positiveLogo {
@@ -150,6 +184,7 @@ header .menuList-sm > .activeHomeLink {
 .stickyHeader .logoWrapper > a > .negativeLogo {
   display: inline-block;
 }
+
 
 @media screen and (min-width: 768px) {
   .menuIcon {

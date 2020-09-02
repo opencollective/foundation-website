@@ -232,3 +232,35 @@
     height: 750px;
   }
 }
+
+/* Green buttons */
+.greenButton {
+  border: 2px solid transparent;
+}
+
+.greenButton:hover {
+  background: linear-gradient(to bottom, #597e80, #376366);
+}
+
+.greenButton:active {
+  background-color: #305e61;
+}
+
+.greenButton:focus {
+  border: solid 2px #90f0bd;
+  background-image: linear-gradient(to bottom, #597e80, #376366);
+}
+
+.closeButton:hover {
+  background: linear-gradient(to bottom, #4e5052 1%, #313233);
+}
+
+.closeButton:active {
+  background: #141414;
+}
+
+
+.closeButton:focus {
+  border: solid 2px #90f0bd;
+  background-image: linear-gradient(to bottom, #4e5052 1%, #313233);
+}
