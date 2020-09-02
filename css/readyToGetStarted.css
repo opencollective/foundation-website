@@ -74,6 +74,9 @@
   border-radius: 24px;
   padding: 16px 24px;
   color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
   background-image: linear-gradient(to bottom, #507e80, #376b6e);
 }
 

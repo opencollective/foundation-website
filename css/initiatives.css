@@ -113,7 +113,7 @@
   }
   .initiativeSection {
     background: #F7F8FA;
-    padding-top: 0;
+    padding-top: 80px;
   }
   .initiativesWrapper {
     width: 1104px;
@@ -131,7 +131,7 @@
 
 @media screen and (min-width: 1440px) {
   .initiatives > .titleWrapper{
-    margin-top: 0;
+    margin-top: 30px;
   }
   .initiativeSection {
     padding-top: 100px;

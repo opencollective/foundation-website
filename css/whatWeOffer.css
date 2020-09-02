@@ -124,6 +124,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .whatWeOffer {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .whatWeOfferSection {
     background: #F7F8FA;

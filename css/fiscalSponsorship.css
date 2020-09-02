@@ -162,7 +162,7 @@ button.applyToStart {
   }
   .sponsorShipIllustrationWrapper {
     width: 53%;
-    height: 679px;
+    height: 500px;
     position: relative;
     top: -140px;
     z-index: 1;
@@ -199,7 +199,6 @@ button.applyToStart {
 @media screen and (min-width: 1440px) {
   .sponsorShipIllustrationWrapper {
     width: 53%;
-    height: 593px;
   }
   .sponsorShipIllustrationWrapper img{
     max-width: 100%;

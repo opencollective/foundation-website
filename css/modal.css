@@ -239,7 +239,7 @@
 }
 
 .greenButton:hover {
-  background: linear-gradient(to bottom, #597e80, #376366);
+  background: linear-gradient(to bottom, #7a9899, #527d80 99%);
 }
 
 .greenButton:active {
@@ -248,7 +248,7 @@
 
 .greenButton:focus {
   border: solid 2px #90f0bd;
-  background-image: linear-gradient(to bottom, #597e80, #376366);
+  background-image: linear-gradient(to bottom, #7a9899, #527d80 99%);
 }
 
 .closeButton:hover {
