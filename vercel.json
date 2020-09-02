@@ -1,9 +1,3 @@
 {
-  "version": 2,
-  "env": {
-    "MAILCHIMP_API_KEY": "@mailchimp_api_key",
-    "MAILCHIMP_API_URL": "@mailchimp_api_url",
-    "MAILGUN_USER": "@mailgun_user",
-    "MAILGUN_PASSWORD": "@mailgun_password"
-  }
+  "version": 2
 }
