@@ -93,6 +93,7 @@ $(document).ready(function(){
       return;
     }
 
+    $(this).find(".sendButton").prop('disabled', true);
     const request = new Request(`/api/contact`, {
       headers: {
         'Content-Type': 'application/json',
@@ -102,6 +103,7 @@ $(document).ready(function(){
     })
 
     fetch(request).then(response => {
+      $(this).find(".sendButton").prop('disabled', false);
       if (response.status === 200) {
         // Render the thank you Modal
         $("div[js-view='contactUsModal']").hide();
@@ -110,7 +112,8 @@ $(document).ready(function(){
         $("div[js-view='thankYouModal']").show();
         activeModalContent = 'thankYouModal';
       } else {
-        alert('An error occur while sending your message, please try again.')
+        $(this).find('.modalFormErrorFeedback').text("An error occur while sending your message, please try again.")
+        $(this).find('.modalFormErrorFeedback').css('display', 'block')
       }
     }).catch(error => {
       console.error(error);
@@ -129,6 +132,7 @@ $(document).ready(function(){
       return;
     }
 
+    $(this).find(".sendButton").prop('disabled', true);
     const request = new Request(`/api/initiative`, {
       headers: {
         'Content-Type': 'application/json',
@@ -138,6 +142,7 @@ $(document).ready(function(){
     })
 
     fetch(request).then(response => {
+      $(this).find(".sendButton").prop('disabled', false);
       if (response.status === 200) {
         // Render the thank you Modal
         $("div[js-view='createYourInitiativeModal']").hide();
@@ -146,7 +151,8 @@ $(document).ready(function(){
         $("div[js-view='thankYouModal']").show();
         activeModalContent = 'thankYouModal';
       } else {
-        alert('An error occur while creating your initiative, please try again.')
+        $(this).find('.modalFormErrorFeedback').text("An error occur while creating your initiative, please try again.")
+        $(this).find('.modalFormErrorFeedback').css('display', 'block')
       }
     }).catch(error => {
       console.error(error);

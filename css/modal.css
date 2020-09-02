@@ -96,6 +96,10 @@
   margin-right: 8px;
 }
 
+.sendButton:disabled {
+  opacity: 0.5;
+}
+
 .closeButton {
   border-radius: 24px;
   background-image: linear-gradient(to bottom, #313233, #141414);
@@ -197,6 +201,13 @@
   text-align: center;
   color: #313233;
   margin-bottom: 32px;
+}
+
+.modalFormErrorFeedback {
+  display: none;
+  margin: 10px 0;
+  color: red;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) { 
