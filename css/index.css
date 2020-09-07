@@ -137,7 +137,13 @@ button {
 	}
 }
 
-@media screen and (min-width: 2560px) { 
+@media screen and (min-width: 1700px) {
+	.backgroundHeader {
+		background-position: 120%;
+	}
+}
+
+@media screen and (min-width: 2000px) { 
 	.backgroundHeader {
 		background-position: initial;
 		background-size: auto;

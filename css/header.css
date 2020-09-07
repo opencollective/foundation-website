@@ -252,23 +252,18 @@ header .menuList-sm > .activeHomeLink {
     top: 0;
     left: 0;
     z-index: 999;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navWrapper {
+    width: 1440px;
   }
 }
 
 @media screen and (min-width: 2560px) {
-  .homeLink {
-    display: inline-block;
-  }
   .messageWrapper {
     margin-left: auto;
     margin-right: auto;
     z-index: 99;
-  }
-  .logoWrapper {
-    margin-left: 20%;
-  }
-  .menuWrapper-sm {
-    margin-right: auto;
-    margin-left: 2%;
   }
 }
