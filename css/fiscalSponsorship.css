@@ -43,6 +43,7 @@
 .actionWrapper { 
   margin-top: 40px;
   margin-bottom: 32px;
+  display: flex;
 }
 
 .actionWrapper a {
@@ -54,6 +55,9 @@
   padding: 16px 24px;
   border-radius: 24px;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button.applyToStart {
@@ -78,7 +82,7 @@ button.applyToStart {
   border-color: rgb(20, 20, 20);
 }
 
-.learnMore {
+a.learnMore {
   background: rgba(255, 255, 255, 0.2);
   margin-left: 8px;
   max-width: 128px;

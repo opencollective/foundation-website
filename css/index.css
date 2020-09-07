@@ -70,7 +70,7 @@ button {
 		position: relative;
 	}
 	.mobile {
-		display: none;
+		display: none !important;
 	}
 	.tablet {
 		display: block;

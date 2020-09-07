@@ -58,6 +58,7 @@ $(document).ready(function(){
 
   function handleMobileMenuToggle () {
     $(".mobileNavOverlay").toggle()
+    
     $(".mobileNavWrapper").animate({
       width: 'toggle'
     })
@@ -65,9 +66,11 @@ $(document).ready(function(){
 
   function handleWindowScroll() {
     const scrollTop = $(document).scrollTop();
-    if (scrollTop > 50) {
+    if (scrollTop > 55) {
+      $("header").addClass('fadeHeader')
       $("header").addClass('stickyHeader')
     } else {
+      $("header").removeClass('fadeHeader')
       $("header").removeClass('stickyHeader')
     }
 

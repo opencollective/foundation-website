@@ -125,11 +125,8 @@ header {
   display: none;
 }
 
-.stickyHeader {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  box-shadow: 0 -1px 16px 0 rgba(30, 89, 92, 0.2);
-  background-color: #ffffff;
+.fadeHeader {
+  top: -55px;
 }
 
 header .menuList-sm > .activeHomeLink {
@@ -248,7 +245,7 @@ header .menuList-sm > .activeHomeLink {
 
 @media screen and (min-width: 1440px) {
   header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
@@ -257,6 +254,20 @@ header .menuList-sm > .activeHomeLink {
   }
   .navWrapper {
     width: 1440px;
+  }
+  .stickyHeader {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 -1px 16px 0 rgba(30, 89, 92, 0.2);
+    transition: top .5s linear !important;
+    -webkit-transition: top .5s linear !important;
+    -moz-transition: top .5s linear !important;
+    -o-transition: top .5s linear !important;
+    -ms-transition: top .5s linear !important;
   }
 }
 
