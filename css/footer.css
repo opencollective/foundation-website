@@ -63,7 +63,7 @@ footer {
 
 .subscribe input {
   margin-top: 8px;
-  width: 256px;
+  width: 120%;
   height: 40px;
   border-radius: 5px;
   border: solid 1px #dcdee0;
