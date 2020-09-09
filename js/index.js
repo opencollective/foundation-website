@@ -37,14 +37,14 @@ $(document).ready(function(){
 
   function handleOpenContactUsModal () {
     $("div[js-view='modalOverlay']").show();
-    $('body').css('overflow','hidden');
+    $('html').css('overflow','hidden');
     $("div[js-view='contactUsModal']").slideDown();
     activeModalContent = 'contactUsModal';
   }
 
   function handleCreateInitiativeModal () {
     $("div[js-view='modalOverlay']").show();
-    $('body').css('overflow','hidden');
+    $('html').css('overflow','hidden');
     activeModalContent = 'createYourInitiativeModal';
     $("div[js-view='createYourInitiativeModal']").slideDown();
   }
@@ -52,7 +52,7 @@ $(document).ready(function(){
   function handleCloseModal () {
     $(`div[js-view='${activeModalContent}']`).slideUp();
     $("div[js-view='modalOverlay']").hide();
-    $('body').css('overflow','auto');
+    $('html').css('overflow','auto');
     activeModalContent = '';
   }
 
