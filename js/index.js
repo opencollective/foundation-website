@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  const showBanner = window.localStorage.getItem('showBanner')
   let activeModalContent = '';
 
   // Mobile menu toggle
@@ -28,6 +29,25 @@ $(document).ready(function(){
   
   // Handle contact us form submission
   $("form[js-event='newsletterForm']").submit(handleNewsletterForm)
+  
+
+  if (showBanner === null || showBanner === true) {
+    $("div[js-view='bannerOverlay']").show();
+  } else {
+    $("div[js-view='bannerOverlay']").addClass("bannerFooterOverlay")
+    $("button[js-event='hideBannerBtn']").css("display", "none");
+    $(".pandemicInfoHeader div").css("margin-right", "auto");
+  }
+
+  $("button[js-event='hideBannerBtn']").click(handleHideBanner)
+
+  function handleHideBanner () {
+    $("div[js-view='bannerOverlay']").fadeOut("slow");
+    $("div[js-view='bannerOverlay']").addClass("bannerFooterOverlay")
+    $("button[js-event='hideBannerBtn']").css("display", "none")
+    $(".pandemicInfoHeader div").css("margin-right", "auto")
+    window.localStorage.setItem("showBanner", false)
+  }
 
   function accordionHandler () {
     $(this).find("button[js-toggle='icon']").toggleClass('active')

@@ -1,0 +1,244 @@
+.bannerOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.24) 98%);  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+}
+
+.bannerFooterOverlay {
+  display: block !important;
+  position: static !important;
+  height: 500px !important;
+  overflow: hidden !important;
+}
+
+.bannerBackground a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.bannerBackground {
+  padding: 24px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/images/banner-bg-stick-sm.png") no-repeat center;
+  background-size: contain;
+}
+
+.pandemicInfoWrapper {
+  width: 304px;
+  height: 208px;
+  border-radius: 32px;
+  background-color: #313233;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 24px 24px 15px 24px;
+  box-shadow: 0 -8px 0 0 #141414;
+}
+
+.pandemicInfoHeader {
+  display: flex;
+}
+
+.pandemicInfoHeader div p {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.pandemicInfoHeader div h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.hideBannerBtn {
+  outline: none;
+  white-space: nowrap;
+  border: none;
+  padding: 4px 14px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  width: 79px;
+  height: 24px;
+}
+
+.pandemicInfoDescription p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.supportCommunitiesWrapper {
+  margin-top: 24px;
+  width: 304px;
+  height: 240px;
+  border-radius: 32px;
+  background-color: #05464a;
+  box-sizing: border-box;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 0 -8px 0 0 #013134;
+}
+
+.supportCommunitiesWrapper h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.supportCommunitiesWrapper p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #ffffff;
+  margin-bottom: 8px;
+  width: 256px;
+}
+
+.bannerIllustration {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .bannerBackground {
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background: url("/images/banner-bg-stick-left.png") no-repeat 142px, url("/images/banner-bg-stick-right.png") no-repeat 577px;
+    background-size: contain;
+    width: 768px;
+  }
+  .bannerIllustration {
+    display: block;
+    position: absolute;
+    z-index: 11;
+  }
+  .leftLadyIllustration {
+    left: 0;
+    bottom: 0;
+  }
+  .rightLadyIllustration {
+    right: 0;
+    bottom: 0;
+  }
+  .leftLadyIllustration img {
+    width: 176px;
+    height: 228px;
+  }
+  .rightLadyIllustration img {
+    width: 123px;
+    height: 245px;
+  }
+  .pandemicInfoWrapper,
+  .supportCommunitiesWrapper {
+    width: 752px;
+    height: 104px;
+  }
+  .pandemicInfoHeader {
+    justify-content: center;
+  }
+  .pandemicInfoHeader div {
+    display: flex;
+    margin-left: auto;
+  }
+  .pandemicInfoHeader div p {
+   margin-right: 8px;
+  }
+  .hideBannerBtn {
+    margin-left: auto;
+  }
+  .pandemicInfoDescription {
+    text-align: center;
+  }
+
+  .supportCommunitiesWrapper {
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .supportCommunitiesWrapper h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    width: 369px;
+    text-align: center;
+  }
+  
+  .supportCommunitiesWrapper p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    width: 368px;
+    text-align: center;
+  } 
+}
+
+@media screen and (min-width: 1280px) {
+  .bannerBackground {
+    width: 852px;
+  }
+  .bannerIllustration {
+    bottom: -24px;
+  }
+  .leftLadyIllustration {
+    left: -90px;
+  }
+  .leftLadyIllustration img {
+    width: 189px;
+    height: 245px
+  }
+  .rightLadyIllustration img {
+    width: 123px;
+    height: 245px;
+  }
+  .supportCommunitiesWrapper,
+  .pandemicInfoWrapper {
+    width: 828px;
+  }
+  .supportCommunitiesWrapper {
+    height: 200px;
+  }
+  .supportCommunitiesWrapper h3 {
+    width: 450px;
+  }
+  .supportCommunitiesWrapper p {
+    width: 616px;
+  }
+  .pandemicInfoHeader div p {
+    font-size: 24px;
+    line-height: 1.33;
+    font-weight: 500;
+  }
+  
+  .pandemicInfoHeader div h3 {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
