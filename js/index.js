@@ -46,7 +46,7 @@ $(document).ready(function(){
     $("div[js-view='bannerOverlay']").addClass("bannerFooterOverlay")
     $("button[js-event='hideBannerBtn']").css("display", "none")
     $(".pandemicInfoHeader div").css("margin-right", "auto")
-    // window.localStorage.setItem("showBanner", false)
+    window.localStorage.setItem("showBanner", false)
   }
 
   function accordionHandler () {
