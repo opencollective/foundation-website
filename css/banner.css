@@ -3,13 +3,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(to bottom, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.24) 98%);  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0),
+    rgba(20, 20, 20, 0.24) 98%
+  );
+  height: 100vh;
   width: 100%;
   z-index: 9999;
 }
 
 .bannerFooterOverlay {
-  display: block !important;
+  display: none !important;
   position: static !important;
   height: 500px !important;
   overflow: hidden !important;
@@ -128,7 +133,8 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    background: url("/images/banner-bg-stick-left.png") no-repeat 142px, url("/images/banner-bg-stick-right.png") no-repeat 577px;
+    background: url("/images/banner-bg-stick-left.png") no-repeat 142px,
+      url("/images/banner-bg-stick-right.png") no-repeat 577px;
     background-size: contain;
     width: 768px;
   }
@@ -166,7 +172,7 @@
     margin-left: auto;
   }
   .pandemicInfoHeader div p {
-   margin-right: 8px;
+    margin-right: 8px;
   }
   .hideBannerBtn {
     margin-left: auto;
@@ -190,14 +196,14 @@
     width: 369px;
     text-align: center;
   }
-  
+
   .supportCommunitiesWrapper p {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.71;
     width: 368px;
     text-align: center;
-  } 
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -212,7 +218,7 @@
   }
   .leftLadyIllustration img {
     width: 189px;
-    height: 245px
+    height: 245px;
   }
   .rightLadyIllustration img {
     width: 123px;
@@ -236,7 +242,7 @@
     line-height: 1.33;
     font-weight: 500;
   }
-  
+
   .pandemicInfoHeader div h3 {
     font-size: 24px;
     line-height: 1.33;
