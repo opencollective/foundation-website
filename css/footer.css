@@ -16,6 +16,10 @@ footer {
   width: 288px;
 }
 
+.addressWrapper {
+  margin-top: 30px;
+}
+
 .copyRightWrapper {
   margin-bottom: 24px;
 }
@@ -40,7 +44,7 @@ footer {
 .subscribeWrapper {
   border-radius: 24px;
   background-color: #e6eded;
-  padding: 32px 16px 24px; 
+  padding: 32px 16px 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -53,7 +57,20 @@ footer {
   color: #1e595c;
   margin-bottom: 15px;
 }
+.quickLinksWrapper {
+  margin-bottom: 20px;
+}
+.quickLinksListWrapper li {
+  list-style: none;
+}
 
+.quickLinksListWrapper li a {
+  width: 257px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #4e5052;
+  margin-bottom: 40px;
+}
 .subscribe label {
   font-size: 14px;
   line-height: 1.07;
@@ -69,7 +86,7 @@ footer {
   border: solid 1px #dcdee0;
   background-color: #ffffff;
   outline: none;
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 .subscribe input:focus {
@@ -77,7 +94,7 @@ footer {
 }
 
 .subscribeButton {
-  padding: 16px 24px; 
+  padding: 16px 24px;
   border-radius: 24px;
   background-image: linear-gradient(to bottom, #507e80, #376b6e);
   font-size: 14px;
@@ -91,7 +108,6 @@ footer {
 .subscribeButton:disabled {
   opacity: 0.5;
 }
-
 
 .subscriptionFeedback {
   display: none;
@@ -112,6 +128,7 @@ footer {
   align-self: baseline;
 }
 
+.quickLinksWrapper h5,
 .organizationDetailsWrapper h5 {
   margin-bottom: 8px;
   font-size: 12px;
@@ -165,6 +182,7 @@ footer {
   }
   .addressWrapper {
     margin-left: 30px;
+    margin-top: 0;
   }
   .organizationDetailsWrapper {
     margin-top: 0;
@@ -188,6 +206,7 @@ footer {
     width: 320px;
   }
   .addressWrapper {
+    flex-direction: row;
     margin-left: 75px;
   }
 }
@@ -199,11 +218,15 @@ footer {
   .subscribe input {
     width: 383px;
   }
+  .quickLinksWrapper {
+    margin-right: 40px;
+  }
   .addressWrapper {
     display: flex;
-    width: 550px;
+    /* width: 50px; */
     justify-content: center;
     margin-left: 50px;
+    flex-direction: column;
   }
   .organizationDetailsWrapper {
     margin-right: 50px;
