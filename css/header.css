@@ -82,7 +82,8 @@ header {
   height: 100vh;
   z-index: 3;
   position: relative;
-  background: url("/images/mobileNav-illustration.png") no-repeat bottom, #ffffff;
+  background: url("/images/mobileNav-illustration.png") no-repeat bottom,
+    #ffffff;
   border-top-right-radius: 32px;
   border-bottom-right-radius: 32px;
   box-shadow: 0 -16px 16px 24px rgba(49, 50, 51, 0.16);
@@ -102,7 +103,7 @@ header {
   width: 100%;
 }
 
-.mobileNavListWrapper a{
+.mobileNavListWrapper a {
   text-decoration: none;
 }
 
@@ -121,7 +122,8 @@ header {
   margin-left: 27px;
 }
 
-.contactUsButton, .homeLink {
+.contactUsButton,
+.homeLink {
   display: none;
 }
 
@@ -152,7 +154,6 @@ header .menuList-sm > .activeHomeLink {
   color: #8ac6c1;
 }
 
-
 .stickyHeader .menuList-sm > a:hover {
   color: #208c93;
   text-decoration: underline;
@@ -170,7 +171,6 @@ header .menuList-sm > .activeHomeLink {
   text-decoration: none;
 }
 
-
 .stickyHeader .active {
   color: #208c93 !important;
 }
@@ -181,7 +181,6 @@ header .menuList-sm > .activeHomeLink {
 .stickyHeader .logoWrapper > a > .negativeLogo {
   display: inline-block;
 }
-
 
 @media screen and (min-width: 768px) {
   .menuIcon {
@@ -198,7 +197,6 @@ header .menuList-sm > .activeHomeLink {
 
   .menuList-sm {
     list-style: none;
-    margin-left: 16px;
     margin-right: 16px;
   }
 
@@ -263,11 +261,11 @@ header .menuList-sm > .activeHomeLink {
     padding-top: 8px;
     padding-bottom: 8px;
     box-shadow: 0 -1px 16px 0 rgba(30, 89, 92, 0.2);
-    transition: top .5s linear !important;
-    -webkit-transition: top .5s linear !important;
-    -moz-transition: top .5s linear !important;
-    -o-transition: top .5s linear !important;
-    -ms-transition: top .5s linear !important;
+    transition: top 0.5s linear !important;
+    -webkit-transition: top 0.5s linear !important;
+    -moz-transition: top 0.5s linear !important;
+    -o-transition: top 0.5s linear !important;
+    -ms-transition: top 0.5s linear !important;
   }
 }
 
