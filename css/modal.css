@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background:  rgba(20, 20, 20, 0.6);
+  background: rgba(20, 20, 20, 0.6);
   height: 100vh;
   width: 100%;
   z-index: 999;
@@ -20,7 +20,8 @@
   height: 100vh;
   min-height: 588px;
   padding: 40px 16px 70px;
-  background: url("/images/mobileNav-illustration.png") no-repeat center bottom, #ffffff;
+  background: url("/images/mobileNav-illustration.png") no-repeat center bottom,
+    #ffffff;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -55,7 +56,6 @@
   line-height: 1.07;
   color: #313233;
 }
-
 
 .inputWrapper input,
 .inputWrapper textarea {
@@ -147,7 +147,7 @@
   padding: 12px 8px;
 }
 
-.inputDescription  {
+.inputDescription {
   font-size: 11px;
   font-style: normal;
   line-height: 1.45;
@@ -210,8 +210,8 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 768px) { 
-	.modalContent {
+@media screen and (min-width: 768px) {
+  .modalContent {
     width: 512px;
     height: 672px;
     border-radius: 48px;
@@ -252,7 +252,6 @@
 .closeButton:active {
   background: #141414;
 }
-
 
 .closeButton:focus {
   border: solid 2px #90f0bd;

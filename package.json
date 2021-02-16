@@ -4,6 +4,9 @@
   "description": "Fiscal Sponsorship as a service",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier \"**/*.@(js|ts|json|md|html|css)\"",
+    "prettier:check": "npm run prettier -- --check",
+    "prettier:write": "npm run prettier -- --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,8 @@
   "dependencies": {
     "cross-fetch": "^3.0.5",
     "nodemailer": "^6.4.11"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }

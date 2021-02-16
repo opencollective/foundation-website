@@ -40,7 +40,7 @@
   margin-top: 8px;
 }
 
-.actionWrapper { 
+.actionWrapper {
   margin-top: 40px;
   margin-bottom: 32px;
   display: flex;
@@ -60,7 +60,8 @@
   align-items: center;
 }
 
-button.applyToStart {
+button.applyToStart,
+a.applyToStart {
   background: linear-gradient(to bottom, #313233, #141414);
   margin-right: 8px;
   width: 144px;
@@ -69,7 +70,8 @@ button.applyToStart {
 
 .applyToStart:hover {
   color: rgb(255, 255, 255);
-  background: linear-gradient(rgb(78, 80, 82) 0%, rgb(49, 50, 51) 100%) rgb(78, 80, 82);
+  background: linear-gradient(rgb(78, 80, 82) 0%, rgb(49, 50, 51) 100%)
+    rgb(78, 80, 82);
   border-color: rgb(78, 80, 82);
 }
 
@@ -90,7 +92,7 @@ a.learnMore {
 }
 
 .learnMore:hover {
-  background:  rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .learnMore:focus {
@@ -102,7 +104,6 @@ a.learnMore {
   border: solid 2px #90f0bd;
   background-color: rgba(255, 255, 255, 0.4);
 }
-
 
 .sponsorShipIllustrationWrapper {
   display: flex;
@@ -120,12 +121,18 @@ a.learnMore {
   object-position: left;
 }
 
-.desktopApply {
+.desktopApply,
+.actionWrapper .desktopApply {
   display: none;
 }
 
+.mobileApply,
+.actionWrapper .mobileApply {
+  display: flex;
+}
+
 @media screen and (min-width: 640px) {
-	.fiscalSponsorshipSectionContent {
+  .fiscalSponsorshipSectionContent {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
@@ -135,7 +142,7 @@ a.learnMore {
     width: 57%;
     height: 473px;
   }
-  .fiscalSponsorshipTitleAndActionWrapper{
+  .fiscalSponsorshipTitleAndActionWrapper {
     position: relative;
     z-index: 1;
     top: 40px;
@@ -160,17 +167,20 @@ a.learnMore {
     justify-content: flex-end;
     align-items: baseline;
   }
-  .fiscalSponsorshipTitleAndActionWrapper{
+  .fiscalSponsorshipTitleAndActionWrapper {
     top: 0;
     display: flex;
     flex-direction: column;
     align-items: baseline;
   }
-  .mobileApply {
+  .actionWrapper .mobileApply {
     display: none;
   }
-  button.desktopApply {
+  .actionWrapper .desktopApply {
     display: flex;
+  }
+  button.desktopApply,
+  a.desktopApply {
     align-items: center;
     justify-content: center;
     width: 190px;
@@ -188,7 +198,6 @@ a.learnMore {
   .fiscalSponsorshipTitlesContainer {
     display: flex;
     flex-direction: column;
-
   }
   .fiscalSponsorshipSectionContent h3 {
     font-size: 24px;
@@ -212,39 +221,38 @@ a.learnMore {
     font-size: 64px;
     font-weight: bold;
     color: #88c6c1;
-  } 
+  }
   .sponsorShipIllustrationWrapper > .biggest {
     display: block;
-  } 
+  }
   .actionWrapper {
     margin-top: 25px;
   }
 }
 
-
 @media screen and (min-width: 1440px) {
   .sponsorShipIllustrationWrapper {
     width: 53%;
     height: 593px;
-    top: -120px
+    top: -120px;
   }
-  .sponsorShipIllustrationWrapper img{
+  .sponsorShipIllustrationWrapper img {
     max-width: 100%;
     max-height: 100%;
   }
   .fiscalSponsorshipTitleAndActionWrapper {
     margin-top: 30px;
   }
-  .actionWrapper { 
+  .actionWrapper {
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 2560px) { 
+@media screen and (min-width: 2560px) {
   .sponsorShipIllustrationWrapper {
-    top: -95px
+    top: -95px;
   }
-	.sponsorShipIllustrationWrapper > .bigger {
+  .sponsorShipIllustrationWrapper > .bigger {
     display: none;
   }
 
@@ -255,4 +263,3 @@ a.learnMore {
     margin-top: 90px;
   }
 }
-

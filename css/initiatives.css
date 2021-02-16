@@ -1,6 +1,6 @@
 .initiativeSection {
-  background-color: #F7F8FA;
-  padding-top: 20px; 
+  background-color: #f7f8fa;
+  padding-top: 20px;
 }
 
 .initiatives {
@@ -66,30 +66,30 @@
     width: 100%;
     margin-top: 40px;
   }
-  .initiative   {
+  .initiative {
     width: 300px;
     margin-left: 10px;
     margin-right: 10px;
   }
   .financialAdmin {
-    order: 1
+    order: 1;
   }
   .payYourExpenses {
-    order: 3
+    order: 3;
   }
   .taxDeductible {
-    order: 2
+    order: 2;
   }
   .plusGreatCommunity {
-    order: 4
+    order: 4;
   }
 }
 
 @media screen and (min-width: 768px) {
   .initiativeSection {
-    padding-top: 50px; 
+    padding-top: 50px;
   }
-  .initiative   {
+  .initiative {
     width: 336px;
     margin-left: 20px;
     margin-right: 20px;
@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 1024px) {
   .initiativeSection {
-    background: #F7F8FA;
+    background: #f7f8fa;
     padding-top: 0;
   }
   .initiatives {
@@ -112,7 +112,7 @@
     margin-top: 80px;
   }
   .initiativeSection {
-    background: #F7F8FA;
+    background: #f7f8fa;
     padding-top: 80px;
   }
   .initiativesWrapper {
@@ -121,16 +121,18 @@
   .initiative {
     width: 416px;
   }
-  .financialAdmin, .payYourExpenses{
+  .financialAdmin,
+  .payYourExpenses {
     margin-right: 100px;
   }
-  .taxDeductible, .plusGreatCommunity{
+  .taxDeductible,
+  .plusGreatCommunity {
     margin-left: 100px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .initiatives > .titleWrapper{
+  .initiatives > .titleWrapper {
     margin-top: 30px;
   }
   .initiativeSection {
