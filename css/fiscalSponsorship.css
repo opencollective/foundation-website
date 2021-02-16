@@ -60,7 +60,7 @@
   align-items: center;
 }
 
-button.applyToStart {
+button.applyToStart, a.applyToStart {
   background: linear-gradient(to bottom, #313233, #141414);
   margin-right: 8px;
   width: 144px;
@@ -120,8 +120,12 @@ a.learnMore {
   object-position: left;
 }
 
-.desktopApply {
+.desktopApply, .actionWrapper .desktopApply {
   display: none;
+}
+
+.mobileApply, .actionWrapper .mobileApply {
+  display: flex;
 }
 
 @media screen and (min-width: 640px) {
@@ -166,11 +170,13 @@ a.learnMore {
     flex-direction: column;
     align-items: baseline;
   }
-  .mobileApply {
+  .actionWrapper .mobileApply {
     display: none;
   }
-  button.desktopApply {
+  .actionWrapper .desktopApply {
     display: flex;
+  }
+  button.desktopApply, a.desktopApply {
     align-items: center;
     justify-content: center;
     width: 190px;
