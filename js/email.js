@@ -1,8 +1,8 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 const getMailgun = () => {
   const transport = {
-    service: 'Mailgun',
+    service: "Mailgun",
     auth: {
       user: process.env.MAILGUN_USER,
       pass: process.env.MAILGUN_PASSWORD,
@@ -10,8 +10,7 @@ const getMailgun = () => {
   };
 
   return nodemailer.createTransport(transport);
-}; 
-
+};
 
 exports.sendMessage = (options = {}) => {
   const {
@@ -27,9 +26,9 @@ exports.sendMessage = (options = {}) => {
     tag,
   } = options;
 
-  headers['X-Mailgun-Dkim'] = 'yes';
+  headers["X-Mailgun-Dkim"] = "yes";
   if (tag) {
-    headers['X-Mailgun-Tag'] = tag;
+    headers["X-Mailgun-Tag"] = tag;
   }
 
   return new Promise((resolve, reject) => {
@@ -41,7 +40,7 @@ exports.sendMessage = (options = {}) => {
         } else {
           return resolve(info);
         }
-      },
+      }
     );
   });
 };

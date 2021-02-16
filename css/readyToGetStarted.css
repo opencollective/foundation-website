@@ -1,7 +1,7 @@
 .readyToGetStartedSection {
   position: relative;
   padding-bottom: 130px;
-  background: linear-gradient(180deg, #ffffff 70%, #F7F8FA 30%);
+  background: linear-gradient(180deg, #ffffff 70%, #f7f8fa 30%);
 }
 
 .getStartedBackground {
@@ -87,7 +87,8 @@
 
 .readDocs:hover {
   color: rgb(255, 255, 255);
-  background: linear-gradient(rgb(78, 80, 82) 0%, rgb(49, 50, 51) 100%) rgb(78, 80, 82);
+  background: linear-gradient(rgb(78, 80, 82) 0%, rgb(49, 50, 51) 100%)
+    rgb(78, 80, 82);
   border-color: rgb(78, 80, 82);
 }
 
@@ -108,7 +109,6 @@ a.longerTextLink {
   display: none;
 }
 
-
 @media screen and (min-width: 640px) {
   .readyToGetStartedIllustration {
     width: 422px;
@@ -119,12 +119,12 @@ a.longerTextLink {
   .getStartedTextWrapper {
     align-self: flex-end;
     text-align: right;
-    margin-right: 20px;;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  
+
   .getStartedTextWrapper > .titleWrapper,
   .getStartedTextWrapper > .descriptionWrapper {
     width: 476px;
@@ -162,7 +162,7 @@ a.longerTextLink {
 
 @media screen and (min-width: 1024px) {
   .readyToGetStartedSection {
-    background: linear-gradient(180deg, #ffffff 10%, #F7F8FA 90%);
+    background: linear-gradient(180deg, #ffffff 10%, #f7f8fa 90%);
   }
   .readyToGetStarted {
     flex-direction: row;
@@ -178,7 +178,7 @@ a.longerTextLink {
   }
   .getStartedBackground {
     height: 602px;
-    top: 3%
+    top: 3%;
   }
 }
 
@@ -192,7 +192,7 @@ a.longerTextLink {
     margin-right: 57px;
   }
   .readyToGetStartedSection {
-    background: #F7F8FA;
+    background: #f7f8fa;
     z-index: 0;
   }
   .getStartedTextAndActionWrapper {

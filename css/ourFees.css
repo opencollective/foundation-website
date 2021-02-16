@@ -1,5 +1,5 @@
 .ourFeesSection {
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
 }
 .ourFees {
   padding-top: 70px;
@@ -74,17 +74,20 @@
 }
 
 .fivePercent {
-  border-top-right-radius : 32px;
-  border-top-left-radius : 32px;
-  background: url("/images/opencollective-icon.svg") no-repeat 20px center, linear-gradient(to top, #045257 5%, #045257 5%, #4e908d 86%), linear-gradient(to bottom, #4e908d, #4e908d);;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  background: url("/images/opencollective-icon.svg") no-repeat 20px center,
+    linear-gradient(to top, #045257 5%, #045257 5%, #4e908d 86%),
+    linear-gradient(to bottom, #4e908d, #4e908d);
   background-color: #4e908d;
 }
 
-
 .fourPercent {
-  border-bottom-right-radius : 32px;
-  border-bottom-left-radius : 32px;
-  background: url("/images/leaves.svg") no-repeat 20px bottom, linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%), linear-gradient(to bottom, #045257, #045257);
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  background: url("/images/leaves.svg") no-repeat 20px bottom,
+    linear-gradient(to top, #045257 6%, #045257 6%, #4e908d 86%),
+    linear-gradient(to bottom, #045257, #045257);
   background-color: #045257;
 }
 
@@ -103,7 +106,7 @@
   color: #ffffff;
 }
 
-.figure > .percentage{
+.figure > .percentage {
   font-size: 32px;
 }
 
@@ -191,19 +194,30 @@
     margin-right: 0;
     width: 200px;
   }
-  .fivePercent, .fourPercent {
+  .fivePercent,
+  .fourPercent {
     border-radius: 0;
   }
   .fivePercent {
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
-    background: url("/images/opencollective-icon.svg") no-repeat 20px 20px, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
-    background-color: #4E908D;
+    background: url("/images/opencollective-icon.svg") no-repeat 20px 20px,
+      linear-gradient(
+        0deg,
+        rgba(4, 82, 87, 0.5) 0%,
+        rgba(78, 144, 141, 0.5) 100%
+      );
+    background-color: #4e908d;
   }
   .fourPercent {
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
-    background: url("/images/leaves.svg") no-repeat 20px bottom, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
+    background: url("/images/leaves.svg") no-repeat 20px bottom,
+      linear-gradient(
+        0deg,
+        rgba(4, 82, 87, 0.5) 0%,
+        rgba(78, 144, 141, 0.5) 100%
+      );
     background-color: #045257;
   }
   .crowdFundingWrapper > .note {
@@ -238,7 +252,6 @@
   }
 }
 
-
 @media screen and (min-width: 1440px) {
   .amountRaisedAndCrowdFundWrapper {
     align-items: center;
@@ -268,8 +281,18 @@
     padding-right: 16px;
     padding-top: 50px;
     padding-bottom: 10px;
-    background-image: linear-gradient(to top, rgba(130, 163, 165, 0), #82a3a5 43%, rgba(130, 163, 165, 0));
-    background: linear-gradient(0deg, rgba(130,163,165,0.00) 0%, #82A3A5 56%, rgba(130,163,165,0.00) 100%);;
+    background-image: linear-gradient(
+      to top,
+      rgba(130, 163, 165, 0),
+      #82a3a5 43%,
+      rgba(130, 163, 165, 0)
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(130, 163, 165, 0) 0%,
+      #82a3a5 56%,
+      rgba(130, 163, 165, 0) 100%
+    );
   }
   .amountRaisedCard {
     width: 521px;
@@ -277,8 +300,13 @@
     padding: 24px 24px;
   }
   .fivePercent {
-    background: url("/images/opencollective-icon.svg") no-repeat 20px center, linear-gradient(0deg, rgba(4,82,87,0.5) 0%, rgba(78,144,141,0.5) 100%);
-    background-color: #4E908D;
+    background: url("/images/opencollective-icon.svg") no-repeat 20px center,
+      linear-gradient(
+        0deg,
+        rgba(4, 82, 87, 0.5) 0%,
+        rgba(78, 144, 141, 0.5) 100%
+      );
+    background-color: #4e908d;
   }
   .figureRaisedWrapper {
     display: flex;
