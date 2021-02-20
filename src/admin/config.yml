@@ -43,7 +43,7 @@ collections:
     label: Carousel data
     label_singular: carousel
     description: |
-      Collections of data displayed in carousels
+      Collections of data displayed in carousels and grids
     files:
       - name: people
         label: People
@@ -121,5 +121,30 @@ collections:
                 buttons: ['link']
                 editor_components: []
                 modes: ['rich_text']
+      - name: links
+        label: Learn links
+        file: src/_data/links.json
+        fields:
+          - name: categories
+            label_singular: category
+            widget: list
+            allow_add: true
+            fields:
+              - name: title
+                label: Category title
+                widget: string
+              - name: links
+                widget: list
+                label: Links
+                label_singular: link
+                min: 1
+                fields:
+                    - name: text
+                      widget: string
+                    - name: url
+                      widget: string
+                      pattern: 
+                      - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+                      - Must be a URL
 
 
