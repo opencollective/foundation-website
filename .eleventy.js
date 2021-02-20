@@ -1,8 +1,8 @@
 const sortBy = require('lodash/sortBy');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('assets');
-  eleventyConfig.addPassthroughCopy('admin');
+  eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy('src/admin');
 
   eleventyConfig.addCollection('sections', function (collectionApi) {
     // get unsorted items
@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
   return {
     markdownTemplateEngine: 'ejs',
     dir: {
+      input: 'src',
       layouts: '_layouts',
     },
   };
