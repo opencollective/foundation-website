@@ -44,6 +44,8 @@ collections:
     label_singular: carousel
     description: |
       Collections of data displayed in carousels and grids
+    editor:
+      preview: false
     files:
       - name: people
         label: People
