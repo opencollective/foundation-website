@@ -13,7 +13,7 @@ collections:
   - name: sections
     label: "Home sections"
     label_singular: 'section'
-    folder: sections
+    folder: src/sections
     extension: md
     format: yaml-frontmatter
     sortable_fields: 
