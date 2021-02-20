@@ -12,9 +12,14 @@ local_backend: true
 collections:
   - name: sections
     label: "Home sections"
+    label_singular: 'section'
     folder: sections
+    extension: md
+    format: yaml-frontmatter
     sortable_fields: 
       - position
+    editor:
+      preview: false
     fields:
       - name: title
         label: Title
