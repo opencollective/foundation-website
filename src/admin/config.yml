@@ -72,5 +72,54 @@ collections:
                 pattern: 
                   - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
                   - Must be a URL
+      - name: interventions
+        label: Interventions
+        label_singular: intervention
+        file: src/_data/interventions.json
+        fields:
+          - name: interventions
+            label_singular: intervention
+            widget: list
+            allow_add: true
+            summary: "[{{interventionType}}] {{practice}}"
+            fields:
+              - name: interventionType
+                label: Type of intervention
+                widget: select
+                options: 
+                  - "Internal Work"
+                  - "Governance Shifts"
+                  - "New Tools/Types of Support"
+                  - "Investment/Endowment Shifts"
+                  - "Take a Systems-Change Approach"
+                  - "Policy Advocacy"
+              - name: practice
+                label: Practice or action
+                widget: markdown
+                minimal: true
+                buttons: ['italic']
+                editor_components: []
+                modes: ['rich_text']
+              - name: sector
+                label: Public sector, nonprofit, or foundation work?
+                widget: select
+                options: 
+                  - Nonprofits
+                  - Foundations
+                  - Public sector
+                  - VC / Investment
+                default: 
+                  - Nonprofits
+                  - Foundations
+                  - Public sector
+                multiple: true
+              - name: learnMore
+                label: Learn more
+                hint: Include links to Legal Q&A or colleages doing the work
+                widget: markdown
+                minimal: true
+                buttons: ['link']
+                editor_components: []
+                modes: ['rich_text']
 
 
