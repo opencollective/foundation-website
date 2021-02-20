@@ -18,6 +18,8 @@ collections:
     format: yaml-frontmatter
     sortable_fields: 
       - position
+    create: false
+    delete: false
     editor:
       preview: false
     fields:
