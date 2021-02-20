@@ -148,5 +148,27 @@ collections:
                       pattern: 
                       - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
                       - Must be a URL
+      - name: concepts
+        label: Concepts
+        label_singular: concept
+        file: src/_data/concepts.json
+        fields:
+          - name: concepts
+            label_singular: concept
+            widget: list
+            summary: "{{conceptTitle}} / {{exampleTitle}}"
+            fields:
+            - name: conceptTitle
+              label: Concept title
+              widget: string
+            - name: conceptDescription
+              label: Concept description 
+              widget: text
+            - name: exampleTitle
+              label: Example title
+              widget: string
+            - name: exampleDescription
+              label: Example description
+              widget: text
 
 
