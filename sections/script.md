@@ -1,6 +1,6 @@
 ---
 title: Script
-showInNavigation: false
+hideInNavigation: true
 position: 1
 ---
 

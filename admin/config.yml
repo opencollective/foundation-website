@@ -1,0 +1,35 @@
+backend:
+  name: github
+  branch: master
+  repo: jboolean/art-coop
+  site_domain: cms.netlify.com
+
+publish_mode: editorial_workflow
+media_folder: assets/uploads
+public_folder: /assets/uploads
+show_preview_links: true
+local_backend: true
+
+collections:
+  - name: sections
+    label: "Home sections"
+    folder: sections
+    sortable_fields: 
+      - position
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: hideInNavigation
+        label: Hide in navigation
+        widget: boolean
+        required: false
+        default: false
+      - name: position
+        label: Display position
+        widget: number
+        min: 0
+        step: 1
+      - name: body
+        label: body
+        widget: markdown
