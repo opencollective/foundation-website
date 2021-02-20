@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site by Julian Boilen, julianboilen.com -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <% if (page.url === '/' || !locals.title) { %>
+    <title><%= site.title %></title>
+  <% } else { %>
+    <title><%= locals.title %></title>
+  <% } %>
+</head>
+<body>
+  <%- content %>
+</body>
+</html>

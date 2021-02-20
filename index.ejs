@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<% collections.section.forEach((section) => { %>
+<section id="<%- section.fileSlug %>">
+  <%- section.templateContent %>
+</section>
+<% }) %>

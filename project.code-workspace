@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".github"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"node_modules": true,
+			"dist": true,
+			".build": true,
+			".serverless": true,
+            "_site": true
+		},
+	}
+}

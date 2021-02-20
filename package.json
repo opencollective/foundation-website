@@ -1,0 +1,24 @@
+{
+  "name": "art-coop",
+  "version": "1.0.0",
+  "description": "GIA Solidarity Economy Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jboolean/art-coop.git"
+  },
+  "author": "Julian Boilen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jboolean/art-coop/issues"
+  },
+  "homepage": "https://github.com/jboolean/art-coop#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
