@@ -1,4 +1,5 @@
 {
   "tags": ["section"],
-  "hideInNavigation": false
+  "hideInNavigation": false,
+  "permalink": false
 }

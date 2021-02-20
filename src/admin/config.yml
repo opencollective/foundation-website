@@ -39,3 +39,38 @@ collections:
       - name: body
         label: body
         widget: markdown
+  - name: carousels
+    label: Carousel data
+    label_singular: carousel
+    description: |
+      Collections of data displayed in carousels
+    files:
+      - name: people
+        label: People
+        label_singular: person
+        file: src/_data/people.json
+        fields:
+          - name: people
+            label_singular: person
+            widget: list
+            allow_add: true
+            summary: "{{name}} ({{personTitle}})"
+            fields:
+              - name: category
+                widget: select
+                options: 
+                  - "Artists / Field Partners"
+                  - "Grantmakers"
+              - name: name
+                label: Name
+                widget: string
+              - name: personTitle
+                label: Title
+                widget: string
+              - name: url
+                widget: string
+                pattern: 
+                  - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+                  - Must be a URL
+
+
