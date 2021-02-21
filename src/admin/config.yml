@@ -11,12 +11,12 @@ local_backend: true
 
 collections:
   - name: sections
-    label: "Home sections"
+    label: 'Home sections'
     label_singular: 'section'
     folder: src/sections
     extension: md
     format: yaml-frontmatter
-    sortable_fields: 
+    sortable_fields:
       - position
     create: false
     delete: false
@@ -56,13 +56,13 @@ collections:
             label_singular: person
             widget: list
             allow_add: true
-            summary: "{{name}} ({{personTitle}})"
+            summary: '{{name}} ({{personTitle}})'
             fields:
               - name: category
                 widget: select
-                options: 
-                  - "Artists / Field Partners"
-                  - "Grantmakers"
+                options:
+                  - 'Artists / Field Partners'
+                  - 'Grantmakers'
               - name: name
                 label: Name
                 widget: string
@@ -71,7 +71,7 @@ collections:
                 widget: string
               - name: url
                 widget: string
-                pattern: 
+                pattern:
                   - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
                   - Must be a URL
       - name: interventions
@@ -83,18 +83,18 @@ collections:
             label_singular: intervention
             widget: list
             allow_add: true
-            summary: "[{{interventionType}}] {{practice}}"
+            summary: '[{{interventionType}}] {{practice}}'
             fields:
               - name: interventionType
                 label: Type of intervention
                 widget: select
-                options: 
-                  - "Internal Work"
-                  - "Governance Shifts"
-                  - "New Tools/Types of Support"
-                  - "Investment/Endowment Shifts"
-                  - "Take a Systems-Change Approach"
-                  - "Policy Advocacy"
+                options:
+                  - 'Internal Work'
+                  - 'Governance Shifts'
+                  - 'New Tools/Types of Support'
+                  - 'Investment/Endowment Shifts'
+                  - 'Take a Systems-Change Approach'
+                  - 'Policy Advocacy'
               - name: practice
                 label: Practice or action
                 widget: markdown
@@ -105,12 +105,12 @@ collections:
               - name: sector
                 label: Public sector, nonprofit, or foundation work?
                 widget: select
-                options: 
+                options:
                   - Nonprofits
                   - Foundations
                   - Public sector
                   - VC / Investment
-                default: 
+                default:
                   - Nonprofits
                   - Foundations
                   - Public sector
@@ -141,11 +141,11 @@ collections:
                 label_singular: link
                 min: 1
                 fields:
-                    - name: text
-                      widget: string
-                    - name: url
-                      widget: string
-                      pattern: 
+                  - name: text
+                    widget: string
+                  - name: url
+                    widget: string
+                    pattern:
                       - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
                       - Must be a URL
       - name: concepts
@@ -156,19 +156,17 @@ collections:
           - name: concepts
             label_singular: concept
             widget: list
-            summary: "{{conceptTitle}} / {{exampleTitle}}"
+            summary: '{{conceptTitle}} / {{exampleTitle}}'
             fields:
-            - name: conceptTitle
-              label: Concept title
-              widget: string
-            - name: conceptDescription
-              label: Concept description 
-              widget: text
-            - name: exampleTitle
-              label: Example title
-              widget: string
-            - name: exampleDescription
-              label: Example description
-              widget: text
-
-
+              - name: conceptTitle
+                label: Concept title
+                widget: string
+              - name: conceptDescription
+                label: Concept description
+                widget: text
+              - name: exampleTitle
+                label: Example title
+                widget: string
+              - name: exampleDescription
+                label: Example description
+                widget: text
