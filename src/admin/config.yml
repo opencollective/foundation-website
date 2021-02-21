@@ -102,22 +102,30 @@ collections:
                 buttons: ['italic']
                 editor_components: []
                 modes: ['rich_text']
-              - name: sector
-                label: Public sector, nonprofit, or foundation work?
-                widget: select
-                options:
-                  - Nonprofits
-                  - Foundations
-                  - Public sector
-                  - VC / Investment
-                default:
-                  - Nonprofits
-                  - Foundations
-                  - Public sector
-                multiple: true
-              - name: learnMore
-                label: Learn more
-                hint: Include links to Legal Q&A or colleages doing the work
+              # - name: sector
+              #   label: Public sector, nonprofit, or foundation work?
+              #   widget: select
+              #   options:
+              #     - Nonprofits
+              #     - Foundations
+              #     - Public sector
+              #     - VC / Investment
+              #   default:
+              #     - Nonprofits
+              #     - Foundations
+              #     - Public sector
+              #   multiple: true
+              - name: exampleColleagues
+                label: Examples of colleagues who are doing this work
+                widget: markdown
+                minimal: true
+                buttons: ['link']
+                editor_components: []
+                modes: ['rich_text']
+              - name: legal
+                label: Legal Q&A
+                hint: Include links to legal Q&A
+                required: false
                 widget: markdown
                 minimal: true
                 buttons: ['link']
