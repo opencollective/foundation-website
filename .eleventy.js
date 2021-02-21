@@ -4,9 +4,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/admin');
 
-  eleventyConfig.addCollection('sections', function (collectionApi) {
+  eleventyConfig.addCollection('section', function (collectionApi) {
     // get unsorted items
-    const raw = collectionApi.getAll();
+    const raw = collectionApi.getFilteredByTag('section');
     return sortBy(raw, 'data.position');
   });
 
