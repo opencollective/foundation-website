@@ -17,7 +17,7 @@
   .below-video-content {
     max-width: @content-width;
     width: 100%;
-    padding: @grid;
+    padding: @grid @grid (@grid * 2) @grid;
     box-sizing: border-box;
     align-self: center;
 
@@ -28,10 +28,24 @@
     align-items: center;
   }
 
-  .greeting {
-    font-size: @font-size-h2;
-
+  .headings,
+  .greeting,
+  .site-title {
     margin: (@grid * 2) 0;
+  }
+
+  .greeting {
+    font-family: @font-family-sans;
+    font-weight: @font-weight-bold;
+    font-size: @font-size-h2;
+  }
+
+  // Semantically, this is the headline,
+  // but it's rendered as a subtitle
+  .site-title {
+    font-size: @font-size-base;
+    font-weight: @font-weight-normal;
+    font-family: @font-family-serif;
   }
 
   a.download-button {
