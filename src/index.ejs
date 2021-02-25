@@ -1,26 +1,7 @@
 ---
 layout: default
 ---
-
-<nav style="display: none">
-  <ul>
-    <% collections.section.filter(section => !section.data.hideInNavigation).forEach((section)=> { %>
-    <li>
-      <a href="#<%= section.fileSlug %>"><%= section.data.title %></a>
-    </li>
-    <% }) %>
-    <li>
-      <a 
-        href="https://www.giarts.org/grantmakers-arts-request-proposals-consultant-1" 
-        rel="noopener noreferrer" 
-        target="_blank"
-      >
-      GIA
-      </a>
-    </li>
-  </ul>
-</nav>
-
+<%- include('/nav') %>
 
 <main>
   <% collections.section.forEach((section) => { %>

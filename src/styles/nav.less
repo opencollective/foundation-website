@@ -1,0 +1,76 @@
+@import './variables/sizing.less';
+@import './variables/typography.less';
+@import './variables/color.less';
+
+@nav-height: @grid * 3;
+
+// https://stackoverflow.com/a/28824157
+// Fixes nav sitting on top of targetted element
+:target::before {
+  content: '';
+  display: block;
+  height: @nav-height;
+  margin: -@nav-height 0 0;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: @nav-height;
+
+  background-color: fade(@background-color-base, 90%);
+  backdrop-filter: blur(2px);
+
+  & > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    & > li {
+      display: inline-block;
+
+      .applyColor(@color) {
+        a:hover {
+          color: @color;
+          border-bottom-color: @color;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 0 @grid;
+        line-height: @nav-height;
+
+        font-weight: @font-weight-bold;
+        border-bottom: 1px dashed transparent;
+
+        &:hover {
+          border-bottom-color: @font-color-base;
+        }
+      }
+
+      // Rainbows!
+      &:nth-child(6n + 1) {
+        .applyColor(@accent-color-red);
+      }
+      &:nth-child(6n + 2) {
+        .applyColor(@accent-color-teal);
+      }
+      &:nth-child(6n + 3) {
+        .applyColor(@accent-color-orange);
+      }
+      &:nth-child(6n + 4) {
+        .applyColor(@accent-color-yellow);
+      }
+      &:nth-child(6n + 5) {
+        .applyColor(@accent-color-jade);
+      }
+      &:nth-child(6n + 6) {
+        .applyColor(@accent-color-purple);
+      }
+    }
+  }
+}
