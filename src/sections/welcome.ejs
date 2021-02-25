@@ -23,9 +23,13 @@ position: 0
 
 <!-- Personalize greeting -->
 <script>
-  var hour = new Date().getHours();
-  // If we like the emojis come back and make the clock more precise
+  var time = new Date();
+  // Shift time forward 15 minutes. Since granularity is 30, this will show closest time.
+  time.setMinutes(time.getMinutes() + 15);
+  var hour = time.getHours();
+  var minute = time.getMinutes();
   var EMOJIS_BY_HOUR = ['🕛', '🕐', '🕑', '🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙', '🕚'];
+  var HALF_HOUR_EMOJIS_BY_HOUR = ['🕧', '🕜', '🕝', '🕞', '🕟', '🕠', '🕡', '🕢', '🕣', '🕤', '🕥', '🕦'];
   var greeting;
   if (hour < 12) {
     greeting = 'Good morning';
@@ -34,6 +38,7 @@ position: 0
   } else {
     greeting = 'Good evening';
   }
-  greeting += ' ' + EMOJIS_BY_HOUR[hour % 12];
+  var emoji = minute >= 30 ? HALF_HOUR_EMOJIS_BY_HOUR[hour % 12] : EMOJIS_BY_HOUR[hour % 12]; 
+  greeting += ' ' + emoji;
   document.getElementById('greeting').innerText = greeting;
 </script>
