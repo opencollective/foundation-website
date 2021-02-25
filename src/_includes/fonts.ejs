@@ -1,0 +1,12 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<% [
+  'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap',
+  'https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap']
+  .forEach((href) => {
+%>
+  <link rel="preload" href="<%- href %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="<%- href %>">
+  </noscript>
+<% }) %>

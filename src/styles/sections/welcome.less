@@ -1,0 +1,76 @@
+@import '../variables/typography.less';
+@import '../variables/sizing.less';
+@import '../variables/color.less';
+
+@nav-height: @grid * 3;
+
+.section-welcome {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  min-height: calc(100vh - @nav-height);
+
+  .video-container {
+    flex-grow: 1;
+    flex-basis: 50vh;
+    position: relative;
+  }
+
+  .below-video-content {
+    max-width: @content-width;
+    width: 100%;
+    padding: 0 @grid;
+    box-sizing: border-box;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headings,
+  .greeting,
+  .site-title {
+    margin: (@grid * 2) 0;
+  }
+
+  .greeting {
+    font-family: @font-family-sans;
+    font-weight: @font-weight-bold;
+    font-size: @font-size-h2;
+  }
+
+  // Semantically, this is an h1,
+  // but it's rendered as a subtitle
+  .site-title {
+    font-size: @font-size-base;
+    font-weight: @font-weight-normal;
+    font-family: @font-family-serif;
+  }
+
+  a.download-button {
+    display: inline-block;
+    padding: (@grid / 2) @grid;
+    background-color: @accent-color-jade;
+    color: @background-color-lighter;
+
+    &:hover {
+      background-color: tint(@accent-color-jade, 20%);
+    }
+  }
+
+  @media (max-width: @mobile-width) {
+    .video-container {
+      flex-grow: 0;
+    }
+
+    .below-video-content {
+      flex-grow: 1;
+      display: block;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}

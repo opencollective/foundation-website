@@ -1,0 +1,43 @@
+@import './variables/typography.less';
+@import './variables/color.less';
+
+// Typography
+
+body {
+  font-family: @font-family-sans;
+  font-weight: @font-weight-normal;
+  font-size: @font-size-base;
+
+  color: @font-color-base;
+  background-color: @background-color-base;
+
+  line-height: @line-height-base;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: @font-family-sans;
+  font-weight: @font-weight-bold;
+  font-size: @font-size-h1;
+  line-height: normal;
+}
+
+h2 {
+  font-family: @font-family-serif;
+  font-weight: @font-weight-bold;
+  font-size: @font-size-h2;
+}
+
+blockquote {
+  font-family: @font-family-serif;
+  font-weight: @font-weight-normal;
+  font-size: @font-size-large;
+  font-style: italic;
+  line-height: @line-height-large;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

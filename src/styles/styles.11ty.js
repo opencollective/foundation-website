@@ -23,13 +23,15 @@ module.exports = class {
     };
   }
 
-  async render({ rawLess, rawFilepath }) {
+  async render({ rawLess, rawFilepath, site }) {
     const lessResult = await less.render(rawLess, { filename: rawFilepath });
-    const postcssResult = await postcss([
-      atImport,
-      autoprefixer,
-      cssNano,
-    ]).process(lessResult.css, { from: input });
+    const plugins = [atImport, autoprefixer];
+    if (site.environment !== 'development') {
+      plugins.push(cssNano);
+    }
+    const postcssResult = await postcss(plugins).process(lessResult.css, {
+      from: input,
+    });
     return postcssResult.css;
   }
 };
