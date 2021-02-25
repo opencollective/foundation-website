@@ -4,9 +4,9 @@
   "description": "GIA Solidarity Economy Website",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "NODE_ENV=production eleventy",
     "serve": "run-p eleventy-serve netlify-proxy",
-    "eleventy-serve": "eleventy --serve",
+    "eleventy-serve": "NODE_ENV=development eleventy --serve",
     "netlify-proxy": "netlify-cms-proxy-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --check .",

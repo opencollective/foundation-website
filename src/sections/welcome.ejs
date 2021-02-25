@@ -1,0 +1,34 @@
+---
+title: Home
+position: 0
+---
+<div class="section-welcome">
+  <div class="video-container">
+    <%- include('/vimeo', {id: '391593028' }) %>
+  </div>
+
+  <div class="below-video-content">
+    <h1 class="greeting" id="greeting">
+      Welcome
+    </h1>
+
+    <a href="#TODO" class="download-button">Download Report</a>
+  </div>
+</div>
+
+<!-- Personalize greeting -->
+<script>
+  var hour = new Date().getHours();
+  // If we like the emojis come back and make the clock more precise
+  var EMOJIS_BY_HOUR = ['🕛', '🕐', '🕑', '🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙', '🕚'];
+  var greeting;
+  if (hour < 12) {
+    greeting = 'Good morning';
+  } else if (hour < 18) {
+    greeting = 'Good afternoon';
+  } else {
+    greeting = 'Good evening';
+  }
+  greeting += ' ' + EMOJIS_BY_HOUR[hour % 12];
+  document.getElementById('greeting').innerText = greeting;
+</script>
