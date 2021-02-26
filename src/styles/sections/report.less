@@ -1,0 +1,44 @@
+@import '../variables/typography.less';
+@import '../variables/sizing.less';
+@import '../variables/color.less';
+@import '../variables/buttons.less';
+
+.section-report {
+  .content-container();
+
+  padding: @grid * 4;
+
+  background-color: @background-color-lighter;
+
+  display: grid;
+  grid-template-columns: max-content 2fr;
+  grid-gap: @grid * 4;
+  align-items: center;
+  justify-items: center;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: (@grid);
+
+    a {
+      margin-bottom: @grid;
+    }
+
+    a:nth-of-type(3n + 1) {
+      .buttonStyledLink(@accent-color-red);
+    }
+    a:nth-of-type(3n + 2) {
+      .buttonStyledLink(@accent-color-teal);
+    }
+    a:nth-of-type(3n + 3) {
+      .buttonStyledLink(@accent-color-yellow);
+    }
+  }
+
+  @media (max-width: @mobile-width) {
+    padding: (@grid * 2) @grid;
+    display: block;
+  }
+}

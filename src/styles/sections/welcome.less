@@ -1,6 +1,7 @@
 @import '../variables/typography.less';
 @import '../variables/sizing.less';
 @import '../variables/color.less';
+@import '../variables/buttons.less';
 
 @nav-height: @grid * 3;
 
@@ -49,14 +50,7 @@
   }
 
   a.download-button {
-    display: inline-block;
-    padding: (@grid / 2) @grid;
-    background-color: @accent-color-jade;
-    color: @background-color-lighter;
-
-    &:hover {
-      background-color: tint(@accent-color-jade, 20%);
-    }
+    .buttonStyledLink(@accent-color-jade);
   }
 
   @media (max-width: @mobile-width) {
