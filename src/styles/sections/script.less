@@ -1,0 +1,101 @@
+@import '../variables/typography.less';
+@import '../variables/sizing.less';
+@import '../variables/color.less';
+
+html {
+  // scroll-snap-type: y proximity;
+}
+
+.section-script {
+  .content-container();
+
+  .bigText() {
+    font-family: @font-family-serif;
+    font-size: @font-size-h2;
+    line-height: 1.5;
+    font-weight: @font-weight-bold;
+
+    @media (max-width: @mobile-width) {
+      font-size: @font-size-large;
+    }
+  }
+
+  p strong {
+    font-style: inherit;
+    background-color: @accent-color-yellow-light;
+
+    // Classes assigned in js
+    &.red {
+      background-color: @accent-color-red-light;
+    }
+    &.teal {
+      background-color: @accent-color-teal-light;
+    }
+    &.orange {
+      background-color: @accent-color-orange-light;
+    }
+    &.yellow {
+      background-color: @accent-color-yellow-light;
+    }
+    &.jade {
+      background-color: @accent-color-jade-light;
+    }
+    &.purple {
+      background-color: @accent-color-purple-light;
+    }
+  }
+
+  p small {
+    font-family: @font-family-serif;
+    font-size: @font-size-sm;
+  }
+
+  // A "two-up" expects to have two children. A p will render big text, a div with ps in it will be paragraph text.
+  .two-up {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    padding: (@grid * 2) 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &.flip {
+      flex-direction: row-reverse;
+    }
+
+    & > * {
+      flex-basis: calc(50% - @grid);
+      flex-shrink: 0;
+    }
+
+    & > p {
+      align-content: center;
+
+      box-sizing: border-box;
+
+      .bigText();
+    }
+
+    & > div > p {
+      line-height: 2;
+    }
+  }
+
+  .one-up {
+    .bigText();
+    scroll-snap-align: center;
+  }
+
+  // Two-up starts to look less than awesome at this point
+  @media (max-width: 850px) {
+    .two-up {
+      display: block;
+      min-height: initial;
+    }
+  }
+}
