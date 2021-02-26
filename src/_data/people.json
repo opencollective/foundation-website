@@ -1,10 +1,339 @@
 {
   "people": [
     {
-      "category": "Artists / Field Partners",
-      "name": "John Smith",
-      "personTitle": "Head of Things",
-      "url": "http://example.com"
+      "name": "Nwamaka Agbo",
+      "personTitle": "CEO, Kataly Foundation",
+      "url": "https://www.nwamakaagbo.com/"
+    },
+    {
+      "name": "Carol Atlas",
+      "personTitle": "Director, Arts & Democracy",
+      "url": "https://artsanddemocracy.org/"
+    },
+    {
+      "name": "Teesa Bahana",
+      "personTitle": "Director, 32° East Ugandan Arts Trust, Uganda",
+      "url": "https://ugandanartstrust.org/"
+    },
+    {
+      "name": "Julia Beatty",
+      "personTitle": "Program Officer, Black-Led Movement Fund and the Communities Transforming Policing Fund, Borealis Philanthropy",
+      "url": "https://borealisphilanthropy.org/"
+    },
+    {
+      "name": "Alicia Bell",
+      "personTitle": "Organizing Manager, Free Press and Media Reparations 2070",
+      "url": "https://www.freepress.net/about/staff/alicia-bell"
+    },
+    {
+      "name": "David Boillier",
+      "personTitle": "Director, Reinventing the Commons Program, Schumacher Center for a New Economics",
+      "url": "http://www.bollier.org/"
+    },
+    {
+      "name": "Craig Borowiak",
+      "personTitle": "Associate Professor of Political Science, Haverford College",
+      "url": "https://www.haverford.edu/users/cborowia"
+    },
+    {
+      "name": "Melody Capote",
+      "personTitle": "Executive Director of Caribbean Cultural Center African Diaspora Institute",
+      "url": "https://cccadi.org/staff"
+    },
+    {
+      "name": "Rachel Chanoff",
+      "personTitle": "Founder and Director, THE OFFICE",
+      "url": "https://www.theofficearts.com/rachel-chanoff"
+    },
+    {
+      "name": "Binna Choi",
+      "personTitle": "Director, Casco Institute, Netherlands",
+      "url": "https://casco.art/"
+    },
+    {
+      "name": "Jen Cole",
+      "personTitle": "Director, National Accelerator for Cultural Innovation, Arizona State University",
+      "url": "https://herbergerinstitute.asu.edu/content/jen-cole"
+    },
+    {
+      "name": "Willa Conway",
+      "personTitle": "Founder, Weavers Fellowship",
+      "url": "https://www.theweaversfellowship.org/anchor-team"
+    },
+    {
+      "name": "Joey DeFrancesco",
+      "personTitle": "Historian and Organizer, Union for Musicians and Allied Workers",
+      "url": "https://www.unionofmusicians.org/"
+    },
+    {
+      "name": "Penelope Douglas",
+      "personTitle": "Chief of Strategy and Revenue, Yerba Buena Center for the Arts",
+      "url": "https://ybca.org/person/penelope-douglas/"
+    },
+    {
+      "name": "Estrella Esquilín",
+      "personTitle": "Program Manager, National Accelerator for Cultural Innovation, Arizona State University",
+      "url": "https://herbergerinstitute.asu.edu/profile/estrella-esquilin"
+    },
+    {
+      "name": "Nia Evans",
+      "personTitle": "Director, Boston Ujima Project",
+      "url": "https://www.ujimaboston.com"
+    },
+    {
+      "name": "Eli Feghali",
+      "personTitle": "Network Organizer, New Economy Coalition",
+      "url": "https://neweconomy.net/"
+    },
+    {
+      "name": "Gertrude Flentge",
+      "personTitle": "Program Manager, DOEN Foundation",
+      "url": "https://www.doen.nl/en/over-ons/doen-team"
+    },
+    {
+      "name": "Reg Flowers",
+      "personTitle": "Artist, Activist, and Educator",
+      "url": "https://www.regflowers.com/"
+    },
+    {
+      "name": "Allen Kwabena Frimpong",
+      "personTitle": "Co-Founder, ZEAL",
+      "url": "https://www.allenkwabena.com/"
+    },
+    {
+      "name": "Luna Olavarria Gallegos",
+      "personTitle": "Storyteller, Researcher, and Co-Founder, Art.Exit",
+      "url": "https://www.nalac.org/members/luna-olavarria-gallegos-2/"
+    },
+    {
+      "name": "Noemi Gizpenc",
+      "personTitle": "Executive Director, Cooperative Development Institute",
+      "url": "https://cdi.coop/"
+    },
+    {
+      "name": "Lavastian Glenn",
+      "personTitle": "Director, Racial and Economic Justice, The Nathan Cummings Foundation",
+      "url": "https://nathancummings.org/team-member/lavastian-glenn/"
+    },
+    {
+      "name": "Jeffreen Hayes",
+      "personTitle": "Executive Director, Threewalls",
+      "url": "https://three-walls.org/"
+    },
+    {
+      "name": "Tempestt Hazell",
+      "personTitle": "Program Officer, Field Foundation",
+      "url": "http://www.tempestthazel.com/"
+    },
+    {
+      "name": "Greg Jackson",
+      "personTitle": "Founder, Repaired Nations and Equal Justice Works Fellow at the Sustainable Economies Law Center",
+      "url": "http://repairednations.org"
+    },
+    {
+      "name": "Michael Johnson",
+      "personTitle": "Director of Advancement, NDN Collective",
+      "url": "https://ndncollective.org/people/michael-johnson/"
+    },
+    {
+      "name": "Emily Kawano",
+      "personTitle": "Co-Director, Wellspring Cooperative Corporation and Coordinator, US Solidarity Economy Network",
+      "url": "https://ussen.org/member/emily-kawano/"
+    },
+    {
+      "name": "Esteban Kelly",
+      "personTitle": "Executive Director, US Federation of Worker Cooperatives",
+      "url": "https://www.usworker.coop"
+    },
+    {
+      "name": "Cariel Klein",
+      "personTitle": "Double Edge Theatre",
+      "url": "https://doubleedgetheatre.org/"
+    },
+    {
+      "name": "Arleta Little",
+      "personTitle": "Program Officer and Director of Artist Fellowships, McKnight Foundation",
+      "url": "https://www.mcknight.org/person/arleta-little/"
+    },
+    {
+      "name": "abdiel lópez",
+      "personTitle": "Program Officer, AmbitioUS, Center for Cultural Innovation",
+      "url": "https://www.cciarts.org/Abdiel_Lopez.html"
+    },
+    {
+      "name": "Josh McPhee",
+      "personTitle": "Founding Member, JustSeeds Collective",
+      "url": "https://justseeds.org/artist/joshmacphee/"
+    },
+    {
+      "name": "Annie McShiras",
+      "personTitle": "Investment and Fundraising Director, East Bay Permanent Real Estate Cooperative",
+      "url": "https://ebprec.org/blog/welcome-annie-mcshiras"
+    },
+    {
+      "name": "Margaret Morton",
+      "personTitle": "Creativity and Free Expression Team, Ford Foundation",
+      "url": "https://www.fordfoundation.org/about/people/margaret-morton/"
+    },
+    {
+      "name": "Gabriela Muñoz",
+      "personTitle": "Program Coordinator, National Accelerator for Cultural Innovation, Arizona State University",
+      "url": "https://herbergerinstitute.asu.edu/profile/myrna-munoz-perez"
+    },
+    {
+      "name": "Jennifer Near",
+      "personTitle": "Philanthropic Advisor and Organizational Consultant",
+      "url": "https://medium.com/justice-funders/the-path-to-liberation-how-to-walk-the-talk-of-equity-rather-than-white-supremacy-in-philanthropy-86e57b4f2e72"
+    },
+    {
+      "name": "Jessica Gordon Nembhard",
+      "personTitle": "Professor, Community Justice and Social Economic Development, Department of Africana Studies, CUNY",
+      "url": "https://www.jjay.cuny.edu/faculty/jessica-gordon-nembhard"
+    },
+    {
+      "name": "Emiko Ono",
+      "personTitle": "Director, Performing Arts Program, William and Flora Hewlett Foundation",
+      "url": "https://hewlett.org/people/emiko-ono/"
+    },
+    {
+      "name": "Janelle Orsi",
+      "personTitle": "Director, Sustainable Economies Law Center",
+      "url": "https://www.theselc.org/janelle_orsi"
+    },
+    {
+      "name": "Alexis Ortiz",
+      "personTitle": "Senior Program Associate, Office of the President, Andrew W. Mellon Foundation",
+      "url": "https://mellon.org/about/staff/alexis-ortiz/"
+    },
+    {
+      "name": "Leticia Peguero",
+      "personTitle": "Vice President of Programs, Nathan Cummings Foundation",
+      "url": "https://nathancummings.org/team-member/leticia-peguero/"
+    },
+    {
+      "name": "Francisco Pérez",
+      "personTitle": "Director, Center for Popular Economics",
+      "url": "https://platanomics.wordpress.com/"
+    },
+    {
+      "name": "Cierra Peters",
+      "personTitle": "Communications Director, Boston Ujima Project",
+      "url": "https://www.ujimaboston.com/"
+    },
+    {
+      "name": "Yvon Poirier",
+      "personTitle": "Vice-Coordinator, RIPESS",
+      "url": "http://www.ripess.org"
+    },
+    {
+      "name": "Kate Poole",
+      "personTitle": "Principal, Chordata Capital",
+      "url": "https://chordatacapital.com/"
+    },
+    {
+      "name": "Michelle Ramos",
+      "personTitle": "Vision Keeper / Executive Director, Alternate Roots",
+      "url": "https://alternateroots.org/michelle-ramos/"
+    },
+    {
+      "name": "Esther Robinson",
+      "personTitle": "Founder/ Co-Executive Director, ArtHome",
+      "url": "https://artbuilt.org/about-artbuilt/"
+    },
+    {
+      "name": "Ted Russell",
+      "personTitle": "Associate Director, Kenneth Rainin Foundation",
+      "url": "https://krfoundation.org/about/who-we-are/staff/ted-russell/"
+    },
+    {
+      "name": "Maliha Safri",
+      "personTitle": "Chair and Associate Professor of Economics, Drew University",
+      "url": "https://www.drew.edu/communications-department/2018/02/21/maliha-safri-2/"
+    },
+    {
+      "name": "Estella Sanchez",
+      "personTitle": "Founder, Sol Collective",
+      "url": "http://www.solcollective.org/"
+    },
+    {
+      "name": "Noni Session,",
+      "personTitle": "Director, East Bay Permanent Real Estate Cooperative",
+      "url": "https://ebprec.org/who-we-are"
+    },
+    {
+      "name": "Danya Sherman",
+      "personTitle": "Sherman Cultural Strategies, Consultant for ArtPlace America",
+      "url": "https://www.danyasherman.com/"
+    },
+    {
+      "name": "Aisha Shillingford",
+      "personTitle": "Intelligent Mischief",
+      "url": "https://www.intelligentmischief.com/about"
+    },
+    {
+      "name": "Kamal Sinclair",
+      "personTitle": "Executive Director, Guild of Future Architects",
+      "url": "https://futurearchitects.com/"
+    },
+    {
+      "name": "Gabby Strong",
+      "personTitle": "Director of Grantmaking, NDN Collective",
+      "url": "https://ndncollective.org/people/4224-2/"
+    },
+    {
+      "name": "Leila Tamari",
+      "personTitle": "Previous Senior Program Officer, ArtPlace America",
+      "url": "https://www.artplaceamerica.org/about/team"
+    },
+    {
+      "name": "Aaron Tanaka",
+      "personTitle": "Co-Founder and Director, Center for Economic Democracy",
+      "url": "https://www.economicdemocracy.us/"
+    },
+    {
+      "name": "Anasa Troutman",
+      "personTitle": "Cultural Strategist",
+      "url": "https://www.anasatroutman.com/"
+    },
+    {
+      "name": "Carlton Turner",
+      "personTitle": "Lead Artist and Director, Mississippi Center for Cultural Production",
+      "url": "http://sippculture.com/"
+    },
+    {
+      "name": "F. Javier Torres",
+      "personTitle": "Program Director, Thriving Cultures, Surdna Foundation",
+      "url": "https://surdna.org/team/f-javier-torres/"
+    },
+    {
+      "name": "Carlos Uriona",
+      "personTitle": "Co-Artistic Director, Double Edge Theatre",
+      "url": "https://doubleedgetheatre.org/"
+    },
+    {
+      "name": "James Vamboi",
+      "personTitle": "Chief of Staff, Boston Ujima Project",
+      "url": "https://www.ujimaboston.com/"
+    },
+    {
+      "name": "Susan Witt",
+      "personTitle": "Director, Schumacher Center for a New Economics",
+      "url": "https://centerforneweconomics.org/"
+    },
+    {
+      "name": "DeeArah Wright",
+      "personTitle": "Creative Strategist and Cooperative Organizer",
+      "url": "http://www.jackny.org/announcement.html"
+    },
+    {
+      "name": "San San Wong",
+      "personTitle": "Director of Arts & Creativity, Barr Foundation",
+      "url": "https://www.barrfoundation.org/"
+    },
+    {
+      "name": "Laura Zabel",
+      "personTitle": "Executive Director, Springboard for the Arts",
+      "url": "https://springboardforthearts.org/"
     }
   ]
 }
