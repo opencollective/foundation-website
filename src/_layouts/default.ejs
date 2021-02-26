@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Site by Julian Boilen, julianboilen.com -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <% if (page.url === '/' || !locals.title) { %>
+  <head>
+    <!-- Site by Julian Boilen, julianboilen.com -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% if (page.url === '/' || !locals.title) { %>
     <title><%= site.title %></title>
-  <% } else { %>
+    <% } else { %>
     <title><%= locals.title %></title>
-  <% } %>
-  <link rel="stylesheet" href="styles.css">
-  <%- include('/fonts') %>
-</head>
-<body>
-  <%- content %>
-</body>
+    <% } %>
+    <link rel="stylesheet" href="styles.css" />
+    <%- include('/fonts') %>
+  </head>
+  <body>
+    <%- content %>
+  </body>
 </html>

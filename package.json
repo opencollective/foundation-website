@@ -43,7 +43,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,html,json,yml,yaml,css,less,md}": "prettier --write"
+    "*.{js,html,json,yml,yaml,css,less,md}": "prettier --write",
+    "*.ejs": "prettier --write --parser html"
   },
   "dependencies": {}
 }

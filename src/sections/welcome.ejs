@@ -2,6 +2,7 @@
 title: Home
 position: 0
 ---
+
 <div class="section-welcome">
   <div class="video-container">
     <%- include('/vimeo', {id: '391593028' }) %>
@@ -9,12 +10,8 @@ position: 0
 
   <div class="below-video-content">
     <div class="headings">
-      <h2 class="greeting" id="greeting">
-        Welcome
-      </h2>
-      <h1 class="site-title">
-        <%= site.title %>
-      </h1>
+      <h2 class="greeting" id="greeting">Welcome</h2>
+      <h1 class="site-title"><%= site.title %></h1>
     </div>
 
     <a href="#TODO" class="download-button">Download Report</a>
@@ -28,8 +25,34 @@ position: 0
   time.setMinutes(time.getMinutes() + 15);
   var hour = time.getHours();
   var minute = time.getMinutes();
-  var EMOJIS_BY_HOUR = ['🕛', '🕐', '🕑', '🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙', '🕚'];
-  var HALF_HOUR_EMOJIS_BY_HOUR = ['🕧', '🕜', '🕝', '🕞', '🕟', '🕠', '🕡', '🕢', '🕣', '🕤', '🕥', '🕦'];
+  var EMOJIS_BY_HOUR = [
+    '🕛',
+    '🕐',
+    '🕑',
+    '🕒',
+    '🕓',
+    '🕔',
+    '🕕',
+    '🕖',
+    '🕗',
+    '🕘',
+    '🕙',
+    '🕚',
+  ];
+  var HALF_HOUR_EMOJIS_BY_HOUR = [
+    '🕧',
+    '🕜',
+    '🕝',
+    '🕞',
+    '🕟',
+    '🕠',
+    '🕡',
+    '🕢',
+    '🕣',
+    '🕤',
+    '🕥',
+    '🕦',
+  ];
   var greeting;
   if (hour < 12) {
     greeting = 'Good morning';
@@ -38,7 +61,10 @@ position: 0
   } else {
     greeting = 'Good evening';
   }
-  var emoji = minute >= 30 ? HALF_HOUR_EMOJIS_BY_HOUR[hour % 12] : EMOJIS_BY_HOUR[hour % 12]; 
+  var emoji =
+    minute >= 30
+      ? HALF_HOUR_EMOJIS_BY_HOUR[hour % 12]
+      : EMOJIS_BY_HOUR[hour % 12];
   greeting += ' ' + emoji;
   document.getElementById('greeting').innerText = greeting;
 </script>
