@@ -1,0 +1,27 @@
+---
+title: People
+position: 3
+hideInNavigation: false
+---
+
+<% const URL_SUMMARY = /^https?:\/\/(?:www.)?([^\/]+)(.*)/; const summarizeUrl =
+(url) => { const matchResult = url.match(URL_SUMMARY); return matchResult ?
+matchResult[1] : url; }; %>
+
+<div class="section-people">
+  <h2>Grantmakers in the Arts Commissioned this…</h2>
+
+  <ul class="people">
+    <% people.people.forEach(person => { %>
+    <li>
+      <div class="name"><%= person.name %></div>
+      <div class="title"><%= person.personTitle %></div>
+      <div class="link">
+        <a href="<%- person.url %>" target="_blank" rel="noopener noreferrer"
+          ><%= summarizeUrl(person.url) %></a
+        >
+      </div>
+      <% }) %>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,43 @@
+@import '../variables/typography.less';
+@import '../variables/sizing.less';
+@import '../variables/color.less';
+
+.section-people {
+  .content-container();
+
+  h2 {
+    // optical alignment
+    margin-left: -0.06em;
+  }
+
+  .people {
+    @gutter: @grid * 4;
+    list-style: none;
+    margin: (@gutter) 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(@grid * 20, 1fr));
+    column-gap: @gutter;
+    row-gap: @gutter;
+    grid-auto-rows: minmax((@grid * 8), auto);
+    font-size: @font-size-sm;
+
+    .name {
+      font-weight: @font-weight-bold;
+    }
+
+    .link {
+      color: @accent-color-jade;
+    }
+
+    @media (max-width: @mobile-width) {
+      // 1 column
+      grid-template-columns: 1fr;
+      // reduce vertical spacing
+      margin: @grid 0;
+      row-gap: @grid;
+      grid-auto-rows: max-content;
+    }
+  }
+}
