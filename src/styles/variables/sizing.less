@@ -11,4 +11,18 @@
   margin: auto;
   padding: 0 @grid;
   box-sizing: border-box;
+
+  // Due to issue with full-bleed
+  overflow-x: hidden;
+}
+
+// bust out of content-container
+// https://css-tricks.com/full-bleed/
+.full-bleed() {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
