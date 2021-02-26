@@ -1,0 +1,11 @@
+.buttonStyledLink(@color) {
+  display: inline-block;
+  padding: (@grid / 2) @grid;
+  background-color: @color;
+  color: @background-color-lighter;
+  text-align: center;
+
+  &:hover {
+    background-color: tint(@color, 20%);
+  }
+}
