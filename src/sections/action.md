@@ -21,9 +21,3 @@ Shifts in Grantmakers Mindset, Practices, Programs, Investment/Endowment, and Po
 ### Action — Legal Q&A
 
 The table below presents some of the practices and policies that arts and culture grantmakers have adopted to support Solidarity Economies. _Note: This list is a working document, developed in dialogue with our interviewees, and it reflects a small snapshot of the range of practices underway as of March 2021. These grantmaking practices are the **result** of each group’s ongoing learning and shared commitment to long-term organizational transformation in the service of racial and economic justice in the sector and beyond. Practices will look different for each organization based on their culture, context, process, and desires._
-
-_TODO: Style this into a carousel. Here's a data dump for now._
-
-<pre style="overflow-x: scroll">
-<%= JSON.stringify(interventions.interventions, null, '\t') %>
-</pre>

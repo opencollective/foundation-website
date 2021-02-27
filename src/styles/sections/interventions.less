@@ -1,0 +1,70 @@
+@import '../variables/typography.less';
+@import '../variables/sizing.less';
+@import '../variables/color.less';
+
+.interventions-container {
+  .intervention {
+    font-size: @font-size-sm;
+  }
+
+  p {
+    // freaking markdown paragraphs
+    margin: 0;
+  }
+
+  a {
+    color: @accent-color-jade;
+  }
+
+  .practice {
+    font-family: @font-family-serif;
+    margin: 0;
+    margin-top: (@grid * 2);
+    font-weight: @font-weight-bold;
+    font-size: @font-size-base;
+  }
+
+  .example-colleagues-heading,
+  .legal-heading {
+    margin: 0;
+    margin-top: @grid * 2;
+    font-weight: @font-weight-bold;
+    font-size: inherit;
+  }
+
+  .color(@color) {
+    background-color: tint(@color, 95%);
+    box-shadow: 0 2px 4px fade(desaturate(@color, 80%), 40%);
+
+    .intervention-type::before {
+      content: '';
+      display: inline-block;
+      background-color: @color;
+      @size: 6px;
+      width: @size;
+      height: @size;
+      margin-right: 0.5em;
+      vertical-align: middle;
+      transform: translateY((-@size / 4));
+    }
+  }
+
+  .intervention.internal-work {
+    .color(@accent-color-red);
+  }
+  .intervention.governance-shifts {
+    .color(@accent-color-teal);
+  }
+  .intervention.new-tools-types-of-support {
+    .color(@accent-color-orange);
+  }
+  .intervention.investment-endowment-shifts {
+    .color(@accent-color-yellow);
+  }
+  .intervention.take-a-systems-change-approach {
+    .color(@font-color-base);
+  }
+  .intervention.policy-advocacy {
+    .color(@accent-color-purple);
+  }
+}

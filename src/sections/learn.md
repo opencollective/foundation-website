@@ -1,7 +1,7 @@
 ---
 title: Learn
 hideInNavigation: false
-position: 6
+position: 7
 ---
 
 ## Learn

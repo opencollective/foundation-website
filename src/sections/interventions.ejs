@@ -1,0 +1,30 @@
+---
+title: Action
+hideInNavigation: false
+position: 6
+---
+
+<div class="interventions-container" markdown="0">
+  <ul class="carousel">
+    <% interventions.interventions.forEach((intervention, i) => { %>
+    <li
+      id="intervention-<%= i _%>"
+      tabindex="0"
+      class="intervention <%= intervention.interventionType.toLowerCase().replace(/\W/g, '-') %>"
+    >
+      <div class="intervention-type"><%= intervention.interventionType %></div>
+      <h4 class="practice"><%- markdown(intervention.practice) %></h4>
+
+      <% if (intervention.exampleColleagues) { %>
+      <h5 class="example-colleagues-heading">Colleagues doing the work</h5>
+      <div class="example-colleagues">
+        <%- markdown(intervention.exampleColleagues) %>
+      </div>
+      <% } %> <% if (intervention.legal) { %>
+      <h5 class="legal-heading">Legal Q&A</h5>
+      <p class="legal"><%- markdown(intervention.legal) %></p>
+      <% } %>
+    </li>
+    <% }) %>
+  </ul>
+</div>

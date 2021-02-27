@@ -1,0 +1,45 @@
+@import '../variables/sizing.less';
+
+@half-margin: calc(50% - (@grid * 20) + (@grid * 3));
+ul.carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  list-style: none;
+  margin: 0;
+
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: (@grid * 2) @half-margin;
+
+  // Hide scrollbars
+  &::-webkit-scrollbar {
+    // display: none;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: @font-color-base;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: @background-color-lighter;
+  }
+
+  & > li {
+    flex: 0 0 (@grid * 35);
+    min-height: @grid * 30;
+    margin-right: @grid * 2;
+    max-width: calc(100vw - (@grid * 5));
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    padding: @grid * 2;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    outline: 0;
+  }
+}
