@@ -4,7 +4,73 @@
       "conceptTitle": "Participatory Budgeting",
       "conceptDescription": "A community makes decisions together about a pool of money because they will be most impacted by where it goes.",
       "exampleTitle": "ArtsCollaboratory",
-      "exampleDescription": "An ecosystem of twenty-four like-minded arts and culture organizations situated predominantly in Asia, the Middle East, Africa, and Latin America were supported to build relationships."
+      "exampleDescription": "An ecosystem of twenty-four like-minded arts and culture organizations situated predominantly in Asia, the Middle East, Africa, and Latin America were supported to build relationships.",
+      "example": "[Participatory Budgeting Oakland](https://pboakland.org/page/guidelines)"
+    },
+    {
+      "conceptTitle": "Arts Collectives and Cooperatives",
+      "conceptDescription": "Artists get together, form a business, and make decisions about how it operates and how profits are distributed. ",
+      "example": "[JustSeeds](https://justseeds.org/about/), [Qualla Arts and Crafts](https://quallaartsandcrafts.com/)"
+    },
+    {
+      "conceptTitle": "Community Land Trusts",
+      "conceptDescription": "Land and buildings are moved from the speculative market to a nonprofit. Decisions are made by residents and community members to make sure the space is affordable forever.",
+      "example": "[Cooper Square Committee](https://coopersquare.org/2019_mission-history)"
+    },
+    {
+      "conceptTitle": "Permanent Real Estate Cooperative",
+      "conceptDescription": "Buildings are moved from the speculative market to a co-op that serves people rather than profit. Decisions are made by residents and community members to make sure the space is affordable forever.",
+      "example": "[East Bay Permanent Real Estate Cooperative](https://ebprec.org/)"
+    },
+    {
+      "conceptTitle": "Study Groups",
+      "conceptDescription": "People learn about the history of collective work together to connect to their shared power and take action.",
+      "example": "[Repaired Nations](http://repairednations.org/)"
+    },
+    {
+      "conceptTitle": "Time Banking",
+      "conceptDescription": "People exchange an hour for an hour, meeting one another's needs without money.",
+      "example": "[Kolanut Collaborative](https://kolanutcollab.org/)"
+    },
+    {
+      "conceptTitle": "Community Currency",
+      "conceptDescription": "A currency that circulates locally to encourage greater local spending.",
+      "example": "[Tenino Community Currency](https://mccmeetings.blob.core.usgovcloudapi.net/tenino-pubu/MEET-Packet-83727e101d904f32ab2051204bc3f694.pdf)"
+    },
+    {
+      "conceptTitle": "Investment Cooperative",
+      "conceptDescription": "People pool their savings and make decisions together about how to invest it.",
+      "example": "[Boston Ujima Project](https://www.ujimaboston.com/invest)"
+    },
+    {
+      "conceptTitle": "Credit Union",
+      "conceptDescription": "A bank owned by its members that is commited to investing in local communities.",
+      "example": "[Lakota Federal Credit Union](https://www.firstpeoplesfund.org/rolling-rez-arts)"
+    },
+    {
+      "conceptTitle": "Mutual Aid",
+      "conceptDescription": "People helping each other meet their needs, often with a shared political commitment.",
+      "example": "[Sol Collective](https://www.solcollective.org/about-us/)"
+    },
+    {
+      "conceptTitle": "Worker-managed Non Profit",
+      "conceptDescription": "A non-profit organization that is managed democratically by its workers rather than by a single Director.",
+      "example": "[Nonprofit Democracy Network](https://www.theselc.org/nonprofit_democracy_network)"
+    },
+    {
+      "conceptTitle": "Consumer Co-op",
+      "conceptDescription": "A buying club that is owned and run by the people who use it.",
+      "example": "[DEEP Grocery Co-op](https://thedeepgrocery.coop/)"
+    },
+    {
+      "conceptTitle": "Community Development Financial Institution",
+      "conceptDescription": "A range of institutions and funds --  including non-profit banks, credit unions, loan funds, and venture capital funds -- that exist to grow community wealth for low-income communities.",
+      "example": "[Hopi Credit Association](https://mtassociation.org/)"
+    },
+    {
+      "conceptTitle": "Community Wealth Cooperative",
+      "conceptDescription": "Give the power of big finance to small, community-centered actors, creating a network that makes local investments that serve people rather than extracting from them.",
+      "example": "[SeedCommons](https://seedcommons.org/)"
     }
   ]
 }

@@ -1,0 +1,29 @@
+---
+title: Concepts
+position: 2
+hideInNavigation: true
+---
+
+<div class="concepts-container" markdown="0">
+  <ul class="carousel">
+    <% concepts.concepts.forEach((concept, i)=> { %>
+    <li class="concept" id="concept-<%= i _%>" tabindex="0">
+      <h4 class="concept-title"><%- markdown(concept.conceptTitle) %></h4>
+
+      <div class="concept-description">
+        <%- markdown(concept.conceptDescription) %>
+      </div>
+
+      <% if (concept.example) { %>
+      <h5 class="example-heading">Who is doing this?</h5>
+      <div class="example"><%- markdown(concept.example) %></div>
+      <% } %>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+
+<p>
+  Community ownership and democratic governance builds political, cultural, and
+  economic power. When these initiatives get together, they have enormous power.
+</p>

@@ -1,6 +1,8 @@
 @import '../variables/sizing.less';
 
-@half-margin: calc(50% - (@grid * 20) + (@grid * 3));
+// Uncomment to make first item start in center
+// @half-margin: calc(50% - (@grid * 20) + (@grid * 3));
+@half-margin: @grid;
 ul.carousel {
   display: flex;
   flex-direction: row;
