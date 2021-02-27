@@ -3,13 +3,13 @@
 @import '../variables/color.less';
 
 section#learn .columns {
+  & > *:first-child h3 {
+    margin-top: 0;
+  }
+
   h3 {
     font-family: @font-family-serif;
     font-size: @font-size-base;
-
-    &:first-child {
-      margin-top: 0;
-    }
   }
 
   p {
