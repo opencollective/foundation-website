@@ -2,12 +2,14 @@
 @import '../variables/sizing.less';
 @import '../variables/color.less';
 
-section#learn {
-  // column-count: 3;
-
+section#learn .columns {
   h3 {
     font-family: @font-family-serif;
     font-size: @font-size-base;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   p {
