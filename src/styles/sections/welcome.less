@@ -6,13 +6,13 @@
 @nav-height: @grid * 3;
 
 .section-welcome {
-  .full-bleed();
   display: flex;
   flex-direction: column;
   height: 0;
   min-height: calc(100vh - @nav-height);
 
   .video-container {
+    .full-bleed();
     flex-grow: 1;
     flex-basis: 50vh;
     position: relative;
@@ -20,7 +20,6 @@
 
   .below-video-content {
     width: 100%;
-    .content-container();
     padding: 0 (@grid * 2);
     align-self: center;
 
@@ -31,24 +30,19 @@
     align-items: center;
   }
 
-  .headings,
-  .greeting,
   .site-title {
+    text-align: left;
+  }
+
+  .headings {
     margin: (@grid * 2) 0;
   }
 
-  .greeting {
+  .greeting,
+  .site-title {
     font-family: @font-family-sans;
     font-weight: @font-weight-bold;
     font-size: @font-size-larger;
-  }
-
-  // Semantically, this is an h1,
-  // but it's rendered as a subtitle
-  .site-title {
-    font-size: @font-size-base;
-    font-weight: @font-weight-normal;
-    font-family: @font-family-serif;
   }
 
   a.download-button {

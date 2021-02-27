@@ -4,6 +4,8 @@ position: 0
 ---
 
 <div class="section-welcome">
+  <h1 class="site-title"><%= site.title %></h1>
+
   <div class="video-container">
     <%- include('/vimeo', {id: '391593028' }) %>
   </div>
@@ -11,7 +13,6 @@ position: 0
   <div class="below-video-content">
     <div class="headings">
       <h2 class="greeting" id="greeting">Welcome</h2>
-      <h1 class="site-title"><%= site.title %></h1>
     </div>
 
     <a href="#report" class="download-button">Download Report</a>
