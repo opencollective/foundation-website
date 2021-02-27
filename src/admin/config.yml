@@ -59,6 +59,7 @@ collections:
             summary: '{{name}} ({{personTitle}})'
             fields:
               - name: category
+                required: false
                 widget: select
                 options:
                   - 'Artists / Field Partners'
