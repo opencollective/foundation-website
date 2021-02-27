@@ -2,8 +2,10 @@
 @import '../variables/sizing.less';
 @import '../variables/color.less';
 
-section#learn {
-  // column-count: 3;
+section#learn .columns {
+  & > *:first-child h3 {
+    margin-top: 0;
+  }
 
   h3 {
     font-family: @font-family-serif;
