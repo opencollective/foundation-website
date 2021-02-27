@@ -165,7 +165,7 @@ collections:
           - name: concepts
             label_singular: concept
             widget: list
-            summary: '{{conceptTitle}} / {{exampleTitle}}'
+            summary: '{{conceptTitle}}'
             fields:
               - name: conceptTitle
                 label: Concept title
