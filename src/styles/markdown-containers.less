@@ -1,0 +1,17 @@
+@import './variables/sizing.less';
+
+// Classes correspond to custom markdown container tags registered in 11ty config
+
+.break-inside-avoid {
+  break-inside: avoid;
+}
+
+.columns {
+  column-width: (@grid * 20);
+  column-gap: (@grid * 4);
+
+  & > *:last-child {
+    // Try to force columns to balnce to the left
+    padding-bottom: 20px;
+  }
+}
