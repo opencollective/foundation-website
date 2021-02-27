@@ -19,6 +19,19 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding: (@grid * 2) @half-margin;
+
+    // Hide scrollbars
+    &::-webkit-scrollbar {
+      // display: none;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      height: 5px;
+      background-color: @font-color-base;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: @background-color-lighter;
+    }
   }
 
   .intervention {
@@ -34,6 +47,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
     font-size: @font-size-sm;
+
+    outline: 0;
   }
 
   p {
@@ -92,7 +107,7 @@
     .color(@accent-color-yellow);
   }
   .intervention.take-a-systems-change-approach {
-    .color(hsl(0, 0, 20%));
+    .color(@font-color-base);
     // .color(@accent-color-jade);
   }
   .intervention.policy-advocacy {

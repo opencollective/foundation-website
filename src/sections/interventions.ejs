@@ -6,8 +6,10 @@ position: 6
 
 <div class="interventions-container" markdown="0">
   <ul class="carousel">
-    <% interventions.interventions.forEach(intervention => { %>
+    <% interventions.interventions.forEach((intervention, i) => { %>
     <li
+      id="intervention-<%= i _%>"
+      tabindex="0"
       class="intervention <%= intervention.interventionType.toLowerCase().replace(/\W/g, '-') %>"
     >
       <div class="intervention-type"><%= intervention.interventionType %></div>
