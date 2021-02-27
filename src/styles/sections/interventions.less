@@ -22,10 +22,11 @@
   }
 
   .intervention {
-    flex: 0 0 (@grid * 30);
-    height: @grid * 30;
+    flex: 0 0 (@grid * 35);
+    min-height: @grid * 30;
     margin-right: @grid * 2;
-    max-width: 90vw;
+    max-width: calc(100vw - @grid);
+    box-sizing: border-box;
     scroll-snap-align: center;
     padding: @grid * 2;
 
