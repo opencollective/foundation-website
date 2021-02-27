@@ -172,9 +172,10 @@ collections:
               - name: conceptDescription
                 label: Concept description
                 widget: text
-              - name: exampleTitle
-                label: Example title
-                widget: string
-              - name: exampleDescription
-                label: Example description
-                widget: text
+              - name: example
+                label: Example
+                required: false
+                widget: markdown
+                minimal: true
+                buttons: ['link']
+                editor_components: []
