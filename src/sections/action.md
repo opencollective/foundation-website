@@ -1,7 +1,7 @@
 ---
 title: Action
 hideInNavigation: false
-position: 5
+position: 6
 ---
 
 ## How can I support the Solidarity Economy?

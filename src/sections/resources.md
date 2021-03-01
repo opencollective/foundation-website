@@ -1,7 +1,7 @@
 ---
 title: Top 10 Resources
 hideInNavigation: true
-position: 7
+position: 8
 ---
 
 ## Top 10 Resources
