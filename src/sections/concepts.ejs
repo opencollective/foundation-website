@@ -8,14 +8,16 @@ hideInNavigation: true
   <ul class="carousel">
     <% concepts.concepts.forEach((concept, i)=> { %>
     <li class="concept" id="concept-<%= i _%>" tabindex="0">
-      <h4 class="concept-title"><%- markdown(concept.conceptTitle) %></h4>
+      <h4 class="concept-title"><%= concept.conceptTitle %></h4>
 
       <div class="concept-description">
         <%- markdown(concept.conceptDescription) %>
       </div>
 
       <% if (concept.example) { %>
-      <h5 class="example-heading">Who is doing this?</h5>
+      <h5 class="example-heading">
+        Who does <%= concept.conceptTitle %> with arts & culture at the center?
+      </h5>
       <div class="example"><%- markdown(concept.example) %></div>
       <% } %>
     </li>
