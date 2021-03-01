@@ -1,6 +1,6 @@
 ---
 title: Examples
-hideInNavigation: true
+hideInNavigation: false
 position: 9
 ---
 
