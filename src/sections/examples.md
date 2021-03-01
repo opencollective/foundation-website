@@ -1,7 +1,7 @@
 ---
 title: Examples
 hideInNavigation: true
-position: 8
+position: 9
 ---
 
 ## Solidarity Economy & Culture
@@ -103,3 +103,5 @@ Copyleft: [Creative Commons](https://creativecommons.org/)
 :::
 
 ::::
+
+To support this work, you can: educate yourself, join existing organizing work, and advocate for economic justice.
