@@ -4,7 +4,7 @@ hideInNavigation: false
 position: 6
 ---
 
-## How can I support the Solidarity Economy?
+## How can grantmakers support the Solidarity Economy?
 
 ### Grantmakers goal
 
