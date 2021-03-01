@@ -9,8 +9,7 @@ html {
 .section-script {
   .bigText() {
     font-family: @font-family-serif;
-    font-size: @font-size-larger;
-    line-height: 1.5;
+    .font-size-larger();
     font-weight: @font-weight-bold;
 
     @media (max-width: @mobile-width) {
@@ -78,10 +77,6 @@ html {
       box-sizing: border-box;
 
       .bigText();
-    }
-
-    & > div > p {
-      line-height: 2;
     }
   }
 

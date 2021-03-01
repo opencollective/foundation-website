@@ -7,12 +7,11 @@
 body {
   font-family: @font-family-sans;
   font-weight: @font-weight-normal;
-  font-size: @font-size-base;
+
+  .font-size-base();
 
   color: @font-color-base;
   background-color: @background-color-base;
-
-  line-height: @line-height-base;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -20,30 +19,30 @@ body {
 h1 {
   font-family: @font-family-sans;
   font-weight: @font-weight-bold;
-  font-size: @font-size-larger;
-  line-height: normal;
+  .font-size-larger();
 }
 
 h2 {
   font-family: @font-family-serif;
   font-weight: @font-weight-bold;
-  font-size: @font-size-larger;
-  line-height: normal;
+  .font-size-larger();
 }
 
 h3 {
   font-family: @font-family-sans;
-  font-size: @font-size-large;
   font-weight: @font-weight-bold;
-  line-height: normal;
+  .font-size-large();
+}
+
+h4 {
+  .font-size-large();
 }
 
 blockquote {
   font-family: @font-family-serif;
   font-weight: @font-weight-normal;
-  font-size: @font-size-large;
   font-style: italic;
-  line-height: @line-height-large;
+  .font-size-large();
 }
 
 a {

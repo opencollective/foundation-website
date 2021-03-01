@@ -1,13 +1,27 @@
+@import './sizing.less';
+
 @font-family-serif: 'Caudex', serif;
 @font-family-sans: 'Rubik', sans-serif;
 
 @font-weight-normal: 400;
 @font-weight-bold: 700;
 
-@font-size-sm: 12px;
-@font-size-base: 14px;
-@font-size-large: 18px;
+@font-size-sm: 14px;
+@font-size-base: 16px;
+@font-size-large: 24px;
 @font-size-larger: 32px;
 
-@line-height-base: 22px;
-@line-height-large: 27px;
+.font-size-base() {
+  line-height: (@grid * 2);
+  font-size: @font-size-base;
+}
+
+.font-size-large() {
+  font-size: @font-size-large;
+  line-height: (@grid * 3);
+}
+
+.font-size-larger() {
+  font-size: @font-size-larger;
+  line-height: (@grid * 4);
+}
