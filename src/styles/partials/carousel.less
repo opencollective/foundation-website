@@ -37,11 +37,15 @@ ul.carousel {
     margin-right: @grid * 2;
     max-width: calc(100vw - (@grid * 5));
     box-sizing: border-box;
-    scroll-snap-align: center;
     padding: @grid * 2;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
     outline: 0;
+
+    // Snapping only for mobile
+    @media (max-width: @mobile-width) {
+      scroll-snap-align: center;
+    }
   }
 }
