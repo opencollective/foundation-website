@@ -1,105 +1,73 @@
 ---
 title: Learn
 hideInNavigation: false
-position: 9
+position: 8
 ---
 
-## Solidarity Economy & Culture
+## Top 10 Resources
 
-Here are a few examples of arts and culture groups and initiatives in the Solidarity Economy. As shown throughout the report, all networks and infrastructure in the Solidarity Economy—regardless of their emphasis on arts and culture—will support artists and culture-bearers.
+1. Power-Sharing in Grantmaking
 
-:::: columns
+- [Trust Based Philanthropy](https://trustbasedphilanthropy.org/resources)
+- [Leeway Foundation’s transition from family-control to community-control](https://issuu.com/leeway/docs/impact_assesment_webready) (written) and [video](https://vimeo.com/374676783)
+- See the list of people interviewed for this report and consider hiring them for individual consultations.
 
-::: break-inside-avoid
+2. Solidarity Economy Education and Workshops for Grantmakers
 
-### Land and Housing 
+- [Justice Funders](http://justicefunders.org/) and [this chart](http://justicefunders.org/wp-content/uploads/2019/01/Spectrum_Final_12.6.pdf)
+- [Chordata Capital](https://chordatacapital.com/)
+- [Kataly Foundation](https://www.katalyfoundation.org/#grantees) / [Nwamaka Agbo](https://www.nwamakaagbo.com/restorative-economics)
+- [Farhad Ebrahimi](https://chorusfoundation.org/about/)
+- [Weavers’ Fellowship Donor Programming](https://www.theweaversfellowship.org/donor-programming)
+- [Center for Popular Economics](http://www.populareconomics.org)
 
-Community Land Trusts: [Community Arts Stabilization Trust](https://cast-sf.org/), [Oakland CLT](https://oakclt.org/), [Cooper Square Community Land Trust](https://wp.nyu.edu/land/whats-the-cooper-square-community-land-trust/)
+3. Solidarity Economy Terms Explained
 
-Permanent Real Estate Cooperatives: [East Bay Permanent Real Estate Investment Cooperative](https://ebprec.org/)
+- [New Economy Coalition](https://neweconomy.net/solidarity-economy/)
+- [US Solidarity Economy Network](https://ussen.org/resources/)
+- [The Next System Project](https://thenextsystem.org/elements)
 
-Housing Cooperatives: [Divine House](https://www.ic.org/directory/), [Art Cooperative](https://www.ic.org/artcommunes/)
+4. United Nations International Solidarity Economy Reports
 
-Cohousing and Intentional Communities: [Convent Arts Community](https://www.ic.org/artcommunes/), [MilePost 5](https://www.ic.org/artcommunes/)
+- [The Contribution of SSE and Social Finance to the Future of Work](https://www.ilo.org/empent/areas/social-finance/publications/WCMS_739377/lang--en/index.htm)
 
-:::
+5. Solidarity Economy Legal Questions and Workshops
 
-::: break-inside-avoid
+- [Sustainable Economies Law Center (SELC)](https://www.theselc.org/) (co-op, land trust, barter, community currency legal support)
+- [SELC Webinar on Worker Self-Directed Nonprofits](https://www.youtube.com/watch?v=uU1w9uXGGLY&feature=emb_title)
 
-### Work and Labor
+6. Recommendations for Giving & Endowment Action
 
-Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [Happy Family Night Market](https://www.happyfamilymkt.com/mission)
+- [The Case for an Emergency Charity Stimulus](https://inequality.org/wp-content/uploads/2020/05/Brief-CharityStimulus-Revision-May12-FINAL.pdf)
+- [Guiding a Giving Response to Anti-Black Injustice](https://www.bridgespan.org/insights/library/philanthropy/guiding-a-giving-response-to-anti-black-injustice)
+- WEBINAR: [Leveraging Investments in Support of Social Justice](https://resourcegeneration.org/webinar-leveraging-investments-in-support-of-social-justice/)
 
-Producer Cooperatives: [200 Million Artisans](https://200millionartisans.org/about), [Just Seeds](https://justseeds.org/)
+7. Reports about Inequity in Funding
 
-Time Banking: [Metasofa Arts Community](https://www.ic.org/directory/metasofa-artists-community/), [Kolanut Collaborative](https://kolanutcollab.org/)
+- Pocket Change: [Not Just Money](http://www.notjustmoney.us), ["Pocket Change"](https://philanthropywomen.org/research/ms-foundation-donors-must-step-up-for-women-and-girls-of-color/)
+- [Not Just Money](http://www.notjustmoney.us/docs/NotJustMoney_Full_Report_July2017.pdf)
+- [Media Reparations](https://mediareparations.org/about/)
 
-Mutual Aid: [NDN Collective](https://ndncollective.org/), [Sol Collective](http://www.solcollective.org/)
+8. Books about the History of the Solidarity Economy
 
-Barter Systems & Non-Monetary Exchange: [O+ Festival](https://www.nytimes.com/2013/11/16/arts/music/the-o-festival-expands-to-san-francisco.html)
+- [Collective Courage: A History of African American Cooperative Economic Thought and Practice](https://www.psupress.org/books/titles/978-0-271-06216-7.html)
+- [The New Systems Reader](https://democracycollaborative.org/newsystemsreader)
+- [On Common Ground: International Perspectives on the Community Land Trust](https://cltweb.org/terra-nostra-press/on-common-ground/)
+- [Building for Us: Stories of Homesteading and Cooperative Housing](https://interferencearchive.org/exhibition-catalog-building-for-us-stories-of-homesteading-and-cooperative-housing/)
+- [The Color of Money](https://www.hup.harvard.edu/catalog.php)
 
-:::
+9. Shows and Podcasts
 
-::: break-inside-avoid
+- Interdependence.FM Podcast
+- The Laura Flanders Show
+- Economic Update by Democracy @Work
+- Upstream Podcast
+- The Rebel Beat
 
-### Money and Finance
+10. Conferences
 
-Participatory Budgeting: [Runway](https://www.runway.family/runway-overview), [Participatory Budgeting Project](https://www.participatorybudgeting.org/)
-
-Credit unions: [Actors Federal Credit Union](https://www.actorsfcu.com/)
-
-Community currencies: [Circles](https://www.therightscollective.com/solidarity-circles), [Tandas](http://www.anthropology.uci.edu/~wmmaurer/courses/anthro_money_2004/Tandas.htm)
-
-CDFIs: [The Working World](https://www.theworkingworld.org/us/), [SeedCommons](https://seedcommons.org/), [First People’s Fund](https://www.firstpeoplesfund.org/), [Oweesta Corporation](https://www.oweesta.org/)
-
-Community Loan Fund: [Boston Ujima Project](https://www.ujimaboston.com/), [Black Farmer Fund](https://www.blackfarmerfund.org/)
-
-Solidarity Philanthropy and Grantmaking: [Center for Economic Democracy](https://www.economicdemocracy.us/), [The Weavers Project](https://www.theweaversproject.org/history), [AmbitioUS](https://ambitio-us.org/), [NDNCollective](https://ndncollective.org/), [Intercultural Leadership Institute](http://www.weareili.org)
-
-:::
-
-::: break-inside-avoid
-
-### Energy and Utilities
-
-Community Solar: [Soulardarity](https://www.soulardarity.com/)
-
-Community Broadband: [Institute for Local Self Reliance’s MuniNetworks](https://muninetworks.org/)
-
-Energy Democracy: [Uprose Brooklyn](https://www.uprose.org/sunset-park-solar)
-
-:::
-
-::: break-inside-avoid
-
-### Food and Farming
-
-Community Gardens: All community gardens!
-
-Community Supported Agriculture: All CSAs!
-
-Food and Farm Co-ops: [Soul Fire Farm](https://www.soulfirefarm.org/), [Double Edge Theatre](https://doubleedgetheatre.org/), [Cooperative Food Empowerment Directive (CoFED)](https://www.cofed.coop/), [Acres of Ancestry](https://acresofancestry.org/)
-
-Community Fridges: All Community fridges!
-
-:::
-
-::: break-inside-avoid
-
-### Media & Technology
-
-Worker-owned news media: [Media Reparations,](https://mediareparations.org/) [Associated Press](https://www.ap.org/about/), [Devil Strip](https://thedevilstrip.com/)
-
-Community radio: [KOJH 104.7 FM](https://www.kojhfm.org/) (Mutual Musicians Foundation)
-
-Platform Cooperatives: [Crux](https://crux.coop), [Guilded](https://www.usworker.coop/guilded/), [Ampled](https://www.ampled.com/), and internationally [Stocksy](https://www.stocksy.com/) in Canada, [SmArt](https://smart.coop/) in Belgium, [Arctic Co-ops](https://arctic-coop.com/) in Canada, and [Doc Servizi](https://docservizi.retedoc.net/en/) in Italy
-
-Solutions Journalism: [Solutions Journalism Network](https://www.solutionsjournalism.org/)
-
-Open Source: [Mozilla](https://www.mozilla.org/en-US/), [Wikipedia](https://www.wikipedia.org/)
-
-Copyleft: [Creative Commons](https://creativecommons.org/)
-
-:::
-
-::::
+- New Economy Coalition’s CommonBound conference
+- Justice Funders
+- Allied Media Conference
+- People’s Movement Assemblies
+- CoCap
