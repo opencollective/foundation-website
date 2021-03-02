@@ -9,38 +9,13 @@ html {
 .section-script {
   .bigText() {
     font-family: @font-family-serif;
-    .font-size-larger();
+    .font-size-large();
     font-weight: @font-weight-bold;
-
-    @media (max-width: @mobile-width) {
-      font-size: @font-size-large;
-    }
   }
 
   p strong {
     font-style: inherit;
-    background-color: @accent-color-yellow-light;
-    font-weight: inherit;
-
-    // Classes assigned in js
-    &.red {
-      background-color: @accent-color-red-light;
-    }
-    &.teal {
-      background-color: @accent-color-teal-light;
-    }
-    &.orange {
-      background-color: @accent-color-orange-light;
-    }
-    &.yellow {
-      background-color: @accent-color-yellow-light;
-    }
-    &.jade {
-      background-color: @accent-color-jade-light;
-    }
-    &.purple {
-      background-color: @accent-color-purple-light;
-    }
+    font-weight: @font-weight-bold;
   }
 
   p small {
@@ -51,7 +26,6 @@ html {
   // A "two-up" expects to have two children. A p will render big text, a div with ps in it will be paragraph text.
   .two-up {
     scroll-snap-align: start;
-    min-height: 100vh;
     padding: (@grid * 2) 0;
     box-sizing: border-box;
     width: 100%;
