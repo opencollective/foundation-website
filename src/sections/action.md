@@ -6,7 +6,7 @@ position: 5
 
 ## How can grantmakers support the Solidarity Economy?
 
-### Grantmakers goal
+### Grantmakers role
 
 Grantmakers play a role in the transformation of the sector by following the lead of BIPOC creatives who are innovating models for self-determination and community wealth. This work is part of an emergent movement in the United States that is known globally as the Solidarity Economy.
 
