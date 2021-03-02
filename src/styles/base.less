@@ -49,8 +49,14 @@ blockquote {
 }
 
 a {
-  color: @accent-color-jade;
+  @link-color: @accent-color-jade;
+
+  color: @link-color;
   text-decoration: inherit;
+
+  &:hover {
+    border-bottom: 1px dashed @link-color;
+  }
 }
 
 main {
