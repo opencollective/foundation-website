@@ -16,7 +16,7 @@ hideInNavigation: true
 
       <% if (concept.example) { %>
       <h5 class="example-heading">
-        Who does <%= concept.conceptTitle %> with arts & culture at the center?
+        <%= concept.conceptTitle %> with arts & culture:
       </h5>
       <div class="example"><%- markdown(concept.example) %></div>
       <% } %>
