@@ -1,12 +1,31 @@
-.buttonStyledLink(@color) {
+.buttonCommon(@background-color) {
   display: inline-block;
   padding: (@grid / 2) @grid;
-  background-color: @color;
+  background-color: @background-color;
   color: @background-color-lighter;
   text-align: center;
 
   &:hover {
-    background-color: tint(@color, 20%);
+    background-color: tint(@background-color, 20%);
     border: none;
   }
+}
+
+// Remove all browser button styling
+.bareButton() {
+  padding: 0;
+  border: none;
+
+  background: none;
+  outline: 0;
+}
+
+.buttonStyledLink(@background-color) {
+  .buttonCommon(@background-color);
+}
+
+.button(@background-color) {
+  .bareButton();
+  .buttonCommon(@background-color);
+  cursor: pointer;
 }
