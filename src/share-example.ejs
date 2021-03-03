@@ -1,0 +1,34 @@
+---
+title: Add yourself to the list of examples
+layout: default
+---
+
+<main>
+  <a href="/">Back</a>
+
+  <form method="POST" data-netlify="true" name="share-example">
+    <h1>Add yourself to the list of examples</h1>
+    <p>
+      <label for="input-organization"> What is your organization? </label>
+      <input id="input-organization" type="text" name="organization" required />
+    </p>
+    <p>
+      <label for="input-email"> What is your email address? </label>
+      <input
+        id="input-email"
+        type="email"
+        name="email"
+        placeholder="me@example.coop"
+        required
+      />
+    </p>
+    <p>
+      <label for="input-work"> What work are you doing? </label>
+      <textarea id="input-work" name="work" required></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+</main>

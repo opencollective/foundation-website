@@ -1,0 +1,36 @@
+@import './variables/sizing.less';
+@import './variables/color.less';
+@import './variables/typography.less';
+@import './variables/buttons.less';
+
+input,
+textarea {
+  display: block;
+
+  width: @grid * 40;
+  height: @grid * 4;
+  max-width: 100%;
+  padding: @grid;
+  box-sizing: border-box;
+
+  border: none;
+  border: 1px solid darken(@background-color-base, 30%);
+
+  &:focus {
+    outline: 1px solid @accent-color-yellow;
+  }
+}
+
+textarea {
+  height: @grid * 12;
+}
+
+label {
+  display: block;
+  margin-bottom: @grid;
+}
+
+button,
+input[type='button'] {
+  .button(@font-color-base);
+}
