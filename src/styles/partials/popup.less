@@ -1,0 +1,66 @@
+@import '../variables/color.less';
+@import '../variables/buttons.less';
+
+@popup_width: 600px;
+@popup_height: 350px;
+
+// Applied to body when popup is open
+.noscroll {
+  overflow: hidden !important;
+}
+
+.popup {
+  // The provides a box to center in
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 100;
+
+  // Centering
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrim {
+  background-color: fade(@background-color-base, 90%);
+  backdrop-filter: blur(2px);
+}
+
+.popup-contents {
+  position: relative;
+
+  width: @popup_width;
+  // height: @popup_height;
+  max-height: 100%;
+  box-sizing: border-box;
+
+  padding: 3rem;
+
+  overflow-y: auto;
+}
+
+.popup-contents .close-button {
+  color: @background-color-base;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: @popup_width) {
+  @popup_mobile_v_margin: 10px;
+  @popup_mobile_h_margin: 5px;
+  .popup-contents {
+    width: calc(100% - (@popup_mobile_h_margin * 2));
+    height: calc(100% - (@popup_mobile_v_margin * 2));
+    padding: 1em;
+  }
+}
+
+// states
+.hidden {
+  display: none;
+}
