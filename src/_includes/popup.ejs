@@ -1,0 +1,49 @@
+<div class="popup scrim">
+  <div class="popup-contents">
+    <h2>Free PDF from GIA</h2>
+    <a class="close-button">✕</a>
+    <p class="signup-message">
+      Thank you for your interest in this open access educational resource. We
+      want to know who you are, so that we have a sense of who is using this
+      site.
+    </p>
+
+    <form
+      method="POST"
+      data-netlify="true"
+      name="pdf-download"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <input type="hidden" name="pdf" />
+      <p>
+        <label for="input-email">Email address</label>
+        <input
+          id="input-email"
+          type="email"
+          name="email"
+          placeholder="me@example.coop"
+          required
+        />
+      </p>
+      <p>
+        <label for="input-first">First name</label>
+        <input id="input-first" type="text" name="first-name" required />
+      </p>
+      <p>
+        <label for="input-last">Last name</label>
+        <input id="input-last" type="text" name="last-name" required />
+      </p>
+      <p>
+        <label for="input-affilliation"
+          >Are you affiliated with a collective, nonprofit, or school? If so,
+          please list them, here.
+        </label>
+        <input id="input-affilliation" type="text" name="affilliation" />
+      </p>
+
+      <p>
+        <button type="submit">Submit & Download</button>
+      </p>
+    </form>
+  </div>
+</div>

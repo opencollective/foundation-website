@@ -10,9 +10,12 @@
     <title><%= locals.title %></title>
     <% } %>
     <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/assets/scripts/popup.js"></script>
+    <script src="/assets/scripts/registerInterstitials.js"></script>
     <%- include('/fonts') %>
   </head>
   <body>
-    <%- content %>
+    <%- include('/popup') %> <%- content %>
   </body>
 </html>
