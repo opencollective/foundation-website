@@ -37,6 +37,7 @@ var HAS_SIGNED_UP = 'signed-up';
     request.onload = function () {
       Cookies.set(HAS_SIGNED_UP, true, { expires: 3650 });
       downloadPdf(pdfUrl);
+      closePopup();
     };
     request.open('POST', '/');
     request.send(formData);
