@@ -1,8 +1,11 @@
 @import '../variables/typography.less';
 @import '../variables/sizing.less';
 @import '../variables/color.less';
+@import '../variables/buttons.less';
 
 .interventions-container {
+  margin: (@grid * 2) 0;
+
   .intervention {
     font-size: @font-size-sm;
   }
@@ -65,5 +68,9 @@
   }
   .intervention.policy-advocacy {
     .color(@accent-color-purple);
+  }
+
+  a.button {
+    .buttonStyledLink(@font-color-base);
   }
 }
