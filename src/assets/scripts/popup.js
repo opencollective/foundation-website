@@ -32,7 +32,7 @@ var HAS_SIGNED_UP = 'signed-up';
     e.preventDefault();
     var pdfUrl = popupEl.getAttribute('data-pdf-href');
     var formData = new FormData(e.target);
-    formData.append('pdf', pdfUrl);
+    formData.set('pdf', pdfUrl);
     var request = new XMLHttpRequest();
     request.onload = function () {
       Cookies.set(HAS_SIGNED_UP, true, { expires: 3650 });
