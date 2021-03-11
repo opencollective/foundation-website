@@ -1,0 +1,81 @@
+---
+title: Add yourself to the list of examples
+layout: default
+---
+
+<main>
+  <a href="/#concepts">Back to site</a>
+
+  <form
+    method="POST"
+    data-netlify="true"
+    name="share-concept"
+    action="/share-concept-success"
+  >
+    <h1>Add yourself to the list of examples</h1>
+    <fieldset class="inline-field-group">
+      <legend>Your name (not public)</legend>
+      <input
+        id="input-first"
+        type="text"
+        name="first-name"
+        placeholder="First"
+        required
+      />
+      <input
+        id="input-last"
+        type="text"
+        name="last-name"
+        placeholder="Last"
+        required
+      />
+    </fieldset>
+    <p>
+      <label for="input-contact">Your contact information (not public)</label>
+      <input id="input-contact" type="text" name="contact" required />
+    </p>
+
+    <p>
+      <label for="input-organization"
+        >Your group’s name (public, listed on the website)</label
+      >
+      <input id="input-organization" type="text" name="organization" required />
+    </p>
+
+    <p>
+      <label for="input-practice">Solidarity Economy practice</label>
+      <select id="input-practice" name="practice" required>
+        <option disabled selected>Select…</option>
+        <% concepts.concepts.forEach((concept)=> { %>
+        <option value="<%= concept.conceptTitle %>">
+          <%= concept.conceptTitle %>
+        </option>
+        <% }) %>
+      </select>
+    </p>
+
+    <p>
+      <label for="input-organization-link"
+        >Link to your organization or more info about this practice (public,
+        linked to the website)</label
+      >
+      <input
+        id="input-organization-link"
+        type="text"
+        name="organization-link"
+        required
+      />
+    </p>
+
+    <p>
+      <label for="input-comments">Other comments</label>
+      <textarea id="input-comments" name="comments"></textarea>
+    </p>
+
+    <p>Thank you!</p>
+
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+</main>
