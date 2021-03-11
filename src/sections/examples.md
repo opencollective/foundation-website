@@ -104,4 +104,6 @@ Copyleft: [Creative Commons](https://creativecommons.org/)
 
 ::::
 
+![Ways of being diagram](/assets/uploads/topos_waysofbeing_diagrams_v6-04.jpg)
+
 To support this work, you can: educate yourself, join existing organizing work, and advocate for economic justice.
