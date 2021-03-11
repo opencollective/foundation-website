@@ -16,15 +16,35 @@ permalink: /
 
 <main class="page-countdown">
   <div class="container">
-    <h1>
-      Solidarity not Charity goes live in <span id="num-days"></span> days
+    <h1 id="headline" style="visibility: hidden">
+      Solidarity not Charity goes live <span id="num-days"></span>
     </h1>
+    <noscript>
+      <h1>Solidarity not Charity is not yet live</h1>
+    </noscript>
 
     <a href="/email-signup" class="button">Sign up for the mailing list</a>
 
     <script>
-      const days = datediff(new Date(), LIVE_DATE);
-      document.getElementById('num-days').innerText = days;
+      document.getElementById('headline').style.visibility = null;
+      function updateCountdown() {
+        const now = new Date();
+        if (now > LIVE_DATE) {
+          // Go to home page
+          window.location.replace('/home');
+        }
+        const days = datediff(now, LIVE_DATE);
+        let text;
+        if (days === 0) {
+          text = 'today';
+        } else {
+          text = 'in ' + days + ' ' + (days === 1 ? 'day' : 'days');
+        }
+        document.getElementById('num-days').innerText = text;
+      }
+      updateCountdown();
+
+      setInterval(updateCountdown, 1000);
     </script>
   </div>
 </main>
