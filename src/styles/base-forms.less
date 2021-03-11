@@ -3,11 +3,13 @@
 @import './variables/typography.less';
 @import './variables/buttons.less';
 
+@field-width: @grid * 40;
+
 input,
 textarea {
   display: block;
 
-  width: @grid * 40;
+  width: @field-width;
   height: @grid * 4;
   max-width: 100%;
   padding: @grid;
@@ -33,4 +35,30 @@ label {
 button,
 input[type='button'] {
   .button(@font-color-base);
+}
+
+.inline-field-group {
+  width: @field-width;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  padding: 0;
+  margin: (@grid * 2) 0;
+
+  & > * {
+    margin-right: @grid * 2 !important;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  input {
+    width: 100%;
+    min-width: 0;
+  }
 }
