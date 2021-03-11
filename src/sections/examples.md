@@ -3,7 +3,6 @@ title: Examples
 hideInNavigation: true
 position: 4
 ---
-
 ## Solidarity Economy & Culture
 
 Here are a few examples of arts and culture groups and initiatives in the Solidarity Economy. As shown throughout the report, all networks and infrastructure in the Solidarity Economy—regardless of their emphasis on arts and culture—will support artists and culture-bearers.
@@ -28,7 +27,7 @@ Cohousing and Intentional Communities: [Convent Arts Community](https://www.ic.o
 
 ### Work and Labor
 
-Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [Happy Family Night Market](https://www.happyfamilymkt.com/mission)
+Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [Happy Family Night Market](https://www.happyfamilymkt.com/mission), [Meerkat](https://www.meerkatmedia.org)
 
 Producer Cooperatives: [200 Million Artisans](https://200millionartisans.org/about), [Just Seeds](https://justseeds.org/)
 
