@@ -1,6 +1,7 @@
 @import './variables/typography.less';
 @import './variables/color.less';
 @import './variables/sizing.less';
+@import './variables/buttons.less';
 
 @import './base-forms.less';
 
@@ -67,4 +68,8 @@ main {
 
 p {
   margin: (@grid * 2) 0;
+}
+
+a.button {
+  .buttonStyledLink(@font-color-base);
 }

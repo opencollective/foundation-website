@@ -1,0 +1,29 @@
+---
+title: Coming soon
+layout: default
+---
+
+<script>
+  function datediff(first, second) {
+    // Take the difference between the dates and divide by milliseconds per day.
+    // Round to nearest whole number to deal with DST.
+    return Math.round((second - first) / (1000 * 60 * 60 * 24));
+  }
+
+  const LIVE_DATE = new Date(Date.UTC(2021, 2, 24, 7 + 5));
+</script>
+
+<main class="page-countdown">
+  <div class="container">
+    <h1>
+      Solidarity not Charity goes live in <span id="num-days"></span> days
+    </h1>
+
+    <a href="/email-signup" class="button">Sign up for the mailing list</a>
+
+    <script>
+      const days = datediff(new Date(), LIVE_DATE);
+      document.getElementById('num-days').innerText = days;
+    </script>
+  </div>
+</main>
