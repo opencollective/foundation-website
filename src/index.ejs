@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
+
 <%- include('/nav') %>
 
 <main>
   <% collections.section.forEach((section) => { %>
-  <section id="<%- section.fileSlug %>">
-    <%- section.templateContent %>
-  </section>
+  <section id="<%- section.fileSlug %>"><%- section.templateContent %></section>
   <% }) %>
 </main>

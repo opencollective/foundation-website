@@ -9,8 +9,8 @@
     "eleventy-serve": "NODE_ENV=development eleventy --serve",
     "netlify-proxy": "netlify-cms-proxy-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "prettier --check .",
-    "lint:fix": "prettier --write ."
+    "lint": "prettier --check . && prettier --check --parser html ../**/*.ejs",
+    "lint:fix": "prettier --write . && prettier --write --parser html ../**/*.ejs"
   },
   "repository": {
     "type": "git",
