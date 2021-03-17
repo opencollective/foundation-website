@@ -4,7 +4,7 @@ hideInNavigation: false
 position: 5
 ---
 
-## How can grantmakers support the Solidarity Economy?
+## ACTION: How can grantmakers support the Solidarity Economy?
 
 ### Grantmakers role
 
