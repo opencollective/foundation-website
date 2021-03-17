@@ -8,6 +8,8 @@ md.use(mila, {
   },
 });
 
+md.enable('table');
+
 module.exports = () => {
   return md.render.bind(md);
 };

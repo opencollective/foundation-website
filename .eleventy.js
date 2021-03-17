@@ -14,6 +14,7 @@ md.use(mila, {
 // Correspond to class names in markdown-containers.less
 md.use(mic, 'break-inside-avoid');
 md.use(mic, 'columns');
+md.enable('table');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets');
