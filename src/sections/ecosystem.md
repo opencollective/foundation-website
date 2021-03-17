@@ -8,7 +8,7 @@ position: 10
 
 A number of organizations that support the Solidarity Economy in the United States have emerged in the past decade, and in recent years, there has been a significant increase in the number and diversity of entities providing support to Solidarity Economy organizations. However, although artists and culture-bearers participate in many of these as workers and beneficiaries, few of these entities place an emphasis on art and culture.
 
-Key Social and Solidarity Economy Organizations and Networks
+### Key Social and Solidarity Economy Organizations and Networks
 
 ### International Solidarity Economy Networks and Task Forces
 
