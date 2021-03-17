@@ -35,39 +35,28 @@
   }
 
   .color(@color) {
-    background-color: tint(@color, 95%);
-    box-shadow: 0 2px 4px fade(desaturate(@color, 80%), 40%);
-
-    .intervention-type::before {
-      content: '';
-      display: inline-block;
-      background-color: @color;
-      @size: 6px;
-      width: @size;
-      height: @size;
-      margin-right: 0.5em;
-      vertical-align: middle;
-      transform: translateY((-@size / 4));
-    }
+    @background-color: @color;
+    background-color: @background-color;
+    box-shadow: 0 2px 4px shade(@background-color, 40%);
   }
 
   .intervention.internal-work {
-    .color(@accent-color-red);
+    .color(#FBFADC);
   }
   .intervention.governance-shifts {
-    .color(@accent-color-teal);
+    .color(#FEF9D4);
   }
   .intervention.new-tools-types-of-support {
-    .color(@accent-color-orange);
+    .color(#FDF4B1);
   }
   .intervention.investment-endowment-shifts {
-    .color(@accent-color-yellow);
+    .color(#FEF79A);
   }
   .intervention.take-a-systems-change-approach {
-    .color(@font-color-base);
+    .color(#F6E97F);
   }
   .intervention.policy-advocacy {
-    .color(@accent-color-purple);
+    .color(#F2E040);
   }
 
   a.button {
