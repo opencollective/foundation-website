@@ -1,10 +1,13 @@
 @import '../variables/sizing.less';
 
 .carousel {
-  margin: (@grid * 2) 0;
+  @margin-for-buttons: (@grid * 4);
+
+  margin: (@grid * 2) @margin-for-buttons;
 
   .carousel-cell {
     width: (@grid * 35);
+    height: 100%;
     min-height: @grid * 30;
 
     // ensure shadow not cut off
@@ -18,5 +21,60 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
     outline: 0;
+  }
+
+  .flickity-prev-next-button {
+    width: (@grid * 4);
+
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &.next {
+      right: -@margin-for-buttons;
+    }
+
+    &.previous {
+      left: -@margin-for-buttons;
+    }
+
+    .flickity-button-icon {
+      fill: @font-color-base;
+    }
+  }
+
+  .flickity-page-dots {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    bottom: -@grid;
+
+    .dot {
+      flex: 1 1 auto;
+      border-radius: 0;
+      margin: 0;
+      height: (@grid / 2);
+
+      background-color: @background-color-lighter;
+      opacity: 1;
+
+      &.is-selected {
+        background-color: @font-color-base;
+      }
+    }
+  }
+}
+
+// Remove arrows on mobile -- no room and it's understood to swipe
+@media (max-width: @mobile-width) {
+  .carousel {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .flickity-prev-next-button {
+    display: none;
   }
 }
