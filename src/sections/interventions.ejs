@@ -9,12 +9,15 @@ position: 7
     >Add Yourself to this List of Examples</a
   >
 
-  <ul class="carousel">
+  <div
+    class="carousel"
+    data-flickity='{"contain": true, "cellAlign": "left", "pageDots": false}'
+  >
     <% interventions.interventions.forEach((intervention, i) => { %>
-    <li
+    <div
       id="intervention-<%= i _%>"
       tabindex="0"
-      class="intervention <%= intervention.interventionType.toLowerCase().replace(/\W/g, '-') %>"
+      class="carousel-cell intervention <%= intervention.interventionType.toLowerCase().replace(/\W/g, '-') %>"
     >
       <div class="intervention-type"><%= intervention.interventionType %></div>
       <h4 class="practice"><%- markdown(intervention.practice) %></h4>
@@ -25,7 +28,7 @@ position: 7
         <%- markdown(intervention.exampleColleagues) %>
       </div>
       <% } %>
-    </li>
+    </div>
     <% }) %>
-  </ul>
+  </div>
 </div>

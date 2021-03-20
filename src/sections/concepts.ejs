@@ -5,9 +5,12 @@ hideInNavigation: false
 ---
 
 <div class="concepts-container">
-  <ul class="carousel">
+  <div
+    class="carousel"
+    data-flickity='{"contain": true, "cellAlign": "left", "pageDots": false}'
+  >
     <% concepts.concepts.forEach((concept, i)=> { %>
-    <li class="concept" id="concept-<%= i _%>" tabindex="0">
+    <div class="carousel-cell concept" id="concept-<%= i _%>" tabindex="0">
       <h4 class="concept-title"><%= concept.conceptTitle %></h4>
 
       <div class="concept-description">
@@ -20,9 +23,9 @@ hideInNavigation: false
       </h5>
       <div class="example"><%- markdown(concept.example) %></div>
       <% } %>
-    </li>
+    </div>
     <% }) %>
-  </ul>
+  </div>
 
   <a href="/share-concept" class="button">Add Yourself to these Examples</a>
 </div>

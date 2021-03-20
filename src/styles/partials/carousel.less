@@ -1,39 +1,15 @@
 @import '../variables/sizing.less';
 
-// Uncomment to make first item start in center
-// @half-margin: calc(50% - (@grid * 20) + (@grid * 3));
-@half-margin: @grid;
-ul.carousel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  list-style: none;
+.carousel {
   margin: (@grid * 2) 0;
 
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding: (@grid * 2) @half-margin;
-
-  // Hide scrollbars
-  &::-webkit-scrollbar {
-    // display: none;
-    height: 5px;
-  }
-  &::-webkit-scrollbar-thumb {
-    height: 5px;
-    background-color: @font-color-base;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: @background-color-lighter;
-  }
-
-  & > li {
-    flex: 0 0 (@grid * 35);
+  .carousel-cell {
+    width: (@grid * 35);
     min-height: @grid * 30;
+
+    // ensure shadow not cut off
+    margin: 4px;
+
     margin-right: @grid * 2;
     max-width: calc(100vw - (@grid * 5));
     box-sizing: border-box;
@@ -42,10 +18,5 @@ ul.carousel {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
     outline: 0;
-
-    // Snapping only for mobile
-    @media (max-width: @mobile-width) {
-      scroll-snap-align: center;
-    }
   }
 }
