@@ -4,7 +4,7 @@ hideInNavigation: true
 position: 6
 ---
 
-## The transformation underway can be summarized as follows:
+### The transformation underway can be summarized as follows:
 
 |                              | MARKET-BASED PARADIGM                                                                                                                                    | COMMONS-BASED PARADIGM                                                                                                                                                 |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
