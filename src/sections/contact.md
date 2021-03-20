@@ -1,6 +1,6 @@
 ---
 title: Contact
-position: 12
+position: 13
 hideInNavigation: false
 ---
 
