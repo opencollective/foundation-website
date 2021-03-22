@@ -6,7 +6,7 @@ position: 5
 
 ## ACTION: How can grantmakers support the Solidarity Economy?
 
-### Grantmakers role
+### Grantmaker’s role
 
 Grantmakers play a role in the transformation of the sector by following the lead of BIPOC creatives who are innovating models for self-determination and community wealth. This work is part of an emergent movement in the United States that is known globally as the Solidarity Economy.
 
@@ -17,13 +17,11 @@ As the cultural sector actively seeks alternatives to business-as-usual to creat
 1. a lack of understanding by grantmakers of systems-change and existing power imbalances
 2. ways to support cooperative governance in the sector
 3. the best tools of support for Solidarity Economy business structures, deliberate incubation, and start-up capital, and
-4. ways to change whole systems by
-5. transforming investments and endowments and
-6. advocating for systems-change policies to create a fiscal and legal enabling environment for Solidarity Economy cultures to thrive.
+4. ways to change whole systems by transforming investments and endowments and advocating for systems-change policies to create a fiscal and legal enabling environment for Solidarity Economy cultures to thrive.
 
 ### Results
 
-Shifts in Grantmakers Mindset, Practices, Programs, Investment/Endowment, and Policy Advocacy to support interconnected, locally-rooted models of community ownership and democratic governance to flourish in the arts and culture sector and beyond. This repairs inequity in the sector and allows those who have been most harmed by our current systems to achieve cultural, economic, and political power.
+Shifts in grantmakers’ mindset, practices, programs, investment/endowment, and policy advocacy to support interconnected, locally-rooted models of community ownership and democratic governance to flourish in the arts and culture sector and beyond. This repairs inequity in the sector and allows those who have been most harmed by our current systems to achieve cultural, economic, and political power.
 
 ### Action
 

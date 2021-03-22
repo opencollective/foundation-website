@@ -36,7 +36,7 @@ position: 9
 - [Sustainable Economies Law Center (SELC)](https://www.theselc.org/) (co-op, land trust, barter, community currency legal support)
 - [SELC Webinar on Worker Self-Directed Nonprofits](https://www.youtube.com/watch?v=uU1w9uXGGLY&feature=emb_title)
 
-6. Recommendations for Giving & Endowment Action
+6. Recommendations for Giving and Endowment Action
 
 - [The Case for an Emergency Charity Stimulus](https://inequality.org/wp-content/uploads/2020/05/Brief-CharityStimulus-Revision-May12-FINAL.pdf)
 - [Guiding a Giving Response to Anti-Black Injustice](https://www.bridgespan.org/insights/library/philanthropy/guiding-a-giving-response-to-anti-black-injustice)
@@ -44,7 +44,7 @@ position: 9
 
 7. Reports about Inequity in Funding
 
-- Pocket Change: [Not Just Money](http://www.notjustmoney.us), ["Pocket Change"](https://philanthropywomen.org/research/ms-foundation-donors-must-step-up-for-women-and-girls-of-color/)
+- [Pocket Change](https://philanthropywomen.org/research/ms-foundation-donors-must-step-up-for-women-and-girls-of-color/)
 - [Not Just Money](http://www.notjustmoney.us/docs/NotJustMoney_Full_Report_July2017.pdf)
 - [Media Reparations](https://mediareparations.org/about/)
 
