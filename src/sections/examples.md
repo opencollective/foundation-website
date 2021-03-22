@@ -18,7 +18,7 @@ Community Land Trusts: [Community Arts Stabilization Trust](https://cast-sf.org/
 
 Permanent Real Estate Cooperatives: [East Bay Permanent Real Estate Investment Cooperative](https://ebprec.org/)
 
-Housing Cooperatives: [Divine House](https://www.ic.org/directory/), [Art Cooperative](https://www.ic.org/artcommunes/)
+Housing Cooperatives: Divine House, [Art Cooperative](https://www.ic.org/artcommunes/)
 
 Cohousing and Intentional Communities: [Convent Arts Community](https://www.ic.org/artcommunes/), [MilePost 5](https://www.ic.org/artcommunes/)
 
@@ -30,13 +30,13 @@ Cohousing and Intentional Communities: [Convent Arts Community](https://www.ic.o
 
 Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [Happy Family Night Market](https://www.happyfamilymkt.com/mission), [Meerkat](https://www.meerkatmedia.org)
 
-Producer Cooperatives: [200 Million Artisans](https://200millionartisans.org/about), [Just Seeds](https://justseeds.org/)
+Producer Cooperatives: [200 Million Artisans](https://200millionartisans.org/about), [Justseeds](https://justseeds.org/)
 
 Time Banking: [Metasofa Arts Community](https://www.ic.org/directory/metasofa-artists-community/), [Kolanut Collaborative](https://kolanutcollab.org/)
 
 Mutual Aid: [NDN Collective](https://ndncollective.org/), [Sol Collective](http://www.solcollective.org/)
 
-Barter Systems & Non-Monetary Exchange: [O+ Festival](https://www.nytimes.com/2013/11/16/arts/music/the-o-festival-expands-to-san-francisco.html)
+Barter Systems and Non-Monetary Exchange: [O+ Festival](https://www.nytimes.com/2013/11/16/arts/music/the-o-festival-expands-to-san-francisco.html)
 
 :::
 
@@ -46,7 +46,7 @@ Barter Systems & Non-Monetary Exchange: [O+ Festival](https://www.nytimes.com/20
 
 Participatory Budgeting: [Runway](https://www.runway.family/runway-overview), [Participatory Budgeting Project](https://www.participatorybudgeting.org/)
 
-Credit unions: [Actors Federal Credit Union](https://www.actorsfcu.com/)
+Credit Unions: [Actors Federal Credit Union](https://www.actorsfcu.com/)
 
 Community currencies: [Circles](https://www.therightscollective.com/solidarity-circles), [Tandas](http://www.anthropology.uci.edu/~wmmaurer/courses/anthro_money_2004/Tandas.htm)
 
@@ -88,11 +88,11 @@ Community Fridges: All Community fridges!
 
 ### Media & Technology
 
-Worker-owned news media: [Media Reparations,](https://mediareparations.org/) [Associated Press](https://www.ap.org/about/), [Devil Strip](https://thedevilstrip.com/)
+Worker-Owned News Media: [Media Reparations,](https://mediareparations.org/) [Associated Press](https://www.ap.org/about/), [Devil Strip](https://thedevilstrip.com/)
 
-Community radio: [KOJH 104.7 FM](https://www.kojhfm.org/) (Mutual Musicians Foundation)
+Community Radio: [KOJH 104.7 FM](https://www.kojhfm.org/) (Mutual Musicians Foundation)
 
-Platform Cooperatives: [Crux](https://crux.coop), [Guilded](https://www.usworker.coop/guilded/), [Ampled](https://www.ampled.com/), and internationally [Stocksy](https://www.stocksy.com/) in Canada, [SmArt](https://smart.coop/) in Belgium, [Arctic Co-ops](https://arctic-coop.com/) in Canada, and [Doc Servizi](https://docservizi.retedoc.net/en/) in Italy
+Platform Cooperatives: [Crux](https://crux.coop), [Guilded](https://www.usworker.coop/guilded/), [Ampled](https://www.ampled.com/), and internationally [Stocksy](https://www.stocksy.com/) in Canada, [Smart](https://smart.coop/) in Belgium, [Arctic Co-ops](https://arctic-coop.com/) in Canada, and [Doc Servizi](https://docservizi.retedoc.net/en/) in Italy
 
 Solutions Journalism: [Solutions Journalism Network](https://www.solutionsjournalism.org/)
 
