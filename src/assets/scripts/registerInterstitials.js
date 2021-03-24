@@ -1,4 +1,4 @@
-DEMO = true;
+DEMO = false;
 document.addEventListener('DOMContentLoaded', function () {
   const els = document.querySelectorAll('a[data-use-interstitial]');
   els.forEach(function (el) {
