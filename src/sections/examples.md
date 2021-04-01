@@ -29,7 +29,7 @@ Cohousing and Intentional Communities: [Convent Arts Community](https://www.ic.o
 
 Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [](https://www.happyfamilymkt.com/mission)[Meerkat](https://www.meerkatmedia.org)
 
-Multi-stakeholder cooperatives: [Happy Family Night Market](https://www.happyfamilymkt.com/mission)
+Multi-stakeholder Cooperatives: [Happy Family Night Market](https://www.happyfamilymkt.com/mission)
 
 Producer Cooperatives: [200 Million Artisans](https://200millionartisans.org/about), [Justseeds](https://justseeds.org/)
 
