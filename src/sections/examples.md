@@ -27,7 +27,7 @@ Cohousing and Intentional Communities: [Convent Arts Community](https://www.ic.o
 
 ### Work and Labor
 
-Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [](https://www.happyfamilymkt.com/mission)[Meerkat](https://www.meerkatmedia.org)
+Worker Cooperatives: [Rhythm Conspiracy](http://www.rhythmconspiracy.com/), [Resonate](https://resonate.is/), [](https://www.happyfamilymkt.com/mission)[Meerkat](https://www.meerkatmedia.org), [CRUX](https://crux.pory.app/)
 
 Multi-stakeholder Cooperatives: [Happy Family Night Market](https://www.happyfamilymkt.com/mission)
 
@@ -93,7 +93,7 @@ Worker-Owned News Media: [Media Reparations,](https://mediareparations.org/) [As
 
 Community Radio: [KOJH 104.7 FM](https://www.kojhfm.org/) (Mutual Musicians Foundation)
 
-Platform Cooperatives: [Crux](https://crux.coop), [Guilded](https://www.usworker.coop/guilded/), [Ampled](https://www.ampled.com/), and internationally [Stocksy](https://www.stocksy.com/) in Canada, [Smart](https://smart.coop/) in Belgium, [Arctic Co-ops](https://arctic-coop.com/) in Canada, and [Doc Servizi](https://docservizi.retedoc.net/en/) in Italy
+Platform Cooperatives: [CRUX](https://crux.pory.app/), [Guilded](https://www.usworker.coop/guilded/), [Ampled](https://www.ampled.com/), and internationally [Stocksy](https://www.stocksy.com/) in Canada, [Smart](https://smart.coop/) in Belgium, [Arctic Co-ops](https://arctic-coop.com/) in Canada, and [Doc Servizi](https://docservizi.retedoc.net/en/) in Italy
 
 Solutions Journalism: [Solutions Journalism Network](https://www.solutionsjournalism.org/)
 
