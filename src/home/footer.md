@@ -3,6 +3,7 @@ title: Footer
 hideInNavigation: true
 position: 9999
 ---
+
 [![Grantmakers in the Arts logo](/assets/uploads/gia-logo.svg)](https://www.giarts.org/)
 
 This report is made possible by the William and Flora Hewlett Foundation, the Kenneth Rainin Foundation, and the Barr Foundation.

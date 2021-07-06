@@ -1,6 +1,6 @@
 <nav class="main-nav">
   <ul>
-    <% collections.section.filter(section=>
+    <% collections[collectionName].filter(section=>
     !section.data.hideInNavigation).forEach((section)=> { %>
     <li>
       <a href="#<%= section.fileSlug %>"> <%= section.data.title %> </a>
