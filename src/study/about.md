@@ -6,7 +6,7 @@ position: 1
 
 # <span id="greeting">Welcome</span>
 
-Did you know that **cultural workers are co-creating <i id="concept" data-concepts='<%= JSON.stringify(concepts.concepts) %>'></i>** right now? They are spreading power and wealth and rooting it in their community.
+Did you know that **cultural workers are co-creating <i id="concept" data-concepts='<%= JSON.stringify(concepts.concepts) %>'></i>** right now?</br> They are spreading power and wealth and rooting it in their community.
 
 **We invite you to study-into-action with us on seven [Fridays this fall](#fridays)**, to participate in our solidarity [value flow](#value-flow), and to [contact us](#contact).
 
