@@ -1,7 +1,7 @@
 const { format } = require('date-fns-tz');
 
 /**
- * Makes lodash available in ejs as _
+ * date formatting function bound to EST
  */
 
 module.exports = () => {
