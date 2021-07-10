@@ -5,15 +5,12 @@
     <li>
       <a href="#<%= section.fileSlug %>"> <%= section.data.title %> </a>
     </li>
-    <% }) %>
+    <% }) %> <% (extraNavLinks || []).forEach(({href, isExternal, text}) => { %>
     <li>
-      <a
-        href="https://www.giarts.org/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        GIA
+      <a href="<%= href %>" <% if (isExternal) { %>
+        target="_blank" rel="noopener noreferrer" <% } %> > <%= text %>
       </a>
     </li>
+    <% }) %>
   </ul>
 </nav>

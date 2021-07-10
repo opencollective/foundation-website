@@ -3,4 +3,6 @@ layout: default
 permalink: /
 ---
 
-<%- include('/sectionalLayout', {collectionName: 'home' }) %>
+<%- include('/sectionalLayout', { collectionName: 'home', extraNavLinks: [{
+href: '/study', isExternal: false, text: 'Study' },{ href:
+'https://www.giarts.org/', isExternal: true, text: 'GIA' }] }) %>
