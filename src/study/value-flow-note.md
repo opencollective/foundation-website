@@ -1,6 +1,6 @@
 ---
 title: Value flow note
-hideFromNavigation: true
+hideInNavigation: true
 position: 7
 ---
 
