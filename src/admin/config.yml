@@ -209,3 +209,36 @@ collections:
                 minimal: true
                 buttons: ['link']
                 editor_components: []
+  - name: studyEvents
+    label: Friday events
+    label_singular: event
+    extension: md
+    format: yaml-frontmatter
+    folder: src/events
+    create: true
+    delete: true
+    preview_path_date_field: startDate
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: date
+        label: start
+        widget: datetime
+      - name: endDate
+        label: end
+        widget: datetime
+      - name: cohortOnly
+        label: Cohort Only
+        widget: boolean
+        default: false
+      - name: rsvpUrl
+        label: RSVP URL
+        widget: string
+        pattern:
+          - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+          - Must be a URL
+        required: false
+      - name: body
+        label: description
+        widget: text

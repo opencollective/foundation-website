@@ -1,0 +1,50 @@
+@import '../variables/typography.less';
+@import '../variables/sizing.less';
+
+.events-list {
+  .event {
+    margin-bottom: @grid * 2;
+  }
+
+  .heading-line {
+    .font-size-large();
+    margin-bottom: @grid;
+  }
+
+  .event-time {
+    font-weight: @font-weight-bold;
+    margin-right: @grid;
+  }
+
+  .rsvp-link,
+  .cohort-only {
+    font-weight: @font-weight-normal;
+  }
+
+  .cohort-only,
+  .rsvp-link,
+  .event-time {
+    display: inline;
+  }
+
+  .cohort-only {
+    opacity: 0.5;
+  }
+
+  .event-title {
+    .font-size-base();
+    font-weight: @font-weight-bold;
+    // font-family: @font-family-serif;
+    margin: 0;
+    margin-bottom: @grid;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .event-title,
+  .event-body {
+    // margin-left: @grid * 2;
+  }
+}
