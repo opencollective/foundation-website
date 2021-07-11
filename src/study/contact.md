@@ -24,7 +24,9 @@ Community & Communications Apprentice
 [**Vijay Mathew**](mailto:vijay@howlround.com?subject=Art.coop%20Study-into-Action%20contact)\
 Live Stream Steward, HowlRound Theatre Commons
 
-### Mailing List
+### Mailing list
+
+<%- include('/email-signup-form') %>
 
 Email: [CulturalEconomyWeWant@gmail.com](mailto:CulturalEconomyWeWant@gmail.com)
 
