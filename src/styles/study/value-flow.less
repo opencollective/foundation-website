@@ -4,6 +4,10 @@
 @import '../variables/buttons.less';
 
 section#value-flow {
+  .large-text {
+    .font-size-large();
+    font-family: @font-family-serif;
+  }
   .value-flow-card {
     padding: @grid * 4;
 
@@ -24,16 +28,7 @@ section#value-flow {
 
       a {
         margin-bottom: @grid;
-      }
-
-      a:nth-of-type(3n + 1) {
-        .buttonStyledLink(@accent-color-red);
-      }
-      a:nth-of-type(3n + 2) {
-        .buttonStyledLink(@accent-color-teal);
-      }
-      a:nth-of-type(3n + 3) {
-        .buttonStyledLink(@accent-color-yellow);
+        .buttonStyledLink(@accent-color-purple);
       }
     }
 
