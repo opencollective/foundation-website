@@ -37,4 +37,15 @@ section#value-flow {
       display: block;
     }
   }
+
+  .oc-embed {
+    margin: (@grid * 2) 0;
+    width: 100%;
+    height: 1000px;
+    // Using the breakpoint of the frame contents
+    @media (max-width: 832px) {
+      height: 1500px;
+    }
+    border: none;
+  }
 }
