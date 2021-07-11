@@ -199,6 +199,10 @@ collections:
               - name: conceptTitle
                 label: Concept title
                 widget: string
+              - name: conceptTitlePlural
+                label: Concept Title (plural)
+                required: false
+                widget: string
               - name: conceptDescription
                 label: Concept description
                 widget: text

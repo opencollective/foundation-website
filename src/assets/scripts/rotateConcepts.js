@@ -8,7 +8,7 @@ function renderRotatingConcepts() {
   function rotate() {
     if (el.matches && el.matches(':hover')) return;
     var concept = concepts[i++ % concepts.length];
-    el.innerText = concept.conceptTitle;
+    el.innerText = concept.conceptTitlePlural || concept.conceptTitle;
     el.setAttribute('title', concept.conceptDescription);
   }
 
