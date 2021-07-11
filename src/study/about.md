@@ -8,7 +8,7 @@ position: 1
 
 Did you know that **cultural workers are co-creating <i id="concept" data-concepts='<%= JSON.stringify(concepts.concepts) %>'></i>** right now?</br> They are spreading power and wealth and rooting it in their community.
 
-**We invite you to study-into-action with us on seven [Fridays this fall](#fridays)**, to participate in our solidarity [value flow](#value-flow), and to [contact us](#contact).
+Let's study together. **We invite you to study-into-action with us on seven [Fridays this fall](#fridays)**, to participate in our solidarity [value flow](#value-flow), and to [contact us](#contact).
 
 Our aim is to **connect cultural innovators across silos** who do not know one another well, but are building the cultural economy we want. We need to socialize, study, and dream together before we can take collective action.
 
