@@ -9,4 +9,4 @@ DJ:
 
 Public Talk + Experience: Cierra Peters
 
-Facilitators:
+Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode, Meron Tebeje

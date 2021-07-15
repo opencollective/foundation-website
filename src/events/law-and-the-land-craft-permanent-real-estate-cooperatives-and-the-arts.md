@@ -9,4 +9,4 @@ DJ:
 
 Public Talk + Experience: Gregory Jackson and Janelle Orsi
 
-Facilitators:
+Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode, Meron Tebeje

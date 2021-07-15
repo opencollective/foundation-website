@@ -5,4 +5,6 @@ endDate: 2021-08-27T18:00:32.106Z
 cohortOnly: true
 ---
 
-Nati Linares, Marina Lopez, Sruti Suryanarayanan, Caroline Woolard: Welcome to Study-into-Action
+Nati Linares, Marina Lopez, Sruti Suryanarayanan, Caroline Woolard: _Welcome to Study-into-Action_
+
+Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode, Meron Tebeje

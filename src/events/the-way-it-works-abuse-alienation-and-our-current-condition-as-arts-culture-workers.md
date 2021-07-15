@@ -10,4 +10,4 @@ DJ:
 
 Public Talk + Experience: Clara Takarabe
 
-Facilitators:
+Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode, Meron Tebeje

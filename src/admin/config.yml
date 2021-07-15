@@ -245,4 +245,4 @@ collections:
         required: false
       - name: body
         label: description
-        widget: text
+        widget: markdown
