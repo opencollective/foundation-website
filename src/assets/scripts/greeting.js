@@ -1,26 +1,7 @@
----
-title: Home
-position: 0
----
+function renderGreeting() {
+  var el = document.getElementById('greeting');
+  if (!el) return;
 
-<div class="section-welcome">
-  <h1 class="site-title"><%= site.title %></h1>
-
-  <div class="video-container">
-    <%- include('/vimeo', {id: '527951208' }) %>
-  </div>
-
-  <div class="below-video-content">
-    <div class="headings">
-      <h2 class="greeting" id="greeting">Welcome</h2>
-    </div>
-
-    <a href="#report" class="download-button">Download Report</a>
-  </div>
-</div>
-
-<!-- Personalize greeting -->
-<script>
   var time = new Date();
   // Shift time forward 15 minutes. Since granularity is 30, this will show closest time.
   time.setMinutes(time.getMinutes() + 15);
@@ -67,5 +48,8 @@ position: 0
       ? HALF_HOUR_EMOJIS_BY_HOUR[hour % 12]
       : EMOJIS_BY_HOUR[hour % 12];
   greeting += ' ' + emoji;
-  document.getElementById('greeting').innerText = greeting;
-</script>
+
+  el.innerText = greeting;
+}
+
+renderGreeting();

@@ -10,10 +10,39 @@ show_preview_links: true
 local_backend: true
 
 collections:
-  - name: sections
+  - name: home
     label: 'Home sections'
     label_singular: 'section'
-    folder: src/sections
+    folder: src/home
+    extension: md
+    format: yaml-frontmatter
+    sortable_fields:
+      - position
+    create: false
+    delete: false
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: hideInNavigation
+        label: Hide in navigation
+        widget: boolean
+        required: false
+        default: false
+      - name: position
+        label: Display position
+        widget: number
+        min: 0
+        step: 1
+      - name: body
+        label: body
+        widget: markdown
+  - name: study
+    label: 'Study sections'
+    label_singular: 'section'
+    folder: src/study
     extension: md
     format: yaml-frontmatter
     sortable_fields:
@@ -170,6 +199,10 @@ collections:
               - name: conceptTitle
                 label: Concept title
                 widget: string
+              - name: conceptTitlePlural
+                label: Concept Title (plural)
+                required: false
+                widget: string
               - name: conceptDescription
                 label: Concept description
                 widget: text
@@ -180,3 +213,36 @@ collections:
                 minimal: true
                 buttons: ['link']
                 editor_components: []
+  - name: studyEvents
+    label: Friday events
+    label_singular: event
+    extension: md
+    format: yaml-frontmatter
+    folder: src/events
+    create: true
+    delete: true
+    preview_path_date_field: startDate
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: date
+        label: start
+        widget: datetime
+      - name: endDate
+        label: end
+        widget: datetime
+      - name: cohortOnly
+        label: Cohort Only
+        widget: boolean
+        default: false
+      - name: rsvpUrl
+        label: RSVP URL
+        widget: string
+        pattern:
+          - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+          - Must be a URL
+        required: false
+      - name: body
+        label: description
+        widget: markdown

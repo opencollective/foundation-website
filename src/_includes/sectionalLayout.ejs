@@ -1,0 +1,7 @@
+<%- include('/nav', { collectionName, extraNavLinks }) %>
+
+<main>
+  <% collections[collectionName].forEach((section)=> { %>
+  <section id="<%- section.fileSlug %>"><%- section.templateContent %></section>
+  <% }) %>
+</main>

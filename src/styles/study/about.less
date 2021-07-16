@@ -1,0 +1,27 @@
+@import '../variables/color.less';
+@import '../variables/typography.less';
+@import '../variables/buttons.less';
+
+section#about {
+  .bigText() {
+    font-family: @font-family-serif;
+    .font-size-large();
+    // font-weight: @font-weight-bold;
+  }
+
+  #concept {
+    @color: @font-color-base;
+    border-bottom: 1px dashed @color;
+    font-style: normal;
+    cursor: help;
+    font-size: @font-size-larger;
+  }
+
+  a.download-button {
+    .buttonStyledLink(@accent-color-jade);
+  }
+
+  p {
+    .bigText();
+  }
+}

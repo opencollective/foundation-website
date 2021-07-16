@@ -3,10 +3,6 @@ layout: default
 permalink: /
 ---
 
-<%- include('/nav') %>
-
-<main>
-  <% collections.section.forEach((section) => { %>
-  <section id="<%- section.fileSlug %>"><%- section.templateContent %></section>
-  <% }) %>
-</main>
+<%- include('/sectionalLayout', { collectionName: 'home', extraNavLinks: [{
+href: '/study', isExternal: false, text: 'Study' },{ href:
+'https://www.giarts.org/', isExternal: true, text: 'GIA' }] }) %>
