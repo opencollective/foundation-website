@@ -13,7 +13,7 @@ Co-Founder, Project Organizer, Network Engagement & Communications Steward
 Co-Founder, Project Development & Research Steward
 
 [**Marina Lopez**](mailto:CulturalEconomyWeWant@gmail.com?subject=Art.coop%20Study-into-Action%20contact)\
-Project Facilitator & XYZ
+Project Facilitator
 
 [**Francisco Perez**](mailto:CulturalEconomyWeWant@gmail.com?subject=Art.coop%20Study-into-Action%20contact)\
 Project Facilitator & Educator
