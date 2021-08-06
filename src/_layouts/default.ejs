@@ -19,6 +19,20 @@
     />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <%- include('/fonts') %> <%- include('/analytics') %>
+
+    <!-- https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </head>
   <body>
     <%- include('/popup') %> <%- content %>
