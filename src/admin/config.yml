@@ -3,7 +3,7 @@ backend:
   branch: master
   repo: jboolean/art-coop
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: src/assets/uploads
 public_folder: /assets/uploads
 show_preview_links: true
