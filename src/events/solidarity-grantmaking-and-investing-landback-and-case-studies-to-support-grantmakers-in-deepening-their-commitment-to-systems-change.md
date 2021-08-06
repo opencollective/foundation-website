@@ -11,4 +11,4 @@ DJ:
 
 Public Talk + Experience: Rhonda Anderson, Carlos Uriona, and Dana Kawaoka-Chen
 
-Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode
+Facilitators:

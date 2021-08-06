@@ -7,4 +7,4 @@ cohortOnly: true
 
 Nati Linares, Marina Lopez, Sruti Suryanarayanan, Caroline Woolard: _Welcome to Study-into-Action_
 
-Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode
+Facilitators:
