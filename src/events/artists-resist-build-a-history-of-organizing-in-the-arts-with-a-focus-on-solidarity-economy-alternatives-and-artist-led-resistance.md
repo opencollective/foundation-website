@@ -10,4 +10,4 @@ DJ:
 
 Public Talk + Experience: Francisco Pérez & Chris Meyers
 
-Facilitators: Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode
+Facilitators:

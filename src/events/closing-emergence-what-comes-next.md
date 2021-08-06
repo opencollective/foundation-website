@@ -7,4 +7,4 @@ cohortOnly: true
 
 DJ:
 
-Facilitators: Lex Barlowe, Kate Barut, Sonia Erika, Hope Ghazala, Andrea Jacome, Mike Strode
+Facilitators:
