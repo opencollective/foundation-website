@@ -35,6 +35,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary('md', md);
 
+  eleventyConfig.addPassthroughCopy({ 'src/favicon_io': '/' });
+
   return {
     markdownTemplateEngine: 'ejs',
     dir: {
