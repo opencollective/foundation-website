@@ -45,6 +45,21 @@
     font-size: @font-size-larger;
   }
 
+  .greeting {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: @grid * 10;
+      width: @grid * 10;
+      margin-right: @grid;
+      background: url('/assets/images/logo.png') no-repeat center;
+      background-size: contain;
+      vertical-align: middle;
+    }
+  }
+
   a.download-button {
     .buttonStyledLink(@accent-color-jade);
   }
