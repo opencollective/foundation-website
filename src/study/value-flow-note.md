@@ -3,7 +3,6 @@ title: Value flow note
 hideInNavigation: true
 position: 7
 ---
-
 Haystack Mountain School of Crafts (Maine) instigated Phase 1 and Open Collective Foundation is the home of the school for Phase 1 and 2.
 
 :::columns
@@ -46,8 +45,6 @@ Howl Round Theater Commons is producing and distributing Phase 1.
 ![Center for Popular Economics](/assets/uploads/popular-economics.png)
 
 ![Sustainable Economies Law Center](/assets/uploads/selc-logo.png)
-
-![anti capitalism for artists](/assets/uploads/a4a_logo_final.png)
 
 ![Double Edge Theater](/assets/uploads/author-logo-round-e1596930290889.png)
 
