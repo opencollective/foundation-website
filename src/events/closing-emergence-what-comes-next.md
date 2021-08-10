@@ -7,4 +7,4 @@ cohortOnly: true
 
 DJ:
 
-Facilitators:
+Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams
