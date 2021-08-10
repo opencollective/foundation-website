@@ -23,10 +23,6 @@ Howl Round Theater Commons is producing and distributing Phase 1.
 
 ![William & Flora Hewlett Foundation](/assets/uploads/hewlett_dark.svg)
 
-![Weavers Fellowship](/assets/uploads/weaver-logo-1-.jpeg)
-
-![Recess Art](/assets/uploads/newlogomedium_revised-1-e1437157116591.png)
-
 ![Minneapolis College of Art and Design](/assets/uploads/minneapolis-college-art-design-700logo-2015.jpeg)
 
 ![Joan Mitchell Foundation](/assets/uploads/joan-mitchell-foundation.png)
