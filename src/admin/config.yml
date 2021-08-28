@@ -246,3 +246,6 @@ collections:
       - name: body
         label: description
         widget: markdown
+      - name: captionEmbedUrl
+        label: Recapd Embed URL
+        widget: string
