@@ -7,8 +7,7 @@ cohortOnly: false
 rsvpUrl: https://opencollective.com/study-into-action/events/the-problem-clara-takarabe-4e439c7f
 captionEmbedUrl: https://recapd.com/i-P11W28
 ---
-
-DJ:
+Opening Artist: Xenia Rubinos
 
 Public Talk + Experience: Clara Takarabe
 
