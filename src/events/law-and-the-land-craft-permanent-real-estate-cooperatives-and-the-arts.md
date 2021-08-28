@@ -11,4 +11,4 @@ DJ:
 
 Public Talk + Experience: Gregory Jackson and Janelle Orsi
 
-Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams
+Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams, Priyanka Das

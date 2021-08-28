@@ -12,4 +12,4 @@ DJ:
 
 Public Talk + Experience: Francisco Pérez & Chris Meyers
 
-Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams
+Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams, Priyanka Das

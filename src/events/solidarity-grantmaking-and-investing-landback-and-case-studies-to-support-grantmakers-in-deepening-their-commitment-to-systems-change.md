@@ -12,4 +12,4 @@ DJ:
 
 Public Talk + Experience: Rhonda Anderson, Carlos Uriona, and Dana Kawaoka-Chen
 
-Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams
+Facilitators: Sonia Erika, Andrea Jacome, Hope Ghazala, Mike Strode, Sadé Swift, Dr. Herukhuti Williams, Priyanka Das
