@@ -5,10 +5,14 @@
     <li>
       <a href="#<%= section.fileSlug %>"> <%= section.data.title %> </a>
     </li>
-    <% }) %> <% (extraNavLinks || []).forEach(({href, isExternal, text}) => { %>
-    <li>
-      <a href="<%= href %>" <% if (isExternal) { %>
-        target="_blank" rel="noopener noreferrer" <% } %> > <%= text %>
+    <% }) %> <% (extraNavLinks || []).forEach(({href, isExternal, text, isCta}) => { %>
+    <li
+      class="<% if (isCta) {%>cta <%}%>">
+      <a href="<%= href %>" 
+        <% if (isExternal) { %>
+          target="_blank" rel="noopener noreferrer" 
+        <% } %>>
+        <%= text %>
       </a>
     </li>
     <% }) %>
