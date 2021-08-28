@@ -48,4 +48,6 @@ Howl Round Theater Commons is producing and distributing Phase 1.
 
 ![Double Edge Theater](/assets/uploads/author-logo-round-e1596930290889.png)
 
+![Howlround](/assets/uploads/howlround.png)
+
 :::
