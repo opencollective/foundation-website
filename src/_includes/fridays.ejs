@@ -9,9 +9,16 @@
       </div>
       <% if (event.data.cohortOnly) { %>
       <div class="cohort-only">(Cohort-Only)</div>
-      <% } %> <% if (event.data.rsvpUrl) { %>
+      <% } %> <% if (event.data.rsvpUrl && event.data.date > new Date()) { %>
       <a class="rsvp-link" href="<%= event.data.rsvpUrl %>" target="_blank"
         >RSVP</a
+      >
+      <% } %> <% if (event.data.recordingUrl) { %>
+      <a
+        class="recording-link"
+        href="<%= event.data.recordingUrl %>"
+        target="_blank"
+        >Video Recording</a
       >
       <% } %>
     </div>

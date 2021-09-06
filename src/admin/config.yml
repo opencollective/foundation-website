@@ -243,9 +243,16 @@ collections:
           - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
           - Must be a URL
         required: false
-      - name: body
-        label: description
-        widget: markdown
+      - name: recordingUrl
+        label: Recording URL
+        widget: string
+        pattern:
+          - https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+          - Must be a URL
+        required: false
       - name: captionEmbedUrl
         label: Recapd Embed URL
         widget: string
+      - name: body
+        label: description
+        widget: markdown
