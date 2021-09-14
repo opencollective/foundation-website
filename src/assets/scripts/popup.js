@@ -39,7 +39,7 @@ var HAS_SIGNED_UP = 'signed-up';
       downloadPdf(pdfUrl);
       closePopup();
     };
-    request.open('POST', '/');
+    request.open('POST', '/form');
     request.send(formData);
   }
 
