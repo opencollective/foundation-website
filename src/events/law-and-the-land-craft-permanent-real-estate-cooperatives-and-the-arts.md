@@ -7,6 +7,9 @@ rsvpUrl: https://opencollective.com/study-into-action/events/law-and-the-land-cr
 recordingUrl: https://www.youtube.com/watch?v=U0jlEQV1D_g
 captionEmbedUrl: https://recapd.com/i-57ymSu
 ---
+Host: Rad Pereira
+
+
 
 DJ: Reem Abdou, aka DRĖĖĖMY, Founder of The Collective BAE
 
