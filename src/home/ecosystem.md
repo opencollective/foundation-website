@@ -1,7 +1,7 @@
 ---
 title: Ecosystem
 hideInNavigation: true
-position: 11
+position: 2
 ---
 
 ## The Solidarity Economy Ecosystem
