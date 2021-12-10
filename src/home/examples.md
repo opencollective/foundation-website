@@ -1,7 +1,7 @@
 ---
 title: Examples
 hideInNavigation: true
-position: 1
+position: 3
 ---
 ## Solidarity Economy & Culture
 
