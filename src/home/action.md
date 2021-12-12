@@ -1,7 +1,7 @@
 ---
 title: Action
 hideInNavigation: false
-position: 5
+position: 6
 ---
 
 ## ACTION: How can grantmakers support the Solidarity Economy?

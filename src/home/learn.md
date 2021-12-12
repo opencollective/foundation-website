@@ -1,7 +1,7 @@
 ---
 title: Learn
 hideInNavigation: false
-position: 9
+position: 10
 ---
 
 ## Top 10 Resources

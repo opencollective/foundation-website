@@ -1,7 +1,7 @@
 ---
 title: Transformation
 hideInNavigation: true
-position: 6
+position: 7
 ---
 
 ### The transformation underway can be summarized as follows:
