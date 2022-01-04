@@ -212,8 +212,8 @@
 
 @media screen and (min-width: 768px) {
   .modalContent {
-    width: 512px;
-    height: 672px;
+    width: 600px;
+    height: 600px;
     border-radius: 48px;
     box-shadow: 0 -16px 16px 24px rgba(49, 50, 51, 0.16);
     background-color: #ffffff;
