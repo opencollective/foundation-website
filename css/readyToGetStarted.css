@@ -70,6 +70,14 @@
   text-decoration: none;
 }
 
+.linkButton {
+  background: none;
+  color: #4e908d;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+}
+
 .buttonStyleLink {
   border-radius: 24px;
   padding: 16px 24px;
