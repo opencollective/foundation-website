@@ -10,14 +10,16 @@
     <title><%= locals.title %></title>
     <% } %>
     <link rel="stylesheet" href="/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="/assets/scripts/popup.js"></script>
-    <script src="/assets/scripts/registerInterstitials.js"></script>
-    <link
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
+
+    <!-- Scripts -->
+    <!-- <script src="/assets/scripts/popup.js"></script> -->
+
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
     <%- include('/fonts') %> <%- include('/analytics') %>
 
     <!-- https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget -->
@@ -37,7 +39,6 @@
     <%- include('/favicon') %>
   </head>
   <body>
-    <%- include('/popup') %> <%- content %>
+    <%- content %>
   </body>
-  <script src="/assets/scripts/greeting.js"></script>
 </html>
