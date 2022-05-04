@@ -1,0 +1,14 @@
+---
+title: Posts
+position: 2
+---
+
+<h2>Blog</h2>
+
+<% blog.items.forEach((post)=> { %>
+<div>
+  <pre>
+    <%= JSON.stringify(post, null, '\t') %>
+  </pre>
+</div>
+<% }) %>
