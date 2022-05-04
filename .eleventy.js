@@ -38,6 +38,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ 'src/favicon_io': '/' });
 
+  eleventyConfig.setBrowserSyncConfig({
+    https: true,
+  });
+
   return {
     markdownTemplateEngine: 'ejs',
     dir: {
