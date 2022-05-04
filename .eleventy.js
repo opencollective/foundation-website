@@ -3,6 +3,7 @@ const sortBy = require('lodash/sortBy');
 const md = require('markdown-it')('commonmark');
 const mila = require('markdown-it-link-attributes');
 const mic = require('markdown-it-container');
+const axios = require('axios');
 
 md.use(mila, [
   {

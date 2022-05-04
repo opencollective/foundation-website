@@ -1,0 +1,15 @@
+---
+title: Events
+position: 1
+---
+
+<h2>Events</h2>
+
+<% events.forEach((event)=> { %>
+<div>
+  <pre>
+    <%= JSON.stringify(event, null, '\t') %>
+    </pre
+  >
+</div>
+<% }) %>
