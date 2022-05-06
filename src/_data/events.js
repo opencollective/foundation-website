@@ -1,8 +1,6 @@
-const axios = require('axios');
+const apiV1 = require('../shared/OpenCollectiveApiV1');
 
 module.exports = async () => {
-  const { data } = await axios.get(
-    'https://opencollective.com/foundation/events.json'
-  );
+  const { data } = await apiV1.get('/foundation/events.json');
   return data;
 };
