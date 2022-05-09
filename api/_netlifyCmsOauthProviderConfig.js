@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const host =
   process.env.VERCEL_URL ||
-  'https://foundation-website-git-new-opencollective.vercel.app/api/complete';
+  'foundation-website-git-new-opencollective.vercel.app';
 
 const completeUrl = `https://${host}/api/complete`;
 
