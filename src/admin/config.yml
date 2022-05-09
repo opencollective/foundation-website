@@ -1,7 +1,9 @@
 backend:
-  name: git-gateway
-  branch: master
-  # repo: jboolean/art-coop
+  name: github
+  branch: new
+  repo: opencollective/foundation-website
+  base_url: https://foundation-website-git-new-opencollective.vercel.app
+  auth_endpoint: api/begin
 
 # publish_mode: editorial_workflow
 media_folder: src/assets/uploads
