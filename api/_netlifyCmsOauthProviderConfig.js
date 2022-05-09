@@ -1,12 +1,14 @@
 require('dotenv').config();
 
-const { VERCEL_URL } = process.env;
-const completeUrl = `https://${VERCEL_URL}/api/complete`;
+const host = process.env.VERCEL_URL || 'localhost:3000';
 
-module.exports = {
-  useEnv: true,
-  origin: VERCEL_URL,
+const completeUrl = `https://${host}/api/complete`;
+
+const config = {
+  origin: host,
   completeUrl,
   oauthProvider: 'github',
   adminPanelUrl: '/admin',
 };
+
+module.exports = config;

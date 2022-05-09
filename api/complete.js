@@ -3,4 +3,4 @@ const {
   createVercelCompleteHandler,
 } = require('netlify-cms-oauth-provider-node');
 
-module.exports = createVercelCompleteHandler({}, config);
+module.exports = createVercelCompleteHandler(config, { useEnv: true });
