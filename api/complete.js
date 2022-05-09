@@ -1,4 +1,4 @@
-const config = require('./netlifyCmsOauthProviderConfig');
+const config = require('./_netlifyCmsOauthProviderConfig');
 const {
   createVercelCompleteHandler,
 } = require('netlify-cms-oauth-provider-node');
