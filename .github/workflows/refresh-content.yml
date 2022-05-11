@@ -1,0 +1,13 @@
+on:
+  schedule:
+    - cron: '0 22,10 * * *'
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deploy
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.DEPLOY_TRIGGER_URL }}
+          method: 'POST'
