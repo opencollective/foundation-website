@@ -11,6 +11,7 @@ const config = {
   completeUrl,
   oauthProvider: 'github',
   adminPanelUrl: '/admin',
+  oauthScopes: 'repo user',
 };
 
 module.exports = config;
