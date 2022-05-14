@@ -2,7 +2,7 @@
 @import './variables/typography.less';
 @import './variables/color.less';
 
-@nav-height: @grid * 3;
+@nav-height: 100px;
 
 // https://stackoverflow.com/a/28824157
 // Fixes nav sitting on top of targetted element
@@ -32,20 +32,9 @@
     & > li {
       display: inline-block;
 
-      .applyColor(@color) {
-        a:hover {
-          color: @color;
-          border-bottom-color: @color;
-        }
-      }
-
-      &.cta a {
-        color: @accent-color-jade;
-      }
-
       a {
         display: block;
-        padding: 0 @grid;
+        // padding: 0 @grid;
         line-height: @nav-height;
 
         font-weight: @font-weight-bold;
@@ -56,26 +45,6 @@
         &:hover {
           border-bottom-color: @font-color-base;
         }
-      }
-
-      // Rainbows!
-      &:nth-child(6n + 1) {
-        .applyColor(@accent-color-red);
-      }
-      &:nth-child(6n + 2) {
-        .applyColor(@accent-color-teal);
-      }
-      &:nth-child(6n + 3) {
-        .applyColor(@accent-color-orange);
-      }
-      &:nth-child(6n + 4) {
-        .applyColor(@accent-color-yellow);
-      }
-      &:nth-child(6n + 5) {
-        .applyColor(@accent-color-jade);
-      }
-      &:nth-child(6n + 6) {
-        .applyColor(@accent-color-purple);
       }
     }
   }

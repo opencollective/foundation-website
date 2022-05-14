@@ -1,27 +1,45 @@
 @import './sizing.less';
 
-@font-family-serif: 'Caudex', serif;
-@font-family-sans: 'Rubik', sans-serif;
+@font-family-sans: 'Barlow', sans-serif;
 
-@font-weight-normal: 400;
+@font-weight-light: 500;
+@font-weight-regular: 600;
 @font-weight-bold: 700;
 
-@font-size-sm: 14px;
-@font-size-base: 16px;
-@font-size-large: 24px;
-@font-size-larger: 32px;
-
-.font-size-base() {
-  line-height: (@grid * 2);
-  font-size: @font-size-base;
+.base-typography {
+  font-family: @font-family-sans;
+  font-weight: @font-weight-regular;
+  line-height: 26px;
+  font-size: 18px;
 }
 
-.font-size-large() {
-  font-size: @font-size-large;
-  line-height: (@grid * 3);
+.heading-h1 {
+  line-height: 60px;
+  font-size: 52px;
 }
 
-.font-size-larger() {
-  font-size: @font-size-larger;
-  line-height: (@grid * 4);
+.heading-h2 {
+  line-height: 54px;
+  font-size: 40px;
+}
+
+.subheading {
+  line-height: 40px;
+  font-size: 32px;
+}
+
+.paragraph-large {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 24px;
+}
+
+.paragraph-mid {
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.paragraph-small {
+  line-height: 24px;
+  font-size: 16px;
 }

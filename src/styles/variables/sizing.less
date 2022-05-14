@@ -1,21 +1,27 @@
-@grid: 11px;
-
-@margin: 7 * @grid;
-
-@content-width: 1200px;
+@content-width: 1280px;
 
 @mobile-width: 768px;
+
+@layout-grid-columns: 12;
+@layout-grid-gutter: 48px;
+@layout-grid-margin: 40px;
 
 html {
   // Due to issue with full-bleed
   overflow-x: hidden;
 }
 
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: @layout-grid-gutter;
+}
+
 .content-container() {
   max-width: @content-width;
   margin: auto;
-  padding: 0 @grid;
-  margin: @grid auto;
+  padding: 0 @layout-grid-gutter;
+  margin: @layout-grid-margin auto;
   box-sizing: border-box;
 
   img {
