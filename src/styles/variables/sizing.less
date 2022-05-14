@@ -6,12 +6,14 @@
 @layout-grid-gutter: 48px;
 @layout-grid-margin: 40px;
 
+@border-radius: 16px;
+
 html {
   // Due to issue with full-bleed
   overflow-x: hidden;
 }
 
-.layout-grid {
+.layout-grid() {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: @layout-grid-gutter;

@@ -1,0 +1,13 @@
+{
+  "featuredCollectives": [
+    {
+      "name": "Bushwick Ayuda Mutua",
+      "heroImage": "/assets/uploads/bushwick-ayuda-mutua.jpeg"
+    },
+    {
+      "name": "Kola Nut Collaborative",
+      "heroImage": "/assets/uploads/kola-nut-collaborative.jpeg",
+      "heroImageAlt": "Pair of cupped hands holding red and yellow koala nuts"
+    }
+  ]
+}

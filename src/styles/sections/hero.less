@@ -1,0 +1,27 @@
+@import '../variables/sizing.less';
+@import '../variables/buttons.less';
+@import '../variables/color.less';
+
+section#hero .content {
+  .layout-grid();
+
+  .left,
+  .collective-hero-image {
+    grid-column: span 6;
+  }
+
+  .subhead {
+    .paragraph-large;
+    font-weight: @font-weight-light;
+  }
+
+  .collective-hero-image {
+    border-radius: @border-radius;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .cta {
+    .buttonStyledLink(@color-dark-green);
+  }
+}

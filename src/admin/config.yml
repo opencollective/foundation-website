@@ -41,3 +41,36 @@ collections:
       - name: body
         label: body
         widget: markdown
+  - name: configurableContent
+    label: Configurable content
+    description: |
+      Configurable structured content
+    editor:
+      preview: false
+    files:
+      - name: featuredCollectives
+        label: Featured collectives
+        label_singular: Featured collective
+        file: src/_data/featuredCollectives.json
+        fields:
+          - name: featuredCollectives
+            label: featured collectives
+            label_singular: featured collective
+            widget: list
+            allow_add: true
+            summary: '{{name}}'
+            fields:
+              - name: name
+                label: Name
+                widget: string
+                required: true
+              - name: heroImage
+                label: Hero image
+                widget: image
+                allow_multiple: false
+                required: true
+              - name: heroImageAlt
+                label: Alt text for hero image
+                description: Alternative text description of image
+                widget: string
+                required: false
