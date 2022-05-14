@@ -4,10 +4,12 @@ position: 0
 ---
 
 <div class="content">
+  <% firstCollective = featuredCollectives.featuredCollectives[0] %>
   <div class="left">
     <h1>
       OC Foundation is proud to be the financial and legal home of
-      <span class="collective-name"></span> and 300 more groups
+      <span class="collective-name"><%= firstCollective.name %> </span> and 300
+      more groups
     </h1>
 
     <p class="subhead">
@@ -23,9 +25,17 @@ position: 0
     >
   </div>
 
-  <img class="collective-hero-image" />
+  <img
+    class="collective-hero-image"
+    src="<%- firstCollective.heroImage %>"
+    alt="<%= firstCollective.heroImageAlt %>"
+  />
 </div>
 <script
   src="/assets/scripts/rotateFeaturedCollectives.js"
   data-featured-collectives="<%= JSON.stringify(featuredCollectives.featuredCollectives) %>"
 ></script>
+
+<% featuredCollectives.featuredCollectives.forEach(collective => { %>
+<link rel="preload" as="image" href="<%- collective.heroImage %>" />
+<% }) %>
