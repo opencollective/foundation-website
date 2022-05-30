@@ -14,4 +14,6 @@ const config = {
   oauthScopes: 'repo user',
 };
 
+console.log(completeUrl);
+
 module.exports = config;
