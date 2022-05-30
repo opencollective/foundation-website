@@ -1,10 +1,10 @@
 ---
-title: Hero
+title: Introduction
 position: 0
 hideInNavigation: true
 ---
 
-<div class="content">
+<div class="row hero-row">
   <% firstCollective = featuredCollectives.featuredCollectives[0] %>
   <div class="left">
     <h1>
@@ -32,6 +32,28 @@ hideInNavigation: true
     alt="<%= firstCollective.heroImageAlt %>"
   />
 </div>
+
+<div class="row the-process-row">
+  <h2 class="the-process-heading">The Process</h2>
+  <img
+    class="the-process-graphic"
+    src="assets/images/theprocess.png"
+    alt="Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!"
+  />
+</div>
+
+<div class="row fees-row">
+  <h3 class="fees-heading">Fees</h3>
+  <p class="fees-copy">
+    * We take 5% for crowdfunding done on the site. Third-party payment
+    processors (like Stripe and Paypal) charge separate fees on each transaction
+    made using their service. Learn more here. We take 4-8% for bank transfers
+    and checks: 8% for up to 500k raised; 6% for up to 1 million raised; 4% for
+    over a million raised.
+  </p>
+</div>
+
+<!-- Scripts, preloaders -->
 <script
   src="/assets/scripts/rotateFeaturedCollectives.js"
   data-featured-collectives="<%= JSON.stringify(featuredCollectives.featuredCollectives) %>"

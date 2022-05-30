@@ -1,8 +1,6 @@
 require('dotenv').config();
 
-const host =
-  process.env.VERCEL_URL ||
-  'foundation-website-git-new-opencollective.vercel.app';
+const host = 'foundation-website-git-new-opencollective.vercel.app';
 
 const completeUrl = `https://${host}/api/complete`;
 
@@ -13,7 +11,5 @@ const config = {
   adminPanelUrl: '/admin',
   oauthScopes: 'repo user',
 };
-
-console.log(completeUrl);
 
 module.exports = config;

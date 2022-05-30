@@ -2,26 +2,63 @@
 @import '../variables/buttons.less';
 @import '../variables/color.less';
 
-section#hero .content {
-  .layout-grid();
-
-  .left,
-  .collective-hero-image {
-    grid-column: span 6;
+section#hero {
+  .row {
+    .layout-grid();
+    border-bottom: 1px solid @color-dark-green;
   }
 
-  .subhead {
-    .paragraph-large;
-    font-weight: @font-weight-light;
+  .hero-row {
+    padding: 40px 0;
+
+    .left,
+    .collective-hero-image {
+      grid-column: span 6;
+    }
+
+    .subhead {
+      .paragraph-large;
+      font-weight: @font-weight-light;
+    }
+
+    .collective-hero-image {
+      border-radius: @border-radius;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .cta {
+      .buttonStyledLink(@color-dark-green);
+    }
   }
 
-  .collective-hero-image {
-    border-radius: @border-radius;
-    object-fit: cover;
-    height: 100%;
+  .the-process-row {
+    padding: 24px 0;
+    .the-process-heading {
+      grid-column: span 4;
+      align-self: center;
+    }
+
+    .the-process-graphic {
+      grid-column-end: span 8;
+    }
   }
 
-  .cta {
-    .buttonStyledLink(@color-dark-green);
+  .fees-row {
+    padding: 21px 0;
+    background-color: @background-color-lighter;
+
+    .fees-heading {
+      grid-column: span 1;
+      .paragraph-mid();
+      font-weight: @font-weight-regular;
+      align-self: center;
+    }
+
+    .fees-copy {
+      grid-column: span 11;
+      .paragraph-mid();
+      font-weight: @font-weight-light;
+    }
   }
 }
