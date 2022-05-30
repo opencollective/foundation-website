@@ -100,7 +100,7 @@ collections:
                 widget: relation
                 collection: configurableContent
                 file: people
-                value_field: departments
+                value_field: departments.*
                 search_fields: ['name']
               - name: title
                 label: Title

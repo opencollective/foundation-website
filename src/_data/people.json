@@ -2,7 +2,7 @@
   "people": [
     {
       "country": "DE",
-      "department": ["OC Foundation Board of Directors"],
+      "department": "OC Foundation Board of Directors",
       "name": "foo bar",
       "title": "test test test",
       "administrativeArea": "somewhere",
