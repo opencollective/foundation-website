@@ -74,3 +74,84 @@ collections:
                 description: Alternative text description of image
                 widget: string
                 required: false
+      - name: people
+        label: People
+        label_singular: person
+        file: src/_data/people.json
+        fields:
+          - name: people
+            label: people
+            label_singular: person
+            widget: list
+            allow_add: true
+            summary: '{{name}}'
+            fields:
+              - name: name
+                label: Name
+                widget: string
+                required: true
+              - name: profileImage
+                label: Profile image
+                widget: image
+                allow_multiple: false
+                required: true
+              - name: department
+                label: Department
+                widget: relation
+                collection: configurableContent
+                file: people
+                value_field: departments
+                search_fields: ['name']
+              - name: title
+                label: Title
+                widget: string
+                required: true
+              - name: administrativeArea
+                label: State, Province, etc.
+                widget: string
+                required: true
+              - name: country
+                widget: relation
+                collection: configurableContent
+                file: geography
+                value_field: 'countries.*.code'
+                display_fields: ['countries.*.label']
+                search_fields: ['countries.*.label', ' countries.*.code']
+                required: true
+              - name: linkedInUrl
+                label: LinkedIn URL
+                widget: string
+                required: false
+              - name: twitterUrl
+                label: Twitter URL
+                widget: string
+                required: false
+              - name: websiteUrl
+                label: Website URL
+                widget: string
+                required: false
+          - name: departments
+            label: Departments
+            label_singular: Department
+            widget: list
+            summary: '{{name}}'
+            minimize_collapsed: true
+            field:
+              name: name
+              label: Department name
+              widget: string
+      - name: geography
+        label: Geography
+        file: src/_data/geography.json
+        fields:
+          - name: countries
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - name: label
+                label: Label
+                widget: string
+              - name: code
+                label: ISO country code
+                widget: string
+                pattern: ['[A-Z]{2}', 'Must be a two-character ISO code']

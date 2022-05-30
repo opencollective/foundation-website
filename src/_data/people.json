@@ -1,0 +1,17 @@
+{
+  "people": [
+    {
+      "country": "DE",
+      "department": ["OC Foundation Board of Directors"],
+      "name": "foo bar",
+      "title": "test test test",
+      "administrativeArea": "somewhere",
+      "profileImage": "http://placekitten.com/72/72"
+    }
+  ],
+  "departments": [
+    "OC Foundation Board of Directors",
+    "OC Foundation Operations and Community",
+    "Platform Engineering and Design"
+  ]
+}
