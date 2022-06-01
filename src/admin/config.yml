@@ -126,6 +126,10 @@ collections:
                 label: Twitter URL
                 widget: string
                 required: false
+              - name: instagramUrl
+                label: Instagram URL
+                widget: string
+                required: false
               - name: websiteUrl
                 label: Website URL
                 widget: string

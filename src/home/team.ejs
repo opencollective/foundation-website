@@ -28,6 +28,8 @@ people.departments.forEach((department) => { %>
         <a href="<%- person.twitterUrl %>" target="_blank"> Twitter </a>
         <% } %> <% if (person.linkedInUrl) { %>
         <a href="<%- person.linkedInUrl %>" target="_blank"> LinkedIn </a>
+        <% } %> <% if (person.websiteUrl) { %> <% if (person.instagramUrl) { %>
+        <a href="<%- person.instagramUrl %>" target="_blank"> Instagram </a>
         <% } %> <% if (person.websiteUrl) { %>
         <a href="<%- person.websiteUrl %>" target="_blank"> Website </a>
         <% } %>
