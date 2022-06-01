@@ -1,0 +1,40 @@
+---
+title: Team
+position: 5
+hideInNavigation: false
+---
+
+<h2>We are a group of committed people you can reach out to.</h2>
+
+<% const peopleByDepartment = _.groupBy(people.people, 'department'); const
+countryByCode = _.keyBy(geography.countries, 'code'); %> <%
+people.departments.forEach((department) => { %>
+
+<h3 class="department-heading"><%= department %></h3>
+
+<div class="people-grid">
+  <% (peopleByDepartment[department] ?? []).forEach((person) => { %>
+  <div class="person">
+    <img class="person-image" src="<%- person.profileImage %>" />
+    <div>
+      <div class="person-name"><%= person.name %></div>
+      <div class="person-title"><%= person.title %></div>
+      <div class="person-location">
+        <%_ if (person.administrativeArea) { _%> <%= person.administrativeArea
+        %>, <%_ } _%> <%= countryByCode[person.country].label _%>
+      </div>
+      <div class="person-links">
+        <% if (person.twitterUrl) { %>
+        <a href="<%- person.twitterUrl %>" target="_blank"> Twitter </a>
+        <% } %> <% if (person.linkedInUrl) { %>
+        <a href="<%- person.linkedInUrl %>" target="_blank"> LinkedIn </a>
+        <% } %> <% if (person.websiteUrl) { %>
+        <a href="<%- person.websiteUrl %>" target="_blank"> Website </a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+</div>
+
+<% }); %>

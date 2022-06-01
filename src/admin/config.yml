@@ -109,7 +109,7 @@ collections:
               - name: administrativeArea
                 label: State, Province, etc.
                 widget: string
-                required: true
+                required: false
               - name: country
                 widget: relation
                 collection: configurableContent

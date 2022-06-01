@@ -1,0 +1,35 @@
+@import '../variables/sizing.less';
+@import '../variables/typography.less';
+
+section#team {
+  .department-heading {
+    .subheading();
+  }
+
+  .people-grid {
+    .layout-grid();
+  }
+
+  .person {
+    grid-column: span 3;
+
+    display: flex;
+    flex-direction: row;
+
+    .paragraph-mid();
+    font-weight: @font-weight-regular;
+  }
+
+  .person-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin: 24px;
+    margin-left: 0;
+  }
+
+  .person-name {
+    font-weight: @font-weight-bold;
+  }
+}
