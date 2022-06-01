@@ -24,8 +24,11 @@ people.departments.forEach((department) => {
       <div class="person-name"><%= person.name %></div>
       <div class="person-title"><%= person.title %></div>
       <div class="person-location">
-        <%_ if (person.administrativeArea) { _%> <%= person.administrativeArea
-        %>,&nbsp; <%_ } _%> <%= countryByCode[person.country].label _%>
+        <%_ if (person.administrativeArea) { _%> 
+          <%= person.administrativeArea %>,&nbsp; 
+          <%_ } _%> 
+          <%= countryByCode[person.country].label _%>&nbsp;
+          <span class="flag" data-country-code="<%=person.country %>"><%#flag emoji inserted by frontend script%></span>
       </div>
       <div class="person-links">
         <% if (person.twitterUrl) { %>
@@ -44,3 +47,5 @@ people.departments.forEach((department) => {
 </div>
 
 <% }); %>
+
+<script src="/assets/scripts/renderFlags.js"></script>
