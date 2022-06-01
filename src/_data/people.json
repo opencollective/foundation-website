@@ -4,9 +4,19 @@
       "country": "DE",
       "department": "OC Foundation Board of Directors",
       "name": "foo bar",
-      "title": "test test test",
+      "title": "test test test 2",
       "administrativeArea": "somewhere",
       "profileImage": "http://placekitten.com/72/72"
+    },
+    {
+      "name": "Caroline Woolard",
+      "department": "OC Foundation Operations and Community",
+      "title": "Director of Research and Partnerships",
+      "administrativeArea": "Berlin",
+      "websiteUrl": "http://carolinewoolard.com",
+      "twitterUrl": "https://twitter.com/carolinewoolard",
+      "profileImage": "/assets/uploads/headshot-woolard.jpg",
+      "country": "DE"
     }
   ],
   "departments": [
