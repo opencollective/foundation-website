@@ -6,9 +6,13 @@ hideInNavigation: false
 
 <h2>We are a group of committed people you can reach out to.</h2>
 
-<% const peopleByDepartment = _.groupBy(people.people, 'department'); const
-countryByCode = _.keyBy(geography.countries, 'code'); %> <%
-people.departments.forEach((department) => { %>
+<% 
+const peopleByDepartment = _.groupBy(people.people, 'department'); 
+const countryByCode = _.keyBy(geography.countries, 'code'); %> 
+
+<%
+people.departments.forEach((department) => { 
+%>
 
 <h3 class="department-heading"><%= department %></h3>
 
