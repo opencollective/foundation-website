@@ -21,14 +21,14 @@ people.departments.forEach((department) => { %>
       <div class="person-title"><%= person.title %></div>
       <div class="person-location">
         <%_ if (person.administrativeArea) { _%> <%= person.administrativeArea
-        %>, <%_ } _%> <%= countryByCode[person.country].label _%>
+        %>,&nbsp; <%_ } _%> <%= countryByCode[person.country].label _%>
       </div>
       <div class="person-links">
         <% if (person.twitterUrl) { %>
         <a href="<%- person.twitterUrl %>" target="_blank"> Twitter </a>
         <% } %> <% if (person.linkedInUrl) { %>
         <a href="<%- person.linkedInUrl %>" target="_blank"> LinkedIn </a>
-        <% } %> <% if (person.websiteUrl) { %> <% if (person.instagramUrl) { %>
+        <% } %> <% if (person.instagramUrl) { %>
         <a href="<%- person.instagramUrl %>" target="_blank"> Instagram </a>
         <% } %> <% if (person.websiteUrl) { %>
         <a href="<%- person.websiteUrl %>" target="_blank"> Website </a>
