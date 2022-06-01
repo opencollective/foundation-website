@@ -7,6 +7,9 @@ section#team {
   }
 
   .people-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     .layout-grid();
   }
 
@@ -31,5 +34,36 @@ section#team {
 
   .person-name {
     font-weight: @font-weight-bold;
+  }
+
+  .person-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px - 16px;
+
+    .social-icon(@filename) {
+      font-size: 0;
+      display: inline-block;
+      background: url('/assets/images/@{filename}') no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-right: 16px;
+    }
+
+    .twitter {
+      .social-icon('twitter.svg');
+    }
+
+    .instagram {
+      .social-icon('instagram.svg');
+    }
+
+    .linkedin {
+      .social-icon('linkedin.svg');
+    }
+
+    .www {
+      .social-icon('www.svg');
+    }
   }
 }

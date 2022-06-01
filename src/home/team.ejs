@@ -16,10 +16,10 @@ people.departments.forEach((department) => {
 
 <h3 class="department-heading"><%= department %></h3>
 
-<div class="people-grid">
+<ul class="people-grid">
   <% (peopleByDepartment[department] ?? []).forEach((person) => { %>
-  <div class="person">
-    <img class="person-image" src="<%- person.profileImage %>" />
+  <li class="person">
+    <img class="person-image" src="<%- person.profileImage %>" alt="<%= person.name %>"/>
     <div>
       <div class="person-name"><%= person.name %></div>
       <div class="person-title"><%= person.title %></div>
@@ -32,19 +32,19 @@ people.departments.forEach((department) => {
       </div>
       <div class="person-links">
         <% if (person.twitterUrl) { %>
-        <a href="<%- person.twitterUrl %>" target="_blank"> Twitter </a>
+        <a class="twitter" href="<%- person.twitterUrl %>" target="_blank"> Twitter </a>
         <% } %> <% if (person.linkedInUrl) { %>
-        <a href="<%- person.linkedInUrl %>" target="_blank"> LinkedIn </a>
+        <a class="linkedin" href="<%- person.linkedInUrl %>" target="_blank"> LinkedIn </a>
         <% } %> <% if (person.instagramUrl) { %>
-        <a href="<%- person.instagramUrl %>" target="_blank"> Instagram </a>
+        <a class="instagram" href="<%- person.instagramUrl %>" target="_blank"> Instagram </a>
         <% } %> <% if (person.websiteUrl) { %>
-        <a href="<%- person.websiteUrl %>" target="_blank"> Website </a>
+        <a class="www" href="<%- person.websiteUrl %>" target="_blank"> Website </a>
         <% } %>
       </div>
     </div>
-  </div>
+  </li>
   <% }); %>
-</div>
+</ul>
 
 <% }); %>
 
