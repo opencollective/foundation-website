@@ -1,14 +1,20 @@
 ---
-title: Posts
-position: 102
+title: blog
+position: 8
+hideInNavigation: true
 ---
 
-<h2>Blog</h2>
+<h3>From our blog:
+  <a class="rss-link" href="https://blog.opencollective.com/tag/ocf/rss/" target="_blank">RSS Link</a>
+</h3>
 
-<% blog.items.forEach((post)=> { %>
 <div>
-  <pre>
-    <%= JSON.stringify(post, null, '\t') %>
-  </pre>
+  <ol class="post-list">
+  <% blog.items.forEach(({title, link})=> { %>
+    <li><a href="<%= link %>" target="_blank"><%= title %></a></li>
+  <% }) %>
+  </ol>
+  <button type="button" class="show-all-button" onClick="this.parentElement.classList.toggle('show-all')">
+    View all
+  </button>
 </div>
-<% }) %>

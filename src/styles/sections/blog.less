@@ -1,0 +1,65 @@
+@import '../variables/sizing.less';
+@import '../variables/typography.less';
+@import '../variables/buttons.less';
+@import '../variables/color.less';
+
+section#blog {
+  .post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .layout-grid();
+    margin-bottom: @layout-grid-margin;
+
+    li {
+      grid-column: span (12 / 3);
+
+      a::before {
+        content: '';
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url('/assets/images/books.svg') no-repeat;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  h3 {
+    .subheading();
+    margin-bottom: @layout-grid-margin;
+  }
+
+  .rss-link {
+    .paragraph-small();
+    color: @color-dark-green;
+    font-weight: @font-weight-light;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url('/assets/images/rss-feed.svg') no-repeat;
+      background-size: contain;
+      margin-right: 8px;
+      margin-left: 14px;
+      margin-bottom: -3px;
+    }
+  }
+
+  // Hide posts after first 9
+  .post-list > li:nth-child(9) ~ li {
+    display: none;
+  }
+
+  .show-all .post-list li {
+    display: initial !important;
+  }
+
+  .show-all-button {
+    .textButton();
+    width: 100%;
+  }
+}
