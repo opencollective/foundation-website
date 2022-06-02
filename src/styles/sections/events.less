@@ -1,0 +1,67 @@
+@import '../variables/sizing.less';
+@import '../variables/typography.less';
+@import '../variables/buttons.less';
+@import '../variables/color.less';
+
+section#events {
+  .content {
+    .layout-grid();
+
+    // left side
+    > :first-child {
+      grid-column: span 4;
+      align-self: center;
+    }
+
+    // right side
+    > :nth-child(2) {
+      grid-column: span 8;
+      border-left: 1px solid @color-dark-green;
+    }
+  }
+
+  .event-list {
+    list-style: none;
+    margin: 0;
+    padding: 34px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: @layout-grid-gutter;
+    row-gap: @layout-grid-margin;
+  }
+
+  .event-name {
+    .paragraph-mid();
+    font-weight: @font-weight-bold;
+  }
+
+  .event-name::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background: url('/assets/images/calendar.svg') no-repeat;
+  }
+
+  .event-datetime {
+    .paragraph-small();
+    font-weight: @font-weight-regular;
+  }
+
+  // Hide events after first 9
+  .event-list > li:nth-child(9) ~ li {
+    display: none;
+  }
+
+  .show-all .event-list li {
+    display: initial !important;
+  }
+
+  .show-all-button {
+    .textButton();
+    width: 100%;
+  }
+}

@@ -52,6 +52,10 @@ function getFlagChar(country) {
   return String.fromCodePoint(firstChar, secondChar);
 }
 
+/**
+ * Renders flag emojis into elements matching [data-country-code].flag
+ * where attribute data-country code is a 2-character ISO country code.
+ */
 function renderFlags() {
   // find flag placeholders
   const els = document.querySelectorAll('[data-country-code].flag');

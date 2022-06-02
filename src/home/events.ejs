@@ -1,15 +1,53 @@
 ---
 title: Events
-position: 101
+position: 4
 ---
 
-<h2>Events</h2>
+<%_
+function toIsoString(str) {
+  return new Date(str).toISOString()
+}
+_%>
 
-<% events.forEach((event)=> { %>
-<div>
-  <pre>
-    <%= JSON.stringify(event, null, '\t') %>
-    </pre
-  >
+<div class="content">
+  <div>
+    <h2>Community events</h2>
+    <p>Join our community forum on first fridays of the month to meet the team and other Collectives in a space of mutual
+    support.</p>
+  </div>
+
+  <div>
+    <ol class="event-list">
+      <% events.forEach(({id, name, description, startsAt, endsAt, url}) => { %>
+        <li data-id="<%= id %>">
+          <div class="event-name">
+            <%= name %>
+          </div>
+          <div class="event-datetime">
+            <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
+            <time 
+              datetime="<%= toIsoString(startsAt) %>" 
+              data-format-options="<%= JSON.stringify({month: 'short', day: 'numeric'}) %>">
+              <%= startsAt %>
+            </time>
+            &ndash;
+            <time 
+              datetime="<%= toIsoString(endsAt) %>"
+              data-format-options="<%= JSON.stringify({month: 'short' , day: 'numeric', year: 'numeric' }) %>">
+              <%= endsAt %>
+            </time>
+            /</br>
+            <time 
+              datetime="<%= toIsoString(startsAt) %>"
+              data-format-options="<%= JSON.stringify({hour: 'numeric', minute: 'numeric', timeZoneName: 'short' }) %>">
+              <%= startsAt %>
+            </time>
+          </div>
+        </li>
+      <% }); %>
+    </ol>
+
+    <button type="button" class="show-all-button" onClick="this.parentElement.classList.toggle('show-all')">View all</button>
+  </div>
+
 </div>
-<% }) %>
