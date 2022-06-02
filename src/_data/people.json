@@ -9,6 +9,15 @@
       "twitterUrl": "https://twitter.com/carolinewoolard",
       "profileImage": "/assets/uploads/headshot-woolard.jpg",
       "country": "DE"
+    },
+    {
+      "name": "Mike Strode",
+      "profileImage": "/assets/uploads/mike.jpeg",
+      "title": "Program Manager",
+      "administrativeArea": "Chicago",
+      "country": "US",
+      "linkedInUrl": "https://www.linkedin.com/in/mjstrode/",
+      "department": "OC Foundation Operations and Community"
     }
   ],
   "departments": [
