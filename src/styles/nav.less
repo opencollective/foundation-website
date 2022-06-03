@@ -1,6 +1,7 @@
 @import './variables/sizing.less';
 @import './variables/typography.less';
 @import './variables/color.less';
+@import './variables/buttons.less';
 
 @nav-height: 100px;
 
@@ -14,37 +15,58 @@
 }
 
 .main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: @content-width;
+  box-sizing: border-box;
+
   position: sticky;
   top: 0;
   z-index: 1;
   min-height: @nav-height;
+  padding: 0 40px;
 
-  background-color: fade(@background-color-base, 90%);
-  backdrop-filter: blur(2px);
+  background-color: white;
+  border-bottom: 1px solid @font-color-base;
 
-  & > ul {
+  .logo {
+    height: 40px;
+  }
+
+  > .cta {
+    .buttonStyledLink(@color-dark-green);
+  }
+
+  > .logo,
+  > .cta {
+    // Make them the same size for symmetry
+    flex-basis: 115px;
+    box-sizing: border-box;
+  }
+
+  .links-container {
+    flex-grow: 1;
+    padding: 0 152px;
+  }
+
+  .links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     list-style: none;
     margin: 0;
     padding: 0;
-
     text-align: center;
 
     & > li {
       display: inline-block;
+      flex-grow: 0;
 
       a {
         display: block;
-        // padding: 0 @grid;
         line-height: @nav-height;
-
-        font-weight: @font-weight-bold;
-        border-bottom: 1px dashed transparent;
-
-        color: @font-color-base;
-
-        &:hover {
-          border-bottom-color: @font-color-base;
-        }
       }
     }
   }
