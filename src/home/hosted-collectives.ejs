@@ -1,0 +1,48 @@
+---
+title: Hosted collectives
+position: 3
+hideInNavigation: true
+---
+
+<%_ function toIsoString(str) { return new Date(str).toISOString() } _%>
+
+<div class="content">
+  <div>
+    <h2>Collective work + transparent finances = ♥️</h2>
+    <p>
+      Click on a collective to see their budget and learn more about their impact.
+    </p>
+  </div>
+
+  <div>
+    <ol class="collective-list">
+      <% hostedCollectives.forEach(({account: {id, name, imageUrl}, since})=> { %>
+        <li data-id="<%= id %>">
+          <img 
+            class="collective-image" 
+            src="<%= imageUrl %>" 
+            loading="lazy"
+            alt="Logo for <%= name %>"
+          />
+          <div>
+            <div class="collective-name">
+              <%= name %>
+            </div>
+            <div class="collective-hosted-since">
+              <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
+              Hosted since:</br>
+                <time datetime="<%= toIsoString(since) %>"
+                  data-format-options="<%= JSON.stringify({dateStyle: 'medium'}) %>">
+                  <%= since %>
+                </time>
+            </div>
+          </div>
+        </li>
+        <% }); %>
+    </ol>
+
+    <button type="button" class="show-all-button" onClick="this.parentElement.classList.toggle('show-all')">View
+      all</button>
+  </div>
+
+</div>

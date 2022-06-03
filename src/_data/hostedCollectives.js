@@ -12,11 +12,13 @@ const query = gql`
         role: HOST
       ) {
         nodes {
+          since
           account {
             id
             name
             slug
             description
+            imageUrl
           }
         }
       }
@@ -30,5 +32,5 @@ module.exports = async () => {
   });
 
   // unwrap data
-  return data.account.memberOf.nodes.map((node) => node.account);
+  return data.account.memberOf.nodes;
 };

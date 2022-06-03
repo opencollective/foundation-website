@@ -3,7 +3,7 @@
 @import '../variables/buttons.less';
 @import '../variables/color.less';
 
-section#events {
+section#hosted-collectives {
   .content {
     .layout-grid();
 
@@ -20,7 +20,7 @@ section#events {
     }
   }
 
-  .event-list {
+  .collective-list {
     list-style: none;
     margin: 0;
     padding: 34px;
@@ -31,32 +31,39 @@ section#events {
     row-gap: @layout-grid-margin;
   }
 
-  .event-name {
+  .collective-name {
     .paragraph-mid();
     font-weight: @font-weight-bold;
   }
 
-  .event-name::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-    background: url('/assets/images/calendar.svg') no-repeat;
-  }
-
-  .event-datetime {
+  .collective-hosted-since {
     .paragraph-small();
     font-weight: @font-weight-regular;
+    margin: 8px 0;
+  }
+
+  @image-size: 72px;
+
+  .collective-list > li {
+    display: grid;
+    grid-template-columns: @image-size 1fr;
+    column-gap: 16px;
+  }
+
+  .collective-image {
+    width: @image-size;
+    height: @image-size;
+    object-fit: cover;
+    align-self: start;
+    border-radius: 100px;
   }
 
   // Hide events after first 9
-  .event-list > li:nth-child(9) ~ li {
+  .collective-list > li:nth-child(9) ~ li {
     display: none;
   }
 
-  .show-all .event-list li {
+  .show-all .collective-list li {
     display: inherit !important;
   }
 
