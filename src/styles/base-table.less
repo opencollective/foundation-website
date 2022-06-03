@@ -1,0 +1,20 @@
+@import './variables/typography.less';
+
+table {
+  border-collapse: collapse;
+
+  td,
+  th {
+    text-align: center;
+    padding: 1em;
+    border: 1px solid @font-color-base;
+
+    &:first-child {
+      text-align: left;
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '../variables/typography.less';
+@import '../variables/color.less';
+
+section#services-table table {
+  .paragraph-mid();
+  font-weight: @font-weight-regular;
+
+  background-color: @background-color-lighter;
+
+  // header and footer (markdown does not support tfoot so using last-child as substitute)
+  thead > tr,
+  tfoot > tr,
+  tbody > tr:last-child {
+    font-weight: @font-weight-bold;
+
+    // first column of header and footer are green
+    td,
+    th {
+      &:first-child {
+        color: @color-dark-green;
+      }
+    }
+  }
+
+  td:first-child {
+    .paragraph-large();
+  }
+
+  // Second column has green background
+  td,
+  th {
+    &:nth-child(2) {
+      background-color: @background-color-base;
+    }
+  }
+
+  .replace-with-symbol(@filename) {
+    background-image: url('/assets/images/@{filename}');
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+  }
+
+  td {
+    &.checkmark {
+      .replace-with-symbol('checkmark.svg');
+    }
+    &.dismiss {
+      .replace-with-symbol('dismiss.svg');
+    }
+    &.question-mark {
+      .replace-with-symbol('question-mark.svg');
+    }
+  }
+}
