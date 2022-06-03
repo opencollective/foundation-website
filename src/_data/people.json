@@ -64,6 +64,16 @@
       "title": "Social Impact Commons",
       "country": "US",
       "websiteUrl": "https://www.socialimpactcommons.org/"
+    },
+    {
+      "name": "Guillermo Esparza",
+      "profileImage": "/assets/uploads/memo.jpeg",
+      "department": "Platform Engineering and Design",
+      "title": "Design",
+      "linkedInUrl": "https://www.linkedin.com/in/memo-es/",
+      "websiteUrl": "https://github.com/Memo-Es",
+      "administrativeArea": "Guadalajara",
+      "country": "MX"
     }
   ],
   "departments": [
