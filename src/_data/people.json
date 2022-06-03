@@ -48,11 +48,20 @@
       "country": "US",
       "linkedInUrl": "https://www.linkedin.com/in/angie-kim-61b3368/",
       "websiteUrl": "https://cci-arts.medium.com/"
+    },
+    {
+      "name": "New Economy Coalition",
+      "profileImage": "https://images.squarespace-cdn.com/content/v1/5220c2ece4b0407999540a76/1488297453364-8E2EHEB1J25B5MC53REZ/thumb-NEC.jpg?format=500w",
+      "websiteUrl": "https://neweconomy.net/",
+      "department": "Platform Engineering and Design",
+      "title": "Solidarity Economy",
+      "country": "US"
     }
   ],
   "departments": [
     "OC Foundation Board of Directors",
     "OC Foundation Operations and Community",
-    "Platform Engineering and Design"
+    "Platform Engineering and Design",
+    "OC Foundation Network Affiliations"
   ]
 }
