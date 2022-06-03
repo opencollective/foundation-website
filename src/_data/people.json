@@ -29,6 +29,15 @@
       "administrativeArea": "New York",
       "twitterUrl": "https://twitter.com/wordsbyde?lang=en",
       "instagramUrl": "https://www.instagram.com/be_revolutionary/"
+    },
+    {
+      "name": "Leila M. Trutanich",
+      "profileImage": "/assets/uploads/screen-shot-2022-06-03-at-5.19.01-am.png",
+      "department": "OC Foundation Operations and Community",
+      "title": "Legal Council",
+      "administrativeArea": "California",
+      "country": "US",
+      "websiteUrl": "https://www.leilalaw.com/about"
     }
   ],
   "departments": [
