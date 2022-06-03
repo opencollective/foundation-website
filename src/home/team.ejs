@@ -8,7 +8,32 @@ hideInNavigation: false
 
 <% 
 const peopleByDepartment = _.groupBy(people.people, 'department'); 
-const countryByCode = _.keyBy(geography.countries, 'code'); %> 
+const countryByCode = _.keyBy(geography.countries, 'code'); 
+const links = [
+  {
+    tag: 'twitter',
+    link: 'twitterUrl',
+    label: 'Twitter'
+  }, {
+    tag: 'linkedin',
+    link: 'linkedInUrl',
+    label: 'LinkedIn'
+  }, {
+    tag: 'instagram',
+    link: 'instagramUrl',
+    label: 'Instagram'
+  }, {
+    tag: 'github',
+    link: 'githubUrl',
+    label: 'GitHub'
+  }, {
+    tag: 'www',
+    link: 'websiteUrl',
+    label: 'Website'
+  }
+];
+%> 
+
 
 <%
 people.departments.forEach((department) => { 
@@ -31,15 +56,11 @@ people.departments.forEach((department) => {
           <span class="flag" data-country-code="<%=person.country %>"><%#flag emoji inserted by frontend script%></span>
       </div>
       <div class="person-links">
-        <% if (person.twitterUrl) { %>
-        <a class="twitter" href="<%- person.twitterUrl %>" target="_blank"> Twitter </a>
-        <% } %> <% if (person.linkedInUrl) { %>
-        <a class="linkedin" href="<%- person.linkedInUrl %>" target="_blank"> LinkedIn </a>
-        <% } %> <% if (person.instagramUrl) { %>
-        <a class="instagram" href="<%- person.instagramUrl %>" target="_blank"> Instagram </a>
-        <% } %> <% if (person.websiteUrl) { %>
-        <a class="www" href="<%- person.websiteUrl %>" target="_blank"> Website </a>
-        <% } %>
+        <% links.forEach(({tag, link, label}) => { %>
+          <% if (person[link]) { %>
+            <a class="<%= tag %>" href="<%= person[link] %>" target="_blank"><%= label %></a>
+          <% } %>
+        <% }) %>
       </div>
     </div>
   </li>

@@ -130,6 +130,9 @@ collections:
                 label: Instagram URL
                 widget: string
                 required: false
+              - name: githubUrl
+                label: GitHub URL
+                required: false
               - name: websiteUrl
                 label: Website URL
                 widget: string
