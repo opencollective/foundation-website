@@ -4,8 +4,11 @@
 section#services-table table {
   .paragraph-mid();
   font-weight: @font-weight-regular;
-
   background-color: @background-color-lighter;
+
+  // equal column width
+  width: 100%;
+  table-layout: fixed;
 
   // header and footer (markdown does not support tfoot so using last-child as substitute)
   thead > tr,
@@ -20,6 +23,10 @@ section#services-table table {
         color: @color-dark-green;
       }
     }
+  }
+
+  th:first-child {
+    width: (2/7) * 100%;
   }
 
   td:first-child {
