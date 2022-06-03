@@ -38,6 +38,16 @@
       "administrativeArea": "California",
       "country": "US",
       "websiteUrl": "https://www.leilalaw.com/about"
+    },
+    {
+      "name": "Angie Kim",
+      "profileImage": "/assets/uploads/for-distribution_angie-kim-portrait-2019_bethanie-hines-photography-cropped.jpg",
+      "department": "OC Foundation Board of Directors",
+      "title": "President and CEO, the Center for Cultural Innovation ",
+      "administrativeArea": "California",
+      "country": "US",
+      "linkedInUrl": "https://www.linkedin.com/in/angie-kim-61b3368/",
+      "websiteUrl": "https://cci-arts.medium.com/"
     }
   ],
   "departments": [
