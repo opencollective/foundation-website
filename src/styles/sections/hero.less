@@ -38,6 +38,13 @@ section#hero {
   }
 
   .the-process-row {
+    background-color: @background-color-lighter;
+
+    .content-container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
     .the-process-heading {
       grid-column: span 4;
       align-self: center;
@@ -45,6 +52,9 @@ section#hero {
 
     .the-process-graphic {
       grid-column-end: span 8;
+      border-left: @default-rule;
+      padding: @layout-grid-margin;
+      box-sizing: border-box;
     }
   }
 
