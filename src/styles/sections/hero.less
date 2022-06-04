@@ -58,6 +58,49 @@ section#hero {
     }
   }
 
+  .network-row {
+    border-bottom: @default-rule;
+
+    .network-copy {
+      grid-column: span 4;
+      align-self: center;
+      .paragraph-large();
+    }
+
+    .network-graphic {
+      grid-column-end: span 8;
+      box-sizing: border-box;
+    }
+  }
+
+  .video-row {
+    .content-container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .video-copy {
+      .subheading();
+      grid-column: span 4;
+      align-self: center;
+    }
+
+    .video-wrapper {
+      grid-column-end: span 8;
+      border-left: @default-rule;
+      padding: @layout-grid-margin;
+      box-sizing: border-box;
+    }
+
+    .video {
+      height: 426px;
+      // aspect-ratio: 515 / 315;
+      width: 100%;
+
+      border-radius: @border-radius;
+    }
+  }
+
   .text-row {
     background-color: @background-color-lighter;
 
