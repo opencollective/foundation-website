@@ -1,0 +1,55 @@
+section#pricing {
+  .pricing-graphic-row {
+    border-bottom: @default-rule;
+  }
+
+  .pricing-graphic {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+
+    * > {
+      border-bottom: @default-rule;
+
+      // center text
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .raised {
+    grid-column: span 2;
+    height: 352px;
+    background-color: #fddd84;
+    .heading-h2();
+    font-weight: @font-weight-bold;
+  }
+
+  .net {
+    grid-column: span 2;
+    height: 216px;
+    background-color: #bae1aa;
+    .heading-h2();
+    font-weight: @font-weight-bold;
+  }
+
+  .fee {
+    grid-column: span 2;
+    height: 72px;
+    color: white;
+    background-color: #044f54;
+    .subheading();
+  }
+
+  .fee-staff {
+    border-right: @default-rule;
+  }
+
+  .fee-staff,
+  .fee-tech {
+    height: 64px;
+    background-color: #c0feff;
+    .subheading();
+  }
+}
