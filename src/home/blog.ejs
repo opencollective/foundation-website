@@ -4,17 +4,19 @@ position: 8
 hideInNavigation: true
 ---
 
-<h3>From our blog:
-  <a class="rss-link" href="https://blog.opencollective.com/tag/ocf/rss/" target="_blank">RSS Link</a>
-</h3>
-
-<div>
-  <ol class="post-list">
-  <% blog.items.forEach(({title, link})=> { %>
-    <li><a href="<%= link %>" target="_blank"><%= title %></a></li>
-  <% }) %>
-  </ol>
-  <button type="button" class="show-all-button" onClick="this.parentElement.classList.toggle('show-all')">
-    View all
-  </button>
+<div class="content-container">
+  <h3>From our blog:
+    <a class="rss-link" href="https://blog.opencollective.com/tag/ocf/rss/" target="_blank">RSS Link</a>
+  </h3>
+    
+  <div>
+    <ol class="post-list">
+    <% blog.items.forEach(({title, link})=> { %>
+      <li><a href="<%= link %>" target="_blank"><%= title %></a></li>
+    <% }) %>
+    </ol>
+    <button type="button" class="show-all-button" onClick="this.parentElement.classList.toggle('show-all')">
+      View all
+    </button>
+  </div>
 </div>

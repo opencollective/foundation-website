@@ -2,10 +2,20 @@
 @import '../variables/typography.less';
 @import '../variables/buttons.less';
 @import '../variables/color.less';
+@import '../variables/rules.less';
 
 section#events {
+  border-bottom: @default-rule;
+
   .content {
+    padding-top: 0;
+    padding-bottom: 0;
+
     .layout-grid();
+
+    > * {
+      padding: @layout-grid-margin 0;
+    }
 
     // left side
     > :first-child {

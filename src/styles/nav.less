@@ -2,6 +2,7 @@
 @import './variables/typography.less';
 @import './variables/color.less';
 @import './variables/buttons.less';
+@import './variables/rules.less';
 
 @nav-height: 100px;
 
@@ -15,21 +16,21 @@
 }
 
 .main-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: @content-width;
-  box-sizing: border-box;
-
   position: sticky;
   top: 0;
   z-index: 1;
   min-height: @nav-height;
-  padding: 0 40px;
-  margin: auto;
 
   background-color: white;
-  border-bottom: 1px solid @font-color-base;
+  border-bottom: @default-rule;
+}
+
+.main-nav .content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 
   .logo {
     height: 40px;

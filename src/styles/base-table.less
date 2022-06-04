@@ -1,4 +1,5 @@
 @import './variables/typography.less';
+@import './variables/rules.less';
 
 table {
   border-collapse: collapse;
@@ -7,14 +8,20 @@ table {
   th {
     text-align: center;
     padding: 1em;
-    border: 1px solid @font-color-base;
+    border: @default-rule;
 
     &:first-child {
       text-align: left;
       border-left: none;
+      padding-left: @layout-grid-margin;
     }
     &:last-child {
       border-right: none;
+      padding-right: @layout-grid-margin;
     }
+  }
+
+  th {
+    border-top: none;
   }
 }

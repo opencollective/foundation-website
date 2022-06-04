@@ -1,16 +1,18 @@
 @import '../variables/sizing.less';
 @import '../variables/buttons.less';
 @import '../variables/color.less';
+@import '../variables/rules.less';
 
 section#hero {
   .row {
-    .layout-grid();
-    border-bottom: 1px solid @color-dark-green;
+    border-bottom: @default-rule;
+
+    .content-container {
+      .layout-grid();
+    }
   }
 
   .hero-row {
-    padding: 40px 0;
-
     .left,
     .collective-hero-image {
       grid-column: span 6;
@@ -41,7 +43,6 @@ section#hero {
   }
 
   .the-process-row {
-    padding: 24px 0;
     .the-process-heading {
       grid-column: span 4;
       align-self: center;
@@ -53,8 +54,12 @@ section#hero {
   }
 
   .fees-row {
-    padding: 21px 0;
     background-color: @background-color-lighter;
+
+    p,
+    h3 {
+      margin: 0;
+    }
 
     .fees-heading {
       grid-column: span 1;

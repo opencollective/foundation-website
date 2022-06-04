@@ -5,51 +5,57 @@ hideInNavigation: true
 ---
 
 <div class="row hero-row">
-  <% firstCollective = featuredCollectives.featuredCollectives[0] %>
-  <div class="left">
-    <h1>
-      OC Foundation is proud to be the financial and legal home of
-      <span class="collective-name"><%= firstCollective.name %> </span> and 300
-      more groups
-    </h1>
+  <div class="content-container">
+    <% firstCollective = featuredCollectives.featuredCollectives[0] %>
+    <div class="left">
+      <h1>
+        OC Foundation is proud to be the financial and legal home of
+        <span class="collective-name"><%= firstCollective.name %> </span> and 300
+        more groups
+      </h1>
 
-    <p class="subhead">
-      OC Foundation offers nonprofit status + fundraising + money management software to aligned groups.
-    </p>
+      <p class="subhead">
+        OC Foundation offers nonprofit status + fundraising + money management software to aligned groups.
+      </p>
 
-    <a
-      class="cta"
-      href="https://opencollective.com/foundation/apply"
-      target="_blank"
-      >Apply now</a
-    >
-  </div>
+      <a
+        class="cta"
+        href="https://opencollective.com/foundation/apply"
+        target="_blank"
+        >Apply now</a
+      >
+    </div>
 
   <img
     class="collective-hero-image"
     src="<%- firstCollective.heroImage %>"
     alt="<%= firstCollective.heroImageAlt %>"
   />
+  </div>
 </div>
 
 <div class="row the-process-row">
-  <h2 class="the-process-heading">The Process</h2>
-  <img
-    class="the-process-graphic"
-    src="assets/images/theprocess.png"
-    alt="Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!"
-  />
+  <div class="content-container">
+    <h2 class="the-process-heading">The Process</h2>
+    <img
+      class="the-process-graphic"
+      src="assets/images/theprocess.png"
+      alt="Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!"
+    />
+  </div>
 </div>
 
 <div class="row fees-row">
-  <h3 class="fees-heading">Fees</h3>
-  <p class="fees-copy">
-    * We take 5% for crowdfunding done on the site. Third-party payment
-    processors (like Stripe and Paypal) charge separate fees on each transaction
-    made using their service. Learn more here. We take 4-8% for bank transfers
-    and checks: 8% for up to 500k raised; 6% for up to 1 million raised; 4% for
-    over a million raised.
-  </p>
+  <div class="content-container">
+    <h3 class="fees-heading">Fees</h3>
+    <p class="fees-copy">
+      * We take 5% for crowdfunding done on the site. Third-party payment
+      processors (like Stripe and Paypal) charge separate fees on each transaction
+      made using their service. Learn more here. We take 4-8% for bank transfers
+      and checks: 8% for up to 500k raised; 6% for up to 1 million raised; 4% for
+      over a million raised.
+    </p>
+  </div>
 </div>
 
 <!-- Scripts, preloaders -->

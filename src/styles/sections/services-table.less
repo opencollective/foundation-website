@@ -1,10 +1,16 @@
 @import '../variables/typography.less';
 @import '../variables/color.less';
+@import '../variables/rules.less';
+
+section#services-table {
+  background-color: @background-color-lighter;
+  border-bottom: @default-rule;
+}
 
 section#services-table table {
+  .content-container();
   .paragraph-mid();
   font-weight: @font-weight-regular;
-  background-color: @background-color-lighter;
 
   // equal column width
   width: 100%;

@@ -1,10 +1,13 @@
 @import '../variables/sizing.less';
 @import '../variables/typography.less';
+@import '../variables/rules.less';
 
 section#team {
   .department-heading {
     .subheading();
   }
+
+  border-bottom: @default-rule;
 
   .people-grid {
     list-style: none;

@@ -2,10 +2,19 @@
 @import '../variables/typography.less';
 @import '../variables/buttons.less';
 @import '../variables/color.less';
+@import '../variables/rules.less';
 
 section#hosted-collectives {
+  border-bottom: @default-rule;
+
   .content {
     .layout-grid();
+    padding-top: 0;
+    padding-bottom: 0;
+
+    > * {
+      padding: @layout-grid-margin 0;
+    }
 
     // left side
     > :first-child {
@@ -16,7 +25,7 @@ section#hosted-collectives {
     // right side
     > :nth-child(2) {
       grid-column: span 8;
-      border-left: 1px solid @color-dark-green;
+      border-left: @default-rule;
     }
   }
 

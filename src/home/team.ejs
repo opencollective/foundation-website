@@ -4,7 +4,9 @@ position: 5
 hideInNavigation: false
 ---
 
-<h2>We are a group of committed people you can reach out to.</h2>
+<div class="heading-container">
+  <h2>We are a group of committed people you can reach out to.</h2>
+</div>
 
 <% 
 const peopleByDepartment = _.groupBy(people.people, 'department'); 
@@ -34,6 +36,7 @@ const links = [
 ];
 %> 
 
+<div class="content-container">
 
 <%
 people.departments.forEach((department) => { 
@@ -68,3 +71,5 @@ people.departments.forEach((department) => {
 </ul>
 
 <% }); %>
+
+</div>
