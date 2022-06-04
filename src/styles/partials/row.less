@@ -7,11 +7,12 @@
   Columns should be styled as appropriate, including setting the grid-column property
   .column wrapper provides a full-height element for vertical borders.
   
+  use .with-borders to add borders
 
   Expected markup
   .row
     .content-container
-      .column
+      .column.with-borders
         p or other content
       .column
   
@@ -31,13 +32,23 @@
     padding-bottom: @layout-grid-margin;
     height: 100%;
     box-sizing: border-box;
-    border-right: @default-rule;
-    // easy vertical centering with 1-cell grid
-    display: grid;
-    align-items: center;
+
+    // Vertical centering
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 
     &:last-child {
-      border-right: none;
+      padding-right: 0;
+    }
+
+    &.with-borders {
+      border-right: @default-rule;
+
+      &:last-child {
+        border-right: none;
+      }
     }
   }
 }

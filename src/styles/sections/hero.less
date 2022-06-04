@@ -1,7 +1,7 @@
 section#hero {
   .hero-row {
     .left,
-    .collective-hero-image {
+    .right {
       grid-column: span 6;
     }
 
@@ -18,12 +18,15 @@ section#hero {
       font-weight: @font-weight-light;
     }
 
+    .right {
+      justify-self: end;
+    }
+
     .collective-hero-image {
       border-radius: @border-radius;
       object-fit: cover;
       height: 496px;
       aspect-ratio: 520 / 496;
-      justify-self: end;
     }
 
     .cta {
@@ -34,60 +37,38 @@ section#hero {
   .the-process-row {
     background-color: @background-color-lighter;
 
-    .content-container {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
     .the-process-heading {
       grid-column: span 4;
-      align-self: center;
     }
 
     .the-process-graphic {
       grid-column-end: span 8;
-      border-left: @default-rule;
-      padding: @layout-grid-margin;
-      box-sizing: border-box;
     }
   }
 
   .network-row {
     .network-copy {
       grid-column: span 3;
-      align-self: center;
       .paragraph-large();
     }
 
     .network-graphic {
       grid-column-end: span (12 - 3);
-      box-sizing: border-box;
     }
   }
 
   .video-row {
-    .content-container {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
     .video-copy-container {
       .subheading();
       grid-column: span 4;
-      align-self: center;
-      height: 100%;
     }
 
     .video-wrapper {
       grid-column-end: span 8;
-      padding: @layout-grid-margin 0;
-      box-sizing: border-box;
-      justify-self: stretch;
     }
 
     .video {
       height: 426px;
-      // aspect-ratio: 515 / 315;
       width: 100%;
 
       border-radius: @border-radius;
