@@ -34,6 +34,15 @@ hideInNavigation: true
   </div>
 </div>
 
+<!-- Scripts, preloaders -->
+<script src="/assets/scripts/rotateFeaturedCollectives.js"
+  data-featured-collectives="<%= JSON.stringify(featuredCollectives.featuredCollectives) %>"></script>
+
+<% featuredCollectives.featuredCollectives.forEach(collective=> { %>
+  <link rel="preload" as="image" href="<%- collective.heroImage %>" />
+  <% }) %>
+
+
 <div class="row the-process-row">
   <div class="content-container">
     <h2 class="the-process-heading">The Process</h2>
@@ -62,7 +71,7 @@ hideInNavigation: true
 
 <div class="row video-row">
   <div class="content-container">
-    <div class="column">
+    <div class="video-copy-container column">
       <p class="video-copy">
         OC Foundation is a nonprofit with a tech platform that enables over 300 groups to raise and spend over $13 million
         dollars a year in full transparency.
@@ -76,61 +85,3 @@ hideInNavigation: true
     </div>
   </div>
 </div>
-
-<div class="row checklist-row">
-  <div class="content-container">
-    <div class="column">
-      <p>
-        If your group wants&nbsp;to:
-      </p>
-    </div>
-
-    <ul class="checklist column">
-      <li><div>View your entire budget in one secure place</div></li>
-      <li>Share your budget with your community</li>
-      <li>Apply for a grant</li>
-      <li>Offer tax write-offs when people donate</li>
-      <li>Create mini-grants for your community</li>
-      <li>Offer prepaid debit cards to your team</li>
-      <li>Reimburse volunteers</li>
-      <li>Use an open-source and community-led platform</li>
-    </ul>
-
-    <p class="column">
-      We've got you covered!
-    </p>
-  </div>
-</div>
-
-<div class="row text-row">
-  <div class="content-container">
-    <h3 class="text-heading">And much more!</h3>
-    <p class="text-copy">
-      Virtual cards – Free courses – Grants – Collective admins – Processing payments 2x a week – Community forums – Tech
-      owned by us – Transparency – Exit to community – Solidarity economies – Radical admin
-    </p>
-  </div>
-</div>
-
-<div class="row text-row">
-  <div class="content-container">
-    <h3 class="text-heading">Fees</h3>
-    <p class="text-copy">
-      * We take 5% for crowdfunding done on the site. Third-party payment
-      processors (like Stripe and Paypal) charge separate fees on each transaction
-      made using their service. Learn more here. We take 4-8% for bank transfers
-      and checks: 8% for up to 500k raised; 6% for up to 1 million raised; 4% for
-      over a million raised.
-    </p>
-  </div>
-</div>
-
-<!-- Scripts, preloaders -->
-<script
-  src="/assets/scripts/rotateFeaturedCollectives.js"
-  data-featured-collectives="<%= JSON.stringify(featuredCollectives.featuredCollectives) %>"
-></script>
-
-<% featuredCollectives.featuredCollectives.forEach(collective => { %>
-<link rel="preload" as="image" href="<%- collective.heroImage %>" />
-<% }) %>

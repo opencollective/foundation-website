@@ -1,0 +1,47 @@
+section#services {
+  .checklist-row {
+    .content-container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .column {
+      grid-column: span 4;
+    }
+
+    p {
+      .heading-h2();
+      align-self: center;
+    }
+
+    .checklist {
+      .paragraph-large();
+
+      list-style: none;
+      margin: 0;
+      padding: @layout-grid-margin;
+      padding-left: 0; // there's already a grid gap
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-bottom: 20px;
+
+        &::before {
+          content: '';
+          display: block;
+          flex-shrink: 0;
+          margin-right: 1em;
+          width: 22px;
+          height: 22px;
+          background: url('/assets/images/checkmark.svg') no-repeat center
+            center;
+        }
+      }
+    }
+  }
+
+  // services table is styled in partials/services-table.less
+}

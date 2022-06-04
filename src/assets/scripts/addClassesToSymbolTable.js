@@ -37,4 +37,4 @@ function addClassesToSymbolTable(tableSelector) {
   });
 }
 
-addClassesToSymbolTable('section#services-table table');
+addClassesToSymbolTable('.services-table-container table');

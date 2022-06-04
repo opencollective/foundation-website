@@ -1,9 +1,3 @@
----
-title: Services table
-hideInNavigation: true
-position: 2
----
-
 | Services                                                                                                         | Hosted by OC Foundation (OCF)                | Create a NonProfit                          | Use our tech Platform without a Fiscal Host like OCF | Hosted by Another Fiscal Sponsor | Use Another Crowdfunding Platform |
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ------------------------------------------- | ---------------------------------------------------- | -------------------------------- | --------------------------------- |
 | Access to non profit status                                                                                      | ✔️                                           | ✔️                                          | ✔️                                                   | ✔️                               | ?                                 |

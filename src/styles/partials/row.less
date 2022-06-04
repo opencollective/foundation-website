@@ -1,0 +1,77 @@
+/**
+  Helps laying out a grid row with constrained content
+
+  Outer element takes full width, renders border
+  Inner container constrains width, is a grid.
+  Vertical borders and padding are added to columns
+  Columns should be styled as appropriate, including setting the grid-column property
+  .column wrapper provides a full-height element for vertical borders.
+  
+
+  Expected markup
+  .row
+    .content-container
+      .column
+        p or other content
+      .column
+  
+      */
+.row {
+  border-bottom: @default-rule;
+
+  .content-container {
+    .layout-grid();
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .column {
+    padding-right: @layout-grid-gutter;
+    padding-top: @layout-grid-margin;
+    padding-bottom: @layout-grid-margin;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: @default-rule;
+    // easy vertical centering with 1-cell grid
+    display: grid;
+    align-items: center;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+/*
+  Extends .row with a common style of a heading side-by-side with a paragraph.
+
+  Expected markup:
+  .row.text-row
+    .content-container
+      .column.text-heading
+        h3
+      .column.text-copy
+        p
+  */
+
+.text-row {
+  background-color: @background-color-lighter;
+
+  p,
+  h3 {
+    margin: 0;
+  }
+
+  .text-heading {
+    grid-column: span 2;
+    .paragraph-mid();
+    font-weight: @font-weight-regular;
+    align-self: center;
+  }
+
+  .text-copy {
+    grid-column: span 10;
+    .paragraph-mid();
+    font-weight: @font-weight-light;
+  }
+}
