@@ -125,6 +125,18 @@
       "administrativeArea": "New York",
       "country": "US",
       "linkedInUrl": "https://www.linkedin.com/in/hafidha-acuay-0a6850164/"
+    },
+    {
+      "name": "Alanna Irving ",
+      "githubUrl": "https://github.com/alanna",
+      "linkedInUrl": "https://www.linkedin.com/in/alannairving83/",
+      "profileImage": "/assets/uploads/alanna.jpeg",
+      "department": "OC Foundation Operations and Community",
+      "websiteUrl": "https://www.alanna.space/",
+      "country": "NZ",
+      "title": "Executive Director ",
+      "administrativeArea": "Wellington ",
+      "twitterUrl": "https://twitter.com/alannairving"
     }
   ],
   "departments": [
