@@ -99,16 +99,13 @@
       "profileImage": "/assets/uploads/kayla.jpeg"
     },
     {
-      "name": "Caroline Woolard",
-      "linkedInUrl": "https://www.linkedin.com/in/carolinewoolard/",
-      "profileImage": "/assets/uploads/headshot-woolard.jpg",
+      "name": "Ember Buck ",
+      "profileImage": "/assets/uploads/ember.jpeg",
       "department": "OC Foundation Operations and Community",
-      "websiteUrl": "http://carolinewoolard.com",
-      "country": "US",
-      "title": "Director of Research and Partnerships",
-      "administrativeArea": "Berlin",
-      "twitterUrl": "https://twitter.com/carolinewoolard",
-      "instagramUrl": "https://www.instagram.com/carolinewoolard/"
+      "title": "Support staff ",
+      "administrativeArea": "Wellington",
+      "country": "NZ",
+      "linkedInUrl": "https://www.linkedin.com/in/emberbuck/"
     },
     {
       "name": "Mike Strode",
@@ -120,23 +117,16 @@
       "department": "OC Foundation Operations and Community"
     },
     {
-      "name": "Leila M. Trutanich",
-      "profileImage": "/assets/uploads/screen-shot-2022-06-03-at-5.19.01-am.png",
+      "name": "Caroline Woolard",
+      "linkedInUrl": "https://www.linkedin.com/in/carolinewoolard/",
+      "profileImage": "/assets/uploads/headshot-woolard.jpg",
       "department": "OC Foundation Operations and Community",
-      "title": "Legal Council",
-      "administrativeArea": "California",
+      "websiteUrl": "http://carolinewoolard.com",
       "country": "US",
-      "websiteUrl": "https://www.leilalaw.com/about"
-    },
-    {
-      "name": "Guillermo Esparza",
-      "profileImage": "/assets/uploads/memo.jpeg",
-      "department": "OC Foundation Operations and Community",
-      "title": "Design",
-      "linkedInUrl": "https://www.linkedin.com/in/memo-es/",
-      "websiteUrl": "https://github.com/Memo-Es",
-      "administrativeArea": "Guadalajara",
-      "country": "US"
+      "title": "Director of Research and Partnerships",
+      "administrativeArea": "Berlin",
+      "twitterUrl": "https://twitter.com/carolinewoolard",
+      "instagramUrl": "https://www.instagram.com/carolinewoolard/"
     },
     {
       "name": "Sadé Swift",
@@ -150,13 +140,33 @@
       "instagramUrl": "https://www.instagram.com/be_revolutionary/"
     },
     {
-      "name": "Ember Buck ",
-      "profileImage": "/assets/uploads/ember.jpeg",
+      "name": "Leila M. Trutanich",
+      "profileImage": "/assets/uploads/screen-shot-2022-06-03-at-5.19.01-am.png",
       "department": "OC Foundation Operations and Community",
-      "title": "Support staff ",
-      "administrativeArea": "Wellington",
+      "title": "Legal Council",
+      "administrativeArea": "California",
+      "country": "US",
+      "websiteUrl": "https://www.leilalaw.com/about"
+    },
+    {
+      "name": "Guillermo Esparza",
+      "profileImage": "/assets/uploads/memo.jpeg",
+      "department": "OC Foundation Board of Directors",
+      "title": "Design",
+      "linkedInUrl": "https://www.linkedin.com/in/memo-es/",
+      "websiteUrl": "https://github.com/Memo-Es",
+      "administrativeArea": "Guadalajara",
+      "country": "US"
+    },
+    {
+      "name": "Alina Manko ",
+      "profileImage": "/assets/uploads/alina.jpeg",
+      "department": "OC Foundation Operations and Community",
+      "title": "Support Stuff ",
       "country": "NZ",
-      "linkedInUrl": "https://www.linkedin.com/in/emberbuck/"
+      "administrativeArea": "Wellington ",
+      "linkedInUrl": "https://www.linkedin.com/in/alinamanko/",
+      "githubUrl": "https://github.com/alinamanko"
     }
   ],
   "departments": [
