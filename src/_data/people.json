@@ -96,6 +96,16 @@
       "country": "US",
       "linkedInUrl": "https://www.linkedin.com/in/andrew-trask-3763ba15b/",
       "twitterUrl": "https://twitter.com/iamtrask"
+    },
+    {
+      "name": "Kaitlin Thaney ",
+      "profileImage": "/assets/uploads/kaitlin.jpeg",
+      "department": "OC Foundation Board of Directors",
+      "title": "Board Member",
+      "administrativeArea": "California ",
+      "country": "US",
+      "linkedInUrl": "https://www.linkedin.com/in/kaythaney/",
+      "twitterUrl": "https://twitter.com/kaythaney"
     }
   ],
   "departments": [
