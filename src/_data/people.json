@@ -108,16 +108,6 @@
       "country": "MX"
     },
     {
-      "name": "Lauren Ruffin ",
-      "department": "OC Foundation Board of Directors",
-      "title": "Board Member",
-      "administrativeArea": "New Mexico",
-      "country": "US",
-      "linkedInUrl": "https://www.linkedin.com/in/itsruffin/",
-      "twitterUrl": "https://twitter.com/Ruffin",
-      "profileImage": "/assets/uploads/pia.jpeg"
-    },
-    {
       "name": "Hafidha Acuay ",
       "profileImage": "/assets/uploads/hafidha.png",
       "department": "OC Foundation Board of Directors",
@@ -137,6 +127,17 @@
       "title": "Executive Director ",
       "administrativeArea": "Wellington ",
       "twitterUrl": "https://twitter.com/alannairving"
+    },
+    {
+      "name": "Nathan Hewitt ",
+      "githubUrl": "https://github.com/natehn",
+      "linkedInUrl": "https://www.linkedin.com/in/nthnh/",
+      "profileImage": "/assets/uploads/nathan.png",
+      "department": "OC Foundation Operations and Community",
+      "country": "US",
+      "title": "Program Staff",
+      "administrativeArea": "California ",
+      "twitterUrl": "https://twitter.com/natehn_"
     }
   ],
   "departments": [
