@@ -42,6 +42,16 @@
       "websiteUrl": "https://www.leilalaw.com/about"
     },
     {
+      "name": "Pia Mancini",
+      "profileImage": "/assets/uploads/pia.jpeg",
+      "department": "OC Foundation Board of Directors",
+      "title": "Founding Director",
+      "administrativeArea": "",
+      "country": "ES",
+      "linkedInUrl": "https://www.linkedin.com/in/piamancini/",
+      "twitterUrl": "https://twitter.com/piamancini"
+    },
+    {
       "name": "Angie Kim",
       "profileImage": "/assets/uploads/for-distribution_angie-kim-portrait-2019_bethanie-hines-photography-cropped.jpg",
       "department": "OC Foundation Board of Directors",
@@ -78,14 +88,14 @@
       "country": "MX"
     },
     {
-      "name": "Pia Mancini",
-      "profileImage": "/assets/uploads/pia.jpeg",
+      "name": "Andrew Trask ",
+      "profileImage": "/assets/uploads/andrew.jpeg",
       "department": "OC Foundation Board of Directors",
-      "title": "Founding Director",
-      "administrativeArea": "",
-      "country": "ES",
-      "linkedInUrl": "https://www.linkedin.com/in/piamancini/",
-      "twitterUrl": "https://twitter.com/piamancini"
+      "title": "Board member ",
+      "administrativeArea": "California",
+      "country": "US",
+      "linkedInUrl": "https://www.linkedin.com/in/andrew-trask-3763ba15b/",
+      "twitterUrl": "https://twitter.com/iamtrask"
     }
   ],
   "departments": [
