@@ -2,13 +2,15 @@
   "people": [
     {
       "name": "Caroline Woolard",
+      "linkedInUrl": "https://www.linkedin.com/in/carolinewoolard/",
+      "profileImage": "/assets/uploads/headshot-woolard.jpg",
       "department": "OC Foundation Operations and Community",
+      "websiteUrl": "http://carolinewoolard.com",
+      "country": "DE",
       "title": "Director of Research and Partnerships",
       "administrativeArea": "Berlin",
-      "websiteUrl": "http://carolinewoolard.com",
       "twitterUrl": "https://twitter.com/carolinewoolard",
-      "profileImage": "/assets/uploads/headshot-woolard.jpg",
-      "country": "DE"
+      "instagramUrl": "https://www.instagram.com/carolinewoolard/"
     },
     {
       "name": "Mike Strode",
