@@ -129,9 +129,19 @@
       "instagramUrl": "https://www.instagram.com/carolinewoolard/"
     },
     {
+      "name": "Alina Manko ",
+      "profileImage": "/assets/uploads/alina.jpeg",
+      "department": "OC Foundation Operations and Community",
+      "title": "Support Stuff ",
+      "country": "NZ",
+      "administrativeArea": "Wellington ",
+      "linkedInUrl": "https://www.linkedin.com/in/alinamanko/",
+      "githubUrl": "https://github.com/alinamanko"
+    },
+    {
       "name": "Sadé Swift",
       "profileImage": "https://d3n8a8pro7vhmx.cloudfront.net/greenworker/pages/17/attachments/original/1571787787/4.png?1571787787",
-      "department": "OC Foundation Operations and Community",
+      "department": "OC Foundation Board of Directors",
       "websiteUrl": "https://cardsbyde.com/",
       "country": "US",
       "title": "Communications Organier",
@@ -151,7 +161,7 @@
     {
       "name": "Guillermo Esparza",
       "profileImage": "/assets/uploads/memo.jpeg",
-      "department": "Platform Engineering and Design",
+      "department": "OC Foundation Board of Directors",
       "title": "Design",
       "linkedInUrl": "https://www.linkedin.com/in/memo-es/",
       "websiteUrl": "https://github.com/Memo-Es",
@@ -159,14 +169,13 @@
       "country": "US"
     },
     {
-      "name": "Alina Manko ",
-      "profileImage": "/assets/uploads/alina.jpeg",
+      "name": "Nia Hunter ",
+      "profileImage": "/assets/uploads/nia.png",
       "department": "OC Foundation Operations and Community",
-      "title": "Support Stuff ",
-      "country": "NZ",
-      "administrativeArea": "Wellington ",
-      "linkedInUrl": "https://www.linkedin.com/in/alinamanko/",
-      "githubUrl": "https://github.com/alinamanko"
+      "title": "Organizer fellow ",
+      "administrativeArea": "Baltimore",
+      "country": "US",
+      "instagramUrl": "https://www.instagram.com/nia.little.tree/"
     }
   ],
   "departments": [
