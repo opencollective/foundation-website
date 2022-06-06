@@ -213,6 +213,15 @@
       "country": "DE",
       "linkedInUrl": "https://www.linkedin.com/in/francoishodierne/",
       "githubUrl": "https://github.com/znarf"
+    },
+    {
+      "name": "Benjamin Piouffle ",
+      "profileImage": "/assets/uploads/benjamin.jpeg",
+      "department": "Platform Engineering and Design",
+      "title": "Engineering ",
+      "country": "FR",
+      "linkedInUrl": "https://www.linkedin.com/in/benjaminpiouffle/",
+      "twitterUrl": "https://twitter.com/Betree83"
     }
   ],
   "departments": [
