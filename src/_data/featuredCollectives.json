@@ -40,6 +40,10 @@
     {
       "name": "Denver Community Fridges",
       "heroImage": "/assets/uploads/denver-community-fridges.jpeg"
+    },
+    {
+      "name": "Disabled and Here",
+      "heroImage": "/assets/uploads/disabled-and-here.jpeg"
     }
   ]
 }
