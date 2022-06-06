@@ -12,6 +12,10 @@
     {
       "name": "Open Mined",
       "heroImage": "/assets/uploads/open-mined_forweb.png"
+    },
+    {
+      "name": "ABQ Free Fridge",
+      "heroImage": "/assets/uploads/abq-free-fridge.jpeg"
     }
   ]
 }
