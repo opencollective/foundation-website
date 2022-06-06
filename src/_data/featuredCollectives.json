@@ -36,6 +36,10 @@
     {
       "name": "Club A Kitchen",
       "heroImage": "/assets/uploads/club-a-kitchen.jpeg"
+    },
+    {
+      "name": "Denver Community Fridges",
+      "heroImage": "/assets/uploads/denver-community-fridges.jpeg"
     }
   ]
 }
