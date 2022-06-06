@@ -20,29 +20,31 @@ _%>
     <ol class="event-list">
       <% events.forEach(({id, name, description, startsAt, endsAt, url}) => { %>
         <li data-id="<%= id %>">
-          <div class="event-name">
-            <%= name %>
-          </div>
-          <div class="event-datetime">
-            <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
-            <time 
-              datetime="<%= toIsoString(startsAt) %>" 
-              data-format-options="<%= JSON.stringify({month: 'short', day: 'numeric'}) %>">
-              <%= startsAt %>
-            </time>
-            &ndash;
-            <time 
-              datetime="<%= toIsoString(endsAt) %>"
-              data-format-options="<%= JSON.stringify({month: 'short' , day: 'numeric', year: 'numeric' }) %>">
-              <%= endsAt %>
-            </time>
-            /</br>
-            <time 
-              datetime="<%= toIsoString(startsAt) %>"
-              data-format-options="<%= JSON.stringify({hour: 'numeric', minute: 'numeric', timeZoneName: 'short' }) %>">
-              <%= startsAt %>
-            </time>
-          </div>
+          <a class="event" href="<%= url %>" target="_blank">
+            <div class="event-name">
+              <%= name %>
+            </div>
+            <div class="event-datetime">
+              <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
+              <time 
+                datetime="<%= toIsoString(startsAt) %>" 
+                data-format-options="<%= JSON.stringify({month: 'short', day: 'numeric'}) %>">
+                <%= startsAt %>
+              </time>
+              &ndash;
+              <time 
+                datetime="<%= toIsoString(endsAt) %>"
+                data-format-options="<%= JSON.stringify({month: 'short' , day: 'numeric', year: 'numeric' }) %>">
+                <%= endsAt %>
+              </time>
+              /</br>
+              <time 
+                datetime="<%= toIsoString(startsAt) %>"
+                data-format-options="<%= JSON.stringify({hour: 'numeric', minute: 'numeric', timeZoneName: 'short' }) %>">
+                <%= startsAt %>
+              </time>
+            </div>
+          </a>
         </li>
       <% }); %>
     </ol>
