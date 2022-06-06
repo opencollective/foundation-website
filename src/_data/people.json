@@ -222,6 +222,17 @@
       "country": "FR",
       "linkedInUrl": "https://www.linkedin.com/in/benjaminpiouffle/",
       "twitterUrl": "https://twitter.com/Betree83"
+    },
+    {
+      "name": "Memo Esparza ",
+      "githubUrl": "https://github.com/Memo-Es",
+      "linkedInUrl": "https://www.linkedin.com/in/memo-es/",
+      "profileImage": "/assets/uploads/memo.jpeg",
+      "department": "Platform Engineering and Design",
+      "country": "MX",
+      "title": "Design ",
+      "twitterUrl": "https://twitter.com/memo_es_",
+      "instagramUrl": "https://www.instagram.com/_memo.es/"
     }
   ],
   "departments": [
