@@ -203,6 +203,16 @@
       "title": "Organizer Fellow",
       "administrativeArea": "California ",
       "country": "US"
+    },
+    {
+      "name": "François Hodierne ",
+      "profileImage": "/assets/uploads/francois.jpeg",
+      "department": "Platform Engineering and Design",
+      "title": "Engineering ",
+      "administrativeArea": "Berlin ",
+      "country": "DE",
+      "linkedInUrl": "https://www.linkedin.com/in/francoishodierne/",
+      "githubUrl": "https://github.com/znarf"
     }
   ],
   "departments": [
