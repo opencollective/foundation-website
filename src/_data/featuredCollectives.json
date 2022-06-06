@@ -52,6 +52,10 @@
     {
       "name": "Food Not Bombs Raleigh",
       "heroImage": "/assets/uploads/food-not-bombs-raleigh.png"
+    },
+    {
+      "name": "Fridays for Future",
+      "heroImage": "/assets/uploads/fridays-for-future.jpeg"
     }
   ]
 }
