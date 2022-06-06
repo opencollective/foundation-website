@@ -16,6 +16,10 @@
     {
       "name": "ABQ Free Fridge",
       "heroImage": "/assets/uploads/abq-free-fridge.jpeg"
+    },
+    {
+      "name": "1k Project",
+      "heroImage": "/assets/uploads/1k-project.png"
     }
   ]
 }
