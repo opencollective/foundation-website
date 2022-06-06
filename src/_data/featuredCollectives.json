@@ -48,6 +48,10 @@
     {
       "name": "DisCO",
       "heroImage": "/assets/uploads/disco.png"
+    },
+    {
+      "name": "Food Not Bombs Raleigh",
+      "heroImage": "/assets/uploads/food-not-bombs-raleigh.png"
     }
   ]
 }
