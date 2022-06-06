@@ -233,6 +233,16 @@
       "title": "Design ",
       "twitterUrl": "https://twitter.com/memo_es_",
       "instagramUrl": "https://www.instagram.com/_memo.es/"
+    },
+    {
+      "name": "Benjamin Nickols ",
+      "profileImage": "/assets/uploads/benjam.jpeg",
+      "department": "Platform Engineering and Design",
+      "title": "Product",
+      "country": "GB",
+      "linkedInUrl": "https://www.linkedin.com/in/benjamuk/",
+      "twitterUrl": "https://twitter.com/BenJam",
+      "githubUrl": "https://github.com/BenJam"
     }
   ],
   "departments": [
