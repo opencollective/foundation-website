@@ -56,6 +56,10 @@
     {
       "name": "Fridays for Future",
       "heroImage": "/assets/uploads/fridays-for-future.jpeg"
+    },
+    {
+      "name": "Humboldt Park Solidarity Network",
+      "heroImage": "/assets/uploads/humboldt-park-solidarity-network.jpeg"
     }
   ]
 }
