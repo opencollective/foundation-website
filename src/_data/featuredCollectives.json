@@ -64,6 +64,10 @@
     {
       "name": "Julian",
       "heroImage": "/assets/uploads/julian.png"
+    },
+    {
+      "name": "Love Wins Food Pantry",
+      "heroImage": "/assets/uploads/love-wins-food-pantry.jpeg"
     }
   ]
 }
