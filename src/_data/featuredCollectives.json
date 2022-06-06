@@ -44,6 +44,10 @@
     {
       "name": "Disabled and Here",
       "heroImage": "/assets/uploads/disabled-and-here.jpeg"
+    },
+    {
+      "name": "DisCO",
+      "heroImage": "/assets/uploads/disco.png"
     }
   ]
 }
