@@ -176,6 +176,16 @@
       "administrativeArea": "Baltimore",
       "country": "US",
       "instagramUrl": "https://www.instagram.com/nia.little.tree/"
+    },
+    {
+      "name": "Niki Franco ",
+      "profileImage": "/assets/uploads/niki.png",
+      "department": "OC Foundation Operations and Community",
+      "title": "Organizer Fellow ",
+      "administrativeArea": "Miami ",
+      "country": "US",
+      "linkedInUrl": "https://www.linkedin.com/in/niki-franco-a7b84a99/",
+      "instagramUrl": "https://www.instagram.com/venusroots/"
     }
   ],
   "departments": [
