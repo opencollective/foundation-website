@@ -38,5 +38,33 @@ section#services {
     }
   }
 
+  // How many times text is repeated in markup
+  @ticker-repeats: 3;
+
+  @keyframes ticker {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate((-100% / @ticker-repeats), 0);
+    }
+  }
+
+  .ticker-wrapper {
+    overflow: hidden;
+    margin: 0 -@layout-grid-gutter;
+  }
+
+  // Hopefully someday browsers support element() then we can do the repeat effect in CSS :-(
+
+  .ticker {
+    white-space: nowrap;
+
+    animation: ticker linear (15s * @ticker-repeats) infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
   // services table is styled in partials/services-table.less
 }

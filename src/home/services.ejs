@@ -35,11 +35,13 @@ hideInNavigation: false
     <div class="column text-heading with-borders">
       <h3>And much more!</h3>
     </div>
-    <div class="column text-copy with-borders">
-      <p class="text-copy">
-        Virtual cards – Free courses – Grants – Collective admins – Processing payments 2x a week – Community forums –
+    <% const tickerContent = `Virtual cards – Free courses – Grants – Collective admins – Processing payments 2x a week – Community forums –
         Tech
-        owned by us – Transparency – Exit to community – Solidarity economies – Radical admin
+        owned by us – Transparency – Exit to community – Solidarity economies – Radical admin – `;
+    %>
+    <div class="column text-copy with-borders ticker-wrapper">
+      <p class="text-copy ticker" aria-label="<%= tickerContent %>">
+        <%= tickerContent.repeat(3) %>
       </p>
     </div>
   </div>
