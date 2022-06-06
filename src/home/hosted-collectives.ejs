@@ -16,27 +16,29 @@ hideInNavigation: false
 
   <div>
     <ol class="collective-list">
-      <% hostedCollectives.forEach(({account: {id, name, imageUrl}, since})=> { %>
+      <% hostedCollectives.forEach(({account: {id, name, imageUrl, slug}, since})=> { %>
         <li data-id="<%= id %>">
-          <img 
-            class="collective-image" 
-            src="<%= imageUrl %>" 
-            loading="lazy"
-            alt="Logo for <%= name %>"
-          />
-          <div>
-            <div class="collective-name">
-              <%= name %>
+          <a href="https://opencollective.com/<%= slug %>" target="_blank" class="collective">
+            <img 
+              class="collective-image" 
+              src="<%= imageUrl %>" 
+              loading="lazy"
+              alt="Logo for <%= name %>"
+            />
+            <div>
+              <div class="collective-name">
+                <%= name %>
+              </div>
+              <div class="collective-hosted-since">
+                <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
+                Hosted since:</br>
+                  <time datetime="<%= toIsoString(since) %>"
+                    data-format-options="<%= JSON.stringify({dateStyle: 'medium'}) %>">
+                    <%= since %>
+                  </time>
+              </div>
             </div>
-            <div class="collective-hosted-since">
-              <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
-              Hosted since:</br>
-                <time datetime="<%= toIsoString(since) %>"
-                  data-format-options="<%= JSON.stringify({dateStyle: 'medium'}) %>">
-                  <%= since %>
-                </time>
-            </div>
-          </div>
+          </a>
         </li>
         <% }); %>
     </ol>
