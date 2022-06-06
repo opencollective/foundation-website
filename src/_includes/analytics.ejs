@@ -1,7 +1,8 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script
+<% const ANALYTICS_ID = 'G-X5GBP7V3D5' %>
+<script
   async
-  src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+  src="https://www.googletagmanager.com/gtag/js?id=<%- ANALYTICS_ID %>"
 ></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,5 +11,5 @@
   }
   gtag('js', new Date());
 
-  gtag('config', 'G-XXXXXXXXXX');
-</script> -->
+  gtag('config', '<%- ANALYTICS_ID %>');
+</script>
