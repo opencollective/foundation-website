@@ -263,6 +263,17 @@
       "country": "IN",
       "linkedInUrl": "https://www.linkedin.com/in/amina-kazi-a97b47158/",
       "githubUrl": "https://github.com/aminakazi"
+    },
+    {
+      "name": "Shannon Wray ",
+      "githubUrl": "https://github.com/shannondwray",
+      "linkedInUrl": "https://www.linkedin.com/in/shannonwray/",
+      "profileImage": "/assets/uploads/shannon.jpeg",
+      "department": "Platform Engineering and Design",
+      "country": "NZ",
+      "title": "Marketing ",
+      "twitterUrl": "https://twitter.com/shanwray_",
+      "instagramUrl": "https://www.instagram.com/shannondwray/"
     }
   ],
   "departments": [
