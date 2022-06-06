@@ -12,6 +12,94 @@
     {
       "name": "Open Mined",
       "heroImage": "/assets/uploads/open-mined_forweb.png"
+    },
+    {
+      "name": "ABQ Free Fridge",
+      "heroImage": "/assets/uploads/abq-free-fridge.jpeg"
+    },
+    {
+      "name": "1k Project",
+      "heroImage": "/assets/uploads/1k-project.png"
+    },
+    {
+      "name": "Black Alliance for Peace",
+      "heroImage": "/assets/uploads/black-alliance-for-peace.jpeg"
+    },
+    {
+      "name": "Black Banjo Reclamation Project",
+      "heroImage": "/assets/uploads/black-banjo-reclamation-project.jpeg"
+    },
+    {
+      "name": "Chicago Community Jail Support",
+      "heroImage": "/assets/uploads/chicago-community-jail-support.jpeg"
+    },
+    {
+      "name": "Club A Kitchen",
+      "heroImage": "/assets/uploads/club-a-kitchen.jpeg"
+    },
+    {
+      "name": "Denver Community Fridges",
+      "heroImage": "/assets/uploads/denver-community-fridges.jpeg"
+    },
+    {
+      "name": "Disabled and Here",
+      "heroImage": "/assets/uploads/disabled-and-here.jpeg"
+    },
+    {
+      "name": "DisCO",
+      "heroImage": "/assets/uploads/disco.png"
+    },
+    {
+      "name": "Food Not Bombs Raleigh",
+      "heroImage": "/assets/uploads/food-not-bombs-raleigh.png"
+    },
+    {
+      "name": "Fridays for Future",
+      "heroImage": "/assets/uploads/fridays-for-future.jpeg"
+    },
+    {
+      "name": "Humboldt Park Solidarity Network",
+      "heroImage": "/assets/uploads/humboldt-park-solidarity-network.jpeg"
+    },
+    {
+      "name": "Julian",
+      "heroImage": "/assets/uploads/julian.png"
+    },
+    {
+      "name": "Love Wins Food Pantry",
+      "heroImage": "/assets/uploads/love-wins-food-pantry.jpeg"
+    },
+    {
+      "name": "M4BL DC Money Pot",
+      "heroImage": "/assets/uploads/m4bl-dc-money-pot.jpg"
+    },
+    {
+      "name": "Meals of Gratitude",
+      "heroImage": "/assets/uploads/meals-of-gratitude.jpeg"
+    },
+    {
+      "name": "Minneapolis Northside Mutual Aid",
+      "heroImage": "/assets/uploads/minneapolis-northside-mutual-aid.jpeg"
+    },
+    {
+      "name": "NYU Graduate Workers Strike",
+      "heroImage": "/assets/uploads/nyu-graduate-workers-strike.jpeg"
+    },
+    {
+      "name": "Okionu Birth Foundation",
+      "heroImage": "/assets/uploads/okionu-birth-foundation.png"
+    },
+    {
+      "name": "Open Food Network",
+      "heroImage": "/assets/uploads/open-food-network.jpeg"
+    },
+    {
+      "name": "Sustainable Progress Equality Collective",
+      "heroImage": "/assets/uploads/sustainable-progress-_-equality-collective.jpeg"
+    },
+    {
+      "name": "The Week",
+      "heroImage": "/assets/uploads/the-week.png"
     }
   ]
 }
