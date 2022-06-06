@@ -1,0 +1,51 @@
+section#footer {
+  background-color: @background-color-lighter;
+  text-align: center;
+
+  .paragraph-small();
+
+  .logo {
+    height: 44px;
+  }
+
+  .name-of-project {
+    .paragraph-large();
+    color: @color-dark-green;
+  }
+
+  .address {
+    white-space: pre-line;
+    font-style: inherit;
+  }
+
+  .social-links {
+    padding: 0;
+    margin: @layout-grid-margin 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .powered-by {
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 16px;
+    }
+
+    .oc-logo {
+      height: 29px;
+    }
+
+    .cc-logo {
+      vertical-align: middle;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+}
