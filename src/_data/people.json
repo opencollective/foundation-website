@@ -254,6 +254,15 @@
       "title": "Engineering ",
       "administrativeArea": "Vancouver ",
       "twitterUrl": "https://twitter.com/PSudharaka"
+    },
+    {
+      "name": "Amina Kazi ",
+      "profileImage": "/assets/uploads/amina.jpeg",
+      "department": "Platform Engineering and Design",
+      "title": "Design ",
+      "country": "IN",
+      "linkedInUrl": "https://www.linkedin.com/in/amina-kazi-a97b47158/",
+      "githubUrl": "https://github.com/aminakazi"
     }
   ],
   "departments": [
