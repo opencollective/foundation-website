@@ -1,0 +1,34 @@
+{
+  "features": [
+    {
+      "title": "Share your budget",
+      "productShot": "/assets/uploads/budget.png",
+      "body": "Everyone can see where money comes from and where it goes. Clarity and accountability without any spreadsheets or extra work!"
+    },
+    {
+      "title": "Receive Contributions",
+      "productShot": "/assets/uploads/homepage.png",
+      "body": "Accept payments by credit card, bank transfer, and Paypal. Define custom tiers and set goals to motivate your supporters to give."
+    },
+    {
+      "title": "Manage Expenses",
+      "productShot": "/assets/uploads/expenses.png",
+      "body": "Contributors and vendors can easily submit receipts and invoices. You approve or reject them, and once paid your balance updates automatically."
+    },
+    {
+      "title": "Engage your community",
+      "productShot": "/assets/uploads/media.png",
+      "body": "Post Updates to engage supporters and share your progress and the impact of their funding. Use Conversations as a community discussion forum."
+    },
+    {
+      "title": "Celebrate your supporters",
+      "productShot": "/assets/uploads/contributors.png",
+      "body": "Leaderboard of your top funders, plus highlight how your whole community contributes in different ways."
+    },
+    {
+      "title": "Get monthly reports",
+      "productShot": "/assets/uploads/reports.png",
+      "body": "A summary of your group’s activities, progress on your budget goals, new contributors, and expense details, with all transaction data and receipts/invoices attached."
+    }
+  ]
+}

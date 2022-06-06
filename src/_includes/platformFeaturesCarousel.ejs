@@ -1,0 +1,19 @@
+<div class="content-container platform-features-container">
+  <div class="platform-features carousel" data-flickity="<%= JSON.stringify({ 
+    }) %>">
+
+    <% platformFeatures.features.forEach((feature)=> { %>
+      <div class="platform-feature slide">
+        <img class="product-shot" src="<%= feature.productShot %>" />
+        <div class="feature-copy">
+          <div class="feature-title">
+            <%= feature.title %>
+          </div>
+          <div class="feature-body">
+            <%- markdown(feature.body) %>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+  </div>
+</div>

@@ -162,3 +162,18 @@ collections:
                 label: ISO country code
                 widget: string
                 pattern: ['[A-Z]{2}', 'Must be a two-character ISO code']
+      - name: platformFeatures
+        label: Platform Features
+        label_singular: Feature
+        file: src/_data/platformFeatures.json
+        fields:
+          - name: features
+            widget: list
+            fields:
+              - name: title
+                widget: string
+              - name: productShot
+                widget: image
+                allow_multiple: false
+              - name: body
+                widget: markdown
