@@ -243,6 +243,17 @@
       "linkedInUrl": "https://www.linkedin.com/in/benjamuk/",
       "twitterUrl": "https://twitter.com/BenJam",
       "githubUrl": "https://github.com/BenJam"
+    },
+    {
+      "name": "Sudharaka Palamakumbura",
+      "githubUrl": "https://github.com/SudharakaP",
+      "linkedInUrl": "https://www.linkedin.com/in/sudharakap/",
+      "profileImage": "/assets/uploads/suds.jpeg",
+      "department": "Platform Engineering and Design",
+      "country": "CA",
+      "title": "Engineering ",
+      "administrativeArea": "Vancouver ",
+      "twitterUrl": "https://twitter.com/PSudharaka"
     }
   ],
   "departments": [
