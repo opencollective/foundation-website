@@ -186,6 +186,15 @@
       "country": "US",
       "linkedInUrl": "https://www.linkedin.com/in/niki-franco-a7b84a99/",
       "instagramUrl": "https://www.instagram.com/venusroots/"
+    },
+    {
+      "name": "Ebony Gustave ",
+      "profileImage": "/assets/uploads/ebony.png",
+      "department": "OC Foundation Operations and Community",
+      "linkedInUrl": "https://www.linkedin.com/in/ebony-gustave-80740b95/",
+      "title": "Organizer Fellow ",
+      "country": "NZ",
+      "administrativeArea": "New York"
     }
   ],
   "departments": [
