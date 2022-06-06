@@ -1,0 +1,121 @@
+section#get-in-touch {
+  .card {
+    border: @default-rule;
+    border-radius: @border-radius;
+    background-color: @background-color-lighter;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    > * {
+      padding: 32px 56px;
+      border-right: @default-rule;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: @layout-grid-margin;
+      .subheading();
+      font-weight: @font-weight-regular;
+    }
+
+    p {
+      .paragraph-large();
+      font-weight: @font-weight-light;
+    }
+  }
+
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      margin-bottom: 17px;
+    }
+
+    input[type='email'],
+    input[type='text'] {
+      outline: none;
+      border: none;
+      border-bottom: @default-rule;
+      width: 100%;
+      appearance: none;
+      height: 40px;
+      .paragraph-large();
+      &::placeholder {
+        color: @color-dark-400;
+        font-weight: @font-weight-bold;
+      }
+    }
+
+    label.checkbox-label {
+      .paragraph-small();
+
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      column-gap: 8px;
+      align-items: center;
+    }
+
+    label.hidden {
+      display: none;
+    }
+
+    button[type='submit'] {
+      .button-outline(@color-dark-green);
+      align-self: start;
+    }
+  }
+
+  .social-icon(@filename) {
+    ::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: url('/assets/images/@{filename}') no-repeat center center;
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+  }
+
+  .social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: @layout-grid-margin;
+    margin-bottom: @layout-grid-margin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: @layout-grid-margin;
+
+    border-bottom: @default-rule;
+
+    .paragraph-large();
+
+    .email {
+      .social-icon('email.svg');
+    }
+    .slack {
+      .social-icon('slack.svg');
+    }
+    .instagram {
+      .social-icon('instagram.svg');
+    }
+    .facebook {
+      .social-icon('facebook.svg');
+    }
+    .tiktok {
+      .social-icon('tiktok.svg');
+    }
+    .twitter {
+      .social-icon('twitter.svg');
+    }
+  }
+}

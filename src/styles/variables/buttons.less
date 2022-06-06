@@ -1,15 +1,17 @@
-.buttonCommon(@background-color) {
+.buttonCommon(@background-color, @outline-color, @text-color) {
   display: inline-block;
   padding: 12px 24px;
   background-color: @background-color;
-  color: @background-color-lighter;
+  color: @text-color;
+  border: 2px solid @outline-color;
   text-align: center;
   border-radius: 100px;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     background-color: tint(@background-color, 20%);
-    border: none;
+    border-color: tint(@outline-color, 20%);
   }
 }
 
@@ -30,11 +32,16 @@
 }
 
 .buttonStyledLink(@background-color) {
-  .buttonCommon(@background-color);
+  .buttonCommon(@background-color, transparent,
+    @background-color-lighter);
 }
 
-.button(@background-color) {
+.button-filled(@background-color) {
   .bareButton();
-  .buttonCommon(@background-color);
-  cursor: pointer;
+  .buttonCommon(@background-color, transparent, @background-color-lighter);
+}
+
+.button-outline(@background-color) {
+  .bareButton();
+  .buttonCommon(@background-color-lighter, @color-dark-green, @color-dark-green);
 }
