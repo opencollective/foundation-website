@@ -13,15 +13,35 @@ table {
     &:first-child {
       text-align: left;
       border-left: none;
-      padding-left: @layout-grid-margin;
+      padding-left: @layout-grid-gutter;
     }
     &:last-child {
       border-right: none;
-      padding-right: @layout-grid-margin;
+      padding-right: @layout-grid-gutter;
     }
   }
 
   th {
     border-top: none;
+  }
+
+  @media screen and (max-width: @viewport-width-tablet-landscape) {
+    td,
+    th {
+      &:first-child {
+        padding-left: @layout-grid-gutter-tablet;
+      }
+
+      &:last-child {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  @media screen and (max-width: @viewport-width-tablet-portrait) {
+    td,
+    th {
+      padding: 8px;
+    }
   }
 }
