@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   }
 
   await sendMessage({
-    to: "contact@opencollective.foundation",
+    to: "info@opencollective.com",
     from: "Open Collective <info@opencollective.com>",
     subject: "Open Collective Foundation: Contact us form",
     text: `
