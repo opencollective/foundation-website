@@ -29,6 +29,26 @@ section#hosted-collectives {
         grid-column: span 5;
       }
     }
+
+    @media screen and (max-width: @viewport-width-tablet-portrait) {
+      // no longer a grid at this size
+      display: block;
+
+      // make inner elements the content containers (have padding)
+      padding: 0;
+
+      > * {
+        padding: @layout-grid-margin @layout-grid-gutter-tablet;
+      }
+
+      > :first-child {
+        border-bottom: @default-rule;
+      }
+
+      > :nth-child(2) {
+        border-left: none;
+      }
+    }
   }
 
   .collective-list {
@@ -41,8 +61,18 @@ section#hosted-collectives {
     column-gap: @layout-grid-gutter;
     row-gap: @layout-grid-margin;
 
+    // if it cannot break words, then rediculous names will ruin the whole grid
+    word-break: break-all;
+    hyphens: auto;
+
     @media screen and (max-width: @viewport-width-tablet-landscape) {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: @viewport-width-tablet-portrait) {
+      padding: 0;
+      // back to 3 columns!
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -78,8 +108,8 @@ section#hosted-collectives {
     display: none;
   }
 
-  // or first 6 or tablet
-  @media screen and (max-width: @viewport-width-tablet-landscape) {
+  // or first 6 or tablet-landscape
+  @media screen and (max-width: @viewport-width-tablet-landscape) and (min-width: (@viewport-width-tablet-portrait + 1px)) {
     // Hide events after first 6
     .collective-list > li:nth-child(6) ~ li {
       display: none;
