@@ -7,17 +7,22 @@ function renderRotatingConcepts() {
     script.getAttribute('data-featured-collectives')
   );
 
-  const collectiveNameEl = sectionEl.querySelector('.collective-name');
-  const heroImageEl = sectionEl.querySelector('.collective-hero-image');
+  const collectiveNameEls = sectionEl.querySelectorAll('.collective-name');
+  const heroImageEls = sectionEl.querySelectorAll('.collective-hero-image');
 
   function rotate() {
     var collective = collectives[i++ % collectives.length];
-    collectiveNameEl.innerText = collective.name;
-    heroImageEl.setAttribute('src', collective.heroImage);
+    collectiveNameEls.forEach((collectiveNameEl) => {
+      collectiveNameEl.innerText = collective.name;
+    });
 
-    if (collective.heroImageAlt)
-      heroImageEl.setAttribute('alt', collective.heroImageAlt);
-    else heroImageEl.removeAttribute('alt');
+    heroImageEls.forEach((heroImageEl) => {
+      heroImageEl.setAttribute('src', collective.heroImage);
+
+      if (collective.heroImageAlt)
+        heroImageEl.setAttribute('alt', collective.heroImageAlt);
+      else heroImageEl.removeAttribute('alt');
+    });
   }
 
   var i = 0;

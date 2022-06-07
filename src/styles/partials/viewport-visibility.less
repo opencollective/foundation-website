@@ -1,0 +1,22 @@
+// Classes to add to hide/show based on viewport
+// All class names refer to that size or smaller (aka max-width)
+
+// Start hidden, use show-* classes
+.hidden {
+  display: none !important;
+}
+
+.make-hide-show(@viewport-name, @viewport-width) {
+  @media screen and (max-width: @viewport-width) {
+    .hide-@{viewport-name} {
+      display: none !important;
+    }
+
+    .show-@{viewport-name} {
+      display: revert !important;
+    }
+  }
+}
+
+.make-hide-show(tablet-landscape, @viewport-width-tablet-landscape);
+.make-hide-show(tablet-portrait, @viewport-width-tablet-portrait);

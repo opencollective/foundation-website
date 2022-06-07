@@ -3,8 +3,10 @@
   column-gap: @layout-grid-gutter;
   row-gap: @layout-grid-margin;
 
+  // 12 column grid on desktop
   grid-template-columns: repeat(12, 1fr);
 
+  // 8 column grid on tablet
   @media screen and (max-width: @viewport-width-tablet-landscape) {
     grid-template-columns: repeat(8, 1fr);
     column-gap: @layout-grid-gutter-tablet;

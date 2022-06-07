@@ -1,5 +1,11 @@
 section#hero {
+  // Move the border to a wrapper to account for mobile styles
+  .hero-wrapper {
+    border-bottom: @default-rule;
+  }
+
   .hero-row {
+    border-bottom: none;
     .left,
     .right {
       grid-column: span 6;
@@ -7,19 +13,6 @@ section#hero {
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         grid-column: span 4;
       }
-    }
-
-    h1 {
-      color: @color-dark-green;
-
-      .collective-name {
-        color: @font-color-base;
-      }
-    }
-
-    .subhead {
-      .paragraph-large;
-      font-weight: @font-weight-light;
     }
 
     .right {
@@ -32,9 +25,31 @@ section#hero {
       height: 496px;
       aspect-ratio: 520 / 496;
     }
+  }
+
+  .heading {
+    color: @color-dark-green;
+
+    .collective-name {
+      color: @font-color-base;
+    }
+  }
+
+  .subhead {
+    .paragraph-large;
+    font-weight: @font-weight-light;
+  }
+
+  .cta {
+    .buttonStyledLink(@color-dark-green);
+  }
+
+  .tablet-portrait-subhead-row {
+    text-align: center;
+    padding-bottom: @layout-grid-margin;
 
     .cta {
-      .buttonStyledLink(@color-dark-green);
+      min-width: 332px;
     }
   }
 

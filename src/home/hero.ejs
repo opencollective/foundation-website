@@ -3,23 +3,23 @@ title: Introduction
 position: 0
 hideInNavigation: true
 ---
-
+<div class="hero-wrapper">
 <div class="row hero-row">
   <div class="content-container">
     <% firstCollective = featuredCollectives.featuredCollectives[0] %>
     <div class="column left">
-      <h1>
+      <h1 class="heading">
         OC Foundation is proud to be the financial and legal home of
         <span class="collective-name"><%= firstCollective.name %> </span> and 300
         more groups
       </h1>
 
-      <p class="subhead">
+      <p class="subhead hide-tablet-portrait">
         OC Foundation offers nonprofit status + fundraising + money management software to aligned groups.
       </p>
 
       <a
-        class="cta"
+        class="cta hide-tablet-portrait"
         href="https://opencollective.com/foundation/apply"
         target="_blank"
         >Apply now</a
@@ -34,6 +34,16 @@ hideInNavigation: true
       />
     </div>
   </div>
+</div>
+
+<div class="tablet-portrait-subhead-row hidden show-tablet-portrait">
+    <p class="subhead">
+      OC Foundation offers nonprofit status + fundraising + money management software to aligned groups.
+    </p>
+    
+    <a class="cta" href="https://opencollective.com/foundation/apply" target="_blank">Apply</a>
+</div>
+
 </div>
 
 <!-- Scripts, preloaders -->
