@@ -12,6 +12,37 @@ section#services {
       }
     }
 
+    @media screen and (max-width: @viewport-width-tablet-portrait) {
+      .content-container {
+        // remove outer content container (outer padding), and instead make each item a content container
+        padding: 0;
+
+        // disable grid
+        display: block;
+      }
+
+      .column {
+        // make each column a content container
+        padding: @layout-grid-margin @layout-grid-gutter-tablet;
+
+        border-right: none;
+        border-bottom: @default-rule;
+        display: block;
+
+        &.checklist {
+          grid-column: 1 / -1;
+          padding: @layout-grid-margin @layout-grid-gutter-tablet;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+
     p {
       .heading-h2();
       align-self: center;
