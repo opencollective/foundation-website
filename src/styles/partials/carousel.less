@@ -32,3 +32,40 @@
   width: 12px;
   height: 12px;
 }
+
+// On tablet, change layout to move arrows to bottom center
+@media screen and (max-width: @viewport-width-tablet-landscape) {
+  .flickity-enabled {
+    display: grid;
+    grid-template:
+      'viewport viewport viewport' auto
+      'prev dots next' auto /
+      minmax(auto, 1fr) auto minmax(auto, 1fr);
+    align-items: center;
+    column-gap: @layout-grid-gutter-tablet;
+
+    .flickity-viewport {
+      grid-area: viewport;
+    }
+
+    .flickity-button {
+      position: static;
+    }
+
+    .flickity-button.previous {
+      grid-area: prev;
+      justify-self: end;
+    }
+
+    .flickity-button.next {
+      grid-area: next;
+      justify-self: 'start';
+    }
+
+    .flickity-page-dots {
+      grid-area: dots;
+      justify-self: center;
+      position: static;
+    }
+  }
+}

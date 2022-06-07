@@ -3,6 +3,10 @@ section#hero {
     .left,
     .right {
       grid-column: span 6;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 4;
+      }
     }
 
     h1 {
@@ -39,10 +43,18 @@ section#hero {
 
     .the-process-heading {
       grid-column: span 4;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 3;
+      }
     }
 
     .the-process-graphic {
       grid-column-end: span 8;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 5;
+      }
     }
   }
 
@@ -50,10 +62,20 @@ section#hero {
     .network-copy {
       grid-column: span 3;
       .paragraph-large();
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 4;
+        // for some reasaon this content is designed to start in the gutter?
+        margin-left: -@layout-grid-gutter-tablet;
+      }
     }
 
     .network-graphic {
       grid-column-end: span (12 - 3);
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 4;
+      }
     }
   }
 
@@ -61,15 +83,24 @@ section#hero {
     .video-copy-container {
       .subheading();
       grid-column: span 4;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 3;
+      }
     }
 
     .video-wrapper {
       grid-column-end: span 8;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 5;
+      }
     }
 
     .video {
-      height: 426px;
+      // height: 426px;
       width: 100%;
+      aspect-ratio: 560 / 315;
 
       border-radius: @border-radius;
     }

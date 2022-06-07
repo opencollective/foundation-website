@@ -39,6 +39,10 @@
     align-items: start;
     justify-content: center;
 
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      padding-right: @layout-grid-gutter-tablet;
+    }
+
     &:last-child {
       padding-right: 0;
     }
@@ -84,5 +88,9 @@
     grid-column: span 10;
     .paragraph-mid();
     font-weight: @font-weight-light;
+
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      grid-column: span 6;
+    }
   }
 }

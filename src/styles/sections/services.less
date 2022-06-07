@@ -2,6 +2,14 @@ section#services {
   .checklist-row {
     .column {
       grid-column: span 4;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 2;
+
+        &.checklist {
+          grid-column: span 4;
+        }
+      }
     }
 
     p {
@@ -14,7 +22,7 @@ section#services {
 
       list-style: none;
       margin: 0;
-      padding: @layout-grid-margin;
+      padding: @layout-grid-margin @layout-grid-gutter;
       padding-left: 0; // there's already a grid gap
 
       li {
@@ -35,6 +43,9 @@ section#services {
             center;
         }
       }
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        padding-right: @layout-grid-gutter-tablet;
+      }
     }
   }
 
@@ -53,6 +64,10 @@ section#services {
   .ticker-wrapper {
     overflow: hidden;
     margin: 0 -@layout-grid-gutter;
+
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      margin: 0 -@layout-grid-gutter-tablet;
+    }
   }
 
   // Hopefully someday browsers support element() then we can do the repeat effect in CSS :-(

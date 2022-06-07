@@ -3,7 +3,12 @@
 @mobile-width: 768px;
 
 @layout-grid-columns: 12;
+
+// Column spacing
 @layout-grid-gutter: 48px;
+@layout-grid-gutter-tablet: 35px;
+
+// Row spacing
 @layout-grid-margin: 40px;
 
 @border-radius: 16px;
@@ -11,33 +16,4 @@
 html {
   // Due to issue with full-bleed
   overflow-x: hidden;
-}
-
-.layout-grid() {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: @layout-grid-gutter;
-  row-gap: @layout-grid-margin;
-}
-
-.content-container {
-  max-width: @content-width;
-  margin: auto;
-  padding: @layout-grid-margin;
-  box-sizing: border-box;
-
-  img {
-    max-width: 100%;
-  }
-}
-
-// bust out of content-container
-// https://css-tricks.com/full-bleed/
-.full-bleed() {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }

@@ -9,6 +9,11 @@
     align-items: center;
     padding: @layout-grid-margin (@layout-grid-gutter * 2);
     padding-bottom: 0;
+
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      column-gap: @layout-grid-gutter-tablet;
+      padding: @layout-grid-margin @layout-grid-gutter-tablet;
+    }
   }
 
   .feature-title {

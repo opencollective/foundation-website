@@ -17,12 +17,20 @@ section#events {
     > :first-child {
       grid-column: span 4;
       align-self: center;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 3;
+      }
     }
 
     // right side
     > :nth-child(2) {
       grid-column: span 8;
       border-left: 1px solid @color-dark-green;
+
+      @media screen and (max-width: @viewport-width-tablet-landscape) {
+        grid-column: span 5;
+      }
     }
   }
 
@@ -35,6 +43,10 @@ section#events {
     grid-template-columns: repeat(3, 1fr);
     column-gap: @layout-grid-gutter;
     row-gap: @layout-grid-margin;
+
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .event-name {
@@ -60,6 +72,14 @@ section#events {
   // Hide events after first 9
   .event-list > li:nth-child(9) ~ li {
     display: none;
+  }
+
+  // or first 6 or tablet
+  @media screen and (max-width: @viewport-width-tablet-landscape) {
+    // Hide events after first 6
+    .event-list > li:nth-child(6) ~ li {
+      display: none;
+    }
   }
 
   .show-all .event-list li {

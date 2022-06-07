@@ -10,11 +10,12 @@ section#team {
     margin: 0;
     padding: 0;
     .layout-grid();
+
+    // On tablet, the design does not follow the 8 column grid, but rather seems to be on its own 3 column grid
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 
   .person {
-    grid-column: span 3;
-
     display: flex;
     flex-direction: row;
 
