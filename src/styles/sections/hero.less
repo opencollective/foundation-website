@@ -119,5 +119,23 @@ section#hero {
 
       border-radius: @border-radius;
     }
+
+    // Not a grid at tablet-portrait
+    @media screen and (max-width: @viewport-width-tablet-portrait) {
+      .content-container {
+        display: block;
+      }
+
+      .column.with-borders {
+        border-right: none;
+      }
+
+      .column.video-copy-container {
+        padding-bottom: 0;
+        .video-copy {
+          margin: 0;
+        }
+      }
+    }
   }
 }
