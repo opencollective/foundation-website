@@ -28,6 +28,20 @@ section#get-in-touch {
       .paragraph-large();
       font-weight: @font-weight-light;
     }
+
+    @media screen and (max-width: @viewport-width-tablet-portrait) {
+      // one column
+      grid-template-columns: 100%;
+
+      > * {
+        border-right: none;
+        border-bottom: @default-rule;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
   }
 
   .sign-up-form {
@@ -120,6 +134,10 @@ section#get-in-touch {
 
     @media screen and (max-width: @viewport-width-tablet-landscape) {
       grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: @viewport-width-tablet-portrait) {
+      // back to 3 columns!
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
