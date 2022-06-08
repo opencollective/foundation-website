@@ -131,13 +131,14 @@
     },
     {
       "name": "Alina Manko ",
+      "githubUrl": "https://github.com/alinamanko",
+      "linkedInUrl": "https://www.linkedin.com/in/alinamanko/",
       "profileImage": "/assets/uploads/alina.jpeg",
       "department": "OC Foundation Operations and Community",
-      "title": "Support Stuff ",
       "country": "NZ",
+      "title": "Operations & Support ",
       "administrativeArea": "Wellington ",
-      "linkedInUrl": "https://www.linkedin.com/in/alinamanko/",
-      "githubUrl": "https://github.com/alinamanko"
+      "twitterUrl": "https://twitter.com/c_observations"
     },
     {
       "name": "Sadé Swift",
