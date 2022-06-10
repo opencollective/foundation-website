@@ -13,6 +13,9 @@ section#hero {
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         grid-column: span 4;
       }
+      @media screen and (max-width: @viewport-width-mobile) {
+        grid-column: span 1;
+      }
     }
 
     .right {
@@ -68,6 +71,9 @@ section#hero {
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         grid-column: span 3;
       }
+      @media screen and (max-width: @viewport-width-mobile) {
+        grid-column: span 1;
+      }
     }
 
     .the-process-graphic {
@@ -75,6 +81,9 @@ section#hero {
 
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         grid-column: span 5;
+      }
+      @media screen and (max-width: @viewport-width-mobile) {
+        grid-column: span 1;
       }
     }
   }
@@ -89,6 +98,10 @@ section#hero {
         // for some reasaon this content is designed to start in the gutter?
         margin-left: -@layout-grid-gutter-tablet;
       }
+      @media screen and (max-width: @viewport-width-mobile) {
+        grid-column: span 1;
+        margin-left: initial;
+      }
     }
 
     .network-graphic {
@@ -96,6 +109,9 @@ section#hero {
 
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         grid-column: span 4;
+      }
+      @media screen and (max-width: @viewport-width-mobile) {
+        grid-column: span 1;
       }
     }
   }
@@ -134,6 +150,7 @@ section#hero {
 
       .column.with-borders {
         border-right: none;
+        border-bottom: none;
       }
 
       .column.video-copy-container {

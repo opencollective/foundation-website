@@ -43,6 +43,7 @@ section#footer {
       display: inline-block;
       vertical-align: middle;
       margin-right: 16px;
+      margin-bottom: 16px;
     }
 
     .oc-logo {
@@ -53,6 +54,11 @@ section#footer {
       vertical-align: middle;
       height: 24px;
       margin-right: 8px;
+    }
+
+    @media screen and (max-width: @viewport-width-mobile) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
