@@ -11,6 +11,11 @@
     grid-template-columns: repeat(8, 1fr);
     column-gap: @layout-grid-gutter-tablet;
   }
+  @media screen and (max-width: @viewport-width-mobile) {
+    // the design shows 4 columns but only ever uses 1, so lets say 1
+    grid-template-columns: 1fr;
+    column-gap: @layout-grid-gutter-mobile;
+  }
 }
 
 .content-container {
@@ -25,5 +30,8 @@
 
   @media screen and (max-width: @viewport-width-tablet-landscape) {
     padding: @layout-grid-margin @layout-grid-gutter-tablet;
+  }
+  @media screen and (max-width: @viewport-width-mobile) {
+    padding: @layout-grid-margin @layout-grid-gutter-mobile;
   }
 }
