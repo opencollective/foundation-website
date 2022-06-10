@@ -1,0 +1,94 @@
+// Basic styles as in Figma, private, do not use directly, use responsive mixins that call these
+#type-rulesets {
+  .base-typography() {
+    font-family: @font-family-sans;
+    font-weight: @font-weight-regular;
+    line-height: @line-height-base;
+    font-size: @font-size-base;
+    letter-spacing: @letter-spacing-base;
+  }
+
+  .heading-h1() {
+    line-height: @line-height-h1;
+    font-size: @font-size-h1;
+    font-weight: @font-weight-regular;
+  }
+
+  .heading-h2() {
+    line-height: @line-height-h2;
+    font-size: @font-size-h2;
+  }
+
+  .heading-h3() {
+    line-height: @line-height-h3;
+    font-size: @font-size-h3;
+  }
+
+  .subheading() {
+    line-height: @line-height-subheading;
+    font-size: @font-size-subheading;
+  }
+
+  .paragraph-large() {
+    line-height: @line-height-paragraph-large;
+    font-size: @font-size-paragraph-large;
+  }
+
+  .paragraph-mid() {
+    line-height: @line-height-paragraph-mid;
+    font-size: @font-size-paragraph-mid;
+  }
+
+  .paragraph-small() {
+    line-height: @line-height-paragraph-small;
+    font-size: @font-size-paragraph-small;
+    letter-spacing: @letter-spacing-paragraph-small;
+  }
+}
+
+.base-typography() {
+  #type-rulesets.base-typography();
+}
+
+.heading-h1() {
+  #type-rulesets.heading-h1();
+
+  @media screen and (max-width: @viewport-width-tablet-portrait) {
+    #type-rulesets.heading-h2();
+  }
+  @media screen and (max-width: @viewport-width-mobile) {
+    #type-rulesets.heading-h3();
+  }
+}
+
+.heading-h2() {
+  #type-rulesets.heading-h2();
+
+  @media screen and (max-width: @viewport-width-mobile) {
+    #type-rulesets.subheading();
+  }
+}
+
+.subheading() {
+  #type-rulesets.subheading();
+
+  @media screen and (max-width: @viewport-width-mobile) {
+    #type-rulesets.paragraph-large();
+  }
+}
+
+.paragraph-large() {
+  #type-rulesets.paragraph-large();
+
+  @media screen and (max-width: @viewport-width-mobile) {
+    #type-rulesets.paragraph-mid();
+  }
+}
+
+.paragraph-mid() {
+  #type-rulesets.paragraph-mid();
+}
+
+.paragraph-small() {
+  #type-rulesets.paragraph-small();
+}
