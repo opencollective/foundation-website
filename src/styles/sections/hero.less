@@ -18,12 +18,18 @@ section#hero {
     .right {
       justify-self: end;
     }
+  }
 
-    .collective-hero-image {
-      border-radius: @border-radius;
-      object-fit: cover;
-      height: 496px;
-      aspect-ratio: 520 / 496;
+  .collective-hero-image {
+    border-radius: @border-radius;
+    object-fit: cover;
+    height: 496px;
+    aspect-ratio: 520 / 496;
+
+    &.mobile-image {
+      height: auto;
+      aspect-ratio: 1 / 1;
+      margin: 18px 0;
     }
   }
 

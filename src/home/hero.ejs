@@ -10,23 +10,25 @@ hideInNavigation: true
     <div class="column left">
       <h1 class="heading">
         OC Foundation is proud to be the financial and legal home of
-        <span class="collective-name"><%= firstCollective.name %> </span> and 300
+        <span class="collective-name"><%= firstCollective.name %> </span> 
+        <img class="collective-hero-image mobile-image hidden show-mobile" src="<%- firstCollective.heroImage %>" alt="<%= firstCollective.heroImageAlt %>" />
+        and 300
         more groups
       </h1>
 
-      <p class="subhead hide-tablet-portrait">
+      <p class="subhead hide-tablet-portrait show-mobile">
         OC Foundation offers nonprofit status + fundraising + money management software to aligned groups.
       </p>
 
       <a
-        class="cta hide-tablet-portrait"
+        class="cta hide-tablet-portrait show-mobile"
         href="https://opencollective.com/foundation/apply"
         target="_blank"
         >Apply now</a
       >
     </div>
 
-    <div class="column right">
+    <div class="column right hide-mobile">
       <img
         class="collective-hero-image"
         src="<%- firstCollective.heroImage %>"
@@ -36,7 +38,7 @@ hideInNavigation: true
   </div>
 </div>
 
-<div class="tablet-portrait-subhead-row hidden show-tablet-portrait">
+<div class="tablet-portrait-subhead-row hidden show-tablet-portrait hide-mobile">
     <p class="subhead">
       OC Foundation offers nonprofit status + fundraising + money management software to aligned groups.
     </p>
