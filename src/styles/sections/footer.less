@@ -29,6 +29,13 @@ section#footer {
     a {
       text-decoration: underline;
     }
+
+    // turns into a grid on mobile
+    @media screen and (max-width: @viewport-width-mobile) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 48px;
+    }
   }
 
   .powered-by {

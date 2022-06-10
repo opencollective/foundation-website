@@ -75,6 +75,10 @@ section#hosted-collectives {
       // back to 3 columns!
       grid-template-columns: repeat(3, 1fr);
     }
+
+    @media screen and (max-width: @viewport-width-mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .collective-name {
@@ -104,17 +108,26 @@ section#hosted-collectives {
     border-radius: 100px;
   }
 
-  // Hide events after first 9
-  .collective-list > li:nth-child(9) ~ li {
-    display: none;
-  }
-
-  // or first 6 or tablet-landscape
-  @media screen and (max-width: @viewport-width-tablet-landscape) and (min-width: (@viewport-width-tablet-portrait + 1px)) {
-    // Hide events after first 6
-    .collective-list > li:nth-child(6) ~ li {
+  .hide-after(@n) {
+    .collective-list > li:nth-child(@{n}) ~ li {
       display: none;
     }
+  }
+
+  .hide-after(9);
+
+  @media screen and (max-width: @viewport-width-tablet-landscape) {
+    // Hide events after first 6
+    .hide-after(6);
+  }
+
+  @media screen and (max-width: @viewport-width-tablet-portrait) {
+    // Back to 9
+    .hide-after(9);
+  }
+  @media screen and (max-width: @viewport-width-mobile) {
+    // Back to 6!
+    .hide-after(6);
   }
 
   .show-all .collective-list li {

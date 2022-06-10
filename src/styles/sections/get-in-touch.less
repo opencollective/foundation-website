@@ -15,6 +15,10 @@ section#get-in-touch {
       &:last-child {
         border-right: none;
       }
+
+      @media screen and (max-width: @viewport-width-mobile) {
+        padding: 24px 16px;
+      }
     }
 
     h3 {
@@ -22,6 +26,10 @@ section#get-in-touch {
       margin-bottom: @layout-grid-margin;
       .subheading();
       font-weight: @font-weight-regular;
+
+      @media screen and (max-width: @viewport-width-mobile) {
+        text-align: center;
+      }
     }
 
     p {
@@ -138,6 +146,9 @@ section#get-in-touch {
     @media screen and (max-width: @viewport-width-tablet-portrait) {
       // back to 3 columns!
       grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: @viewport-width-mobile) {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

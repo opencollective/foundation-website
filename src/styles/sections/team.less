@@ -11,8 +11,13 @@ section#team {
     padding: 0;
     .layout-grid();
 
-    // On tablet, the design does not follow the 8 column grid, but rather seems to be on its own 3 column grid
+    // The design does not follow the 8 column grid, but rather seems to be on its own 3 column grid
     grid-template-columns: repeat(3, 1fr) !important;
+
+    @media screen and (max-width: @viewport-width-mobile) {
+      // or 1 column on mobile
+      grid-template-columns: 1fr !important;
+    }
   }
 
   .person {

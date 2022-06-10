@@ -73,6 +73,11 @@ section#events {
       // back to 3 columns!
       grid-template-columns: repeat(3, 1fr);
     }
+
+    // 1 column
+    @media screen and (max-width: @viewport-width-mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .event-name {
@@ -95,17 +100,27 @@ section#events {
     font-weight: @font-weight-regular;
   }
 
-  // Hide events after first 9
-  .event-list > li:nth-child(9) ~ li {
-    display: none;
-  }
-
-  // or first 6 or tablet-landscape
-  @media screen and (max-width: @viewport-width-tablet-landscape) and (min-width: (@viewport-width-tablet-portrait + 1px)) {
-    // Hide events after first 6
-    .event-list > li:nth-child(6) ~ li {
+  .hide-after(@n) {
+    .event-list > li:nth-child(@{n}) ~ li {
       display: none;
     }
+  }
+
+  .hide-after(9);
+
+  @media screen and (max-width: @viewport-width-tablet-landscape) {
+    // Hide events after first 6
+    .hide-after(6);
+  }
+
+  @media screen and (max-width: @viewport-width-tablet-portrait) {
+    // Back to 9
+    .hide-after(9);
+  }
+
+  @media screen and (max-width: @viewport-width-mobile) {
+    // Back to 6!
+    .hide-after(6);
   }
 
   .show-all .event-list li {
