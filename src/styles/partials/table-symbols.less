@@ -1,0 +1,20 @@
+.replace-with-symbol(@filename) {
+  background-image: url('/assets/images/@{filename}');
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.applySymbols() {
+  &.checkmark {
+    .replace-with-symbol('checkmark.svg');
+  }
+
+  &.dismiss {
+    .replace-with-symbol('dismiss.svg');
+  }
+
+  &.question-mark {
+    .replace-with-symbol('question-mark.svg');
+  }
+}

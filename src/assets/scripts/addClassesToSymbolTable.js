@@ -28,7 +28,7 @@ const symbolToClass = {
 function addClassesToSymbolTable(tableSelector) {
   const table = document.querySelector(tableSelector);
   if (!table) return;
-  const tableCells = table.querySelectorAll('td');
+  const tableCells = table.querySelectorAll('td, .table-data');
   tableCells.forEach((el) => {
     const text = el.textContent.trim().toLowerCase();
     if (text in symbolToClass) {
@@ -38,3 +38,4 @@ function addClassesToSymbolTable(tableSelector) {
 }
 
 addClassesToSymbolTable('.services-table-container table');
+addClassesToSymbolTable('.services-table-container .services-table-mobile');

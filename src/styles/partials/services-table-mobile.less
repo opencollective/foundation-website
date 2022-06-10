@@ -1,0 +1,81 @@
+@import './table-symbols.less';
+
+.services-table-mobile {
+  .paragraph-mid();
+
+  .table-heading-row,
+  .table-data,
+  .row-heading {
+    padding: @layout-grid-gutter-mobile;
+  }
+
+  // ensure room for prev/next buttons
+  .table-heading-row {
+    padding-left: 80px;
+    padding-right: 80px;
+    min-height: 4em;
+  }
+
+  .table-row,
+  .table-heading-row {
+    border-bottom: @default-rule;
+  }
+
+  .table-row {
+    display: flex;
+    flex-direction: row;
+
+    .table-data {
+      flex-basis: 72px;
+      flex-shrink: 0;
+      min-height: 72px;
+      box-sizing: border-box;
+
+      .applySymbols();
+    }
+
+    .row-heading {
+      flex-grow: 1;
+      border-left: @default-rule;
+    }
+
+    // Footer
+    &:last-child {
+      display: grid;
+      row-gap: 8px;
+
+      .row-heading {
+        grid-row: 1;
+        border: none;
+        color: @color-dark-green;
+        font-weight: @font-weight-bold;
+        padding-bottom: 0;
+      }
+
+      .table-data {
+        grid-row: 2;
+        padding-top: 0;
+        background-color: inherit !important;
+      }
+    }
+  }
+
+  // First column has green background for data and heading
+  .table-column:first-child {
+    .table-data,
+    .table-heading-row {
+      background-color: @background-color-base;
+    }
+  }
+
+  .flickity-enabled {
+    // disable grid
+    display: block;
+  }
+
+  // Flickity controls
+  .flickity-prev-next-button {
+    position: absolute !important;
+    top: @layout-grid-gutter-mobile;
+  }
+}

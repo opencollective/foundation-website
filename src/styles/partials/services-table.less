@@ -1,9 +1,16 @@
+@import './table-symbols.less';
+
 .services-table-container {
   background-color: @background-color-lighter;
   border-bottom: @default-rule;
 }
 
 .services-table-container table {
+  // Hide on mobile, use alternate dom created by js instead
+  @media screen and (max-width: @viewport-width-mobile) {
+    display: none;
+  }
+
   .content-container();
   .paragraph-mid();
   font-weight: @font-weight-regular;
@@ -43,23 +50,8 @@
     }
   }
 
-  .replace-with-symbol(@filename) {
-    background-image: url('/assets/images/@{filename}');
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-size: 0;
-  }
-
   td {
-    &.checkmark {
-      .replace-with-symbol('checkmark.svg');
-    }
-    &.dismiss {
-      .replace-with-symbol('dismiss.svg');
-    }
-    &.question-mark {
-      .replace-with-symbol('question-mark.svg');
-    }
+    .applySymbols();
   }
 
   // links
