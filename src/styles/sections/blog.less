@@ -33,6 +33,10 @@ section#blog {
   h3 {
     .subheading();
     margin-bottom: @layout-grid-margin;
+
+    @media screen and (max-width: @viewport-width-mobile) {
+      margin-bottom: @layout-grid-margin-mobile;
+    }
   }
 
   .rss-link {
