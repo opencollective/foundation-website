@@ -42,9 +42,22 @@
     grid-area: left;
   }
 
-  > .cta {
+  // all ctas
+  .cta {
     .buttonStyledLink(@color-dark-green);
+    display: block;
+  }
+
+  // desktop cta
+  > .cta {
     grid-area: right;
+  }
+
+  // mobile cta
+  .links-container > .cta {
+    display: inline-block;
+    margin-top: 40px;
+    min-width: 220px;
   }
 
   .links-container {
@@ -99,6 +112,15 @@
     // hide unless opened
     .links-container {
       display: none;
+      text-align: center;
+
+      // do not allow it to go off the screen
+      max-height: calc(100vh - @nav-height-mobile);
+      overflow-y: auto;
+    }
+
+    .links-container > .cta {
+      display: inline-block !important; // override display: none
     }
 
     &.show-menu .links-container {
