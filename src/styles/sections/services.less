@@ -31,7 +31,6 @@ section#services {
 
         &.checklist {
           grid-column: 1 / -1;
-          padding: @layout-grid-margin @layout-grid-gutter-tablet;
         }
 
         &:last-child {
@@ -77,6 +76,9 @@ section#services {
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         padding-right: @layout-grid-gutter-tablet;
       }
+      @media screen and (max-width: @viewport-width-mobile) {
+        padding: @layout-grid-margin @layout-grid-gutter-mobile;
+      }
     }
   }
 
@@ -98,6 +100,9 @@ section#services {
 
     @media screen and (max-width: @viewport-width-tablet-landscape) {
       margin: 0 -@layout-grid-gutter-tablet;
+    }
+    @media screen and (max-width: @viewport-width-mobile) {
+      margin: 0 -@layout-grid-gutter-mobile;
     }
   }
 

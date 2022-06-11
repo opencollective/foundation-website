@@ -40,9 +40,10 @@
     }
 
     // Footer
-    &:last-child {
+    &.row-footer {
       display: grid;
       row-gap: 8px;
+      border-bottom: none;
 
       .row-heading {
         grid-row: 1;
@@ -56,8 +57,40 @@
         grid-row: 2;
         padding-top: 0;
         background-color: inherit !important;
+        padding-bottom: 0;
       }
     }
+  }
+
+  &:not(.show-all)
+    .table-column
+    .table-row:nth-child(3)
+    ~ .table-row:not(.row-footer) {
+    display: none;
+  }
+
+  .show-more-button {
+    .textButton();
+    padding: @layout-grid-gutter-mobile;
+    border-bottom: @default-rule;
+    width: 100%;
+    text-align: inherit;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: @layout-grid-gutter-mobile;
+      top: calc(50% - (16px / 2));
+      background: url('/assets/images/chevron.svg') no-repeat center center;
+    }
+  }
+
+  &.show-all .show-more-button::after {
+    transform: rotate(180deg);
   }
 
   // First column has green background for data and heading
