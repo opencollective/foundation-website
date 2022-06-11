@@ -125,7 +125,7 @@
       display: inline-block !important; // override display: none
     }
 
-    &:focus-within .links-container {
+    &.show-menu .links-container {
       display: unset;
       position: absolute;
       box-sizing: border-box;
@@ -137,7 +137,7 @@
       border-bottom: @default-rule;
     }
 
-    &:focus-within .menu-button {
+    &.show-menu .menu-button {
       font-size: 0;
       background: @color-sand url('/assets/images/dismiss-dark-green.svg')
         no-repeat center center;
