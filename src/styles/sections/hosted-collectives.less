@@ -49,6 +49,11 @@ section#hosted-collectives {
         border-left: none;
       }
     }
+    @media screen and (max-width: @viewport-width-mobile) {
+      > * {
+        padding: @layout-grid-margin-mobile @layout-grid-gutter-mobile;
+      }
+    }
   }
 
   .collective-list {
@@ -78,6 +83,8 @@ section#hosted-collectives {
 
     @media screen and (max-width: @viewport-width-mobile) {
       grid-template-columns: 1fr;
+      column-gap: @layout-grid-gutter-mobile;
+      row-gap: @layout-grid-margin-mobile;
     }
   }
 
