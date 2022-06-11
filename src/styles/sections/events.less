@@ -52,6 +52,12 @@ section#events {
         border-left: none;
       }
     }
+
+    @media screen and (max-width: @viewport-width-mobile) {
+      > * {
+        padding: @layout-grid-margin-mobile @layout-grid-gutter-mobile;
+      }
+    }
   }
 
   .event-list {
@@ -77,6 +83,7 @@ section#events {
     // 1 column
     @media screen and (max-width: @viewport-width-mobile) {
       grid-template-columns: 1fr;
+      row-gap: 35px; // custom margin
     }
   }
 
