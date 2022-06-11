@@ -1,12 +1,15 @@
 <nav class="main-nav">
-  <div class="nav-container content-container">
+  <div id="nav-container" class="nav-container content-container">
     <img class="logo" src="/assets/images/OCF-Logo.svg" alt="OCF Logo" />
     <div class="links-container">
       <ul class="links-list">
         <% collections[collectionName].filter(section=>
         !section.data.hideInNavigation).forEach((section)=> { %>
         <li>
-          <a href="#<%= section.fileSlug %>"> <%= section.data.title %> </a>
+          <a 
+          href="#<%= section.fileSlug %>"
+          onclick="document.getElementById('nav-container').classList.remove('show-menu')"
+          > <%= section.data.title %> </a>
         </li>
         <% }) %> <% (extraNavLinks || []).forEach(({href, isExternal, text, isCta}) => { %>
         <li
@@ -25,7 +28,7 @@
     <a class="cta hide-tablet-landscape" href="https://opencollective.com/foundation/apply" target="_blank">Apply</a>
     <button 
       class="menu-button hidden show-tablet-landscape" 
-      onclick="this.parentElement.classList.toggle('show-menu')">
+      onclick="document.getElementById('nav-container').classList.toggle('show-menu')">
       Menu
     </button>
   </div>
