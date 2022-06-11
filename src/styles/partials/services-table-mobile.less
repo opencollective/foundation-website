@@ -13,6 +13,11 @@
     width: 100%;
   }
 
+  // "Compared to" on all but first column
+  .table-column:not(:first-child) .table-heading-row::before {
+    content: 'Compared to: ';
+  }
+
   // ensure room for prev/next buttons
   .table-heading-row {
     padding-left: 80px;
