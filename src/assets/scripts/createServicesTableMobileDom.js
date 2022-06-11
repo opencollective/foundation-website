@@ -89,6 +89,7 @@ function createServicesTableMobileDom(table) {
 
   flkty = new Flickity(columnsEl, {
     pageDots: false,
+    dragThreshold: 50,
   });
 }
 
