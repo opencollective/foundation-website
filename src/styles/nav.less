@@ -102,7 +102,9 @@
     .menu-button {
       grid-area: right;
       align-self: stretch;
-      margin-right: -@layout-grid-gutter-mobile;
+
+      // goes to edge, break out of usual margin
+      margin-right: -@layout-grid-gutter-tablet;
 
       .textButton();
       color: @font-color-base;
@@ -145,6 +147,12 @@
   @media screen and (max-width: @viewport-width-tablet-portrait) {
     .links-list {
       flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: @viewport-width-mobile) {
+    .menu-button {
+      margin-right: -@layout-grid-gutter-mobile;
     }
   }
 }
