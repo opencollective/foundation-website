@@ -5,6 +5,7 @@
 @import './variables/rules.less';
 
 @nav-height: 100px;
+@nav-height-mobile: 72px;
 
 // https://stackoverflow.com/a/28824157
 // Fixes nav sitting on top of targetted element
@@ -19,41 +20,36 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  min-height: @nav-height;
 
-  background-color: white;
+  background-color: @background-color-lighter;
   border-bottom: @default-rule;
 }
 
-.main-nav .content-container {
-  display: flex;
-  flex-direction: row;
+.main-nav .nav-container {
+  position: relative;
+  display: grid;
+  grid-template:
+    'left center right' @nav-height /
+    115px 1fr 115px;
+  column-gap: 152px;
+
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
 
   .logo {
     height: 40px;
+    grid-area: left;
   }
 
   > .cta {
     .buttonStyledLink(@color-dark-green);
-  }
-
-  > .logo,
-  > .cta {
-    // Make them the same size for symmetry
-    flex-basis: 115px;
-    box-sizing: border-box;
+    grid-area: right;
   }
 
   .links-container {
-    flex-grow: 1;
-    padding: 0 152px;
-
-    @media screen and (max-width: @viewport-width-tablet-landscape) {
-      padding: 1em;
-    }
+    grid-area: center;
+    background-color: @background-color-lighter;
   }
 
   .links-list {
@@ -71,9 +67,62 @@
       flex-grow: 0;
 
       a {
-        display: block;
-        line-height: @nav-height;
+        display: inline-block;
+        border: @default-rule;
+        border-color: transparent;
+        padding: 16px;
       }
+
+      a:hover {
+        border: @default-rule;
+        border-radius: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: @viewport-width-tablet-landscape) {
+    grid-template:
+      'left right' @nav-height /
+      1fr 72px;
+    column-gap: 1em;
+
+    .menu-button {
+      grid-area: right;
+      align-self: stretch;
+      margin-right: -@layout-grid-gutter-mobile;
+
+      .textButton();
+      color: @font-color-base;
+      border-left: @default-rule;
+    }
+
+    // hide unless opened
+    .links-container {
+      display: none;
+    }
+
+    &.show-menu .links-container {
+      display: unset;
+      position: absolute;
+      box-sizing: border-box;
+      top: calc(100% + 1px);
+      width: 100%;
+      padding: 28px;
+      // margin-left: -@layout-grid-gutter-mobile;
+
+      border-bottom: @default-rule;
+    }
+
+    &.show-menu .menu-button {
+      font-size: 0;
+      background: @color-sand url('/assets/images/dismiss-dark-green.svg')
+        no-repeat center center;
+    }
+  }
+
+  @media screen and (max-width: @viewport-width-tablet-portrait) {
+    .links-list {
+      flex-direction: column;
     }
   }
 }
