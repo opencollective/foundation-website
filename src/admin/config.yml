@@ -190,3 +190,29 @@ collections:
                 allow_multiple: false
               - name: body
                 widget: markdown
+  - name: editableBlocks
+    label: Editable Blocks
+    editor:
+      preview: false
+    files:
+      - label: 'Fees blurb'
+        name: 'fees'
+        file: src/editable-blocks/fees.md
+        fields:
+          - name: body
+            widget: markdown
+      - label: 'Resources for events blurb'
+        name: resourcesForEvents
+        file: src/editable-blocks/resources-for-events.md
+        fields:
+          - name: body
+            widget: markdown
+      - label: Services table
+        name: servicesTable
+        file: src/editable-blocks/services-table.md
+        fields:
+          - name: body
+            widget: markdown
+            hint: >
+              Checkmark symbol (✔️, ✅, etc) or "yes" is replaced with a checkmark icon. 
+              "x", "❌" etc. or "no" is replaced with cross mark icon.
