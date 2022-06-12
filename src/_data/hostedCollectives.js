@@ -10,6 +10,7 @@ const query = gql`
         accountType: COLLECTIVE
         orderBy: { field: MEMBER_COUNT, direction: DESC }
         role: HOST
+        limit: 1000
       ) {
         nodes {
           since
