@@ -120,7 +120,12 @@ collections:
                 file: geography
                 value_field: 'countries.*.code'
                 display_fields: ['countries.*.label']
-                search_fields: ['countries.*.label', ' countries.*.code']
+                search_fields:
+                  [
+                    'countries.*.label',
+                    'countries.*.code',
+                    'countries.*.searchLabel',
+                  ]
                 required: true
               - name: linkedInUrl
                 label: LinkedIn URL
@@ -166,6 +171,10 @@ collections:
                 label: ISO country code
                 widget: string
                 pattern: ['[A-Z]{2}', 'Must be a two-character ISO code']
+              - name: searchLabel
+                label: Label for search
+                hint: Additional field for searching on if country has alternate name
+                required: false
       - name: platformFeatures
         label: Platform Features
         label_singular: Feature

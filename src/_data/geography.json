@@ -6,7 +6,7 @@
     },
     {
       "code": "AX",
-      "label": "\u00c5land Islands"
+      "label": "Åland Islands"
     },
     {
       "code": "AL",
@@ -218,7 +218,7 @@
     },
     {
       "code": "CI",
-      "label": "C\u00f4te d'Ivoire"
+      "label": "Côte d'Ivoire"
     },
     {
       "code": "HR",
@@ -230,7 +230,7 @@
     },
     {
       "code": "CW",
-      "label": "Cura\u00e7ao"
+      "label": "Curaçao"
     },
     {
       "code": "CY",
@@ -722,7 +722,7 @@
     },
     {
       "code": "RE",
-      "label": "R\u00e9union"
+      "label": "Réunion"
     },
     {
       "code": "RO",
@@ -738,7 +738,7 @@
     },
     {
       "code": "BL",
-      "label": "Saint Barth\u00e9lemy"
+      "label": "Saint Barthélemy"
     },
     {
       "code": "SH",
@@ -942,7 +942,8 @@
     },
     {
       "code": "US",
-      "label": "U.S.A."
+      "label": "U.S.A.",
+      "searchLabel": "United States"
     },
     {
       "code": "UM",
