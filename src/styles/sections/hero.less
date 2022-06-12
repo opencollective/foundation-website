@@ -29,10 +29,20 @@ section#hero {
     height: 496px;
     aspect-ratio: 520 / 496;
 
+    @supports not (aspect-ratio: 520 / 496) {
+      width: 520px;
+    }
+
     &.mobile-image {
       height: auto;
       aspect-ratio: 1 / 1;
       margin: 18px 0;
+
+      // Aspect ration doesn't seem to work on Safari :-(
+      @supports not(aspect-ratio: 1 / 1;
+      ) {
+        height: calc(100vw - @layout-grid-gutter-mobile * 2);
+      }
     }
   }
 
