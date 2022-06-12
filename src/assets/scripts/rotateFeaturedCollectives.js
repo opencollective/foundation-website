@@ -1,6 +1,6 @@
 const INTERVAL_LENGTH = 3000;
 
-function renderRotatingConcepts() {
+function renderRotatingCollectives() {
   var script = document.currentScript;
   var sectionEl = script.parentElement;
   var collectives = JSON.parse(
@@ -13,7 +13,16 @@ function renderRotatingConcepts() {
   function rotate() {
     var collective = collectives[i++ % collectives.length];
     collectiveNameEls.forEach((collectiveNameEl) => {
-      collectiveNameEl.innerText = collective.name;
+      const nameTextEl = document.createTextNode(collective.name);
+      if (collective.url) {
+        const linkEl = document.createElement('a');
+        linkEl.setAttribute('target', '_blank');
+        linkEl.setAttribute('href', collective.url);
+        linkEl.append(nameTextEl);
+        collectiveNameEl.replaceChildren(linkEl);
+      } else {
+        collectiveNameEl.replaceChildren(nameTextEl);
+      }
     });
 
     heroImageEls.forEach((heroImageEl) => {
@@ -31,4 +40,4 @@ function renderRotatingConcepts() {
   collectiveNameEl.addEventListener('click', rotate);
 }
 
-renderRotatingConcepts();
+renderRotatingCollectives();

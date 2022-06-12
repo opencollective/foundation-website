@@ -2,7 +2,8 @@
   "featuredCollectives": [
     {
       "name": "Bushwick Ayuda Mutua",
-      "heroImage": "/assets/uploads/bushwick-ayuda-mutua_forweb.png"
+      "heroImage": "/assets/uploads/bushwick-ayuda-mutua_forweb.png",
+      "url": "https://opencollective.com/bushwick-ayuda-mutua"
     },
     {
       "name": "Kola Nut Collaborative",

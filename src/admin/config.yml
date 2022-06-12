@@ -74,6 +74,10 @@ collections:
                 description: Alternative text description of image
                 widget: string
                 required: false
+              - name: url
+                label: Link
+                widget: string
+                required: false
       - name: people
         label: People
         label_singular: person
