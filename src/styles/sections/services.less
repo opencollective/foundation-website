@@ -18,6 +18,8 @@ section#services {
           grid-column: 1 / -1;
         }
       }
+
+      .breakout-column-tablet-portrait();
     }
 
     p {
@@ -28,6 +30,10 @@ section#services {
     @media screen and (max-width: @viewport-width-tablet-portrait) {
       p {
         margin: 0;
+      }
+
+      .content-container {
+        row-gap: 0;
       }
     }
 

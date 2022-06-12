@@ -49,31 +49,52 @@
       &:last-child {
         border-right: none;
       }
-
-      @media screen and (max-width: @viewport-width-mobile) {
-        border-right: none;
-        border-bottom: @default-rule;
-        &:last-child {
-          border-bottom: none;
-        }
-      }
     }
 
     @media screen and (max-width: @viewport-width-tablet-landscape) {
       padding-right: @layout-grid-gutter-tablet;
     }
 
-    @media screen and (max-width: @viewport-width-mobile) {
-      // exchange margins for padding to extend border to edges
-      grid-column: span 1;
-      margin-left: -@layout-grid-gutter-mobile;
-      margin-right: -@layout-grid-gutter-mobile;
-      padding: @layout-grid-margin-mobile @layout-grid-gutter-mobile;
+    // breakout columns and make them full width
+    .breakout-column-tablet-mobile();
+  }
+}
 
-      &:last-child {
-        padding-right: @layout-grid-gutter-mobile;
-      }
+// bust column out of the content container with negative margins and replace it with it's own padding.
+// useful if you want a column to take the full width and be its own content container at a smaller size
+
+// private to make breakout
+.breakout-column-for-viewport( @gutter, @margin) {
+  // exchange margins for padding to extend border to edges
+  grid-column: 1 / -1;
+  margin-left: -@gutter;
+  margin-right: -@gutter;
+  padding: @margin @gutter;
+
+  &:last-child {
+    padding-right: @gutter;
+  }
+
+  // move borders to bottom
+  &.with-borders {
+    border-right: none;
+    border-bottom: @default-rule;
+
+    &:last-child {
+      border-bottom: none;
     }
+  }
+}
+
+.breakout-column-tablet-portrait() {
+  @media screen and (max-width: @viewport-width-tablet-portrait) {
+    .breakout-column-for-viewport(@layout-grid-gutter-tablet, @layout-grid-margin);
+  }
+}
+
+.breakout-column-tablet-mobile() {
+  @media screen and (max-width: @viewport-width-mobile) {
+    .breakout-column-for-viewport(@layout-grid-gutter-mobile, @layout-grid-margin-mobile);
   }
 }
 
