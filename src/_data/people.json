@@ -296,6 +296,16 @@
       "websiteUrl": "https://blog.opencollective.com/",
       "title": "Coming Soon!",
       "profileImage": "/assets/uploads/illustration2-d_takeaction-1-.png"
+    },
+    {
+      "name": "Oluwaseun Omoyajowo",
+      "department": "Platform Engineering and Design",
+      "title": "Engineering",
+      "administrativeArea": "Amsterdam",
+      "country": "NL",
+      "websiteUrl": "https://nl.linkedin.com/in/oluwaseun-omoyajowo-641358110",
+      "githubUrl": "https://github.com/flickz",
+      "profileImage": "https://avatars.githubusercontent.com/u/15707013?v=4"
     }
   ],
   "departments": [
