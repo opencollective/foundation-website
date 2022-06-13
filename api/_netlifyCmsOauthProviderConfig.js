@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const host = 'foundation-website-git-new-opencollective.vercel.app';
+const host = 'opencollective.foundation';
 
 const completeUrl = `https://${host}/api/complete`;
 
