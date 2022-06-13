@@ -1,8 +1,8 @@
 backend:
   name: github
-  branch: new
+  branch: master
   repo: opencollective/foundation-website
-  base_url: https://foundation-website-git-new-opencollective.vercel.app
+  base_url: https://opencollective.foundation
   auth_endpoint: api/begin
 
 # publish_mode: editorial_workflow
