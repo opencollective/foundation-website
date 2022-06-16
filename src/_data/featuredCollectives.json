@@ -4,7 +4,7 @@
       "name": "Bushwick Ayuda Mutua",
       "heroImage": "/assets/uploads/bushwick-ayuda-mutua_forweb.png",
       "url": "https://opencollective.com/bushwick-ayuda-mutua",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "Kola Nut Collaborative",
@@ -20,7 +20,7 @@
     {
       "name": "ABQ Free Fridge",
       "heroImage": "/assets/uploads/abq-free-fridge.jpeg",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "1k Project",
@@ -30,7 +30,7 @@
     {
       "name": "Black Alliance for Peace",
       "heroImage": "/assets/uploads/black-alliance-for-peace.jpeg",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "Black Banjo Reclamation Project",
@@ -40,7 +40,7 @@
     {
       "name": "Chicago Community Jail Support",
       "heroImage": "/assets/uploads/chicago-community-jail-support.jpeg",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "Club A Kitchen",
@@ -55,7 +55,7 @@
     {
       "name": "Disabled and Here",
       "heroImage": "/assets/uploads/disabled-and-here.jpeg",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "DisCO",
@@ -90,7 +90,7 @@
     {
       "name": "M4BL DC Money Pot",
       "heroImage": "/assets/uploads/m4bl-dc-money-pot.jpg",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "Meals of Gratitude",
@@ -110,7 +110,7 @@
     {
       "name": "Okionu Birth Foundation",
       "heroImage": "/assets/uploads/okionu-birth-foundation.png",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "Open Food Network",
@@ -120,7 +120,7 @@
     {
       "name": "Sustainable Progress Equality Collective",
       "heroImage": "/assets/uploads/sustainable-progress-_-equality-collective.jpeg",
-      "isVisible": true
+      "isVisible": false
     },
     {
       "name": "The Week",
