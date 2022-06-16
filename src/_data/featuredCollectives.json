@@ -3,104 +3,129 @@
     {
       "name": "Bushwick Ayuda Mutua",
       "heroImage": "/assets/uploads/bushwick-ayuda-mutua_forweb.png",
-      "url": "https://opencollective.com/bushwick-ayuda-mutua"
+      "url": "https://opencollective.com/bushwick-ayuda-mutua",
+      "isVisible": true
     },
     {
       "name": "Kola Nut Collaborative",
       "heroImage": "/assets/uploads/kola-nut-collaborative.jpeg",
-      "heroImageAlt": "Pair of cupped hands holding red and yellow koala nuts"
+      "heroImageAlt": "Pair of cupped hands holding red and yellow koala nuts",
+      "isVisible": true
     },
     {
       "name": "Open Mined",
-      "heroImage": "/assets/uploads/open-mined_forweb.png"
+      "heroImage": "/assets/uploads/open-mined_forweb.png",
+      "isVisible": true
     },
     {
       "name": "ABQ Free Fridge",
-      "heroImage": "/assets/uploads/abq-free-fridge.jpeg"
+      "heroImage": "/assets/uploads/abq-free-fridge.jpeg",
+      "isVisible": true
     },
     {
       "name": "1k Project",
-      "heroImage": "/assets/uploads/1k-project.png"
+      "heroImage": "/assets/uploads/1k-project.png",
+      "isVisible": true
     },
     {
       "name": "Black Alliance for Peace",
-      "heroImage": "/assets/uploads/black-alliance-for-peace.jpeg"
+      "heroImage": "/assets/uploads/black-alliance-for-peace.jpeg",
+      "isVisible": true
     },
     {
       "name": "Black Banjo Reclamation Project",
-      "heroImage": "/assets/uploads/black-banjo-reclamation-project.jpeg"
+      "heroImage": "/assets/uploads/black-banjo-reclamation-project.jpeg",
+      "isVisible": true
     },
     {
       "name": "Chicago Community Jail Support",
-      "heroImage": "/assets/uploads/chicago-community-jail-support.jpeg"
+      "heroImage": "/assets/uploads/chicago-community-jail-support.jpeg",
+      "isVisible": true
     },
     {
       "name": "Club A Kitchen",
-      "heroImage": "/assets/uploads/club-a-kitchen.jpeg"
+      "heroImage": "/assets/uploads/club-a-kitchen.jpeg",
+      "isVisible": true
     },
     {
       "name": "Denver Community Fridges",
-      "heroImage": "/assets/uploads/denver-community-fridges.jpeg"
+      "heroImage": "/assets/uploads/denver-community-fridges.jpeg",
+      "isVisible": true
     },
     {
       "name": "Disabled and Here",
-      "heroImage": "/assets/uploads/disabled-and-here.jpeg"
+      "heroImage": "/assets/uploads/disabled-and-here.jpeg",
+      "isVisible": true
     },
     {
       "name": "DisCO",
-      "heroImage": "/assets/uploads/disco.png"
+      "heroImage": "/assets/uploads/disco.png",
+      "isVisible": true
     },
     {
       "name": "Food Not Bombs Raleigh",
-      "heroImage": "/assets/uploads/food-not-bombs-raleigh.png"
+      "heroImage": "/assets/uploads/food-not-bombs-raleigh.png",
+      "isVisible": true
     },
     {
       "name": "Fridays for Future",
-      "heroImage": "/assets/uploads/fridays-for-future.jpeg"
+      "heroImage": "/assets/uploads/fridays-for-future.jpeg",
+      "isVisible": true
     },
     {
       "name": "Humboldt Park Solidarity Network",
-      "heroImage": "/assets/uploads/humboldt-park-solidarity-network.jpeg"
+      "heroImage": "/assets/uploads/humboldt-park-solidarity-network.jpeg",
+      "isVisible": true
     },
     {
       "name": "Julian",
-      "heroImage": "/assets/uploads/julian.png"
+      "heroImage": "/assets/uploads/julian.png",
+      "isVisible": false
     },
     {
       "name": "Love Wins Food Pantry",
-      "heroImage": "/assets/uploads/love-wins-food-pantry.jpeg"
+      "heroImage": "/assets/uploads/love-wins-food-pantry.jpeg",
+      "isVisible": true
     },
     {
       "name": "M4BL DC Money Pot",
-      "heroImage": "/assets/uploads/m4bl-dc-money-pot.jpg"
+      "heroImage": "/assets/uploads/m4bl-dc-money-pot.jpg",
+      "isVisible": true
     },
     {
       "name": "Meals of Gratitude",
-      "heroImage": "/assets/uploads/meals-of-gratitude.jpeg"
+      "heroImage": "/assets/uploads/meals-of-gratitude.jpeg",
+      "isVisible": true
     },
     {
       "name": "Minneapolis Northside Mutual Aid",
-      "heroImage": "/assets/uploads/minneapolis-northside-mutual-aid.jpeg"
+      "heroImage": "/assets/uploads/minneapolis-northside-mutual-aid.jpeg",
+      "isVisible": true
     },
     {
       "name": "NYU Graduate Workers Strike",
-      "heroImage": "/assets/uploads/nyu-graduate-workers-strike.jpeg"
+      "heroImage": "/assets/uploads/nyu-graduate-workers-strike.jpeg",
+      "isVisible": true
     },
     {
       "name": "Okionu Birth Foundation",
-      "heroImage": "/assets/uploads/okionu-birth-foundation.png"
+      "heroImage": "/assets/uploads/okionu-birth-foundation.png",
+      "isVisible": true
     },
     {
       "name": "Open Food Network",
-      "heroImage": "/assets/uploads/open-food-network.jpeg"
+      "heroImage": "/assets/uploads/open-food-network.jpeg",
+      "isVisible": true
     },
     {
       "name": "Sustainable Progress Equality Collective",
-      "heroImage": "/assets/uploads/sustainable-progress-_-equality-collective.jpeg"
+      "heroImage": "/assets/uploads/sustainable-progress-_-equality-collective.jpeg",
+      "isVisible": true
     },
     {
       "name": "The Week",
-      "heroImage": "/assets/uploads/the-week.png"
+      "heroImage": "/assets/uploads/the-week.png",
+      "isVisible": true
     }
   ]
 }

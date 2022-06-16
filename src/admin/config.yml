@@ -78,6 +78,10 @@ collections:
                 label: Link
                 widget: string
                 required: false
+              - name: isVisible
+                label: Visible
+                widget: boolean
+                default: true
       - name: people
         label: People
         label_singular: person

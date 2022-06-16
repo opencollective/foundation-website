@@ -3,10 +3,15 @@ title: Introduction
 position: 0
 hideInNavigation: true
 ---
+<%_ 
+const featuredCollectivesFiltered = featuredCollectives.featuredCollectives
+  .filter((collective) => collective.isVisible);
+_%> 
+
 <div class="hero-wrapper">
 <div class="row hero-row">
   <div class="content-container">
-    <% firstCollective = featuredCollectives.featuredCollectives[0] %>
+    <% firstCollective = _.first(featuredCollectivesFiltered) %>
     <div class="column left">
       <h1 class="heading">
         OC Foundation is proud to be the financial and legal home of
@@ -50,9 +55,9 @@ hideInNavigation: true
 
 <!-- Scripts, preloaders -->
 <script src="/assets/scripts/rotateFeaturedCollectives.js"
-  data-featured-collectives="<%= JSON.stringify(featuredCollectives.featuredCollectives) %>"></script>
+  data-featured-collectives="<%= JSON.stringify(featuredCollectivesFiltered) %>"></script>
 
-<% featuredCollectives.featuredCollectives.forEach(collective=> { %>
+<% featuredCollectivesFiltered.forEach(collective=> { %>
   <link rel="preload" as="image" href="<%- collective.heroImage %>" />
   <% }) %>
 
