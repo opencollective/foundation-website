@@ -72,7 +72,7 @@ collections:
                 hint: Image should be at least 1040 pixels wide
               - name: heroImageAlt
                 label: Alt text for hero image
-                description: Alternative text description of image for screen readers
+                hint: Alternative text description of image for screen readers
                 widget: string
                 required: true
               - name: url
