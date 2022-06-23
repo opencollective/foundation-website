@@ -39,15 +39,21 @@ const links = [
 <div class="content-container">
 
 <%
-people.departments.forEach((department) => { 
+for (let department of people.departments) {
 %>
 
 <h3 class="department-heading"><%= department %></h3>
 
 <ul class="people-grid">
-  <% (peopleByDepartment[department] ?? []).forEach((person) => { %>
+  <% for (let person of (peopleByDepartment[department] ?? [])) { %>
   <li class="person">
-    <img class="person-image" src="<%- person.profileImage %>" alt="<%= person.name %>"/>
+    <%- await image({
+      class: 'person-image',
+      src: person.profileImage,
+      alt: person.name,
+      sizes: '72px'
+    }, [72]);
+    %>
     <div>
       <div class="person-name"><%= person.name %></div>
       <div class="person-title"><%= person.title %></div>
@@ -67,9 +73,9 @@ people.departments.forEach((department) => {
       </div>
     </div>
   </li>
-  <% }); %>
+  <% } %>
 </ul>
 
-<% }); %>
+<% } %>
 
 </div>

@@ -16,16 +16,18 @@ _%>
       <h1 class="heading">
         OC Foundation is proud to be the financial and legal home of
         <span class="collective-name"><%= firstCollective.name %> </span> 
-        <% featuredCollectivesFiltered.forEach((collective, i)=> { %>
-          <%- image({ 
+        <% for (let i = 0; i < featuredCollectivesFiltered.length; i++) { 
+          const collective = featuredCollectivesFiltered[i];
+          %>
+          <%- await image({ 
             class: "collective-hero-image mobile-image hidden show-mobile" , 
             'data-index' : i, 
             style: i===0 ? '' : 'display: none !important' , // start hidden, unhide with js 
             src: collective.heroImage, 
             alt: collective.heroImageAlt || '' ,
             sizes: '100vw' 
-          }, [428]) %>
-        <% }); %>
+          }, [428]); %>
+        <% } %>
         and <%= hostedCollectives.length - 1 %>
         more groups
       </h1>
@@ -43,15 +45,17 @@ _%>
     </div>
 
     <div class="column right hide-mobile">
-      <% featuredCollectivesFiltered.forEach((collective, i) => { %>
-        <%- image({
+      <% for (let i=0; i < featuredCollectivesFiltered.length; i++) { 
+        const collective=featuredCollectivesFiltered[i];
+      %>
+         <%- await image({
           class: "collective-hero-image" , 
           'data-index': i,
           style: i === 0 ? '' : 'display: none !important', // start hidden, unhide with js
           src: collective.heroImage, 
           alt: collective.heroImageAlt || '',
-          sizes: '520px' }, [520]) %>
-      <% }); %>
+          sizes: '520px' }, [520]); %>
+      <% } %>
     </div>
   </div>
 </div>

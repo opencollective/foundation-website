@@ -8,7 +8,7 @@ module.exports = () =>
    * @param {*} baseWidths Widths in css pixels to create
    * @returns picture tag html
    */
-  function image(attributes, baseWidths) {
+  async function image(attributes, baseWidths) {
     const { src } = attributes;
     // if it's a local path, resolve it
     let filePath = src.startsWith('/')
@@ -32,12 +32,10 @@ module.exports = () =>
 
         return `${name}-${width}w-${id}.${format}`;
       },
+      useCache: true,
     };
 
-    // Create image in background (async not supported in data files)
-    Image(filePath, options);
-
-    let metadata = Image.statsSync(filePath, options);
+    let metadata = await Image(filePath, options);
 
     return Image.generateHTML(metadata, attributes);
   };

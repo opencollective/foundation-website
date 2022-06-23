@@ -30,7 +30,7 @@ hideInNavigation: false
   </div>
 </div>
 
-<%- include('/platformFeaturesCarousel') %>
+<%- await include('/platformFeaturesCarousel') %>
 
 <div class="row text-row">
   <div class="content-container">
@@ -54,5 +54,5 @@ hideInNavigation: false
 </div>
 
 <div class="services-table-container">
-  <%- markdown(include('../editable-blocks/services-table.md')) %>
+  <%- markdown(await include('../editable-blocks/services-table.md')) %>
 </div>
