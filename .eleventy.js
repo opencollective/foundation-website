@@ -42,6 +42,10 @@ module.exports = function (eleventyConfig) {
     https: true,
   });
 
+  eleventyConfig.setEjsOptions({
+    async: true,
+  });
+
   return {
     markdownTemplateEngine: 'ejs',
     dir: {

@@ -8,10 +8,11 @@ function renderRotatingCollectives() {
   );
 
   const collectiveNameEls = sectionEl.querySelectorAll('.collective-name');
-  const heroImageEls = sectionEl.querySelectorAll('.collective-hero-image');
 
   function rotate() {
-    var collective = collectives[i++ % collectives.length];
+    const lastI = i % collectives.length;
+    const curI = ++i % collectives.length;
+    var collective = collectives[curI];
     collectiveNameEls.forEach((collectiveNameEl) => {
       const nameTextEl = document.createTextNode(collective.name);
       if (collective.url) {
@@ -25,19 +26,28 @@ function renderRotatingCollectives() {
       }
     });
 
-    heroImageEls.forEach((heroImageEl) => {
-      heroImageEl.setAttribute('src', collective.heroImage);
+    // Images are already in html, this script just changes the style.display property
 
-      if (collective.heroImageAlt)
-        heroImageEl.setAttribute('alt', collective.heroImageAlt);
-      else heroImageEl.removeAttribute('alt');
+    // hide image element with last index
+    const prevImageEls = sectionEl.querySelectorAll(
+      `.collective-hero-image[data-index="${lastI}"]`
+    );
+    prevImageEls.forEach((imageEl) => {
+      imageEl.style.setProperty('display', 'none', 'important');
+    });
+
+    // show image element matching new index
+    const curImageEls = sectionEl.querySelectorAll(
+      `.collective-hero-image[data-index="${curI}"]`
+    );
+    curImageEls.forEach((imageEl) => {
+      imageEl.style.removeProperty('display');
     });
   }
 
-  var i = 0;
+  var i = -1;
   setInterval(rotate, INTERVAL_LENGTH);
   rotate();
-  collectiveNameEl.addEventListener('click', rotate);
 }
 
 renderRotatingCollectives();

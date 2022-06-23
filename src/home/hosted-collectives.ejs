@@ -16,15 +16,17 @@ hideInNavigation: false
 
   <div>
     <ol class="collective-list">
-      <% hostedCollectives.forEach(({account: {id, name, imageUrl, slug}, since})=> { %>
+      <% for (let {account: {id, name, imageUrl, slug}, since} of hostedCollectives) { %>
         <li data-id="<%= id %>">
           <a href="https://opencollective.com/<%= slug %>" target="_blank" class="collective">
-            <img 
-              class="collective-image" 
-              src="<%= imageUrl %>" 
-              loading="lazy"
-              alt="Logo for <%= name %>"
-            />
+            <%- await image({
+              class: 'collective-image',
+              src: imageUrl,
+              alt: `Logo of ${name}`,
+              sizes: '72px',
+              loading: 'lazy'
+            }, [72]);
+            %>
             <div>
               <div class="collective-name">
                 <%= name %>
@@ -40,7 +42,7 @@ hideInNavigation: false
             </div>
           </a>
         </li>
-        <% }); %>
+        <% } %>
     </ol>
 
     <button type="button" class="show-all-button" onClick="this.parentElement.classList.toggle('show-all')">View

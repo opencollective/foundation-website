@@ -16,7 +16,18 @@ _%>
       <h1 class="heading">
         OC Foundation is proud to be the financial and legal home of
         <span class="collective-name"><%= firstCollective.name %> </span> 
-        <img class="collective-hero-image mobile-image hidden show-mobile" src="<%- firstCollective.heroImage %>" alt="<%= firstCollective.heroImageAlt %>" />
+        <% for (let i = 0; i < featuredCollectivesFiltered.length; i++) { 
+          const collective = featuredCollectivesFiltered[i];
+          %>
+          <%- await image({ 
+            class: "collective-hero-image mobile-image hidden show-mobile" , 
+            'data-index' : i, 
+            style: i===0 ? '' : 'display: none !important' , // start hidden, unhide with js 
+            src: collective.heroImage, 
+            alt: collective.heroImageAlt || '' ,
+            sizes: '100vw' 
+          }, [428]); %>
+        <% } %>
         and <%= hostedCollectives.length - 1 %>
         more groups
       </h1>
@@ -34,11 +45,17 @@ _%>
     </div>
 
     <div class="column right hide-mobile">
-      <img
-        class="collective-hero-image"
-        src="<%- firstCollective.heroImage %>"
-        alt="<%= firstCollective.heroImageAlt %>"
-      />
+      <% for (let i=0; i < featuredCollectivesFiltered.length; i++) { 
+        const collective=featuredCollectivesFiltered[i];
+      %>
+         <%- await image({
+          class: "collective-hero-image" , 
+          'data-index': i,
+          style: i === 0 ? '' : 'display: none !important', // start hidden, unhide with js
+          src: collective.heroImage, 
+          alt: collective.heroImageAlt || '',
+          sizes: '520px' }, [520]); %>
+      <% } %>
     </div>
   </div>
 </div>
@@ -57,11 +74,6 @@ _%>
 <script src="/assets/scripts/rotateFeaturedCollectives.js"
   data-featured-collectives="<%= JSON.stringify(featuredCollectivesFiltered) %>"></script>
 
-<% featuredCollectivesFiltered.forEach(collective=> { %>
-  <link rel="preload" as="image" href="<%- collective.heroImage %>" />
-  <% }) %>
-
-
 <div class="row the-process-row">
   <div class="content-container">
     <div class="column with-borders the-process-heading">
@@ -69,11 +81,14 @@ _%>
     </div>
 
     <div class="column the-process-graphic">
-      <img
-        class=""
-        src="assets/images/theprocess.png"
-        alt="Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!"
-      />
+      <%- await image({
+        src: '/assets/images/theprocess.png',
+        alt: 'Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!',
+        sizes: `
+        (max-width: 428px) 100vw,
+        66%
+        `
+      }, [773, 423, 428]) %>
     </div>
   </div>
 </div>
@@ -85,8 +100,14 @@ _%>
 <div class="row network-row">
   <div class="content-container">
     <div class="column network-graphic">
-      <img class="" src="assets/images/network.png"
-      alt="Network graphic" />
+      <%- await image({
+        src: '/assets/images/network.png',
+        alt: 'Network illustration',
+        sizes: `
+        (max-width: 428px) 100vw,
+        66%
+        `
+      },  [773, 423, 428]) %>
     </div>
     <div class="column network-copy">
       <p class="">

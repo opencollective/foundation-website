@@ -1,7 +1,7 @@
 {
-  "name": "art-coop",
+  "name": "open-collective-foundation",
   "version": "1.0.0",
-  "description": "GIA Solidarity Economy Website",
+  "description": "Open Collective Foundation Website",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production eleventy",
@@ -51,9 +51,10 @@
   },
   "lint-staged": {
     "*.{js,html,json,yml,yaml,css,less,md}": "prettier --write",
-    "*.ejs": "ejslint"
+    "*.ejs": "ejslint --await"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
     "cross-fetch": "^3.1.5",
     "dotenv": "^16.0.0",
     "graphql": "^16.4.0",

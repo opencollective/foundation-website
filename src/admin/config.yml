@@ -69,11 +69,12 @@ collections:
                 widget: image
                 allow_multiple: false
                 required: true
+                hint: Image should be at least 1040 pixels wide
               - name: heroImageAlt
                 label: Alt text for hero image
-                description: Alternative text description of image
+                description: Alternative text description of image for screen readers
                 widget: string
-                required: false
+                required: true
               - name: url
                 label: Link
                 widget: string

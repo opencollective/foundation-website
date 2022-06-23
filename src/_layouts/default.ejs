@@ -18,8 +18,8 @@
 
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <%- include('/fonts') %> 
-    <%- include('/analytics') %>
+    <%- await include('/fonts') %> 
+    <%- await include('/analytics') %>
 
     <!-- https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -35,7 +35,7 @@
       }
     </script>
 
-    <%- include('/favicon') %>
+    <%- await include('/favicon') %>
   </head>
   <body>
     <%- content %>
