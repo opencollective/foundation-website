@@ -3,9 +3,17 @@
     <div class="platform-features carousel" data-flickity="<%= JSON.stringify({ 
       }) %>">
 
-      <% platformFeatures.features.forEach((feature)=> { %>
+      <% for (let feature of platformFeatures.features) { %>
         <div class="platform-feature slide">
-          <img class="product-shot" src="<%= feature.productShot %>" />
+          <%- await image({
+            class: 'product-shot',
+            src: feature.productShot,
+            sizes: `
+            (max-width: 428px) 100vw,
+            630px
+            `,
+            alt: 'Screenshot'
+          }, [630, 428]) %>
           <div class="feature-copy">
             <div class="feature-title">
               <%= feature.title %>
@@ -15,7 +23,7 @@
             </div>
           </div>
         </div>
-        <% }) %>
+        <% } %>
     </div>
   </div>
 </div>

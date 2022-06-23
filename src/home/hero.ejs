@@ -81,11 +81,14 @@ _%>
     </div>
 
     <div class="column the-process-graphic">
-      <img
-        class=""
-        src="assets/images/theprocess.png"
-        alt="Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!"
-      />
+      <%- await image({
+        src: '/assets/images/theprocess.png',
+        alt: 'Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!',
+        sizes: `
+        (max-width: 428px) 100vw,
+        66%
+        `
+      }, [773, 423, 428]) %>
     </div>
   </div>
 </div>
@@ -97,8 +100,14 @@ _%>
 <div class="row network-row">
   <div class="content-container">
     <div class="column network-graphic">
-      <img class="" src="assets/images/network.png"
-      alt="Network graphic" />
+      <%- await image({
+        src: '/assets/images/network.png',
+        alt: 'Network illustration',
+        sizes: `
+        (max-width: 428px) 100vw,
+        66%
+        `
+      },  [773, 423, 428]) %>
     </div>
     <div class="column network-copy">
       <p class="">

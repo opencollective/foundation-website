@@ -24,6 +24,9 @@ module.exports = () =>
     const options = {
       widths,
       formats: ['webp', 'jpeg'],
+      sharpJpegOptions: {
+        background: '#ebfdfe',
+      },
       outputDir: './_site/assets-compressed',
       urlPath: '/assets-compressed/',
       filenameFormat: function (id, src, width, format, options) {
