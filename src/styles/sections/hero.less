@@ -28,6 +28,7 @@ section#hero {
     object-fit: cover;
     height: 496px;
     aspect-ratio: 520 / 496;
+    width: auto; // overrides html width, which is used for loading right source only
 
     @supports not (aspect-ratio: 520 / 496) {
       width: 520px;
