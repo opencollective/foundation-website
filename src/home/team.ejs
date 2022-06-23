@@ -51,7 +51,8 @@ for (let department of people.departments) {
       class: 'person-image',
       src: person.profileImage,
       alt: person.name,
-      sizes: '72px'
+      sizes: '72px',
+      loading: 'lazy'
     }, [72]);
     %>
     <div>
