@@ -74,7 +74,7 @@ collections:
                 label: Alt text for hero image
                 hint: Alternative text description of image for screen readers
                 widget: string
-                required: true
+                required: false
               - name: url
                 label: Link
                 widget: string
