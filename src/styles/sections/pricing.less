@@ -1,8 +1,4 @@
 section#pricing {
-  .pricing-graphic-row {
-    border-bottom: @default-rule;
-  }
-
   .pricing-graphic {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -11,6 +7,7 @@ section#pricing {
 
     * > {
       border-bottom: @default-rule;
+      box-sizing: border-box;
 
       // center text
       display: grid;
