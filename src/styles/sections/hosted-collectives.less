@@ -66,8 +66,6 @@ section#hosted-collectives {
     column-gap: @layout-grid-gutter;
     row-gap: @layout-grid-margin;
 
-    // if it cannot break words, then rediculous names will ruin the whole grid
-    word-break: break-all;
     hyphens: auto;
 
     @media screen and (max-width: @viewport-width-tablet-landscape) {
@@ -91,6 +89,7 @@ section#hosted-collectives {
   .collective-name {
     .paragraph-mid();
     font-weight: @font-weight-bold;
+    .limit-lines(2);
   }
 
   .collective-hosted-since {

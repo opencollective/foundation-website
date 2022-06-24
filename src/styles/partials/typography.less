@@ -92,3 +92,13 @@
 .paragraph-small() {
   #type-rulesets.paragraph-small();
 }
+
+.limit-lines(@n) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  line-clamp: @n;
+  -webkit-box-orient: vertical;
+}
