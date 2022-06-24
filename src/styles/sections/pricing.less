@@ -5,7 +5,8 @@ section#pricing {
 
   .pricing-graphic {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, auto);
     padding: 0;
 
     * > {
@@ -17,10 +18,17 @@ section#pricing {
       align-items: center;
       text-align: center;
     }
+
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      // collapse to 2 columns
+      grid-template-columns: repeat(2, 50%);
+    }
   }
 
   .raised {
     grid-column: span 2;
+    // span whole column
+    grid-row: 1 / -1;
     height: 352px;
     background-color: #fddd84;
     .heading-h2();
