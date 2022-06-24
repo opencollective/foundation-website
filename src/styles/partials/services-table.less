@@ -59,4 +59,39 @@
     color: @color-dark-green;
     text-decoration: underline;
   }
+
+  .show-more-row {
+    background-color: @background-color-base;
+    text-align: center;
+    td {
+      text-align: inherit;
+    }
+  }
+
+  .show-more-button {
+    .textButton();
+    padding: 0 @layout-grid-margin;
+    position: relative;
+    text-align: inherit;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: calc(50% - (16px / 2));
+      background: url('/assets/images/chevron.svg') no-repeat center center;
+    }
+  }
+
+  &.show-all .show-more-button::after {
+    transform: rotate(180deg);
+  }
+
+  // Hide rows after button
+  &:not(.show-all) tr.show-more-row ~ tr:not(:last-child) {
+    display: none;
+  }
 }
