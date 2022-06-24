@@ -45,6 +45,7 @@
   // Second column has green background
   td,
   th {
+    background-color: @background-color-lighter;
     &:nth-child(2) {
       background-color: @background-color-base;
     }
@@ -93,5 +94,11 @@
   // Hide rows after button
   &:not(.show-all) tr.show-more-row ~ tr:not(:last-child) {
     display: none;
+  }
+
+  &.show-all th {
+    position: sticky;
+    top: 101px;
+    z-index: 1;
   }
 }
