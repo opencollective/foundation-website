@@ -51,6 +51,14 @@ section#hero {
     color: @color-dark-green;
     margin: 0;
 
+    // prevent jumping when there's longer text
+    min-height: 9em;
+
+    @media screen and (max-width: @viewport-width-tablet-landscape) {
+      grid-column: span 4;
+      min-height: 15em;
+    }
+
     .collective-name {
       color: @font-color-base;
     }
