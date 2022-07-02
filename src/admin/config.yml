@@ -221,3 +221,11 @@ collections:
             hint: >
               Checkmark symbol (✔️, ✅, etc) or "yes" is replaced with a checkmark icon. 
               "x", "❌" etc. or "no" is replaced with cross mark icon.
+      - label: Services ticker
+        name: servicesTicker
+        file: src/editable-blocks/services-ticker.md
+        fields:
+          - name: body
+            widget: markdown
+            hint: >
+              Ensure content looks good when repeated
