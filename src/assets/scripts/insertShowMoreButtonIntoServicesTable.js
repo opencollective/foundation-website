@@ -1,5 +1,3 @@
-const AFTER_N = 6;
-
 // Inserts a row with a button into the table that toggles a class
 // CSS handles visibility
 function insertShowMoreButtonIntoServicesTable(table) {
@@ -8,6 +6,9 @@ function insertShowMoreButtonIntoServicesTable(table) {
   showMoreButton.setAttribute('class', 'show-more-button');
   const showMoreButtonOnClick = () => {
     table.classList.toggle('show-all');
+    showMoreButton.textContent = table.classList.contains('show-all')
+      ? 'Show less features'
+      : 'Show all features';
   };
   showMoreButton.addEventListener('click', showMoreButtonOnClick);
 
@@ -17,15 +18,15 @@ function insertShowMoreButtonIntoServicesTable(table) {
   buttonRowEl.appendChild(buttonCellEl);
   buttonCellEl.appendChild(showMoreButton);
 
-  const nthRow = table.querySelector(`tbody > tr:nth-child(${AFTER_N})`);
+  const lastRow = table.querySelector(`tbody > tr:last-child`);
 
-  if (!nthRow) return;
+  if (!lastRow) return;
 
-  const nColumns = nthRow.children.length;
+  const nColumns = lastRow.children.length;
   // span all columns
   buttonCellEl.setAttribute('colspan', nColumns);
 
-  nthRow.after(buttonRowEl);
+  lastRow.before(buttonRowEl);
 }
 
 insertShowMoreButtonIntoServicesTable(
