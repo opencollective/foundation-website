@@ -28,6 +28,9 @@
     // first column of header and footer are green
     td,
     th {
+      // prevent double-border on last row and section border
+      border-bottom: none;
+
       &:first-child {
         color: @color-dark-green;
       }
