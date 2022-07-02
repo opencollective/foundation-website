@@ -110,6 +110,7 @@ section#events {
   .event-name {
     .paragraph-mid();
     font-weight: @font-weight-bold;
+    .limit-lines(2);
   }
 
   .event-name::before {
@@ -150,12 +151,11 @@ section#events {
     .hide-after(6);
   }
 
-  .show-all .event-list li {
-    display: inherit !important;
-  }
-
   .show-all-button {
-    .textButton();
+    display: block;
+    text-align: center;
+    color: @color-dark-green;
+    font-weight: @font-weight-light;
     width: 100%;
   }
 

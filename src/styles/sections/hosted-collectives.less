@@ -66,8 +66,6 @@ section#hosted-collectives {
     column-gap: @layout-grid-gutter;
     row-gap: @layout-grid-margin;
 
-    // if it cannot break words, then rediculous names will ruin the whole grid
-    word-break: break-all;
     hyphens: auto;
 
     @media screen and (max-width: @viewport-width-tablet-landscape) {
@@ -91,6 +89,7 @@ section#hosted-collectives {
   .collective-name {
     .paragraph-mid();
     font-weight: @font-weight-bold;
+    .limit-lines(2);
   }
 
   .collective-hosted-since {
@@ -124,7 +123,7 @@ section#hosted-collectives {
   .hide-after(9);
 
   @media screen and (max-width: @viewport-width-tablet-landscape) {
-    // Hide events after first 6
+    // Hide after first 6
     .hide-after(6);
   }
 
@@ -137,12 +136,11 @@ section#hosted-collectives {
     .hide-after(6);
   }
 
-  .show-all .collective-list li {
-    display: inherit !important;
-  }
-
   .show-all-button {
-    .textButton();
+    display: block;
+    text-align: center;
+    color: @color-dark-green;
+    font-weight: @font-weight-light;
     width: 100%;
   }
 }
