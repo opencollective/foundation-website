@@ -3,11 +3,7 @@ title: Events
 position: 4
 ---
 
-<%_
-function toIsoString(str) {
-  return new Date(str).toISOString()
-}
-_%>
+<% const now = new Date() %>
 
 <div class="outer-events-wrapper">
   <div class="content content-container">
@@ -17,37 +13,19 @@ _%>
       support.</p>
     </div>
 
-    <div>
+    <div class="events-column">        
+      <h3 class="event-section-heading">Upcoming events</h3>
       <ol class="event-list">
-        <% events.forEach(({id, name, description, startsAt, endsAt, url}) => { %>
-          <li data-id="<%= id %>">
-            <a class="event" href="<%= url %>" target="_blank">
-              <div class="event-name">
-                <%= name %>
-              </div>
-              <div class="event-datetime">
-                <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
-                <time 
-                  datetime="<%= toIsoString(startsAt) %>" 
-                  data-format-options="<%= JSON.stringify({month: 'short', day: 'numeric'}) %>">
-                  <%= startsAt %>
-                </time>
-                &ndash;
-                <time 
-                  datetime="<%= toIsoString(endsAt) %>"
-                  data-format-options="<%= JSON.stringify({month: 'short' , day: 'numeric', year: 'numeric' }) %>">
-                  <%= endsAt %>
-                </time>
-                /</br>
-                <time 
-                  datetime="<%= toIsoString(startsAt) %>"
-                  data-format-options="<%= JSON.stringify({hour: 'numeric', minute: 'numeric', timeZoneName: 'short' }) %>">
-                  <%= startsAt %>
-                </time>
-              </div>
-            </a>
-          </li>
-        <% }); %>
+        <% for (const event of (events.filter(({endsAt}) => new Date(endsAt) >= now))) { %>
+          <%- await include('/event', {event}) %>
+        <% } %>
+      </ol>
+
+      <h3 class="event-section-heading">Past events</h3>
+      <ol class="event-list">
+        <% for (const event of (events.filter(({endsAt}) => new Date(endsAt) < now))) { %>
+          <%- await include('/event', {event}) %>
+        <% } %>
       </ol>
 
     <a 

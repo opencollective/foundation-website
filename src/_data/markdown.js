@@ -13,5 +13,10 @@ md.use(mila, {
 md.enable('table');
 
 module.exports = () => {
-  return md.render.bind(md);
+  // Usage: markdown(content)
+  const render = md.render.bind(md);
+
+  // Usage: markdown.inline(content);
+  render.inline = md.renderInline.bind(md);
+  return render;
 };

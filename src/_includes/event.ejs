@@ -1,0 +1,29 @@
+<% const {id, name, description, startsAt, endsAt, url} = event %>
+
+<%_ function toIsoString(str) { return new Date(str).toISOString() } _%>
+
+
+<li data-id="<%= id %>" class="event <% if (new Date(endsAt) < new Date()) { %>past<%}%>">
+  <a class="event" href="<%= url %>" target="_blank">
+    <div class="event-name">
+      <%= name %>
+    </div>
+    <div class="event-datetime">
+      <%# times rendered by renderFormattedDateTimes.js on frontend in browser locale and tz %>
+        <time datetime="<%= toIsoString(startsAt) %>"
+          data-format-options="<%= JSON.stringify({month: 'short', day: 'numeric'}) %>">
+          <%= startsAt %>
+        </time>
+        &ndash;
+        <time datetime="<%= toIsoString(endsAt) %>"
+          data-format-options="<%= JSON.stringify({month: 'short' , day: 'numeric', year: 'numeric' }) %>">
+          <%= endsAt %>
+        </time>
+        /</br>
+        <time datetime="<%= toIsoString(startsAt) %>"
+          data-format-options="<%= JSON.stringify({hour: 'numeric', minute: 'numeric', timeZoneName: 'short' }) %>">
+          <%= startsAt %>
+        </time>
+    </div>
+  </a>
+</li>

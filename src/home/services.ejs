@@ -37,13 +37,15 @@ hideInNavigation: false
     <div class="column text-heading with-borders">
       <h3>And much more!</h3>
     </div>
-    <% const tickerContent = `Virtual Cards – Free Courses – Grants – Collective Admins – Processing Payments 2x a Week – Community Forums –
-        Tech
-        Owned by Us – Transparency – Exit to Community – Solidarity Economies – Radical Admin – `;
-    %>
     <div class="column text-copy with-borders ticker-wrapper">
-      <p class="text-copy ticker" aria-label="<%= tickerContent %>">
-        <%= tickerContent.repeat(3) %>
+      <p class="text-copy ticker">
+        <span>
+          <%- markdown.inline(await include('../editable-blocks/services-ticker.md')) %>
+        </span>
+        <%# repeat content for ticker effect but hide from screen reader %>
+        <span aria-hidden="true">
+          <%- markdown.inline(await include('../editable-blocks/services-ticker.md')) %>
+        </span>
       </p>
     </div>
   </div>
