@@ -4,128 +4,155 @@
       "name": "Bushwick Ayuda Mutua",
       "heroImage": "/assets/uploads/bushwick-ayuda-mutua_forweb.png",
       "url": "https://opencollective.com/bushwick-ayuda-mutua",
-      "isVisible": false
+      "isVisible": false,
+      "heroImageAlt": "Bushwick Ayuda Mutual volunteers outside in their neighborhood"
     },
     {
       "name": "Kola Nut Collaborative",
       "heroImage": "/assets/uploads/kola-nut-collaborative.jpeg",
       "heroImageAlt": "Pair of cupped hands holding red and yellow koala nuts",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/kolanutcollab"
     },
     {
       "name": "Open Mined",
       "heroImage": "/assets/uploads/open-mined_forweb.png",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/openmined",
+      "heroImageAlt": "Open Mined team working together at table"
     },
     {
       "name": "ABQ Free Fridge",
       "heroImage": "/assets/uploads/abq-free-fridge.jpeg",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/abqfreefridge",
+      "heroImageAlt": "A free fridge under a hand-built shelter with a painted sign that says \"Free Food Comida Gratis\""
     },
     {
       "name": "1k Project",
       "heroImage": "/assets/uploads/1k-project.png",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/1kproject"
     },
     {
       "name": "Black Alliance for Peace",
       "heroImage": "/assets/uploads/black-alliance-for-peace.jpeg",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/bap"
     },
     {
       "name": "Black Banjo Reclamation Project",
       "heroImage": "/assets/uploads/black-banjo-reclamation-project.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/banjo-reclamation-project"
     },
     {
       "name": "Chicago Community Jail Support",
       "heroImage": "/assets/uploads/chicago-community-jail-support.jpeg",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/chicago-community-jail-support"
     },
     {
       "name": "Club A Kitchen",
       "heroImage": "/assets/uploads/club-a-kitchen.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/club-a-kitchen"
     },
     {
       "name": "Denver Community Fridges",
       "heroImage": "/assets/uploads/denver-community-fridges.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/denvercommunityfridges"
     },
     {
       "name": "Disabled and Here",
       "heroImage": "/assets/uploads/disabled-and-here.jpeg",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/affect/projects/disabledandhere"
     },
     {
       "name": "DisCO",
       "heroImage": "/assets/uploads/disco.png",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/disco-one-project-grant"
     },
     {
       "name": "Food Not Bombs Raleigh",
       "heroImage": "/assets/uploads/food-not-bombs-raleigh.png",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/fnb_raleigh"
     },
     {
       "name": "Fridays for Future",
       "heroImage": "/assets/uploads/fridays-for-future.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/fridaysforfuture-us"
     },
     {
       "name": "Humboldt Park Solidarity Network",
       "heroImage": "/assets/uploads/humboldt-park-solidarity-network.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/hpsolidaritynetwork"
     },
     {
       "name": "Julian",
       "heroImage": "/assets/uploads/julian.png",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/julian-collective"
     },
     {
       "name": "Love Wins Food Pantry",
       "heroImage": "/assets/uploads/love-wins-food-pantry.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/lovewins"
     },
     {
       "name": "M4BL DC Money Pot",
       "heroImage": "/assets/uploads/m4bl-dc-money-pot.jpg",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/m4bl-dc-money-pot"
     },
     {
       "name": "Meals of Gratitude",
       "heroImage": "/assets/uploads/meals-of-gratitude.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/mealsofgratitude"
     },
     {
       "name": "Minneapolis Northside Mutual Aid",
       "heroImage": "/assets/uploads/minneapolis-northside-mutual-aid.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/mpls-northside-mutual-aid"
     },
     {
       "name": "NYU Graduate Workers Strike",
       "heroImage": "/assets/uploads/nyu-graduate-workers-strike.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/gsocnyu"
     },
     {
       "name": "Okionu Birth Foundation",
       "heroImage": "/assets/uploads/okionu-birth-foundation.png",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/okionu-birth-foundation"
     },
     {
       "name": "Open Food Network",
       "heroImage": "/assets/uploads/open-food-network.jpeg",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/ofnusa"
     },
     {
       "name": "Sustainable Progress Equality Collective",
       "heroImage": "/assets/uploads/sustainable-progress-_-equality-collective.jpeg",
-      "isVisible": false
+      "isVisible": false,
+      "url": "https://opencollective.com/spec"
     },
     {
       "name": "The Week",
       "heroImage": "/assets/uploads/the-week.png",
-      "isVisible": true
+      "isVisible": true,
+      "url": "https://opencollective.com/the-week"
     }
   ]
 }
