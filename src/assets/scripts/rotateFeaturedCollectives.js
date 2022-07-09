@@ -1,4 +1,4 @@
-const INTERVAL_LENGTH = 3000;
+const INTERVAL_LENGTH = 8 * 1000;
 
 function renderRotatingCollectives() {
   var script = document.currentScript;
