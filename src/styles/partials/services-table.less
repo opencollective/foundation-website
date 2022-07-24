@@ -103,5 +103,8 @@
     position: sticky;
     top: 101px;
     z-index: 1;
+
+    // Regular borders do not work when with sticky position and border-collapse, so box shadow hack.
+    box-shadow: inset 0 1px 0 @rule-color, inset 0 -1px 0 @rule-color;
   }
 }
