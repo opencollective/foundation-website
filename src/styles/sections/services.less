@@ -1,7 +1,11 @@
 section#services {
   .checklist-row {
     .column {
-      grid-column: span 4;
+      grid-column: span 3;
+
+      &.checklist {
+        grid-column: span 6;
+      }
 
       @media screen and (max-width: @viewport-width-tablet-landscape) {
         grid-column: span 2;

@@ -11,7 +11,7 @@
     display: none;
   }
 
-  .content-container();
+  // .content-container();
   .paragraph-mid();
   font-weight: @font-weight-regular;
 
@@ -28,6 +28,9 @@
     // first column of header and footer are green
     td,
     th {
+      // prevent double-border on last row and section border
+      border-bottom: none;
+
       &:first-child {
         color: @color-dark-green;
       }
@@ -45,6 +48,7 @@
   // Second column has green background
   td,
   th {
+    background-color: @background-color-lighter;
     &:nth-child(2) {
       background-color: @background-color-base;
     }
@@ -58,5 +62,49 @@
   a {
     color: @color-dark-green;
     text-decoration: underline;
+  }
+
+  .show-more-row {
+    text-align: center;
+    td {
+      background-color: @background-color-base;
+      text-align: inherit;
+    }
+  }
+
+  .show-more-button {
+    .textButton();
+    padding: 0 @layout-grid-margin;
+    position: relative;
+    text-align: inherit;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: calc(50% - (16px / 2));
+      background: url('/assets/images/chevron.svg') no-repeat center center;
+    }
+  }
+
+  &.show-all .show-more-button::after {
+    transform: rotate(180deg);
+  }
+
+  // Hide rows after 6 rows
+  &:not(.show-all) tr:nth-child(6) ~ tr:not(:last-child):not(.show-more-row) {
+    display: none;
+  }
+
+  &.show-all th {
+    position: sticky;
+    top: 101px;
+    z-index: 1;
+
+    // Regular borders do not work when with sticky position and border-collapse, so box shadow hack.
+    box-shadow: inset 0 1px 0 @rule-color, inset 0 -1px 0 @rule-color;
   }
 }
