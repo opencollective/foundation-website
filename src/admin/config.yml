@@ -217,7 +217,7 @@ collections:
         file: src/editable-blocks/services-table.md
         fields:
           - name: body
-            widget: markdown
+            widget: markdown-toast-ui
             hint: >
               Checkmark symbol (✔️, ✅, etc) or "yes" is replaced with a checkmark icon. 
               "x", "❌" etc. or "no" is replaced with cross mark icon.
