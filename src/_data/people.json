@@ -70,7 +70,7 @@
       "name": "Alanna Irving",
       "githubUrl": "https://github.com/alanna",
       "linkedInUrl": "https://www.linkedin.com/in/alannairving83/",
-      "profileImage": "/assets/uploads/alanna.jpeg",
+      "profileImage": "/assets/uploads/alanna-nhsq.jpg",
       "department": "OC Foundation Operations and Community",
       "websiteUrl": "https://www.alanna.space/",
       "country": "NZ",
@@ -315,6 +315,14 @@
       "department": "Platform Engineering and Design",
       "title": "View our Hiring Page and Apply",
       "websiteUrl": "https://opencollective.com/hiring",
+      "country": "US"
+    },
+    {
+      "name": "James Vaughan",
+      "profileImage": "/assets/uploads/screen-shot-2022-09-02-at-10.37.17-am.png",
+      "department": "Platform Engineering and Design",
+      "title": "Senior Software Engineer",
+      "administrativeArea": "NY",
       "country": "US"
     }
   ],
