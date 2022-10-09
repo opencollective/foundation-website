@@ -94,6 +94,18 @@ section#get-in-touch {
     }
   }
 
+  .form-submitted-message {
+    display: none;
+  }
+
+  // hide form, show thank you message
+  .sign-up-form.submitted {
+    display: none;
+  }
+  .sign-up-form.submitted + .form-submitted-message {
+    display: block;
+  }
+
   .social-icon(@filename) {
     ::before {
       content: '';
