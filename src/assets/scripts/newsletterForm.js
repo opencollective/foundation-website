@@ -7,7 +7,7 @@ function handleFormSubmit(e) {
 
   fetch(url, {
     method: 'POST',
-    data,
+    body: data,
   }).then(function (resp) {
     if (resp.ok) form.classList.add('submitted');
   });
