@@ -4,12 +4,20 @@ function handleFormSubmit(e) {
 
   const url = form.getAttribute('action');
   const data = new FormData(form);
+  const email = data.get('email');
 
-  fetch(url, {
+  const request = new Request(`/api/newsletter`, {
+    headers: {
+      'Content-Type': 'application/json',
+    },
     method: 'POST',
-    body: data,
-  }).then(function (resp) {
-    if (resp.ok) form.classList.add('submitted');
+    body: JSON.stringify({ email }),
+  });
+
+  fetch(request).then(function (resp) {
+    if (resp.ok) {
+      form.classList.add('submitted');
+    }
   });
 
   return false;
