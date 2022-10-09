@@ -3,14 +3,11 @@ function handleFormSubmit(e) {
   const form = e.target;
 
   const url = form.getAttribute('action');
-  const formData = new FormData(form);
-  const bodyJson = {
-    email: formData.get('email'),
-  };
+  const data = new FormData(form);
 
   fetch(url, {
     method: 'POST',
-    body: JSON.stringify(bodyJson),
+    body: data,
   }).then(function (resp) {
     if (resp.ok) form.classList.add('submitted');
   });
