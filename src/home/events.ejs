@@ -3,7 +3,10 @@ title: Events
 position: 4
 ---
 
-<% const now = new Date() %>
+<% 
+const now = new Date();
+const [futureEvents, pastEvents] = _.partition(events, ({endsAt}) => new Date(endsAt) >= now);
+%>
 
 <div class="outer-events-wrapper">
   <div class="content content-container">
@@ -16,14 +19,14 @@ position: 4
     <div class="events-column">        
       <h3 class="event-section-heading">Upcoming events</h3>
       <ol class="event-list">
-        <% for (const event of (events.filter(({endsAt}) => new Date(endsAt) >= now))) { %>
+        <% for (const event of futureEvents.slice().reverse()) { %>
           <%- await include('/event', {event}) %>
         <% } %>
       </ol>
 
       <h3 class="event-section-heading">Past events</h3>
       <ol class="event-list">
-        <% for (const event of (events.filter(({endsAt}) => new Date(endsAt) < now))) { %>
+        <% for (const event of pastEvents) { %>
           <%- await include('/event', {event}) %>
         <% } %>
       </ol>
