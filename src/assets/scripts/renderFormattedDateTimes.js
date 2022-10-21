@@ -1,5 +1,5 @@
 /**
- * Formates datetimes in the browser using the browser locale.
+ * Formates datetimes in the browser using the browser locale and timzone.
  *
  * Processes all `time` elements matching `time[data-format-options]`
  * where data-format-options is a json object matching Intl.DateTimeFormats options argument.
