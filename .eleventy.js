@@ -23,6 +23,7 @@ md.enable('table');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/admin');
+  eleventyConfig.addPassthroughCopy('src/compensation');
   eleventyConfig.addPassthroughCopy('src/_redirects');
   eleventyConfig.addWatchTarget('src/styles');
 
