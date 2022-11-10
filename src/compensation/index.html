@@ -167,8 +167,7 @@
           </div>
           <br />
           <div>
-            <span class="text-weight-medium">FTE pay:</span> ${{ fulltimeSalary
-            }}
+            <span class="text-weight-medium">FTE pay:</span> ${{ FTEPay }}
           </div>
           <div>
             <span class="text-weight-medium">Hours per week:</span> {{
@@ -179,10 +178,8 @@
         </q-card-section>
 
         <q-card-section>
-          <span class="text-h6"> Salary: ${{ round(salary, 0) }} </span>
-          <span class="text-body1">
-            (hourly: ${{ round(salary / 2080, 1) }})
-          </span>
+          <span class="text-h6"> Salary: ${{ round(proRataPay, 0) }} </span>
+          <span class="text-body1"> (hourly: ${{ hourlyPay }}) </span>
         </q-card-section>
       </q-card>
     </div>
