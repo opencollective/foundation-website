@@ -95,7 +95,7 @@ function buildInitialFormState(inputs) {
 function setup() {
   const form = reactive(buildInitialFormState(inputs));
 
-  const fulltimeSalary = computed(
+  const basePay = computed(
     () => 50000 + form.responsibility * 10000 + (form.exec / 100) * 15000
   );
 
@@ -117,27 +117,24 @@ function setup() {
 
   const effectiveDependants = computed(() => {
     return form.dependants.reduce((acc, dependant) => {
-      return acc + 1 / dependant.supporters;
+      return acc + 1 / (dependant.supporters + 1);
     }, 0);
   });
 
-  const adjustment = computed(() =>
-    form.classification === 'contractor'
-      ? 0.1
-      : 0 +
-        yearsOnTeam.value * 0.03 +
-        form.disability * 0.01 +
-        form.debt * 0.01 +
-        form.disadvantage * 0.01 +
-        effectiveDependants.value * 0.01
-  );
-
-  const salary = computed(
+  const adjustment = computed(
     () =>
-      (fulltimeSalary.value * (1 + adjustment.value) * form.hours) / 40 // pro-rata
+      (form.classification === 'contractor' ? 0.1 : 0) +
+      yearsOnTeam.value * 0.03 +
+      form.disability * 0.01 +
+      form.debt * 0.01 +
+      form.disadvantage * 0.01 +
+      effectiveDependants.value * 0.05
   );
 
-  console.log(inputs.month.options);
+  const FTEPay = computed(() => basePay.value * (1 + adjustment.value));
+  const proRataPay = computed(() => (FTEPay.value * form.hours) / 40);
+  const hourlyPay = computed(() => round(FTEPay.value / 2080, 1));
+
   return {
     inputs,
     form,
@@ -146,8 +143,10 @@ function setup() {
     yearsOnTeam,
     effectiveDependants,
     adjustment,
-    fulltimeSalary,
-    salary,
+    basePay,
+    FTEPay,
+    proRataPay,
+    hourlyPay,
 
     // helper methods
     markerLabels: (input) => (val) => {
@@ -164,7 +163,7 @@ function setup() {
         return Math.floor(val / step) * step === val;
       },
     ],
-    round: (val, DP = 2) => Math.round(val * 10 ** DP) / 10 ** DP, // round to 2DP
+    round,
 
     // actions
     addDependant() {
@@ -180,3 +179,7 @@ function setup() {
 const app = createApp({ setup });
 app.use(Quasar); // eslint-disable-line
 app.mount('#app');
+
+function round(val, DP = 2) {
+  return Math.round(val * 10 ** DP) / 10 ** DP;
+}
