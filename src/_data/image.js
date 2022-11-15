@@ -1,6 +1,8 @@
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
 
+const FALLBACK_IMAGE = './src/assets/images/transparent-pixel.png';
+
 module.exports = () =>
   /**
    * Create image HTML tag and compress images
@@ -38,7 +40,13 @@ module.exports = () =>
       useCache: true,
     };
 
-    let metadata = await Image(filePath, options);
+    let metadata;
+    try {
+      metadata = await Image(filePath, options);
+    } catch (e) {
+      console.error('Error creating image. Falling back.', e);
+      metadata = await Image(FALLBACK_IMAGE, options);
+    }
 
     return Image.generateHTML(metadata, attributes);
   };
