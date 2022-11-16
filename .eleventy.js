@@ -49,6 +49,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     markdownTemplateEngine: 'ejs',
+    htmlTemplateEngine: false, // stops compensation/index.html being mutated
     dir: {
       input: 'src',
       layouts: '_layouts',
