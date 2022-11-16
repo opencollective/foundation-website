@@ -17,7 +17,176 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quasar@2.10.0/dist/quasar.umd.prod.js"></script>
 
-    <div id="app"></div>
+    <div id="app">
+      <label> Classification </label>
+      <div class="q-gutter-x-sm q-ml-sm q-mb-lg">
+        <q-radio
+          v-model="form.classification"
+          val="employee"
+          label="Employee"
+        />
+        <q-radio
+          v-model="form.classification"
+          val="contractor"
+          label="Contractor"
+        />
+      </div>
+
+      <!-- start year -->
+      <label class="q-mb-lg"> Started with company </label>
+      <div class="row q-col-gutter-x-md q-mt-sm q-ml-sm">
+        <div class="col-3">
+          <q-input
+            type="number"
+            v-model.number="form.year"
+            step="1"
+            :min="inputs.year.min"
+            :max="inputs.year.max"
+            :rules="inputRules(inputs.year)"
+            dense
+            outlined
+          >
+          </q-input>
+        </div>
+
+        <div class="col-4">
+          <q-select
+            v-model="form.month"
+            :options="inputs.month.options"
+            dense
+            outlined
+          >
+          </q-select>
+        </div>
+      </div>
+      <div class="q-ml-lg q-mb-lg text-grey-8">
+        {{ yearsOnTeam }} years on team
+      </div>
+
+      <!-- public + private -->
+      <div
+        v-for="input in [...inputs.public, ...inputs.private]"
+        :key="input.key"
+      >
+        <label> {{ input.label }} </label>
+        <div class="row q-col-gutter-x-lg q-ml-xs q-mb-sm">
+          <q-slider
+            v-model="form[input.key]"
+            :color="input.color"
+            markers
+            :marker-labels="markerLabels(input)"
+            label-always
+            :min="input.min"
+            :max="input.max"
+            :step="input.step || 1"
+            class="col-10"
+          >
+          </q-slider>
+
+          <q-input
+            type="number"
+            v-model.number="form[input.key]"
+            :step="input.step || 1"
+            :min="input.min"
+            :max="input.max"
+            :rules="inputRules(input)"
+            outlined
+            dense
+            class="col-2"
+          >
+          </q-input>
+        </div>
+      </div>
+
+      <!-- dependants -->
+      <label> Dependants </label>
+      <div class="q-mt-xs q-ml-md">
+        <div class="row">
+          <q-btn
+            icon="person_add"
+            rounded
+            size="sm"
+            color="purple"
+            @click="addDependant"
+            class="col-1 q-mr-sm"
+          >
+          </q-btn>
+          <q-btn
+            icon="person_remove"
+            rounded
+            flat
+            size="sm"
+            color="grey-7"
+            :disabled="form.dependants.length === 0"
+            @click="form.dependants.pop()"
+            class="col-1"
+          >
+          </q-btn>
+        </div>
+        <div>
+          <div
+            v-for="(dependant, i) in form.dependants"
+            :key="i"
+            class="q-mt-sm"
+          >
+            <span class="text-weight-medium"> Dependant {{ i + 1 }}: </span>
+            <span>supported by you and </span>
+            <q-input
+              type="number"
+              v-model.number="dependant.supporters"
+              :step="1"
+              :min="1"
+              outlined
+              dense
+              style="display: inline-block; width: 60px"
+              class="q-mx-xs"
+            >
+            </q-input>
+            <span> other people.</span>
+          </div>
+        </div>
+
+        <div class="q-mt-sm text-grey-8">
+          {{ form.dependants.length }} dependants,
+          <br />
+          {{ round(effectiveDependants) }} effective dependants
+        </div>
+      </div>
+
+      <!-- total -->
+      <q-card flat bordered class="q-mt-lg">
+        <q-card-section>
+          <div>
+            <span class="text-weight-medium">Classification:</span>
+            {{ form.classification }}
+          </div>
+          <div>
+            <span class="text-weight-medium">Responsibility level:</span>
+            {{ form.responsibility }}
+          </div>
+          <div>
+            <span class="text-weight-medium">Years on team:</span>
+            {{ yearsOnTeam }}
+          </div>
+          <br />
+          <div>
+            <span class="text-weight-medium">FTE pay:</span>
+            ${{ Math.round(FTEPay) }}
+          </div>
+          <div>
+            <span class="text-weight-medium">Hours per week:</span>
+            {{ form.hours }}
+          </div>
+
+          <!--<div>Adjustment: +{{ Math.floor(adjustment * 100) }}%</div>-->
+        </q-card-section>
+
+        <q-card-section>
+          <span class="text-h6"> Salary: ${{ round(proRataPay, 0) }} </span>
+          <span class="text-body1"> (hourly: ${{ hourlyPay }}) </span>
+        </q-card-section>
+      </q-card>
+    </div>
 
     <script type="module">
       import CompensationCalculator from './CompensationCalculator.js';
