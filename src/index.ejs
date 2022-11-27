@@ -3,4 +3,11 @@ layout: default
 permalink: /
 ---
 
-<%- await include('/sectionalLayout', { collectionName: 'home', extraNavLinks: [ ] }) %>
+<%- await include('/sectionalLayout', { collectionName: 'home', extraNavLinks: [ 
+  {
+    href: "http://discover.opencollective.com",
+    text: "Discover",
+    isExternal: true,
+    isCta: false
+  }
+] }) %>
