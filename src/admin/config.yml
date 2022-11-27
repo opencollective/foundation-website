@@ -212,6 +212,12 @@ collections:
         fields:
           - name: body
             widget: markdown
+      - label: 'Values blurb'
+        name: values
+        file: src/editable-blocks/values.md
+        fields:
+          - name: body
+            widget: markdown
       - label: Services table
         name: servicesTable
         file: src/editable-blocks/services-table.md
