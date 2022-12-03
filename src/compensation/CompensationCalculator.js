@@ -1,4 +1,8 @@
 const { reactive, computed } = Vue; // eslint-disable-line
+const { setCssVar } = Quasar;
+
+setCssVar('primary', '#1869f5');
+setCssVar('secondary', '#eaeaec');
 
 const inputs = {
   year: {
@@ -31,7 +35,6 @@ const inputs = {
       label: 'Hours per week',
       min: 0,
       max: 40,
-      color: 'deep-orange',
     },
     {
       key: 'exec',
@@ -39,7 +42,6 @@ const inputs = {
       min: 0,
       max: 100,
       step: 5,
-      color: 'deep-orange',
     },
     {
       key: 'responsibility',
@@ -47,7 +49,6 @@ const inputs = {
       min: 1,
       max: 4,
       step: 0.5,
-      color: 'green',
     },
   ],
   private: [
@@ -56,21 +57,18 @@ const inputs = {
       label: 'Disability',
       min: 0,
       max: 10,
-      color: 'purple',
     },
     {
       key: 'debt',
       label: 'Debt',
       min: 0,
       max: 10,
-      color: 'purple',
     },
     {
       key: 'disadvantage',
       label: 'Disadvantage',
       min: 0,
       max: 10,
-      color: 'purple',
     },
   ],
 };

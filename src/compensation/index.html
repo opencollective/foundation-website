@@ -19,7 +19,7 @@
 
     <div id="app">
       <label> Classification </label>
-      <div class="q-gutter-x-sm q-ml-sm q-mb-lg">
+      <div class="q-gutter-x-sm q-mb-lg">
         <q-radio
           v-model="form.classification"
           val="employee"
@@ -34,7 +34,7 @@
 
       <!-- start year -->
       <label class="q-mb-lg"> Started with company </label>
-      <div class="row q-col-gutter-x-md q-mt-sm q-ml-sm">
+      <div class="row q-col-gutter-x-md q-mt-sm">
         <div class="col-3">
           <q-input
             type="number"
@@ -59,7 +59,7 @@
           </q-select>
         </div>
       </div>
-      <div class="q-ml-lg q-mb-lg text-grey-8">
+      <div class="q-ml-none q-mb-lg text-grey-8">
         {{ yearsOnTeam }} years on team
       </div>
 
@@ -69,10 +69,9 @@
         :key="input.key"
       >
         <label> {{ input.label }} </label>
-        <div class="row q-col-gutter-x-lg q-ml-xs q-mb-sm">
+        <div class="row q-col-gutter-x-lg q-mb-sm">
           <q-slider
             v-model="form[input.key]"
-            :color="input.color"
             markers
             :marker-labels="markerLabels(input)"
             label-always
@@ -80,6 +79,7 @@
             :max="input.max"
             :step="input.step || 1"
             class="col-10"
+            track-color="secondary"
           >
           </q-slider>
 
@@ -100,13 +100,12 @@
 
       <!-- dependants -->
       <label> Dependants </label>
-      <div class="q-mt-xs q-ml-md">
+      <div class="q-mt-xs">
         <div class="row">
           <q-btn
             icon="person_add"
             rounded
             size="sm"
-            color="purple"
             @click="addDependant"
             class="col-1 q-mr-sm"
           >
@@ -116,7 +115,6 @@
             rounded
             flat
             size="sm"
-            color="grey-7"
             :disabled="form.dependants.length === 0"
             @click="form.dependants.pop()"
             class="col-1"
@@ -206,8 +204,6 @@
       label {
         font-size: 14px;
         font-weight: 500;
-        color: #555;
-        color: #044f54;
         letter-spacing: 1px;
       }
 
