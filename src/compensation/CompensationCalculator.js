@@ -1,7 +1,7 @@
 const { reactive, computed } = Vue; // eslint-disable-line
 const { setCssVar } = Quasar;
 
-setCssVar('primary', '#1869f5');
+setCssVar('primary', '#044F54');
 setCssVar('secondary', '#eaeaec');
 
 const inputs = {
