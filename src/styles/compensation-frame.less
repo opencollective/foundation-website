@@ -30,17 +30,37 @@ label {
   font-weight: @font-weight-light;
 }
 
-#app {
-  padding: 24px;
-  max-width: 600px;
-  //  margin: 0 auto;
-}
-
 .inputs-container {
   background-color: @background-color-lighter;
   border-radius: @border-radius;
   border: @default-rule-lighter;
   padding: 32px;
+  margin-right: @layout-grid-gutter;
+
+  width: 676px;
+  max-width: 100%;
+}
+
+.inputs-container,
+.outputs-container {
+  display: inline-block;
+}
+
+.outputs-container {
+  .paragraph-large();
+  font-weight: @font-weight-light;
+  margin-top: @layout-grid-margin;
+  color: @color-dark-green;
+
+  .key {
+    color: @font-color-base;
+  }
+
+  .grand-total {
+    margin-top: 1em;
+    .heading-h3();
+    font-weight: @font-weight-bold;
+  }
 }
 
 .q-slider .q-slider__pin {

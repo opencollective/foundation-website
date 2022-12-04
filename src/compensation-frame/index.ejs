@@ -162,8 +162,8 @@
       </div>
 
       <!-- total -->
-      <q-card flat bordered class="container-outputs">
-        <q-card-section>
+      <div class="outputs-container">
+        <div>
           <div>
             <span class="key">Classification =</span>
             {{ form.classification }}
@@ -187,12 +187,12 @@
           </div>
 
           <!--<div>Adjustment = +{{ Math.floor(adjustment * 100) }}%</div>-->
-        </q-card-section>
+        </div>
 
-        <q-card-section>
-          <span class=""> Salary = ${{ round(proRataPay, 0) }} </span>
-        </q-card-section>
-      </q-card>
+        <div class="grand-total">
+          <span class="key"> Salary =  </span>${{ round(proRataPay, 0) }}
+        </div>
+      </div>
     </div>
 
     <script type="module">
