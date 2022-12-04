@@ -1,0 +1,52 @@
+@import 'normalize.css';
+
+// Variables
+@import './variables/buttons.less';
+@import './variables/color.less';
+@import './variables/rules.less';
+@import './variables/sizing.less';
+@import './variables/typography.less';
+@import './variables/viewports.less';
+
+@import './partials/typography.less';
+
+@import './base.less';
+
+h1 {
+  .subheading();
+  color: @font-color-base;
+
+  padding-bottom: 1em;
+  border-bottom: @default-rule;
+}
+
+label {
+  .paragraph-large();
+}
+
+.subtitle {
+  .paragraph-small();
+  color: @color-dark-700;
+  font-weight: @font-weight-light;
+}
+
+#app {
+  padding: 24px;
+  max-width: 600px;
+  //  margin: 0 auto;
+}
+
+.inputs-container {
+  background-color: @background-color-lighter;
+  border-radius: @border-radius;
+  border: @default-rule-lighter;
+  padding: 32px;
+}
+
+.q-slider .q-slider__pin {
+  display: none;
+}
+
+.q-slider:active .q-slider__pin {
+  display: initial;
+}

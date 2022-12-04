@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <%- await include('/fonts') %>
+    <link
+      href="https://cdn.jsdelivr.net/npm/quasar@2.10.0/dist/quasar.prod.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/compensation-frame.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.10.0/dist/quasar.umd.prod.js"></script>
+    <script src="https://www.unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.contentWindow.min.js"></script>
+
+    <div id="app">
+      <div class="inputs-container">
+        <h1>Compensation Calculator</h1>
+        <label> Classification </label>
+        <div class="q-gutter-x-sm q-mb-lg q-mt-md">
+          <q-radio
+            v-model="form.classification"
+            val="employee"
+            label="Employee"
+          />
+          <q-radio
+            v-model="form.classification"
+            val="contractor"
+            label="Contractor"
+          />
+        </div>
+
+        <!-- start year -->
+        <label class="q-mb-lg"> Started with company </label>
+        <div class="row q-col-gutter-x-md q-mb-md q-mt-md">
+          <div class="col-3">
+            <q-input
+              type="number"
+              v-model.number="form.year"
+              step="1"
+              :min="inputs.year.min"
+              :max="inputs.year.max"
+              :rules="inputRules(inputs.year)"
+              dense
+              outlined
+            >
+            </q-input>
+          </div>
+
+          <div class="col-4">
+            <q-select
+              v-model="form.month"
+              :options="inputs.month.options"
+              dense
+              outlined
+            >
+            </q-select>
+          </div>
+        </div>
+        <div class="subtitle q-ml-none q-mb-lg">
+          {{ yearsOnTeam }} years on team
+        </div>
+
+        <!-- public + private -->
+        <div
+          v-for="input in [...inputs.public, ...inputs.private]"
+          :key="input.key"
+        >
+          <label> {{ input.label }} </label>
+          <div class="row q-col-gutter-x-lg q-mb-lg q-mt-sm">
+            <q-slider
+              v-model="form[input.key]"
+              markers
+              :marker-labels="markerLabels(input)"
+              label-always
+              :min="input.min"
+              :max="input.max"
+              :step="input.step || 1"
+              class="col-10"
+              track-color="secondary"
+              marker-labels-class="subtitle marker-label"
+            >
+            </q-slider>
+
+            <q-input
+              type="number"
+              v-model.number="form[input.key]"
+              :step="input.step || 1"
+              :min="input.min"
+              :max="input.max"
+              :rules="inputRules(input)"
+              outlined
+              dense
+              class="col-2"
+            >
+            </q-input>
+          </div>
+        </div>
+
+        <!-- dependants -->
+        <label> Dependants </label>
+        <div class="q-mt-xs">
+          <div class="row">
+            <q-btn
+              icon="person_add"
+              rounded
+              size="sm"
+              @click="addDependant"
+              class="col-1 q-mr-sm"
+            >
+            </q-btn>
+            <q-btn
+              icon="person_remove"
+              rounded
+              flat
+              size="sm"
+              :disabled="form.dependants.length === 0"
+              @click="form.dependants.pop()"
+              class="col-1"
+            >
+            </q-btn>
+          </div>
+          <div>
+            <div
+              v-for="(dependant, i) in form.dependants"
+              :key="i"
+              class="q-mt-sm"
+            >
+              <span class=""> Dependant {{ i + 1 }}: </span>
+              <span>supported by you and </span>
+              <q-input
+                type="number"
+                v-model.number="dependant.supporters"
+                :step="1"
+                :min="1"
+                outlined
+                dense
+                style="display: inline-block; width: 60px"
+                class="q-mx-xs"
+              >
+              </q-input>
+              <span> other people.</span>
+            </div>
+          </div>
+
+          <div class="subtitle q-mt-sm">
+            {{ form.dependants.length }} dependants,
+            <br />
+            {{ round(effectiveDependants) }} effective dependants
+          </div>
+        </div>
+
+      </div>
+
+      <!-- total -->
+      <q-card flat bordered class="container-outputs">
+        <q-card-section>
+          <div>
+            <span class="key">Classification =</span>
+            {{ form.classification }}
+          </div>
+          <div>
+            <span class="key">Responsibility level =</span>
+            {{ form.responsibility }}
+          </div>
+          <div>
+            <span class="key">Years on team =</span>
+            {{ yearsOnTeam }}
+          </div>
+          <br />
+          <div>
+            <span class="key">FTE pay =</span>
+            ${{ Math.round(FTEPay) }}
+          </div>
+          <div>
+            <span class="key">Hours per week =</span>
+            {{ form.hours }}
+          </div>
+
+          <!--<div>Adjustment = +{{ Math.floor(adjustment * 100) }}%</div>-->
+        </q-card-section>
+
+        <q-card-section>
+          <span class=""> Salary = ${{ round(proRataPay, 0) }} </span>
+        </q-card-section>
+      </q-card>
+    </div>
+
+    <script type="module">
+      import CompensationCalculator from './CompensationCalculator.js';
+      const { createApp } = Vue; // eslint-disable-line
+
+      const app = createApp(CompensationCalculator);
+      app.use(Quasar); // eslint-disable-line
+      app.mount('#app');
+    </script>
+  </body>
+</html>
