@@ -24,22 +24,24 @@
       <div class="inputs-container">
         <h1>Compensation Calculator</h1>
         <label> Classification </label>
-        <div class="q-gutter-x-sm q-mb-lg q-mt-md">
+        <div class="q-gutter-sm q-mb-lg q-mt-md">
           <q-radio
+            dense
             v-model="form.classification"
             val="employee"
             label="Employee"
-          />
+          ></q-radio>
           <q-radio
+            dense
             v-model="form.classification"
             val="contractor"
             label="Contractor"
-          />
+          ></q-radio>
         </div>
 
         <!-- start year -->
         <label class="q-mb-lg"> Started with company </label>
-        <div class="row q-col-gutter-x-md q-mb-md q-mt-md">
+        <div class="row q-col-gutter-x-md q-mt-md">
           <div class="col-3">
             <q-input
               type="number"
