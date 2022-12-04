@@ -3,6 +3,8 @@ layout: default
 title: Compensation Calculator
 ---
 
+<%- await include('/nav', { collectionName: 'home', extraNavLinks: [], prefix: '/' }) %>
+
 <main id="compensation">
   <iframe id="compensation-frame" src="/compensation-frame" style="width: 1px; min-width: 100%; border: none;">
   </iframe>
@@ -12,3 +14,5 @@ title: Compensation Calculator
 <script>
   iFrameResize({ log: true }, "#compensation-frame");
 </script>
+
+<%- await include('/footer') %>
