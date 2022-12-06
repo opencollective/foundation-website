@@ -3,7 +3,7 @@
 \
 Solidarity is [our guiding principle](https://docs.opencollective.foundation/about/solidarity-our-guiding-principle) at Open Collective Foundation. We practice what we preach. Here are some ways that **transparency** (“Open”) and **shared work** (“Collective”) are embodied by us, the people you will meet at OCF:
 
-1. We **set our salaries together** and account for responsibility level, as well as debt, disability, disadvantage, and dependents, and more - [blog post 1](https://blog.opencollective.com/team-set-salaries-ocf/) and [2](https://blog.opencollective.com/ocfs-journey-to-a-new-compensation-model).
+1. We **set our salaries together** and account for responsibility level, as well as debt, disability, disadvantage, dependents, and more - [blog post 1](https://blog.opencollective.com/team-set-salaries-ocf/) and [2](https://blog.opencollective.com/ocfs-journey-to-a-new-compensation-model).
 2. We practice **[distributed leadership](https://medium.com/enspiral-tales/how-to-grow-distributed-leadership-7f6b25f0361c).**
 3. We **set our own schedules**, to balance care for ourselves and our communities with our accountability and service to collectives.
 4. We have a[**fund for learning** and coaching](https://opencollective.com/foundation/projects) to support individual growth.
