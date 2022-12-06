@@ -7,8 +7,8 @@ const atImport = require('postcss-import');
 const cssNano = require('cssnano');
 const LessRenderer = require('./LessRenderer');
 
-const permalink = 'styles.css';
-const input = './styles.less';
+const permalink = 'compensation-frame.css';
+const input = './compensation-frame.less';
 
 /**
  * This reads a single LESS file from `input` and outputs a single CSS file to `permalink`.

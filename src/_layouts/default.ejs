@@ -1,3 +1,8 @@
+---
+css: []
+footerScripts: []
+headerScripts: []
+---
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,13 +17,15 @@
     <%- await include('/seo-meta') %>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <link rel="stylesheet" href="/styles.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
 
-    <!-- Scripts -->
-    <!-- <script src="/assets/scripts/popup.js"></script> -->
+    <% for (const link of (css || []))  { %>
+      <link rel="stylesheet" href="<%- link %>" />
+    <% } %>
 
+    <% for (const link of (headerScripts || [])) { %>
+      <script src="<%- link %>"></script>
+    <% } %>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <%- await include('/fonts') %> 
     <%- await include('/analytics') %>
 
@@ -41,10 +48,7 @@
   <body>
     <%- content %>
   </body>
-  <script src="/assets/scripts/renderFormattedDateTimes.js"></script>
-  <script src="/assets/scripts/renderFlags.js"></script>
-  <script src="/assets/scripts/createServicesTableMobileDom.js"></script>
-  <script src="/assets/scripts/insertShowMoreButtonIntoServicesTable.js"></script>
-  <script src="/assets/scripts/addClassesToSymbolTable.js"></script>
-  <script src="/assets/scripts/newsletterForm.js"></script>
+  <% for (const link of (footerScripts || [])) { %>
+    <script src="<%- link %>"></script>
+  <% } %>
 </html>

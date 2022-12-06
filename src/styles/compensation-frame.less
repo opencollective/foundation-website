@@ -1,0 +1,72 @@
+@import 'normalize.css';
+
+// Variables
+@import './variables/buttons.less';
+@import './variables/color.less';
+@import './variables/rules.less';
+@import './variables/sizing.less';
+@import './variables/typography.less';
+@import './variables/viewports.less';
+
+@import './partials/typography.less';
+
+@import './base.less';
+
+h1 {
+  .subheading();
+  color: @font-color-base;
+
+  padding-bottom: 1em;
+  border-bottom: @default-rule;
+}
+
+label {
+  .paragraph-large();
+}
+
+.subtitle {
+  .paragraph-small();
+  color: @color-dark-700;
+  font-weight: @font-weight-light;
+}
+
+.inputs-container {
+  background-color: @background-color-lighter;
+  border-radius: @border-radius;
+  border: @default-rule-lighter;
+  padding: 32px;
+  margin-right: @layout-grid-gutter;
+
+  width: 676px;
+  max-width: 100%;
+}
+
+.inputs-container,
+.outputs-container {
+  display: inline-block;
+}
+
+.outputs-container {
+  .paragraph-large();
+  font-weight: @font-weight-light;
+  margin-top: @layout-grid-margin;
+  color: @color-dark-green;
+
+  .key {
+    color: @font-color-base;
+  }
+
+  .grand-total {
+    margin-top: 1em;
+    .heading-h3();
+    font-weight: @font-weight-bold;
+  }
+}
+
+.q-slider .q-slider__pin {
+  display: none;
+}
+
+.q-slider:active .q-slider__pin {
+  display: initial;
+}

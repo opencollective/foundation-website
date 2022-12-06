@@ -7,7 +7,7 @@
         !section.data.hideInNavigation).forEach((section)=> { %>
         <li>
           <a 
-          href="#<%= section.fileSlug %>"
+          href="<%= prefix || '' %>#<%= section.fileSlug %>"
           onclick="document.getElementById('nav-container').classList.remove('show-menu')"
           > <%= section.data.title %> </a>
         </li>
