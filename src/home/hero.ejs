@@ -98,24 +98,26 @@ _%>
 </div>
 
 <div class="row network-row">
-  <div class="content-container">
-    <div class="column network-graphic">
-      <%- await image({
-        src: '/assets/images/network.png',
-        alt: 'Network illustration',
-        sizes: `
-        (max-width: 428px) 100vw,
-        66%
-        `
-      },  [773, 423, 428]) %>
+  <a href="http://opencollective.com/e2c" target="_blank">
+    <div class="content-container">
+      <div class="column network-graphic">
+        <%- await image({
+          src: '/assets/images/network.png',
+          alt: 'Network illustration',
+          sizes: `
+          (max-width: 428px) 100vw,
+          66%
+          `
+        },  [773, 423, 428]) %>
+      </div>
+      <div class="column network-copy">
+        <p class="">
+          We are part of an international network of 600 nonprofits, LLCs, and co-ops around the world that use the same, open
+          source software to create efficiencies with money.
+        </p>
+      </div>
     </div>
-    <div class="column network-copy">
-      <p class="">
-        We are part of an international network of 600 nonprofits, LLCs, and co-ops around the world that use the same, open
-        source software to create efficiencies with money.
-      </p>
-    </div>
-  </div>
+  </a>
 </div>
 
 <div class="row video-row">
