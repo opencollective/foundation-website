@@ -324,6 +324,16 @@
       "title": "Senior Software Engineer",
       "administrativeArea": "NY",
       "country": "US"
+    },
+    {
+      "name": "Alfie Marsland",
+      "profileImage": "/assets/uploads/0-16-852x1024.jpeg",
+      "department": "OC Foundation Operations and Community",
+      "title": "Communications Designer",
+      "administrativeArea": "Baltimore, MD",
+      "country": "US",
+      "instagramUrl": "https://www.instagram.com/alfie.marsland/?hl=en",
+      "websiteUrl": "https://althemiamarsland.com/"
     }
   ],
   "departments": [
