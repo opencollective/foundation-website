@@ -82,6 +82,45 @@ section#hero {
     }
   }
 
+  .discover-row {
+    border-bottom: @default-rule;
+
+    text-align: center;
+
+    background-color: #fddd84b2;
+
+    font-weight: @font-weight-light;
+
+    p {
+      margin: 0;
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .content-container {
+      // reduced padding
+      padding-top: (@layout-grid-margin / 2);
+      padding-bottom: (@layout-grid-margin / 2);
+
+      @media screen and (max-width: @viewport-width-mobile) {
+        padding-top: @layout-grid-margin-mobile;
+        padding-bottom: @layout-grid-margin-mobile;
+      }
+    }
+
+    .discover-heading {
+      .paragraph-large();
+      font-weight: @font-weight-bold;
+    }
+
+    a {
+      color: @color-dark-green;
+    }
+  }
+
   .the-process-row {
     background-color: @background-color-lighter;
 
