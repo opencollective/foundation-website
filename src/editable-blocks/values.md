@@ -1,3 +1,6 @@
+## V﻿alues
+
+\
 Solidarity is [our guiding principle](https://docs.opencollective.foundation/about/solidarity-our-guiding-principle) at Open Collective Foundation. We practice what we preach. Here are some ways that **transparency** (“Open”) and **shared work** (“Collective”) are embodied and by us, the people you will meet at OCF:
 
 1. We **set our salaries together** and account for responsibility level, as well as debt, disability, disadvantage, and dependents, and more – more about that, here.
