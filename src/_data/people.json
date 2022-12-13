@@ -11,26 +11,6 @@
       "twitterUrl": "https://twitter.com/piamancini"
     },
     {
-      "name": "Andrew Trask",
-      "profileImage": "/assets/uploads/andrew.jpeg",
-      "department": "OC Foundation Board of Directors",
-      "title": "Board Member",
-      "administrativeArea": "Oxford",
-      "country": "GB",
-      "linkedInUrl": "https://www.linkedin.com/in/andrew-trask-3763ba15b/",
-      "twitterUrl": "https://twitter.com/iamtrask"
-    },
-    {
-      "name": "Kaitlin Thaney",
-      "profileImage": "/assets/uploads/kaitlin.jpeg",
-      "department": "OC Foundation Board of Directors",
-      "title": "Board Member",
-      "administrativeArea": "New York",
-      "country": "US",
-      "linkedInUrl": "https://www.linkedin.com/in/kaythaney/",
-      "twitterUrl": "https://twitter.com/kaythaney"
-    },
-    {
       "name": "Angie Kim",
       "profileImage": "/assets/uploads/for-distribution_angie-kim-portrait-2019_bethanie-hines-photography-cropped.jpg",
       "department": "OC Foundation Board of Directors",
@@ -334,6 +314,22 @@
       "country": "US",
       "instagramUrl": "https://www.instagram.com/alfie.marsland/?hl=en",
       "websiteUrl": "https://althemiamarsland.com/"
+    },
+    {
+      "name": "Bart Westdijk",
+      "profileImage": "/assets/uploads/screen-shot-2022-12-14-at-12.51.58-pm.png",
+      "department": "OC Foundation Board of Directors",
+      "title": "Director",
+      "country": "US",
+      "websiteUrl": "https://grassrootsfund.org"
+    },
+    {
+      "name": "Nan Mead",
+      "profileImage": "/assets/uploads/nan.jpeg",
+      "linkedInUrl": "https://www.linkedin.com/in/naneileenmead/",
+      "country": "US",
+      "title": "Director",
+      "department": "OC Foundation Board of Directors"
     }
   ],
   "departments": [
