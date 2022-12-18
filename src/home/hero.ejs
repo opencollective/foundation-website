@@ -94,18 +94,16 @@ _%>
       <h2>The Process</h2>
     </div>
 
-    <div class="column the-process-graphic">
-      <a href="https://opencollective.com/foundation/apply" target="_blank">
-        <%- await image({
-          src: '/assets/images/theprocess.png',
-          alt: 'Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!',
-          sizes: `
-          (max-width: 428px) 100vw,
-          66%
-          `
-        }, [773, 423, 428]) %>
-      </a>
-    </div>
+    <a href="https://opencollective.com/foundation/apply" target="_blank" class="column the-process-graphic the-process-link">
+      <%- await image({
+        src: '/assets/images/theprocess.png',
+        alt: 'Infographic showing the steps: Apply, then meet us, then set up your page, then raise funds!',
+        sizes: `
+        (max-width: 428px) 100vw,
+        66%
+        `
+      }, [773, 423, 428]) %>
+    </a>
   </div>
 </div>
 
