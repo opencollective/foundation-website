@@ -87,7 +87,7 @@ section#hero {
 
     text-align: center;
 
-    background-color: #fddd84b2;
+    background-color: @color-sand-light;
 
     font-weight: @font-weight-light;
 
@@ -124,6 +124,12 @@ section#hero {
   .the-process-row {
     background-color: @background-color-lighter;
 
+    .the-process-link {
+      &:hover {
+        background-color: @color-sand-light;
+      }
+    }
+
     .the-process-heading {
       grid-column: span 4;
 
@@ -136,6 +142,7 @@ section#hero {
     }
 
     .the-process-graphic {
+      display: block;
       grid-column-end: span 8;
 
       @media screen and (max-width: @viewport-width-tablet-landscape) {
