@@ -142,45 +142,6 @@
       "websiteUrl": "https://www.leilalaw.com/about"
     },
     {
-      "name": "Nia Hunter",
-      "profileImage": "/assets/uploads/nia.png",
-      "department": "OC Foundation Operations and Community",
-      "title": "Artist-Organizer Fellow",
-      "administrativeArea": "Baltimore",
-      "country": "US",
-      "instagramUrl": "https://www.instagram.com/little.tree.art/"
-    },
-    {
-      "name": "Niki Franco",
-      "linkedInUrl": "https://www.linkedin.com/in/niki-franco-a7b84a99/",
-      "profileImage": "/assets/uploads/niki.png",
-      "department": "OC Foundation Operations and Community",
-      "websiteUrl": "https://www.venusroots.com/",
-      "country": "US",
-      "title": "Artist-Organizer Fellow",
-      "administrativeArea": "Miami",
-      "twitterUrl": "https://twitter.com/venusroots",
-      "instagramUrl": "https://www.instagram.com/venusroots/"
-    },
-    {
-      "name": "Ebony Gustave",
-      "profileImage": "/assets/uploads/ebony.png",
-      "department": "OC Foundation Operations and Community",
-      "linkedInUrl": "https://www.linkedin.com/in/ebony-gustave-80740b95/",
-      "title": "Artist-Organizer Fellow",
-      "country": "US",
-      "administrativeArea": "New York",
-      "twitterUrl": ""
-    },
-    {
-      "name": "Robin Bean Crane",
-      "profileImage": "/assets/uploads/robin.png",
-      "department": "OC Foundation Operations and Community",
-      "title": "Artist-Organizer Fellow",
-      "administrativeArea": "California",
-      "country": "US"
-    },
-    {
       "name": "François Hodierne",
       "profileImage": "/assets/uploads/francois.jpeg",
       "department": "Platform Engineering and Design",
