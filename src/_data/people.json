@@ -291,6 +291,30 @@
       "country": "US",
       "title": "Board member",
       "department": "OC Foundation Board of Directors"
+    },
+    {
+      "name": "Salwa R",
+      "profileImage": "/assets/uploads/salwa.jpeg",
+      "department": "OC Foundation Operations and Community",
+      "title": "Support Staff",
+      "country": "US",
+      "administrativeArea": "New York"
+    },
+    {
+      "name": "Dawn Matlak",
+      "profileImage": "/assets/uploads/dawn-profile-pic.jpeg",
+      "department": "OC Foundation Operations and Community",
+      "title": "Operations Coordinator",
+      "country": "US",
+      "administrativeArea": "Wisconsin"
+    },
+    {
+      "name": "Katie Adamides",
+      "department": "OC Foundation Operations and Community",
+      "title": "Director of Operations",
+      "administrativeArea": "New York",
+      "country": "US",
+      "profileImage": "/assets/uploads/img_3106-copy.jpeg"
     }
   ],
   "departments": [
