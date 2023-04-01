@@ -50,7 +50,7 @@ const PersonChoices = ({ name }) => {
 
   return html`
     <div class="person-choices">
-      <h2>${name}</h2>
+      <h3>${name}</h2>
       <div class="top-choices">
         <h3>People they <strong>most</strong> want to be supported by</h3>
         <${PersonChoicesSelects}
