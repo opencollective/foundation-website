@@ -2,6 +2,7 @@ import { computed } from 'https://esm.sh/@preact/signals@1.1.1';
 import { topChoicesByPerson, bottomChoicesByPerson, people } from './store.js';
 import without from 'https://esm.sh/lodash/without';
 import { MinPriorityQueue } from 'https://esm.sh/@datastructures-js/priority-queue';
+import shuffle from 'https://esm.sh/lodash/shuffle';
 
 // We assign weights between people based on their ranking
 // 0..n for top choices
@@ -15,11 +16,10 @@ function computeWeightsForPerson(personName) {
 
   const topChoices = topChoicesByPerson.value[personName] || [];
   const bottomChoices = bottomChoicesByPerson.value[personName] || [];
-  const unrankedChoices = without(
-    people.value,
-    personName,
-    ...topChoices,
-    ...bottomChoices
+
+  // We want to shuffle the unranked choices to avoid bias from the original order
+  const unrankedChoices = shuffle(
+    without(people.value, personName, ...topChoices, ...bottomChoices)
   );
   const n = people.value.length;
 
