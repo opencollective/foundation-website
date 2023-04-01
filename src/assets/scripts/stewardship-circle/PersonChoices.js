@@ -50,9 +50,9 @@ const PersonChoices = ({ name }) => {
 
   return html`
     <div class="person-choices">
-      <h3>${name}</h2>
+      <h3>${name}</h3>
       <div class="top-choices">
-        <h3>People they <strong>most</strong> want to be supported by</h3>
+        <div>People they <strong>most</strong> want to be supported by</div>
         <${PersonChoicesSelects}
           choices=${topChoicesByPerson.value[name] || []}
           onChoicesChanged=${handleChoicesChanged.bind(
@@ -63,7 +63,7 @@ const PersonChoices = ({ name }) => {
         />
       </div>
       <div class="bottom-choices">
-        <h3>People they <strong>least</strong> want to be supported by</h3>
+        <div>People they <strong>least</strong> want to be supported by</div>
         <${PersonChoicesSelects}
           choices=${bottomChoicesByPerson.value[name] || []}
           onChoicesChanged=${handleChoicesChanged.bind(
