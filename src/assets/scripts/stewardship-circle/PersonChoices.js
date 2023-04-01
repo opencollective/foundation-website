@@ -31,6 +31,7 @@ const PersonChoicesSelects = ({
         value=${choices[i]}
         onChange=${handleChoiceChanged.bind(this, i)}
         className="choice-select"
+        style=${{ display: 'block' }}
       >
         <option value="">--</option>
         ${validOptions.map(
