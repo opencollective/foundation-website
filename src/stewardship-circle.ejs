@@ -1,0 +1,19 @@
+---
+layout: default
+title: Stewardship Circle
+---
+
+<main id="stewardship-circle" class="content-container">
+
+</main>
+
+<script>
+  window.CONTEXT = <%- JSON.stringify({
+    people:  (await include('./editable-blocks/stewardship-people.md')).trim().split('\n') 
+  })%>
+</script>
+
+<script 
+  type="module" 
+  src="/assets/scripts/stewardship-circle/index.js" 
+></script>
