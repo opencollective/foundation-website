@@ -44,7 +44,7 @@ function calculateCircle() {
   const edgeQueue = new MinPriorityQueue(([_from, _to, weight]) => weight);
 
   // Add all edges to the queue
-  people.value.forEach((person) => {
+  shuffle(people.value).forEach((person) => {
     const weights = computeWeightsForPerson(person);
     Object.entries(weights).forEach(([supportedBy, weight]) => {
       edgeQueue.enqueue([supportedBy, person, weight]);
