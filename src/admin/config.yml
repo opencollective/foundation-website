@@ -195,6 +195,15 @@ collections:
                 allow_multiple: false
               - name: body
                 widget: markdown
+      - label: 'People for stewardship circle calculator'
+        name: stewardshipCirclePeople
+        # Even though we want plain text, Netlify CMS throws an error if we don't use markdown
+        file: src/editable-blocks/stewardship-people.md
+        fields:
+          - name: body
+            label: People
+            hint: List of people for stewardship circle calculator, one per line
+            widget: text
   - name: editableBlocks
     label: Editable Blocks
     editor:
