@@ -63,7 +63,7 @@ const PersonChoices = ({ name }) => {
           maximum=${2}
         />
       </div>
-      <div class="bottom-choices">
+      <div class="bottom-choices" style=${{ display: 'none' }}>
         <div>People they <strong>least</strong> want to be supported by</div>
         <${PersonChoicesSelects}
           choices=${bottomChoicesByPerson.value[name] || []}
