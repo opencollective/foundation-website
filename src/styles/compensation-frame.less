@@ -20,6 +20,19 @@ h1 {
   border-bottom: @default-rule;
 }
 
+.text {
+  a {
+    @link-color: @font-color-base;
+
+    color: @link-color;
+    text-decoration: inherit;
+
+    &:hover {
+      // border-bottom: 1px dashed @link-color;
+    }
+  }
+}
+
 label {
   .paragraph-large();
 }
