@@ -37,38 +37,13 @@
       "administrativeArea": "Philadelphia"
     },
     {
-      "name": "Alanna Irving",
-      "githubUrl": "https://github.com/alanna",
-      "linkedInUrl": "https://www.linkedin.com/in/alannairving83/",
-      "profileImage": "/assets/uploads/alanna-nhsq.jpg",
-      "department": "OC Foundation Operations and Community",
-      "websiteUrl": "https://www.alanna.space/",
-      "country": "NZ",
-      "title": "Executive Director",
-      "administrativeArea": "Wellington",
-      "twitterUrl": "https://twitter.com/alannairving"
-    },
-    {
-      "name": "Nathan Hewitt",
-      "githubUrl": "https://github.com/natehn",
-      "linkedInUrl": "https://www.linkedin.com/in/nthnh/",
-      "profileImage": "/assets/uploads/nathan.png",
-      "department": "OC Foundation Operations and Community",
-      "websiteUrl": "https://natehn.com/",
+      "name": "Mike Strode",
+      "profileImage": "/assets/uploads/mike.jpeg",
+      "title": "Program Manager",
+      "administrativeArea": "Chicago",
       "country": "US",
-      "title": "Program Staff",
-      "administrativeArea": "New York",
-      "twitterUrl": "https://twitter.com/natehn_"
-    },
-    {
-      "name": "Kayla Epstein",
-      "department": "OC Foundation Operations and Community",
-      "title": "Support Staff",
-      "administrativeArea": "California",
-      "country": "US",
-      "linkedInUrl": "https://www.linkedin.com/in/kaylarepstein/",
-      "githubUrl": "https://github.com/kaylarep",
-      "profileImage": "/assets/uploads/kayla.jpeg"
+      "linkedInUrl": "https://www.linkedin.com/in/mjstrode/",
+      "department": "OC Foundation Operations and Community"
     },
     {
       "name": "Ember Buck",
@@ -80,36 +55,14 @@
       "linkedInUrl": "https://www.linkedin.com/in/emberbuck/"
     },
     {
-      "name": "Mike Strode",
-      "profileImage": "/assets/uploads/mike.jpeg",
-      "title": "Program Manager",
-      "administrativeArea": "Chicago",
+      "name": "Kayla Epstein",
+      "department": "OC Foundation Operations and Community",
+      "title": "Support Staff",
+      "administrativeArea": "California",
       "country": "US",
-      "linkedInUrl": "https://www.linkedin.com/in/mjstrode/",
-      "department": "OC Foundation Operations and Community"
-    },
-    {
-      "name": "Caroline Woolard",
-      "linkedInUrl": "https://www.linkedin.com/in/carolinewoolard/",
-      "profileImage": "/assets/uploads/headshot-woolard.jpg",
-      "department": "OC Foundation Operations and Community",
-      "websiteUrl": "http://carolinewoolard.com",
-      "country": "DE",
-      "title": "Director of Research and Partnerships",
-      "administrativeArea": "Berlin",
-      "twitterUrl": "https://twitter.com/carolinewoolard",
-      "instagramUrl": "https://www.instagram.com/carolinewoolard/"
-    },
-    {
-      "name": "Alina Manko",
-      "githubUrl": "https://github.com/alinamanko",
-      "linkedInUrl": "https://www.linkedin.com/in/alinamanko/",
-      "profileImage": "/assets/uploads/alina.jpeg",
-      "department": "OC Foundation Operations and Community",
-      "country": "NZ",
-      "title": "Operations & Support",
-      "administrativeArea": "Wellington",
-      "twitterUrl": "https://twitter.com/c_observations"
+      "linkedInUrl": "https://www.linkedin.com/in/kaylarepstein/",
+      "githubUrl": "https://github.com/kaylarep",
+      "profileImage": "/assets/uploads/kayla.jpeg"
     },
     {
       "name": "Sadé Swift",
@@ -267,14 +220,6 @@
       "websiteUrl": "https://grassrootsfund.org"
     },
     {
-      "name": "Nan Mead",
-      "profileImage": "/assets/uploads/nan.jpeg",
-      "linkedInUrl": "https://www.linkedin.com/in/naneileenmead/",
-      "country": "US",
-      "title": "Board member",
-      "department": "OC Foundation Board of Directors"
-    },
-    {
       "name": "Salwa R",
       "profileImage": "/assets/uploads/salwa.jpeg",
       "department": "OC Foundation Operations and Community",
@@ -289,14 +234,6 @@
       "title": "Operations Coordinator",
       "country": "US",
       "administrativeArea": "Wisconsin"
-    },
-    {
-      "name": "Katie Adamides",
-      "department": "OC Foundation Operations and Community",
-      "title": "Director of Operations",
-      "administrativeArea": "New York",
-      "country": "US",
-      "profileImage": "/assets/uploads/img_3106-copy.jpeg"
     }
   ],
   "departments": [
