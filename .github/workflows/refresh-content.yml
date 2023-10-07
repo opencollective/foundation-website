@@ -11,3 +11,5 @@ jobs:
         with:
           url: ${{ secrets.DEPLOY_TRIGGER_URL }}
           method: 'POST'
+      - name: keepalive
+        uses: gautamkrishnar/keepalive-workflow@v1
