@@ -11,3 +11,9 @@ jobs:
         with:
           url: ${{ secrets.DEPLOY_TRIGGER_URL }}
           method: 'POST'
+  touch-repo:
+    name: Make a commit to prevent workflow from being disabled
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/keepalive-workflow@v1
