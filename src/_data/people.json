@@ -75,88 +75,6 @@
       "websiteUrl": "https://www.leilalaw.com/about"
     },
     {
-      "name": "François Hodierne",
-      "profileImage": "/assets/uploads/francois.jpeg",
-      "department": "Platform Engineering and Design",
-      "title": "Engineering",
-      "administrativeArea": "Berlin",
-      "country": "DE",
-      "linkedInUrl": "https://www.linkedin.com/in/francoishodierne/",
-      "githubUrl": "https://github.com/znarf"
-    },
-    {
-      "name": "Benjamin Piouffle",
-      "profileImage": "/assets/uploads/benjamin.jpeg",
-      "department": "Platform Engineering and Design",
-      "title": "Engineering",
-      "country": "FR",
-      "linkedInUrl": "https://www.linkedin.com/in/benjaminpiouffle/",
-      "twitterUrl": "https://twitter.com/Betree83",
-      "administrativeArea": ""
-    },
-    {
-      "name": "Memo Esparza",
-      "githubUrl": "https://github.com/Memo-Es",
-      "linkedInUrl": "https://www.linkedin.com/in/memo-es/",
-      "profileImage": "/assets/uploads/memo.jpeg",
-      "department": "Platform Engineering and Design",
-      "country": "MX",
-      "title": "Design",
-      "twitterUrl": "https://twitter.com/memo_es_",
-      "instagramUrl": "https://www.instagram.com/_memo.es/"
-    },
-    {
-      "name": "Benjamin Nickols",
-      "profileImage": "/assets/uploads/benjam.jpeg",
-      "department": "Platform Engineering and Design",
-      "title": "Product",
-      "country": "GB",
-      "linkedInUrl": "https://www.linkedin.com/in/benjamuk/",
-      "twitterUrl": "https://twitter.com/BenJam",
-      "githubUrl": "https://github.com/BenJam"
-    },
-    {
-      "name": "Sudharaka Palamakumbura",
-      "githubUrl": "https://github.com/SudharakaP",
-      "linkedInUrl": "https://www.linkedin.com/in/sudharakap/",
-      "profileImage": "/assets/uploads/suds.jpeg",
-      "department": "Platform Engineering and Design",
-      "country": "CA",
-      "title": "Engineering",
-      "administrativeArea": "Vancouver",
-      "twitterUrl": "https://twitter.com/PSudharaka"
-    },
-    {
-      "name": "Amina Kazi",
-      "profileImage": "/assets/uploads/amina.jpeg",
-      "department": "Platform Engineering and Design",
-      "title": "Design",
-      "country": "IN",
-      "linkedInUrl": "https://www.linkedin.com/in/amina-kazi-a97b47158/",
-      "githubUrl": "https://github.com/aminakazi"
-    },
-    {
-      "name": "Shannon Wray",
-      "githubUrl": "https://github.com/shannondwray",
-      "linkedInUrl": "https://www.linkedin.com/in/shannonwray/",
-      "profileImage": "/assets/uploads/shannon.jpeg",
-      "department": "Platform Engineering and Design",
-      "country": "NZ",
-      "title": "Marketing",
-      "twitterUrl": "https://twitter.com/shanwray_",
-      "instagramUrl": "https://www.instagram.com/shannondwray/"
-    },
-    {
-      "name": "Leonardo Kewitz",
-      "profileImage": "/assets/uploads/leo.jpeg",
-      "department": "Platform Engineering and Design",
-      "title": "Engineering",
-      "country": "BR",
-      "linkedInUrl": "https://www.linkedin.com/in/kewitz/",
-      "twitterUrl": "https://twitter.com/leokewitz",
-      "githubUrl": "https://github.com/kewitz"
-    },
-    {
       "name": "National Network of Fiscal Sponsors",
       "profileImage": "/assets/uploads/screen-shot-2022-06-07-at-12.39.57-pm.png",
       "department": "OC Foundation Network Affiliations",
@@ -172,24 +90,6 @@
       "websiteUrl": "https://blog.opencollective.com/",
       "title": "Coming Soon!",
       "profileImage": "/assets/uploads/illustration2-d_takeaction-1-.png"
-    },
-    {
-      "name": "Oluwaseun Omoyajowo",
-      "department": "Platform Engineering and Design",
-      "title": "Engineering",
-      "administrativeArea": "Amsterdam",
-      "country": "NL",
-      "websiteUrl": "https://nl.linkedin.com/in/oluwaseun-omoyajowo-641358110",
-      "githubUrl": "https://github.com/flickz",
-      "profileImage": "https://avatars.githubusercontent.com/u/15707013?v=4"
-    },
-    {
-      "name": "Join our team!",
-      "profileImage": "/assets/uploads/media.png",
-      "department": "Platform Engineering and Design",
-      "title": "View our Hiring Page and Apply",
-      "websiteUrl": "https://opencollective.com/hiring",
-      "country": "US"
     },
     {
       "name": "Alfie Marsland",
