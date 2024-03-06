@@ -18,15 +18,6 @@
       "country": "US"
     },
     {
-      "name": "Social Impact Commons",
-      "profileImage": "https://images.squarespace-cdn.com/content/v1/5e84b5eaa39e6c2b3f14571b/1596739394901-W0GJPWIAON5H9OHJ49U9/Social-Impact-Commons-Logo-ICON-color.png?format=1000w",
-      "department": "OC Foundation Network Affiliations",
-      "title": "Social Impact Commons",
-      "country": "US",
-      "websiteUrl": "https://www.socialimpactcommons.org/",
-      "administrativeArea": "Philadelphia"
-    },
-    {
       "name": "Mike Strode",
       "profileImage": "/assets/uploads/mike.jpeg",
       "title": "Program Manager",
@@ -43,27 +34,6 @@
       "administrativeArea": "Wellington",
       "country": "NZ",
       "linkedInUrl": "https://www.linkedin.com/in/emberbuck/"
-    },
-    {
-      "name": "Kayla Epstein",
-      "department": "OC Foundation Operations and Community",
-      "title": "Support Staff",
-      "administrativeArea": "California",
-      "country": "US",
-      "linkedInUrl": "https://www.linkedin.com/in/kaylarepstein/",
-      "githubUrl": "https://github.com/kaylarep",
-      "profileImage": "/assets/uploads/kayla.jpeg"
-    },
-    {
-      "name": "Sadé Swift",
-      "profileImage": "https://d3n8a8pro7vhmx.cloudfront.net/greenworker/pages/17/attachments/original/1571787787/4.png?1571787787",
-      "department": "OC Foundation Operations and Community",
-      "websiteUrl": "https://cardsbyde.com/",
-      "country": "US",
-      "title": "Communications Organizer",
-      "administrativeArea": "New York",
-      "twitterUrl": "https://twitter.com/wordsbyde?lang=en",
-      "instagramUrl": "https://www.instagram.com/be_revolutionary/"
     },
     {
       "name": "Leila M. Trutanich",
@@ -84,16 +54,6 @@
       "websiteUrl": "https://www.fiscalsponsors.org/"
     },
     {
-      "name": "Alfie Marsland",
-      "profileImage": "/assets/uploads/0-16-852x1024.jpeg",
-      "department": "OC Foundation Operations and Community",
-      "title": "Communications Designer",
-      "administrativeArea": "Baltimore, MD",
-      "country": "US",
-      "instagramUrl": "https://www.instagram.com/alfie.marsland/?hl=en",
-      "websiteUrl": "https://althemiamarsland.com/"
-    },
-    {
       "name": "Bart Westdijk",
       "profileImage": "/assets/uploads/screen-shot-2022-12-14-at-12.51.58-pm.png",
       "department": "OC Foundation Board of Directors",
@@ -108,14 +68,6 @@
       "title": "Support Staff",
       "country": "US",
       "administrativeArea": "New York"
-    },
-    {
-      "name": "Dawn Matlak",
-      "profileImage": "/assets/uploads/dawn-profile-pic.jpeg",
-      "department": "OC Foundation Operations and Community",
-      "title": "Operations Coordinator",
-      "country": "US",
-      "administrativeArea": "Wisconsin"
     }
   ],
   "departments": [
